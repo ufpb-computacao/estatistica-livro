@@ -386,5 +386,8 @@ Logo, os eventos latexmath:[$A,B$] e latexmath:[$C$] não são independentes.
 
 
 
+////
+Sempre termine os arquivos com uma linha em branco.
+////
 
 

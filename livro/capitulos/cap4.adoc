@@ -345,3 +345,8 @@ Daí, pela regra da cadeia, vale que latexmath:[$F_Y'(y) = f(\sqrt{y})\cdot \fra
 
 
 Portanto, latexmath:[$f_Y(y) = \frac{1}{2\sqrt{y}}\left(f(\sqrt{y})+f(-\sqrt{y})\right).$]
+
+////
+Sempre termine os arquivos com uma linha em branco.
+////
+

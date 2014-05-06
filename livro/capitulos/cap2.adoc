@@ -250,4 +250,7 @@ latexmath:[$(a+b)^n = {n\choose 0} a^n +\cdots+ {n\choose i} a^{n-i} b^i +\cdots
 
 
 
+////
+Sempre termine os arquivos com uma linha em branco.
+////
 

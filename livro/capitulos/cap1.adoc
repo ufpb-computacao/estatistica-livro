@@ -1,0 +1,8 @@
+== Estatística Descritiva
+
+Falta texto do capítulo 1 aqui.
+
+////
+Sempre termine os arquivos com uma linha em branco.
+////
+
