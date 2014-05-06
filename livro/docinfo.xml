@@ -1,0 +1,29 @@
+<edition>{edition}</edition>
+
+<revhistory>
+
+  <revision>
+    <revnumber>v0.1.0</revnumber>
+    <date>Março 2013</date>
+    <authorinitials>Autor1, Autor2</authorinitials>
+    <revremark>
+      Primeira versão do livro.
+    </revremark>
+  </revision>
+  
+</revhistory>
+
+<authorgroup>
+  <author>
+    <firstname>Nome</firstname>
+    <surname>Sobrenome</surname>
+  </author>
+</authorgroup>
+
+<othercredit>
+    <firstname>Eduardo</firstname>
+    <surname>Medeiros</surname>
+    <othername>Santana</othername>
+  <contrib>Editor</contrib>
+</othercredit>
+
