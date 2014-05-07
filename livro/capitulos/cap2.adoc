@@ -18,11 +18,11 @@ Chamamos os objetos que formam o conjunto de _elementos_. Assim,
 para descrever um conjunto, basta listar seus elementos. 
 Existem três maneiras de descrever os elementos de um conjunto latexmath:[$A$]:
 
-* Listando os elementos. Por exemplo, latexmath:[$A = \{ 1, 2, 3, 4,\ldots\}$];
+* _Listando os elementos_. Por exemplo, latexmath:[$A = \{ 1, 2, 3, 4,\ldots\}$];
 
-* Descrevendo os elementos. Por exemplo, latexmath:[$A$] é o conjunto de todos os números inteiros;
+* _Descrevendo os elementos_. Por exemplo, latexmath:[$A$] é o conjunto de todos os números inteiros;
 
-* Colocando condições. latexmath:[$A = \{x; x\textrm{ é número real e } 0\leq x\leq 1\}$]. 
+* _Colocando condições_. latexmath:[$A = \{x; x\textrm{ é número real e } 0\leq x\leq 1\}$]. 
 
 
 [NOTE]
