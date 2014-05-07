@@ -39,11 +39,11 @@ resultados por latexmath:[$\Omega$].
 
 .Espaços amostrais associados aos exemplos anteriores
 ====
-. latexmath:[$\Omega = \{1,2,3,4,5,6\}$]
+. latexmath:[$\Omega = \{1,2,3,4,5,6\}$];
 
-. latexmath:[$\Omega = \{0,1,2,3\}$]
+. latexmath:[$\Omega = \{0,1,2,3\}$];
 
-. latexmath:[$\Omega = \{0,1,2,3,...}, \Omega = \{0,1,2,...,7000000000\}, \ldots $]
+. latexmath:[$\Omega = \{0,1,2,3,\ldots\}, \Omega = \{0,1,2,...,7000000000\}, \ldots $].
 ====
 
 [NOTE]
@@ -133,7 +133,7 @@ Definição: Medida de Probabilidade::
 Seja latexmath:[$E$] um experimento. Seja latexmath:[$\Omega$] um espaço amostral,
 e seja latexmath:[$E$] um evento de latexmath:[$\Omega$]. Dizemos que latexmath:[$P$] é uma 
 medida probabilidade em latexmath:[$\Omega$] se para todo evento latexmath:[$A$], 
-temos que latexmath:[$P(A)] é um número não-negativo, chamado de probabilidade de latexmath:[$A$], 
+temos que latexmath:[$P(A)$] é um número não-negativo, chamado de probabilidade de latexmath:[$A$], 
 tal que
 
 * latexmath:[$ 0\leq P(A)\leq 1$];
