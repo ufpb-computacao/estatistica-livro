@@ -263,7 +263,7 @@ Daí latexmath:[$\cup_{n\in \mathbb{Z}} (n,n+1\] \subset \mathbb{R}$].
 Portanto, concluímos que 
 [latexmath]
 ++++
-\[\mathbb{R} = \cup_{n\in \mathbb{Z}} (n,n+1\].\]
+\[\mathbb{R} = \cup_{n\in \mathbb{Z}} (n,n+1].\]
 ++++
 
 --
