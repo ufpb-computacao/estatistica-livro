@@ -260,11 +260,11 @@ Temos que para todo latexmath:[$x$] real, vale
 \[x\in ([x]-1,[x]]\cup ([x],[x]+1]\].
 ++++
 
-Portanto, vale latexmath:[$x \in \displaystyle\cup_{n\in \mathbb{Z}} (n,n+1\]$], ou seja, 
-latexmath:[$\mathbb{R}\subset \displaystyle\cup_{n\in \mathbb{Z}} (n,n+1\]$]. 
+Portanto, vale latexmath:[$x \in \bigcup_{n\in \mathbb{Z}} (n,n+1\]$], ou seja, 
+latexmath:[$\mathbb{R}\subset \bigcup_{n\in \mathbb{Z}} (n,n+1\]$]. 
 
 Por outro lado, latexmath:[$\forall n\in \mathbb{Z}, (n,n+1\]\subset \mathbb{R}$]. 
-Daí latexmath:[$\displaystyle\cup_{n\in \mathbb{Z}} (n,n+1\] \subset \mathbb{R}$]. 
+Daí latexmath:[$\bigcup_{n\in \mathbb{Z}} (n,n+1\] \subset \mathbb{R}$]. 
 Portanto, concluímos que 
 [latexmath]
 ++++
