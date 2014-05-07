@@ -450,7 +450,12 @@ Escrevendo os eventos latexmath:[$A, B$] e latexmath:[$A\cap B$] explicitamente,
 
 [latexmath]
 ++++
-\[B = \{(2,1),(3,1),(4,1),(5,1),(6,1),(3,2), (4,2), (5,2), (6,2), (4,3), (5,3), (6,3), (5,4), (6,4), (6,5)\}\]
+\[
+\begin{array}{lll}
+B &=&\{(2,1),(3,1),(4,1),(5,1),(6,1),(3,2), \\
+&&(4,2), (5,2), (6,2), (4,3), (5,3), (6,3), (5,4), (6,4), (6,5)\}
+\end{array}
+\]
 ++++
 e 
 [latexmath]
@@ -704,7 +709,12 @@ Escrevendo explicitamente, temos que
 latexmath:[$\Omega = \{(1,1),(1,2),(1,3),\ldots, (6,6)\}$], onde latexmath:[$\Omega$] possui 36 elementos,
 [latexmath]
 ++++
-\[A = \{ (2,1), (2,2), (2,3), (2,4), (2,5), (2,6), (4,1), (4,2), (4,3), (4,4), (4,5), (4,6), (6,1), (6,2), (6,3), (6,4), (6,5), (6,6)\},\]
+\[
+\begin{array}{lll}
+A &=& \{ (2,1), (2,2), (2,3), (2,4), (2,5), (2,6), (4,1), (4,2), (4,3), \\
+&&(4,4), (4,5), (4,6), (6,1), (6,2), (6,3), (6,4), (6,5), (6,6)\}
+\end{array}
+,\]
 ++++
 onde latexmath:[$A$] possui 18 elementos, 
 [latexmath]
@@ -770,9 +780,9 @@ Além disso, segue que latexmath:[$A\cap B$] = {(cara,cara)}, latexmath:[$A\cap 
 latexmath:[$B\cap C$] = {(coroa,cara)}.
 
 Portanto, temos que latexmath:[$P(A) = \frac{2}{4} = \frac{1}{2}, P(B) = \frac{2}{4} = \frac{1}{2},
-P(C) = \frac{2}{4} = \frac{1}{2}$. Por outro lado, temos que latexmath:[$P(A\cap B) = \frac{1}{4} = \frac{1}{2}\frac{1}{2} = P(A)P(B)$], 
-latexmath:[$P(A\cap C) = \frac{1}{4} = \frac{1}{2}\frac{1}{2} = P(A)P(C)$] e 
-latexmath:[$P(B\cap C) = \frac{1}{4} = \frac{1}{2}\frac{1}{2} = P(B)P(C)$].
+P(C) = \frac{2}{4} = \frac{1}{2}$. Por outro lado, temos que latexmath:[$P(A\cap B) = \frac{1}{4} = \frac{1}{2}\cdot\frac{1}{2} = P(A)P(B)$], 
+latexmath:[$P(A\cap C) = \frac{1}{4} = \frac{1}{2}\cdot\frac{1}{2} = P(A)P(C)$] e 
+latexmath:[$P(B\cap C) = \frac{1}{4} = \frac{1}{2}\cdot\frac{1}{2} = P(B)P(C)$].
 
 Isso mostra que os eventos latexmath:[$A, B$] e latexmath:[$C$] são dois-a-dois independentes. 
 Entretanto, temos que latexmath:[$A\cap B\cap C = \emptyset$], e desta forma,
