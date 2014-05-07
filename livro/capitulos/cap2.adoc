@@ -71,6 +71,7 @@ latexmath:[$B$], e escrevemos latexmath:[$A\not\subset B$].
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
 
++
 
 Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\not\subset A$], 
 latexmath:[$A\not\subset C$], latexmath:[$A\not\subset B$],
@@ -113,7 +114,7 @@ e latexmath:[$B\subset A$].
 
 ==== União de conjuntos
 
-(((Conjuntos, União)))
+(((Conjunto, União)))
 
 Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$]. 
 Podemos definir um terceiro conjunto, chamado de conjunto união de
@@ -171,7 +172,7 @@ como o conjunto formado pelos elementos de latexmath:[$A_1,\ldots, A_n$], ou sej
 
 ==== Interseção de conjuntos
 
-(((Conjuntos, Interseção)))
+(((Conjunto, Interseção)))
 
 Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$].
 Considere agora o conjunto formado pelos objetos que são elementos 
@@ -455,7 +456,7 @@ Note que latexmath:[$1000\cdot 999\cdot 998 = \frac{1000!}{997!}$].
 Assim, a regra dos arranjos é:
 
 
-Arrajo::
+Arranjo::
 +
 --
 Suponha que temos latexmath:[$n$] objetos disponíveis. Então, o número de formas de escolher latexmath:[$k$]
