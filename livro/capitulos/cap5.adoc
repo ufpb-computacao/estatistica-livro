@@ -12,8 +12,8 @@ latexmath:[$P(A\cap B) = P(A)P(B)$].
 Esta definição motiva a definição de independência entre variáveis aleatórias:
 
 .Variáveis Aleatórias Independentes
-======================================
 [caption="Definição"]
+======================================
 Sejam latexmath:[$X:\Omega\to R$] e latexmath:[$Y:\Omega\to R$] duas variáveis aleatórias. 
 Dizemos que latexmath:[$X$] e latexmath:[$Y$] são independentes se para todos os eventos 
 latexmath:[$A,B\in R$], vale a fórmula 
@@ -47,8 +47,8 @@ Assim, o peso médio é latexmath:[$m = 1/10 + 2/10 + \cdots + 10/10 = 5,5$].
 Mais geralmente temos a
 
 .Esperança de Variáveis Aleatórias Discretas
-============================================
 [caption="Definição"]
+============================================
 Seja latexmath:[$X$] uma variável aleatória discreta tomando valores no conjunto latexmath:[$\{a_1,a_2,a_3,\ldots\}$]. 
 Seja latexmath:[$p(a_i) = P(X=a_i)$] sua função de probabilidade. Então definimos a esperança, ou valor esperado, de latexmath:[$X$] como:
 [latexmath]
