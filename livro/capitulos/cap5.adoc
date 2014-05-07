@@ -11,20 +11,22 @@ latexmath:[$P(A\cap B) = P(A)P(B)$].
 
 Esta definição motiva a definição de independência entre variáveis aleatórias:
 
-
-Definição:: Sejam latexmath:[$X:\Omega\to R$] e latexmath:[$Y:\Omega\to R$] duas variáveis aleatórias. 
+.Variáveis Aleatórias Independentes
+======================================
+[caption="Definição"]
+Sejam latexmath:[$X:\Omega\to R$] e latexmath:[$Y:\Omega\to R$] duas variáveis aleatórias. 
 Dizemos que latexmath:[$X$] e latexmath:[$Y$] são independentes se para todos os eventos 
 latexmath:[$A,B\in R$], vale a fórmula 
 [latexmath]
 ++++
 \[P(X\in A\textrm{ e } Y\in B) = P(X\in A)P(Y\in B).\] 
 ++++
+======================================
 
-
-É possível mostrar que se latexmath:[$X$] e latexmath:[$Y$] são duas variáveis aleatórias discretas. 
+Sejam latexmath:[$X$] e latexmath:[$Y$] são duas variáveis aleatórias discretas. 
 Suponha que latexmath:[$X$] toma valores no conjunto latexmath:[$\{a_1,a_2,a_3,\ldots\}$] e que latexmath:[$Y$] 
-toma valores no conjunto latexmath:[$\{b_1,b_2,b_3,\ldots\}$]. Então latexmath:[$X$] e latexmath:[$Y$] são independentes se, 
-e somente se, para cada latexmath:[$a_i$] e latexmath:[$b_j$], temos 
+toma valores no conjunto latexmath:[$\{b_1,b_2,b_3,\ldots\}$]. Então, é possível mostrar que
+latexmath:[$X$] e latexmath:[$Y$] são independentes se, e somente se, para cada latexmath:[$a_i$] e latexmath:[$b_j$], temos 
 [latexmath]
 ++++
 \[P(X = a_i, Y=b_j) = P(X=a_i)P(Y=b_j).\]
@@ -44,7 +46,10 @@ Assim, o peso médio é latexmath:[$m = 1/10 + 2/10 + \cdots + 10/10 = 5,5$].
 
 Mais geralmente temos a
 
-Definição:: Seja latexmath:[$X$] uma variável aleatória discreta tomando valores no conjunto latexmath:[$\{a_1,a_2,a_3,\ldots\}$]. 
+.Esperança de Variáveis Aleatórias Discretas
+============================================
+[caption="Definição"]
+Seja latexmath:[$X$] uma variável aleatória discreta tomando valores no conjunto latexmath:[$\{a_1,a_2,a_3,\ldots\}$]. 
 Seja latexmath:[$p(a_i) = P(X=a_i)$] sua função de probabilidade. Então definimos a esperança, ou valor esperado, de latexmath:[$X$] como:
 [latexmath]
 ++++
@@ -52,7 +57,7 @@ Seja latexmath:[$p(a_i) = P(X=a_i)$] sua função de probabilidade. Então defin
 ++++
 se a série latexmath:[$\sum_{i=1}^\infty |a_i| p(a_i)$] convergir, ou seja, se a série latexmath:[$\sum_{i=1}^\infty a_i p(a_i)$] 
 convergir absolutamente. Caso a série em questão não convirja absolutamente, dizemos que a esperança de latexmath:[$X$] não existe.
-
+=============================================
 
 É claro que se latexmath:[$X$] toma apenas uma quantidade finita de valores, digamos latexmath:[$a_1,\ldots,a_n$], então a esperança de 
 latexmath:[$X$] é dada por
@@ -61,6 +66,8 @@ latexmath:[$X$] é dada por
 \[E(X) = \sum_{i=1}^n a_ip(a_i).\]
 ++++
 
+[NOTE]
+==============================================
 Observe que como a soma latexmath:[$p(a_1)+\cdots+p(a_n)=1$], podemos pensar nesta esperança como uma média ponderada, entre os valores
 latexmath:[$a_1,\ldots,a_n$], com os pesos latexmath:[$p(a_1),\ldots,p(a_n)$]. Note ainda que se todos os valores forem igualmente possíveis,
 ou seja, se para cada latexmath:[$i$], latexmath:[$p(a_i)=1/n$], então a esperança será dada simplesmente pela média aritmética
@@ -69,12 +76,17 @@ entre os valores possíveis:
 ++++
 \[E(X) = \frac{1}{n} \sum_{i=1}^n a_i.\]
 ++++
+==============================================
 
-Exemplo:: Seja latexmath:[$X$] uma variável aleatória que toma valor latexmath:[$1$] com probabilidade latexmath:[$p$], e valor latexmath:[$0$]
+==============================================
+Seja latexmath:[$X$] uma variável aleatória que toma valor latexmath:[$1$] com probabilidade latexmath:[$p$], e valor latexmath:[$0$]
 com probabilidade latexmath:[$1-p$]. Temos então que 
 [latexmath]
 ++++
 \[ E(X) = 0p(0) + 1p(1) = p(1)=P(X=1) = p.\]
 ++++
+==============================================
+
+
 
 Vamos agora definir esperança para variáveis aleatórias contínuas.
