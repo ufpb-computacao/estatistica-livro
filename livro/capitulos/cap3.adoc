@@ -18,7 +18,7 @@ Experimento aleatório::
 Consiste em um experimento em que, mesmo mantendo as mesmas condições, o resultado do experimento pode variar.
 --
 
-.Exemplo de experimentos aleatórios
+.Exemplos de experimentos aleatórios
 ====
 . Lançar um dado e observar o resultado.
 
@@ -28,37 +28,85 @@ Consiste em um experimento em que, mesmo mantendo as mesmas condições, o resul
 ====
 
 === Fundamentos de Probabilidade
-
-Espaço amostral:: É o conjunto de todos os resultados possíveis de um experimento. Denotamos o conjunto de todos os resultados por latexmath:[$\Omega$].
+(((Espaço, amostral)))
+Definição: Espaço amostral:: 
++
+--
+Espaço amostral é o conjunto de todos os resultados possíveis 
+de um experimento. Denotamos o conjunto de todos os 
+resultados por latexmath:[$\Omega$].
+--
 
 .Espaços amostrais associados aos exemplos anteriores
-==========================
-*E1.* latexmath:[$\Omega$] = \{1,2,3,4,5,6}
+====
+. latexmath:[$\Omega = \{1,2,3,4,5,6\}$]
 
-*E2.* latexmath:[$\Omega$] = \{0,1,2,3}
+. latexmath:[$\Omega = \{0,1,2,3\}$]
 
-*E3.* latexmath:[$\Omega$] = \{0,1,2,3,...}, latexmath:[$\Omega$] = \{0,1,2,...,7000000000}, ...
-==========================
+. latexmath:[$\Omega = \{0,1,2,3,...}, \Omega = \{0,1,2,...,7000000000\}, \ldots $]
+====
 
-Observe que no último exemplo tivemos mais de uma opção de espaço amostral. Isto não contradiz a definição de espaço amostral. De fato, podemos ter mais de uma opção de espaços amostrais, o importante é que cada uma dessas opções contenha todos os resultados possíveis.
+[NOTE]
+====
+Observe que no último exemplo tivemos mais de uma opção de espaço amostral. 
+Isto não contradiz a definição de espaço amostral. De fato, podemos ter mais 
+de uma opção de espaços amostrais, o importante é que cada uma dessas 
+opções contenha todos os resultados possíveis.
+====
 
-Evento:: Seja latexmath:[$\Omega$] o espaço amostral de um experimento. Todo conjunto latexmath:[$A\subset\Omega$] tal que podemos calcular a probabilidade de _A_ é chamado de evento. Destacamos dois eventos importantes: latexmath:[$\Omega$] é chamado de _evento certo_ e latexmath:[$\emptyset$] é chamado de _evento impossível_. O conjunto de todos os eventos possui uma estrutura chamada de latexmath:[$\sigma$]-álgebra. A definição de latexmath:[$\sigma$]-álgebra é muito simples, mesmo assim, não há necessidade de estudarmos latexmath:[$\sigma$]-álgebras, pois todos os conjuntos que utilizaremos ao longo do livro serão eventos.
+(((Evento)))
 
-Como cada evento é um conjunto, vale a pena descrever os eventos obtidos após realizarmos as operações clássicas de conjuntos entre eventos.
+Definição: Evento:: 
++
+--
+Seja latexmath:[$\Omega$] o espaço amostral de um experimento. 
+Todo conjunto latexmath:[$A\subset\Omega$] tal que podemos calcular 
+a probabilidade de latexmath:[$A$] é chamado de _evento_. 
+--
+
+Destacamos dois eventos importantes: 
+
+. latexmath:[$\Omega$] é chamado de _evento certo_;
+. latexmath:[$\emptyset$] é chamado de _evento impossível_. 
+
+[NOTE]
+====
+O conjunto de todos os eventos possui uma estrutura chamada de latexmath:[$\sigma$]-álgebra.
+Apesar da definição de latexmath:[$\sigma$]-álgebra ser muito simples, não há necessidade de 
+estudarmos latexmath:[$\sigma$]-álgebras, pois todos os conjuntos que 
+utilizaremos ao longo do livro serão eventos. Além disso, as aplicações onde é _realmente_
+necessário o uso de latexmath:[$\sigma$]-álgebras fogem do escopo deste livro.
+====
+
+
+Como cada evento é um conjunto, vale a pena descrever os eventos 
+obtidos após realizarmos as operações clássicas de conjuntos entre eventos.
 
 .Eventos
-* latexmath:[$A\cup B$]: é o evento "_A_ ou _B_";
-* latexmath:[$A\cap B$]: é o evento "_A_ e _B_";
-* latexmath:[$A^c$]: é o evento "não ocorrência de _A_";
-* latexmath:[$A\subset B$]: significa que se o evento _A_ ocorre, então o evento _B_ ocorre.
-* latexmath:[$A\cap B = \emptyset$]: significa que _A_ e _B_ são eventos mutuamente exclusivos, ou seja, a ocorrência de _A_ implica que _B_ não ocorre, e a ocorrência de _B_ implica que _A_ não ocorre.
+====
+* latexmath:[$A\cup B$]: é o evento ``latexmath:[$A$] ou latexmath:[$B$]'';
+* latexmath:[$A\cap B$]: é o evento ``latexmath:[$A$] e latexmath:[$B$]'';
+* latexmath:[$A^c$]: é o evento ``não ocorrência de latexmath:[$A$]'';
+* latexmath:[$A\subset B$]: significa que se o evento latexmath:[$A$] ocorre, então o evento latexmath:[$B$] ocorre.
+* latexmath:[$A\cap B = \emptyset$]: significa que latexmath:[$A$] e latexmath:[$B$] são 
+eventos mutuamente exclusivos, ou seja, a ocorrência de latexmath:[$A$] implica 
+que latexmath:[$B$] não ocorre, e a ocorrência de latexmath:[$B$] implica que latexmath:[$A$] não ocorre.
+====
 
-
-.Partição
-Dado um espaço amostral latexmath:[$\Omega$], uma *partição* latexmath:[$P = \{A_{\alpha}, \alpha\in I\}$] de latexmath:[$\Omega$] é uma coleção de eventos, neste caso, indexados por latexmath:[$\alpha$], que toma valores no conjunto _I_, e satisfaz:
+(((Espaço Amostral, Partição)))
+Definição: Partição::
++
+--
+Dado um espaço amostral latexmath:[$\Omega$], uma _partição_ latexmath:[$\mathcal{P} = \{A_{\alpha}, \alpha\in \mathcal{I}\}$] 
+de latexmath:[$\Omega$] é uma coleção de eventos, latexmath:[$A_{\alpha}$], indexados por latexmath:[$\alpha$], tais que:
 
 * Para todo latexmath:[$\alpha\neq\beta$], latexmath:[$A_{\alpha}\cap A_{\beta} = \emptyset$];
-* latexmath:[$\cup_{\alpha\in I} A_{\alpha} = \Omega$].
+* [latexmath]
+++++
+\[\bigcup_{\alpha\in I} A_{\alpha} = \Omega.\]
+++++
+
+--
 
 Portanto, temos que os eventos de uma partição são _mutuamente excludentes_ dois-a-dois e sua união é todo o espaço amostral. 
 
