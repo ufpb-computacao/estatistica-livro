@@ -28,7 +28,9 @@ Consiste em um experimento em que, mesmo mantendo as mesmas condições, o resul
 ====
 
 === Fundamentos de Probabilidade
+
 (((Espaço, amostral)))
+
 Definição: Espaço amostral:: 
 +
 --
@@ -104,7 +106,7 @@ que latexmath:[$B$] não ocorre, e a ocorrência de latexmath:[$B$] implica que 
 Definição: Partição::
 +
 --
-Dado um espaço amostral latexmath:[$\Omega$], uma _partição_ latexmath:[$\mathcal{P} = \{A_{\alpha}, \alpha\in \mathcal{I}\}$] 
+Dado um espaço amostral latexmath:[$\Omega$], uma _partição_ latexmath:[$\mathcal{P} = \{A_{\alpha}, \alpha\in I\}$] 
 de latexmath:[$\Omega$] é uma coleção de eventos, latexmath:[$A_{\alpha}$], indexados por latexmath:[$\alpha$], tais que:
 
 * Para todo latexmath:[$\alpha\neq\beta$], latexmath:[$A_{\alpha}\cap A_{\beta} = \emptyset$];
@@ -142,7 +144,7 @@ tal que
 * _(Aditividade contável)_ Se latexmath:[$A_i, i=1,2,3,\ldots$] forem eventos dois-a-dois mutuamente excludentes, então, 
 [latexmath]
 ++++
-\[P(\cup_{i=1}^{\infty} A_i) = \sum_{i=1}^{\infty} P(A_i).\]
+\[P\left(\bigcup_{i=1}^{\infty} A_i\left) = \sum_{i=1}^{\infty} P(A_i).\]
 ++++
 
 --
@@ -165,6 +167,7 @@ latexmath:[$P(A) = P(A\cup \emptyset) = P(A) + P(\emptyset)$]. Desta forma, late
 --
 
 (((Evento, Complementar)))
+
 Teorema::
 +
 --
