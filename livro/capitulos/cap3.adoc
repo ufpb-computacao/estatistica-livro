@@ -94,6 +94,7 @@ que latexmath:[$B$] não ocorre, e a ocorrência de latexmath:[$B$] implica que 
 ====
 
 (((Espaço Amostral, Partição)))
+
 Definição: Partição::
 +
 --
