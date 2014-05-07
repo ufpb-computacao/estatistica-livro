@@ -144,7 +144,7 @@ tal que
 * _(Aditividade contável)_ Se latexmath:[$A_i, i=1,2,3,\ldots$] forem eventos dois-a-dois mutuamente excludentes, então, 
 [latexmath]
 ++++
-\[P\left(\bigcup_{i=1}^{\infty} A_i\left) = \sum_{i=1}^{\infty} P(A_i).\]
+\[P\Big(\bigcup_{i=1}^{\infty} A_i\Big) = \sum_{i=1}^{\infty} P(A_i).\]
 ++++
 
 --
