@@ -68,14 +68,34 @@ tal que latexmath:[$x\notin B$], dizemos que latexmath:[$A$] não é subconjunto
 latexmath:[$B$], e escrevemos latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$].
 
 
-Exemplo:: Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\subset\!\!\!\!\!/ $] latexmath:[$A$], latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$C$], latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$], latexmath:[$C\subset\!\!\!\!\!/ $] latexmath:[$B$] e latexmath:[$B\subset\!\!\!\!\!/ $] latexmath:[$C$]. 
+====
+Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
+Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\not\subset A$], 
+latexmath:[$A\not\subset C$], latexmath:[$A\not\subset B$],
+latexmath:[$C\not\subset B$] e latexmath:[$B\not\subset C$].
+====
 
 
-Exercício:: Mostre que para todo conjunto latexmath:[$A$], o conjunto vazio é subconjunto de latexmath:[$A$], ou seja, que latexmath:[$\emptyset\subset A$]. 
 
-_Solução_: Suponha que latexmath:[$\emptyset\subset\!\!\!\!\!/$] latexmath:[$A$], então por definição, isso significa que existe latexmath:[$x\in \emptyset$] tal que latexmath:[$x\not\in A$]. Como latexmath:[$\emptyset$] não possui nenhum elemento, é impossível encontrar o tal elemento latexmath:[$x$]. Portanto, a afirmação latexmath:[$\emptyset\subset\!\!\!\!\!/ $] latexmath:[$A$] é falsa. Isso mostra que latexmath:[$\emptyset \subset A$].
+Exercício::
++
+--
+Mostre que para todo conjunto latexmath:[$A$], o conjunto vazio é subconjunto de 
+latexmath:[$A$], ou seja, que latexmath:[$\emptyset\subset A$]. 
+--
 
-'''
+_Solução_::
++
+----
+Suponha que latexmath:[$\emptyset\not\subset A$], então por definição, isso significa que 
+existe latexmath:[$x\in \emptyset$] tal que latexmath:[$x\not\in A$]. 
+Como latexmath:[$\emptyset$] não possui nenhum elemento, 
+é impossível encontrar o tal elemento latexmath:[$x$]. 
+
+Portanto, a afirmação latexmath:[$\emptyset\not\subset A$] é falsa. 
+Isso mostra que latexmath:[$\emptyset \subset A$].
+
+----
 
 
 Definição:: Dizemos que os conjuntos latexmath:[$A$] e latexmath:[$B$] são iguais, e escrevemos latexmath:[$A=B$], se todo elemento de latexmath:[$A$] é elemento de latexmath:[$B$] e todo elemento de latexmath:[$B$] é elemento de latexmath:[$A$]. Equivalentemente, temos que latexmath:[$A=B$] se, e somente se, latexmath:[$A\subset B$] e latexmath:[$B\subset A$]. 
