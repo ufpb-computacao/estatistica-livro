@@ -219,10 +219,10 @@ Sejam latexmath:[$A_1,A_2,\ldots,A_n$] latexmath:[$n$] eventos quaisquer. Então
 [latexmath]
 ++++
 \[
-\begin{eqnarray*}
+\begin{eqnarray}
 P(A_1\cup A_2\cup \cdots \cup A_n) &=& \sum_{i=1}^n P(A_i) - \sum_{i<j} P(A_i\cap A_j) \\
 &+& \sum_{i<j<k} P(A_i\cap A_j\cap A_k) + \cdots+(-1)^{n-1}P(A_1\cap\cdots\cap A_n).
-\end{eqnarray*}
+\end{eqnarray}
 \]
 ++++
 --
