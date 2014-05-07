@@ -1,14 +1,22 @@
 == Definições Básicas
 
-=== Modelos Matemáticos
+(((Modelos Matemáticos)))
 
-Modelo Determinístico:: Um modelo no qual as condições impostas ao modelo _determinam_ o resultado do experimento. 
+Modelos Matemáticos::
++
 
-Modelo Probabilístico:: Modelos nos quais, mesmo mantendo as mesmas condições, o resultado do experimento pode variar. Isso se deve a um fator _aleatório_ o qual não podemos controlar.
+* *Modelo Determinístico* Um modelo no qual as condições impostas ao modelo _determinam_ o resultado do experimento. +
 
-=== Experimentos
+* *Modelo Probabilístico* Modelos nos quais, mesmo mantendo as mesmas condições, o resultado do 
+experimento pode variar. Isso se deve a um fator _aleatório_ o qual não podemos controlar.
 
-Experimento aleatório:: Consiste em um experimento em que, mesmo mantendo as mesmas condições, o resultado do experimento pode variar.
+(((Experimento Aleatório)))
+
+Experimento aleatório:: 
++
+--
+Consiste em um experimento em que, mesmo mantendo as mesmas condições, o resultado do experimento pode variar.
+--
 
 .Experimentos aleatórios
 ==========================
