@@ -11,8 +11,8 @@ latexmath:[$P(A\cap B) = P(A)P(B)$].
 
 Esta definição motiva a definição de independência entre variáveis aleatórias:
 
-.Variáveis Aleatórias Independentes
 [caption="Definição"]
+.Variáveis Aleatórias Independentes
 ======================================
 Sejam latexmath:[$X:\Omega\to R$] e latexmath:[$Y:\Omega\to R$] duas variáveis aleatórias. 
 Dizemos que latexmath:[$X$] e latexmath:[$Y$] são independentes se para todos os eventos 
