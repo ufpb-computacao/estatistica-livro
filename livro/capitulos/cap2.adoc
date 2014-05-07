@@ -1,18 +1,22 @@
 == Teoria dos Conjuntos e Contagem
 
-O objetivo deste capítulo é apresentar os pré-requisitos necessários para estudar probabilidade.
+O objetivo deste capítulo é apresentar os pré-requisitos 
+necessários para estudar probabilidade.
 
 === Teoria dos Conjuntos
-
-Conjunto é uma coleção de objetos. A natureza desses objetos é arbitrária, ou seja, podemos ter conjunto de qualquer coisa. Por exemplo, podemos ter conjuntos de pessoas; conjuntos de números; conjuntos de letras; podemos ter até conjuntos de conjuntos!
+(((conjunto)))
+Conjunto é uma coleção de objetos. A natureza desses objetos é 
+arbitrária, ou seja, podemos ter conjunto de qualquer coisa. Por exemplo, 
+podemos ter conjuntos de pessoas; conjuntos de números; conjuntos de letras; 
+podemos ter até conjuntos de conjuntos!
 
 
 Nós representaremos conjuntos por letras maiúsculas latexmath:[$A, B, C,\ldots$]. 
 
 
-Chamamos os objetos que formam o conjunto de _elementos_. Assim, para descrever um conjunto, basta listar seus elementos. 
+Chamamos os objetos que formam o conjunto de _elementos_. Assim, 
+para descrever um conjunto, basta listar seus elementos. 
 Existem três maneiras de descrever os elementos de um conjunto latexmath:[$A$]:
-
 
 * Listando os elementos. Por exemplo, latexmath:[$A = \{ 1, 2, 3, 4,\ldots\}$];
 
@@ -21,21 +25,47 @@ Existem três maneiras de descrever os elementos de um conjunto latexmath:[$A$]:
 * Colocando condições. latexmath:[$A = \{x; x\textrm{ é número real e } 0\leq x\leq 1\}$]. 
 
 
-_Observação_: É importante observar a notação. Sempre escreveremos os elementos que formam um conjunto entre chaves. O ponto-e-vírgula, quando estiver entre chaves deve ser lido como ``tal que''. Por exemplo, no conjunto latexmath:[$A = \{x; x\textrm{ é número real e } 0\leq x\leq 1\}$], lemos, latexmath:[$A$] é o conjunto dos números reais tais que latexmath:[$0\leq x\leq 1$]. 
+[NOTE]
+====
+É importante observar a notação. Sempre escreveremos os elementos
+que formam um conjunto entre chaves. O ponto-e-vírgula, quando estiver 
+entre chaves deve ser lido como ``tal que''. Por exemplo, no conjunto 
+latexmath:[$A = \{x; x\textrm{ é número real e } 0\leq x\leq 1\}$], 
+lemos, latexmath:[$A$] é o conjunto dos números reais tais que 
+latexmath:[$0\leq x\leq 1$]. 
+====
+
+(((Conjunto, Elemento)))
+
+Quando o objeto latexmath:[$x$] é elemento do conjunto latexmath:[$A$],
+dizemos que latexmath:[$x$] pertence a latexmath:[$A$], e escrevemos
+latexmath:[$x\in A$]. Analogamente, se latexmath:[$x$] não é elemento 
+do conjunto latexmath:[$A$], dizemos que latexmath:[$x$] não pertence a 
+latexmath:[$A$], e escrevemos latexmath:[$x\notin A$]. 
+
+(((Conjunto, Vazio)))
+Existe um conjunto que não possui nenhum elemento. Esse conjunto especial
+é chamado de conjunto vazio e é denotado por latexmath:[$\emptyset$].
 
 
-Quando o objeto latexmath:[$x$] é elemento do conjunto latexmath:[$A$], dizemos que latexmath:[$x$] pertence a latexmath:[$A$], e escrevemos latexmath:[$x\in A$]. Analogamente, se latexmath:[$x$] não é elemento do conjunto latexmath:[$A$], dizemos que latexmath:[$x$] não pertence a latexmath:[$A$], e escrevemos latexmath:[$x\notin A$]. 
-
-
-Existe um conjunto que não possui nenhum elemento. Esse conjunto especial é chamado de conjunto vazio e é denotado por latexmath:[$\emptyset$].
-
-
-_Observação_: É muito importante notar que o conjunto vazio latexmath:[$\emptyset$] não possui nenhum elemento, portanto não há chaves na sua notação. O conjunto latexmath:[$\{\emptyset\}$] *NÃO* é o conjunto vazio, e sim um conjunto com um elemento, e esse elemento é o conjunto vazio. 
-
+[NOTE]
+====
+É muito importante notar que o conjunto vazio latexmath:[$\emptyset$] 
+não possui nenhum elemento, portanto não há chaves na sua notação.
+O conjunto latexmath:[$\{\emptyset\}$] *NÃO* é o conjunto vazio, e sim 
+um conjunto com um elemento, e esse elemento é o conjunto vazio. 
+====
 
 ==== Comparação entre conjuntos
 
-Sejam latexmath:[$A$] e latexmath:[$B$] dois conjuntos. Dizemos que latexmath:[$A$] é subconjunto de latexmath:[$B$], e escrevemos, latexmath:[$A\subset B$] se todo elemento de latexmath:[$A$] é elemento de latexmath:[$B$]. Ou seja, se sempre que latexmath:[$x\in A$], temos que latexmath:[$x\in B$]. Se existe latexmath:[$x\in A$] tal que latexmath:[$x\notin B$], dizemos que latexmath:[$A$] não é subconjunto de latexmath:[$B$], e escrevemos latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$].
+(((Conjunto, Subconjunto)))
+
+Sejam latexmath:[$A$] e latexmath:[$B$] dois conjuntos. Dizemos que latexmath:[$A$] 
+é subconjunto de latexmath:[$B$], e escrevemos, latexmath:[$A\subset B$] se todo 
+elemento de latexmath:[$A$] é elemento de latexmath:[$B$]. Ou seja, se sempre que 
+latexmath:[$x\in A$], temos que latexmath:[$x\in B$]. Se existe latexmath:[$x\in A$] 
+tal que latexmath:[$x\notin B$], dizemos que latexmath:[$A$] não é subconjunto de
+latexmath:[$B$], e escrevemos latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$].
 
 
 Exemplo:: Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\subset\!\!\!\!\!/ $] latexmath:[$A$], latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$C$], latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$], latexmath:[$C\subset\!\!\!\!\!/ $] latexmath:[$B$] e latexmath:[$B\subset\!\!\!\!\!/ $] latexmath:[$C$]. 
