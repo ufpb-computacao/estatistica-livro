@@ -70,6 +70,8 @@ latexmath:[$B$], e escrevemos latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$]
 .Exemplo de comparação entre conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
+
+
 Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\not\subset A$], 
 latexmath:[$A\not\subset C$], latexmath:[$A\not\subset B$],
 latexmath:[$C\not\subset B$] e latexmath:[$B\not\subset C$].
@@ -127,6 +129,8 @@ latexmath:[$A$] e pelos elementos de latexmath:[$B$]. Matematicamente, escrevemo
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e 
 latexmath:[$C = \{3,5,7\}$]. 
+
+
 Então, latexmath:[$A\cup B = \{1,2,3,4,5\}$], 
 ====
 
@@ -183,7 +187,9 @@ e latexmath:[$B$]. Escrevemos este conjunto, matematicamente, como
 .Exemplo de interseção de conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] 
-e latexmath:[$C = \{3,5,7\}$]. Então, 
+e latexmath:[$C = \{3,5,7\}$]. 
+
+Então, 
 latexmath:[$A\cap B = \{2,4\}$], latexmath:[$A\cap C = \{3,5\}$] e 
 latexmath:[$B\cap C = \emptyset$].
 ====
@@ -242,6 +248,8 @@ e é denotado por latexmath:[$B\setminus A$]. Matematicamente, temos
 .Exemplo de diferença de conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
+
+
 Então, latexmath:[$A\setminus B = \{1,3,5\}$], latexmath:[$A\setminus C = \{1,2,4\}$], 
 latexmath:[$B\setminus C = \{2,4\}$], latexmath:[$B\setminus A = \emptyset$], 
 latexmath:[$C\setminus A = \{7\}$] e latexmath:[$C\setminus B = \{3,5,7\}$]. 
@@ -260,7 +268,7 @@ Dado qualquer conjunto latexmath:[$A\subset M$], definimos o complementar de
 latexmath:[$A$] (em latexmath:[$M$]), como o conjunto
 latexmath:[$A^c = M\setminus A$]. 
 
-TIP: Quando está claro no contexto quem é o conjunto de referência, o conjunto latexmath:[$A^c$]
+CAUTION: Quando está claro no contexto quem é o conjunto de referência, o conjunto latexmath:[$A^c$]
 é referido apenas como complementar de latexmath:[$A$]. 
 
 
