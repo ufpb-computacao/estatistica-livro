@@ -257,7 +257,7 @@ Denote por latexmath:[$[x\]$] a parte inteira do número real latexmath:[$x$].
 Temos que para todo latexmath:[$x$] real, vale 
 [latexmath]
 ++++
-\[x\in ([x]-1,[x]]\cup ([x],[x]+1]\].
+\[x\in ([x]-1,[x]]\cup ([x],[x]+1].\]
 ++++
 
 Portanto, vale latexmath:[$x \in \bigcup_{n\in \mathbb{Z}} (n,n+1\]$], ou seja, 
