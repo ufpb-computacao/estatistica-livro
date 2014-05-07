@@ -4,7 +4,7 @@ O objetivo deste capítulo é apresentar os pré-requisitos
 necessários para estudar probabilidade.
 
 === Teoria dos Conjuntos
-(((conjunto)))
+(((Conjunto)))
 Conjunto é uma coleção de objetos. A natureza desses objetos é 
 arbitrária, ou seja, podemos ter conjunto de qualquer coisa. Por exemplo, 
 podemos ter conjuntos de pessoas; conjuntos de números; conjuntos de letras; 
@@ -48,7 +48,7 @@ Existe um conjunto que não possui nenhum elemento. Esse conjunto especial
 é chamado de conjunto vazio e é denotado por latexmath:[$\emptyset$].
 
 
-[NOTE]
+[IMPORTANT]
 ====
 É muito importante notar que o conjunto vazio latexmath:[$\emptyset$] 
 não possui nenhum elemento, portanto não há chaves na sua notação.
@@ -86,7 +86,7 @@ latexmath:[$A$], ou seja, que latexmath:[$\emptyset\subset A$].
 
 _Solução_::
 +
-----
+--
 Suponha que latexmath:[$\emptyset\not\subset A$], então por definição, isso significa que 
 existe latexmath:[$x\in \emptyset$] tal que latexmath:[$x\not\in A$]. 
 Como latexmath:[$\emptyset$] não possui nenhum elemento, 
@@ -94,71 +94,170 @@ Como latexmath:[$\emptyset$] não possui nenhum elemento,
 
 Portanto, a afirmação latexmath:[$\emptyset\not\subset A$] é falsa. 
 Isso mostra que latexmath:[$\emptyset \subset A$].
+--
 
-----
+(((Conjunto,Igualdade)))
 
+Definição::
++
+--
+Dizemos que os conjuntos latexmath:[$A$] e latexmath:[$B$] são iguais, e escrevemos latexmath:[$A=B$],
+se todo elemento de latexmath:[$A$] é elemento de latexmath:[$B$] e todo elemento de latexmath:[$B$]
+é elemento de latexmath:[$A$]. 
 
-Definição:: Dizemos que os conjuntos latexmath:[$A$] e latexmath:[$B$] são iguais, e escrevemos latexmath:[$A=B$], se todo elemento de latexmath:[$A$] é elemento de latexmath:[$B$] e todo elemento de latexmath:[$B$] é elemento de latexmath:[$A$]. Equivalentemente, temos que latexmath:[$A=B$] se, e somente se, latexmath:[$A\subset B$] e latexmath:[$B\subset A$]. 
+Equivalentemente, temos que latexmath:[$A=B$] se, e somente se, latexmath:[$A\subset B$] 
+e latexmath:[$B\subset A$]. 
+--
 
 ==== União de conjuntos
 
-Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$]. Podemos definir um terceiro conjunto, chamado de conjunto união de latexmath:[$A$] e latexmath:[$B$], formado pelos elementos de latexmath:[$A$] e pelos elementos de latexmath:[$B$]. Matematicamente, escrevemos 
+(((Conjuntos, União)))
 
-latexmath:[$A\cup B = \{x; x\in A\textrm{ ou }x\in B\}$]. 
+Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$]. 
+Podemos definir um terceiro conjunto, chamado de conjunto união de
+latexmath:[$A$] e latexmath:[$B$], formado pelos elementos de 
+latexmath:[$A$] e pelos elementos de latexmath:[$B$]. Matematicamente, escrevemos 
 
-Exemplo:: Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. Então, latexmath:[$A\cup B = \{1,2,3,4,5\}$], latexmath:[$A\cup C = \{1,2,3,4,5,7\}$] e latexmath:[$B\cup C = \{2,3,4,5,7\}$].
+[latexmath]
+++++
+\[A\cup B = \{x; x\in A\textrm{ ou }x\in B\}.\] 
+++++
+
+====
+Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e 
+latexmath:[$C = \{3,5,7\}$]. 
+Então, latexmath:[$A\cup B = \{1,2,3,4,5\}$], 
+====
+
+[NOTE]
+====
+Se latexmath:[$A\subset B$], então todo elemento de latexmath:[$A$] 
+já é elemento de latexmath:[$B$], e portanto latexmath:[$A\cup B = B$].
+====
 
 
-_Observação_: Se latexmath:[$A\subset B$], então todo elemento de latexmath:[$A$] já é elemento de latexmath:[$B$], e portanto latexmath:[$A\cup B = B$].
+De maneira geral, dados conjuntos latexmath:[$A_1,A_2,A_3,\ldots$], 
+definimos o conjunto formado pela união dos conjuntos latexmath:[$A_1,A_2,\ldots$], 
+como o conjunto que contém todos os elementos de latexmath:[$A_1$], de latexmath:[$A_2$], etc.. Matematicamente, temos:
 
+[latexmath]
+++++
+\[\bigcup_{i=1}^\infty A_i = \{x; \textrm{existe }i\textrm{ tal que }x\in A_i\}.\]
+++++
 
-De maneira geral, dados conjuntos latexmath:[$A_1,A_2,A_3,\ldots$], definimos o conjunto formado pela união dos conjuntos latexmath:[$A_1,A_2,\ldots$], como o conjunto que contém todos os elementos de latexmath:[$A_1$], de latexmath:[$A_2$], etc., ou matematicamente:
+Exercício:: 
++
+--
+Forneça a definição da união de latexmath:[$n$] conjuntos latexmath:[$A_1,A_2,\ldots,A_n$]. 
+--
 
-latexmath:[$\bigcup_{i=1}^\infty A_i = \{x; \textrm{existe }i\textrm{ tal que }x\in A_i\}.$]
+_Solução_::
++
+--
+Definimos a união de latexmath:[$n$] conjuntos latexmath:[$A_1,\ldots,A_n$], 
+como o conjunto formado pelos elementos de latexmath:[$A_1,\ldots, A_n$], ou seja, é o conjunto
 
-Exercício:: Forneça a definição da união de latexmath:[$n$] conjuntos latexmath:[$A_1,A_2,\ldots,A_n$]. 
-
-_Solução_: Definimos a união de latexmath:[$n$] conjuntos latexmath:[$A_1,\ldots,A_n$], como o conjunto formado pelos elementos de latexmath:[$A_1,\ldots, A_n$], ou seja, é o conjunto
-
-latexmath:[$\bigcup_{i=1}^n A_i =\{x; x\in A_1\textrm{ ou } x\in A_2,\ldots,\textrm{ ou } x\in A_n\}.$]
+[latexmath]
+++++
+\[\bigcup_{i=1}^n A_i =\{x; x\in A_1\textrm{ ou } x\in A_2,\ldots,\textrm{ ou } x\in A_n\}.\]
+++++
 
 ==== Interseção de conjuntos
 
-Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$]. Considere agora o conjunto formado pelos objetos que são elementos de latexmath:[$A$] e também são elementos de latexmath:[$B$]. Este conjunto é chamado de conjunto interseção de latexmath:[$A$] e latexmath:[$B$]. Escrevemos este conjunto, matematicamente, como
+(((Conjuntos, Interseção)))
 
-latexmath:[$A\cap B = \{x; x\in A\textrm{ e }x\in B\}.$]
+Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$].
+Considere agora o conjunto formado pelos objetos que são elementos 
+de latexmath:[$A$] e também são elementos de latexmath:[$B$].
+Este conjunto é chamado de conjunto interseção de latexmath:[$A$]
+e latexmath:[$B$]. Escrevemos este conjunto, matematicamente, como
 
-Exemplo:: Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. Então, latexmath:[$A\cap B = \{2,4\}$], latexmath:[$A\cap C = \{3,5\}$] e latexmath:[$B\cap C = \emptyset$].
+[latexmath]
+++++
+\[A\cap B = \{x; x\in A\textrm{ e }x\in B\}.\]
+++++
+
+====
+Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] 
+e latexmath:[$C = \{3,5,7\}$]. Então, 
+latexmath:[$A\cap B = \{2,4\}$], latexmath:[$A\cap C = \{3,5\}$] e 
+latexmath:[$B\cap C = \emptyset$].
+====
+
+[NOTE]
+====
+Se latexmath:[$A\subset B$], então todo elemento de latexmath:[$A$] é elemento de latexmath:[$B$], 
+assim os elementos que estão em latexmath:[$A$] e latexmath:[$B$], são os elementos de latexmath:[$A$].
+Ou seja, latexmath:[$A\cap B = A$].
+====
+
+De maneira geral, dados conjuntos latexmath:[$A_1,A_2,A_3,\ldots$], definimos a interseção 
+entre os conjuntos latexmath:[$A_1,A_2,A_3,\ldots$] como o conjunto formado pelos elementos que 
+estão simultaneamente em todos os conjuntos. Escrevemos esse conjunto matematicamente como 
+
+[latexmath]
+++++
+\[\bigcap_{i=1}^\infty A_i = \{x; x\in A_1, x\in A_2,\ldots\}.\]
+++++
 
 
-_Observação_: Se latexmath:[$A\subset B$], então todo elemento de latexmath:[$A$] é elemento de latexmath:[$B$], assim os elementos que estão em latexmath:[$A$] e latexmath:[$B$], são os elementos de latexmath:[$A$]. Ou seja, latexmath:[$A\cap B = A$].
+Exercício::
++
+--
+Forneça a definição da interseção de latexmath:[$n$] conjuntos latexmath:[$A_1,A_2,\ldots,A_n$]. 
+--
 
-De maneira geral, dados conjuntos latexmath:[$A_1,A_2,A_3,\ldots$], definimos a interseção entre os conjuntos latexmath:[$A_1,A_2,A_3,\ldots$] como o conjunto formado pelos elementos que estão simultaneamente em todos os conjuntos. Escrevemos esse conjunto matematicamente como 
+_Solução_::
++
+--
+Definimos a interseção de latexmath:[$n$] conjuntos latexmath:[$A_1,\ldots,A_n$], 
+como o conjunto formado pelos elementos que estão simultaneamente 
+latexmath:[$A_1,\ldots, A_n$], ou seja, é o conjunto
 
-latexmath:[$\bigcap_{i=1}^\infty A_i = \{x; x\in A_1, x\in A_2,\ldots\}.$]
+[latexmath]
+++++
+\[\bigcap_{i=1}^n A_i =\{x; x\in A_1\textrm{ e } x\in A_2,\ldots,\textrm{ e } x\in A_n\}.\]
+++++
 
-
-Exercício::Forneça a definição da interseção de latexmath:[$n$] conjuntos latexmath:[$A_1,A_2,\ldots,A_n$]. 
-
-_Solução_: Definimos a interseção de latexmath:[$n$] conjuntos latexmath:[$A_1,\ldots,A_n$], como o conjunto formado pelos elementos que estão simultaneamente latexmath:[$A_1,\ldots, A_n$], ou seja, é o conjunto
-
-latexmath:[$\bigcap_{i=1}^n A_i =\{x; x\in A_1\textrm{ e } x\in A_2,\ldots,\textrm{ e } x\in A_n\}.$]
+--
 
 ==== Diferença entre conjuntos
+(((Conjunto, Diferença)))
 
-Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$]. Considere agora o conjunto formado por objetos que são elementos de latexmath:[$B$], mas não são elementos de latexmath:[$A$]. Esse conjunto é chamado de latexmath:[$B$] menos latexmath:[$A$], e é denotado por latexmath:[$B\setminus A$]. Matematicamente, temos
+Suponha que temos dois conjuntos latexmath:[$A$] e latexmath:[$B$]. 
+Considere agora o conjunto formado por objetos que são elementos 
+de latexmath:[$B$], mas não são elementos de latexmath:[$A$]. 
+Esse conjunto é chamado de latexmath:[$B$] menos latexmath:[$A$],
+e é denotado por latexmath:[$B\setminus A$]. Matematicamente, temos
 
-latexmath:[$B\setminus A = \{x; x\in B\textrm{ e } x\notin A\}$]. 
+[latexmath]
+++++
+\[B\setminus A = \{x; x\in B\textrm{ e } x\notin A\}.\]
+++++
 
-Exemplo:: Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. Então, latexmath:[$A\setminus B = \{1,3,5\}$], latexmath:[$A\setminus C = \{1,2,4\}$], latexmath:[$B\setminus C = \{2,4\}$], latexmath:[$B\setminus A = \emptyset$], latexmath:[$C\setminus A = \{7\}$] e latexmath:[$C\setminus B = \{3,5,7\}$]. 
+====
+Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
+Então, latexmath:[$A\setminus B = \{1,3,5\}$], latexmath:[$A\setminus C = \{1,2,4\}$], 
+latexmath:[$B\setminus C = \{2,4\}$], latexmath:[$B\setminus A = \emptyset$], 
+latexmath:[$C\setminus A = \{7\}$] e latexmath:[$C\setminus B = \{3,5,7\}$]. 
+====
+
 
 ==== Complementar de um conjunto
+(((Conjunto, Complementar)))
 
-Um caso particular e importante de diferenças de conjunto é o complementar. Esta definição é particularmente útil no curso de probabilidade.
 
-Suponha que temos um conjunto de referência, digamos latexmath:[$M$]. Dado qualquer conjunto latexmath:[$A\subset M$], definimos o complementar de latexmath:[$A$] (em latexmath:[$M$]), como o conjunto latexmath:[$A^c = M\setminus A$]. 
+Um caso particular e importante de diferenças de conjunto é o complementar. 
+Esta definição é particularmente útil no curso de probabilidade.
 
-_Observação_: Quando está claro no contexto quem é o conjunto de referência, o conjunto latexmath:[$A^c$] é referido apenas como complementar de latexmath:[$A$]. 
+Suponha que temos um conjunto de referência, digamos latexmath:[$M$]. 
+Dado qualquer conjunto latexmath:[$A\subset M$], definimos o complementar de 
+latexmath:[$A$] (em latexmath:[$M$]), como o conjunto
+latexmath:[$A^c = M\setminus A$]. 
+
+TIP: Quando está claro no contexto quem é o conjunto de referência, o conjunto latexmath:[$A^c$]
+é referido apenas como complementar de latexmath:[$A$]. 
+
 
 O complementar de latexmath:[$A$] é descrito como o conjunto dos elementos que não pertencem a latexmath:[$A$]. Fica claro que é o conjunto dos elementos que não pertencem a latexmath:[$A$], mas pertencem ao conjunto de referência latexmath:[$M$].
 
