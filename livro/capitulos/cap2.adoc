@@ -67,7 +67,7 @@ latexmath:[$x\in A$], temos que latexmath:[$x\in B$]. Se existe latexmath:[$x\in
 tal que latexmath:[$x\notin B$], dizemos que latexmath:[$A$] não é subconjunto de
 latexmath:[$B$], e escrevemos latexmath:[$A\subset\!\!\!\!\!/ $] latexmath:[$B$].
 
-.{a}
+.Exemplo de comparação entre conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
 Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\not\subset A$], 
@@ -123,7 +123,7 @@ latexmath:[$A$] e pelos elementos de latexmath:[$B$]. Matematicamente, escrevemo
 \[A\cup B = \{x; x\in A\textrm{ ou }x\in B\}.\] 
 ++++
 
-.{a}
+.Exemplo de união de conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e 
 latexmath:[$C = \{3,5,7\}$]. 
@@ -180,7 +180,7 @@ e latexmath:[$B$]. Escrevemos este conjunto, matematicamente, como
 \[A\cap B = \{x; x\in A\textrm{ e }x\in B\}.\]
 ++++
 
-.{a}
+.Exemplo de interseção de conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] 
 e latexmath:[$C = \{3,5,7\}$]. Então, 
@@ -239,7 +239,7 @@ e é denotado por latexmath:[$B\setminus A$]. Matematicamente, temos
 \[B\setminus A = \{x; x\in B\textrm{ e } x\notin A\}.\]
 ++++
 
-.{a}
+.Exemplo de diferença de conjuntos
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
 Então, latexmath:[$A\setminus B = \{1,3,5\}$], latexmath:[$A\setminus C = \{1,2,4\}$], 
