@@ -71,4 +71,4 @@ com probabilidade latexmath:[$1-p$]. Temos então que
 latexmath:\[ E(X) = 0p(0) + 1p(1) = p(1)=P(X=1) = p.\]
 ++++
 
-
+Vamos agora definir esperança para variáveis aleatórias contínuas.
