@@ -71,7 +71,7 @@ latexmath:[$B$], e escrevemos latexmath:[$A\not\subset B$].
 ====
 Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
 
-{empty}+
+{zwsp}
 
 Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\not\subset A$], 
 latexmath:[$A\not\subset C$], latexmath:[$A\not\subset B$],
