@@ -69,7 +69,7 @@ latexmath:[$B$], e escrevemos latexmath:[$A\not\subset B$].
 
 .Exemplo de comparação entre conjuntos
 ====
-Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$].  +
+Sejam latexmath:[$A = \{1,2,3,4,5\}$], latexmath:[$B = \{2,4\}$] e latexmath:[$C = \{3,5,7\}$]. 
 
 Então, temos que latexmath:[$B\subset A$], mas latexmath:[$C\not\subset A$], 
 latexmath:[$A\not\subset C$], latexmath:[$A\not\subset B$],
@@ -307,14 +307,14 @@ A primeira técnica é conhecida como regra da multiplicação. Para ilustrar a 
 ====
 Fernando possui 10 pares de meias e 3 pares de sapatos. Sabendo que Fernando pode utilizar 
 qualquer par de meia com qualquer sapato, de quantas formas diferentes, 
-ele pode combinar pares de meias com sapatos? 
+ele pode combinar pares de meias com sapatos? +
 
 
 Vamos começar colocando rótulos nos sapatos: sapato 1, sapato 2 e sapato 3. 
 O sapato 1 pode ser usado com 10 pares de meias; o sapato 2 também pode ser usado com 
 10 pares de meias; e o sapato 3 também pode ser usado com 10 pares de meias. Portanto,
 como Fernando pode utilizar o sapato 1, o sapato 2 e o sapato 3, ele poderá fazer 
-10+10+10 = 30 combinações diferentes entre pares de meias e sapatos.
+10+10+10 = 30 combinações diferentes entre pares de meias e sapatos. +
 
 
 Resumindo, cada sapato pode ser associado a 10 pares de meias, e como temos 3 sapatos,
@@ -346,12 +346,12 @@ considere o seguinte exemplo:
 ====
 Paulo tem 15 blusas de manga comprida e 10 blusas de manga curta e apenas
 uma calça. Sabendo que Paulo não usa duas blusas ao mesmo tempo,
-de quantas formas ele pode se vestir?
+de quantas formas ele pode se vestir? +
 
 
 Como Paulo só possui uma calça, o que determina a quantidade de formas de se 
 vestir é a quantidade de blusas. Como Paulo possui 25 = 10+15 
-blusas, segue que Paulo pode se vestir de 25 formas diferentes.
+blusas, segue que Paulo pode se vestir de 25 formas diferentes. +
 
 
 Assim, como Paulo não pode usar uma blusa de manga comprida e outra de
@@ -393,17 +393,17 @@ Para ilustrarmos a ideia considere o seguinte exemplo:
 
 .Exemplo de permutações
 ====
-Quantas filas diferentes podemos formar com Pedro, Paulo, Carlos e João?
+Quantas filas diferentes podemos formar com Pedro, Paulo, Carlos e João? +
 
 
-Também poderíamos escrever a pergunta como: Qual o número de permutações possíveis entre quatro pessoas?
+Também poderíamos escrever a pergunta como: Qual o número de permutações possíveis entre quatro pessoas? +
 
 
 Vamos enumerar as posições: primeira, segunda, terceira e quarta. Para a 
 primeira posição temos 4 escolhas possíveis. Agora, supondo que já escolhemos 
 a primeira posição, qualquer que seja a primeira pessoa escolhida, temos 
 possibilidades para a segunda posição. Analogamente, temos 2 possibilidades
-para a terceira posição e apenas uma para a quarta.
+para a terceira posição e apenas uma para a quarta. +
 
 
 Pela regra da multiplicação, temos latexmath:[$4\cdot 3\cdot 2\cdot 1= 24$] possibilidades.
@@ -441,12 +441,12 @@ O número de formas é chamado de número de _arranjos_. Considere o seguinte ex
 
 .Exemplo de arranjos
 ====
-Suponha que uma corrida de rua tem 1000 atletas inscritos. Quantos pódios podemos formar com esses 1000 atletas?
+Suponha que uma corrida de rua tem 1000 atletas inscritos. Quantos pódios podemos formar com esses 1000 atletas? +
 
 
 Um pódio consiste de três pessoas, ordenadas pelo campeão, vice-campeão e terceiro lugar. Assim, temos 
 1000 formas de escolher o campeão, 999 formas de escolher o vice-campeão e 998 
-formas de escolher o terceiro lugar. Portanto, temos latexmath:[$1000\cdot 999\cdot 998$] pódios possíveis.
+formas de escolher o terceiro lugar. Portanto, temos latexmath:[$1000\cdot 999\cdot 998$] pódios possíveis. +
 
 Note que latexmath:[$1000\cdot 999\cdot 998 = \frac{1000!}{997!}$].
 ====
@@ -485,21 +485,21 @@ Considere o seguinte exemplo:
 ====
 Suponha que uma empresa possui 1000 funcionários, e que o presidente da empresa gostaria de saber o 
 número de equipes de 3 pessoas que podem ser formadas com esses 1000 funcionários. 
-Qual o número que o presidente procura?
+Qual o número que o presidente procura? +
 
 
 Note que este exemplo é muito parecido com o dos arranjos, inclusive temos 1000 ``objetos'' e 
-queremos escolher 3. Entretanto o fato da ordem não importar muda tudo.
+queremos escolher 3. Entretanto o fato da ordem não importar muda tudo. +
 
 
-Como em uma equipe a ordem das pessoas não importa, devemos levar essa informação em consideração.
+Como em uma equipe a ordem das pessoas não importa, devemos levar essa informação em consideração. +
 
 
 Vamos então fingir que a ordem importa, então a quantidade de formas seria latexmath:[$A_{1000,3} = \frac{1000!}{997!}$]. 
 Observe agora que para cada equipe de formada por 3 pessoas, temos latexmath:[$3!$] pódios possíveis a se formar. 
 Desta forma, se latexmath:[$C$] é o número de equipes de 3 pessoas que podemos formar com 1000 funcionários, 
 então latexmath:[$3!\cdot C$] é o número de pódios que podemos formar com 1000 pessoas, pois cada equipe fornece 
-latexmath:[$3!$] pódios (aqui utilizamos a regra da multiplicação). 
+latexmath:[$3!$] pódios (aqui utilizamos a regra da multiplicação). +
 
 
 Como sabemos que o número de pódios possíveis é latexmath:[$A_{1000,3} = \frac{1000!}{997!}$], 
