@@ -464,6 +464,7 @@ objetos, onde a ordem em que os objetos foram escolhidos importa, é dada por
 ++++
 \[A_{n,k} = \frac{n!}{(n-k)!}.\]
 ++++
+--
 
 No exemplo anterior, podemos pensar nas pessoas como 1000 objetos, e queríamos escolher 
 3 objetos, onde a ordem importa (a ordem determina o campeão, vice-campeão e terceiro lugar), 
