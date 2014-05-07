@@ -109,7 +109,7 @@ de latexmath:[$\Omega$] é uma coleção de eventos, latexmath:[$A_{\alpha}$], i
 Portanto, temos que os eventos de uma partição são _mutuamente excludentes_ dois-a-dois e sua união é todo o espaço amostral. 
 
 .Exemplo
-- Se latexmath:[$\Omega$] = \{1,2,3,4}, então latexmath:[$\{A_1,A_2\}$], onde latexmath:[$A_1 = \{1,2,3\}$] e latexmath:[$A_2 = \{4\}$], é uma partição de latexmath:[$\Omega$].
+- Se latexmath:[$\Omega = \{1,2,3,4\}$], então latexmath:[$\{A_1,A_2\}$], onde latexmath:[$A_1 = \{1,2,3\}$] e latexmath:[$A_2 = \{4\}$], é uma partição de latexmath:[$\Omega$].
 
 == Noções de Probabilidade
 
@@ -130,7 +130,9 @@ Seja latexmath:[$\emptyset$] o conjunto vazio, então latexmath:[$P(\emptyset) =
 
 _Demonstração_:
 
-Para qualquer evento _A_, podemos escrever latexmath:[$A = A\cup \emptyset$]. Como _A_ e latexmath:[$\emptyset$] são mutuamente excludentes, decorre da aditividade finita que latexmath:[$P(A) = P(A\cup \emptyset) = P(A) + P(\emptyset)$]. Desta forma, latexmath:[$P(\emptyset) = 0$].
+Para qualquer evento _A_, podemos escrever latexmath:[$A = A\cup \emptyset$]. Como _A_ e 
+latexmath:[$\emptyset$] são mutuamente excludentes, decorre da aditividade finita que
+latexmath:[$P(A) = P(A\cup \emptyset) = P(A) + P(\emptyset)$]. Desta forma, latexmath:[$P(\emptyset) = 0$].
 
 '''
 
