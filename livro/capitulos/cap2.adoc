@@ -162,6 +162,8 @@ como o conjunto formado pelos elementos de latexmath:[$A_1,\ldots, A_n$], ou sej
 \[\bigcup_{i=1}^n A_i =\{x; x\in A_1\textrm{ ou } x\in A_2,\ldots,\textrm{ ou } x\in A_n\}.\]
 ++++
 
+--
+
 ==== Interseção de conjuntos
 
 (((Conjuntos, Interseção)))
