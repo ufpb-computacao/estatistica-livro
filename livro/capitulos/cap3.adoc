@@ -251,30 +251,62 @@ partição do conjunto dos números reais latexmath:[$\mathbb{R}$].
 --
 
 _Solução_::
++
+--
+Denote por latexmath:[$[x\]$] a parte inteira do número real latexmath:[$x$]. 
+Temos que para todo latexmath:[$x$] real, vale 
+latexmath:[$x\in ([x\]-1,[x\]\]\cup ([x\],[x\]+1\]\]$]. Portanto, vale 
+latexmath:[$x \in \cup_{n\in \mathbb{Z}} (n,n+1\]$], ou seja, latexmath:[$\mathbb{R}\subset \cup_{n\in \mathbb{Z}} (n,n+1\]$]. 
 
-Denote por _[x]_ a parte inteira do número real _x_. Temos que para todo _x_ real, vale latexmath:[$x\in ([x\]-1,[x\]\]\cup ([x\],[x\]+1\]\]$]. Portanto, vale latexmath:[$x \in \cup_{n\in Z} (n,n+1\]$], ou seja, latexmath:[$R\subset \cup_{n\in Z} (n,n+1\]$]. 
+Por outro lado, latexmath:[$\forall n\in \mathbb{Z}, (n,n+1\]\subset \mathbb{R}$]. 
+Daí latexmath:[$\cup_{n\in \mathbb{Z}} (n,n+1\] \subset \mathbb{R}$]. 
+Portanto, concluímos que 
+[latexmath]
+++++
+\[\mathbb{R} = \cup_{n\in \mathbb{Z}} (n,n+1\].\]
+++++
 
-Por outro lado, latexmath:[$\forall n\in Z, (n,n+1\]\subset R$]. Daí latexmath:[$\cup_{n\in Z} (n,n+1\] \subset R$]. Portanto, concluímos que latexmath:[$R = \cup_{n\in Z} (n,n+1\]$].
+--
 
-'''
 
-== Espaços Amostrais Finitos
+=== Espaços Amostrais Finitos
 
-Seja latexmath:[$\Omega$] um espaço amostral associado a um experimento aleatório latexmath:[$E$] com um número finito de resultados possíveis. Então latexmath:[$\Omega$] pode ser escrito da seguinte forma: latexmath:[$\Omega = \{\omega_1,\ldots,\omega_n\}$], para algum número natural latexmath:[$n$]. 
+Seja latexmath:[$\Omega$] um espaço amostral associado a um experimento aleatório 
+latexmath:[$E$] com um número finito de resultados possíveis. 
+Então latexmath:[$\Omega$] pode ser escrito da seguinte forma: 
+latexmath:[$\Omega = \{\omega_1,\ldots,\omega_n\}$], 
+para algum número natural latexmath:[$n$]. 
 
-A cada evento simples latexmath:[$\{\omega_i\}$], latexmath:[$i=1,\ldots,n$], associamos um número latexmath:[$p_i,i=1,\ldots,n$] de tal forma que duas condições sejam satisfeitas:
+A cada evento simples latexmath:[$\{\omega_i\}$], latexmath:[$i=1,\ldots,n$], 
+associamos um número latexmath:[$p_i,i=1,\ldots,n$] de tal forma que duas condições sejam satisfeitas:
 
-* latexmath:[$p_i\geq 0$] para todo latexmath:[$i=1,\ldots,n$].
-* latexmath:[$p_1+\cdots+p_n = 1$].
+. latexmath:[$p_i\geq 0$] para todo latexmath:[$i=1,\ldots,n$];
+. latexmath:[$p_1+\cdots+p_n = 1$].
 
-Assim, definimos a probabilidade da ocorrência do resultado latexmath:[$\omega_i,i=1,\ldots,n$] como sendo latexmath:[$P(\{\omega_i\}) = p_i$]. 
+Assim, definimos a probabilidade da ocorrência do resultado latexmath:[$\omega_i,i=1,\ldots,n$] 
+como sendo latexmath:[$P(\{\omega_i\}) = p_i$]. 
 
-Suponha que tenhamos um evento latexmath:[$A$] consistindo de $k$ resultados possíveis, ou seja, latexmath:[$A = \{\omega_{j_1},\ldots,\omega_{j_k}\}$], onde latexmath:[$j_1,\ldots,j_k$] assumem valores entre 1 e latexmath:[$n$]. Pela propriedade da aditividade contável, a probabilidade do evento latexmath:[$A$] é dada por
-latexmath:[$P(A) = P(\{\omega_{j_1}\}) + \cdots + P(\{\omega_{j_k}\}) = p_{j_1}+\cdots+p_{j_k}$].
+Suponha que tenhamos um evento latexmath:[$A$] consistindo de latexmath:[$k$] resultados possíveis,
+ou seja, latexmath:[$A = \{\omega_{j_1},\ldots,\omega_{j_k}\}$], onde latexmath:[$j_1,\ldots,j_k$] 
+assumem valores entre 1 e latexmath:[$n$]. Pela propriedade da aditividade contável, 
+a probabilidade do evento latexmath:[$A$] é dada por
+[latexmath]
+++++
+\[P(A) = P(\{\omega_{j_1}\}) + \cdots + P(\{\omega_{j_k}\}) = p_{j_1}+\cdots+p_{j_k}.\]
+++++
 
-Exercício:: Suponha que somente três resultados sejam possíveis em um experimento, a saber, latexmath:[$a_1, a_2$] e latexmath:[$a_3$]. Além disso, suponha que latexmath:[$a_1$] seja duas vezes mais provável de ocorrer do que latexmath:[$a_2$], o qual, por sua vez, é duas vezes mais provável de ocorrer do que latexmath:[$a_3$]. Determine as probabilidades de ocorrência de latexmath:[$a_1,a_2$] e latexmath:[$a_3$].
+Exercício::
++
+--
+Suponha que somente três resultados sejam possíveis em um experimento, 
+a saber, latexmath:[$a_1, a_2$] e latexmath:[$a_3$]. Além disso, 
+suponha que latexmath:[$a_1$] seja duas vezes mais provável de ocorrer 
+do que latexmath:[$a_2$], o qual, por sua vez, é duas vezes mais provável 
+de ocorrer do que latexmath:[$a_3$]. Determine as probabilidades de 
+ocorrência de latexmath:[$a_1,a_2$] e latexmath:[$a_3$].
+--
 
-_Solução_:
+_Solução_::
 
 Sejam latexmath:[$p_1,p_2$] e latexmath:[$p_3$] as probabilidades de ocorrências de latexmath:[$a_1,a_2$] e latexmath:[$a_3$], respectivamente. Então, temos do enunciado que latexmath:[$p_1 = 2p_2$] e que latexmath:[$p_2 = 2p_3$]. Como sabemos que latexmath:[$p_1+p_2+p+3 = 1$], temos que latexmath:[$4p_3 + 2p_3 + p_3 = 1$], ou seja, latexmath:[$p_3 = 1/7$]. Isto fornece latexmath:[$p_2 = 2/7$] e latexmath:[$p_1 = 4/7$]. 
 
