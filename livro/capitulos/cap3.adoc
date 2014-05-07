@@ -101,10 +101,7 @@ Dado um espaço amostral latexmath:[$\Omega$], uma _partição_ latexmath:[$\mat
 de latexmath:[$\Omega$] é uma coleção de eventos, latexmath:[$A_{\alpha}$], indexados por latexmath:[$\alpha$], tais que:
 
 * Para todo latexmath:[$\alpha\neq\beta$], latexmath:[$A_{\alpha}\cap A_{\beta} = \emptyset$];
-* [latexmath]
-++++
-\[\bigcup_{\alpha\in I} A_{\alpha} = \Omega.\]
-++++
+* latexmath:[$\bigcup_{\alpha\in I} A_{\alpha} = \Omega.$]
 
 --
 
