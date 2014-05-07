@@ -312,28 +312,72 @@ ocorrência de latexmath:[$a_1,a_2$] e latexmath:[$a_3$].
 --
 
 _Solução_::
++
+--
+Sejam latexmath:[$p_1,p_2$] e latexmath:[$p_3$] as probabilidades de ocorrências 
+de latexmath:[$a_1,a_2$] e latexmath:[$a_3$], respectivamente. Então, temos do enunciado que 
+latexmath:[$p_1 = 2p_2$] e que latexmath:[$p_2 = 2p_3$]. 
+Como sabemos que latexmath:[$p_1+p_2+p+3 = 1$], temos que latexmath:[$4p_3 + 2p_3 + p_3 = 1$], ou seja, latexmath:[$p_3 = 1/7$]. 
 
-Sejam latexmath:[$p_1,p_2$] e latexmath:[$p_3$] as probabilidades de ocorrências de latexmath:[$a_1,a_2$] e latexmath:[$a_3$], respectivamente. Então, temos do enunciado que latexmath:[$p_1 = 2p_2$] e que latexmath:[$p_2 = 2p_3$]. Como sabemos que latexmath:[$p_1+p_2+p+3 = 1$], temos que latexmath:[$4p_3 + 2p_3 + p_3 = 1$], ou seja, latexmath:[$p_3 = 1/7$]. Isto fornece latexmath:[$p_2 = 2/7$] e latexmath:[$p_1 = 4/7$]. 
+Isto fornece latexmath:[$p_1 = 4/7$], latexmath:[$p_2 = 2/7$] e latexmath:[$p_3 = 1/7$]. 
 
-'''
+--
 
 === Resultados Equiprováveis
 
-Suponha que temos um experimento com latexmath:[$n$] resultados possíveis e que todos esses resultados sejam equiprováveis, isto é, todos os resultados possuem a mesma probabilidade de ocorrência. Neste caso, dizemos que o experimento possui resultados equiprováveis. Digamos que os resultados possíveis do experimento são latexmath:[$a_1,\ldots,a_n$]. Sejam latexmath:[$p_1,p_2,\ldots,p_n$] as probabilidades de ocorrências dos eventos latexmath:[$a_1,a_2,\ldots,a_n$], respectivamente. Então, como todos os resultados possuem a mesma probabilidade de ocorrência, temos que latexmath:[$p_1=p_2=\cdots=p_n = p$]. 
+(((Resultados, Equiprováveis)))
 
-Além disso, sabemos que latexmath:[$p_1+\cdots+p_n = 1$], ou seja, latexmath:[$n p = 1$], o que por sua vez implica que latexmath:[$p = 1/n$]. Utilizando a propriedade de aditividade contável da probabilidade podemos concluir o seguinte resultado: Seja latexmath:[$A$] um evento que contém latexmath:[$k$] resultados possíveis, então latexmath:[$P(A) = k/n$]. 
+Suponha que temos um experimento com latexmath:[$n$] resultados possíveis e 
+que todos esses resultados sejam equiprováveis, isto é, todos os resultados 
+possuem a mesma probabilidade de ocorrência. Neste caso, dizemos que o 
+experimento possui resultados equiprováveis. Digamos que os resultados 
+possíveis do experimento são latexmath:[$a_1,\ldots,a_n$]. 
 
-Este método de avaliar a probabilidade do evento latexmath:[$A$] normalmente é enunciado da seguinte maneira: latexmath:[$P(A) = \frac{\textrm{número de resultados favoráveis a } A}{\textrm{número de resultados possíveis}}$].
+Sejam latexmath:[$p_1,p_2,\ldots,p_n$] as probabilidades de ocorrências 
+dos eventos latexmath:[$a_1,a_2,\ldots,a_n$], respectivamente. Então, como 
+todos os resultados possuem a mesma probabilidade de ocorrência, 
+temos que latexmath:[$p_1=p_2=\cdots=p_n = p$]. 
 
-Exercício:: Um dado é lançado e todos os resultados são igualmente prováveis. O evento latexmath:[$A$] ocorrerá se, e somente se, um número maior do que 4 aparecer, isto é, latexmath:[$A = \{5,6\}$]. Calcule latexmath:[$P(A)$].
+Além disso, sabemos que latexmath:[$p_1+\cdots+p_n = 1$], ou seja, 
+latexmath:[$n p = 1$], o que por sua vez implica que latexmath:[$p = 1/n$]. 
 
-_Solução_: Como temos 6 resultados possíveis e 2 resultados favoráveis, temos que latexmath:[$P(A) = 2/6 =1/3$].
+Utilizando a propriedade de aditividade contável da probabilidade podemos 
+concluir o seguinte resultado: Seja latexmath:[$A$] um evento que contém 
+latexmath:[$k$] resultados possíveis, então latexmath:[$P(A) = k/n$]. 
+
+Este método de avaliar a probabilidade do evento latexmath:[$A$] normalmente
+é enunciado da seguinte maneira: 
+[latexmath]
+++++
+\[P(A) = \frac{\textrm{número de resultados favoráveis a } A}{\textrm{número de resultados possíveis}}.\]
+++++
+
+Exercício::
++
+--
+Um dado é lançado e todos os resultados são igualmente prováveis. 
+O evento latexmath:[$A$] ocorrerá se, e somente se, um número maior do que 4 aparecer, 
+isto é, latexmath:[$A = \{5,6\}$]. Calcule latexmath:[$P(A)$].
+--
+
+_Solução_::
++
+--
+Como temos 6 resultados possíveis e 2 resultados favoráveis, temos que latexmath:[$P(A) = 2/6 =1/3$].
+--
 
 === Probabilidade Condicional
+(((Probabilidade, Condicional)))
 
-Suponha que temos a seguinte situação: Um lote é formado por 100 monitores de computador. Foi verificado que neste lote, temos 80 monitores em perfeito estado e 20 monitores defeituosos. Suponha que dois monitores são retirados do lote ao acaso. Considere então os eventos:
+Suponha que temos a seguinte situação: 
+Um lote é formado por 100 monitores de computador. Foi verificado que neste lote, 
+temos 80 monitores em perfeito estado e 20 monitores defeituosos. Suponha 
+que dois monitores são retirados do lote ao acaso. Considere então os eventos:
 
-_A_ = {O primeiro monitor é defeituoso} e _B_ = {O segundo monitor é defeituoso}.
+[latexmath]
+++++
+\[A = hbox{O primeiro monitor é defeituoso e }~B = \hbox{O segundo monitor é defeituoso}.\]
+++++
 
 Suponha que a retirada dos monitores seja com reposição. Isto é, o primeiro monitor é retirado, verifica-se se é defeituoso ou não, e é colocado de volta ao lote. Neste cenário, temos 20 casos favoráveis ao evento _A_, entre 100 casos possíveis, e 20 casos favoráveis ao evento _B_, também entre 100 casos possíveis. Desta forma, no cenário *com reposição*, temos que latexmath:[$P(A) = P(B) = 1/5$].
 
