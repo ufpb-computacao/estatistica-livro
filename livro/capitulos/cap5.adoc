@@ -226,7 +226,11 @@ E(Y) &=& E(g(X)) = \sum_{i=1}^\infty g(i) P(X=i)\\
 
 Portanto, latexmath:[$E(Y) = -1/3$]. 
 
-Note que, quando apresentamos o exemplo no capítulo <<Cap_Var_Ale>>, vimos que latexmath:[$Y$] só 
+Note que, quando apresentamos o exemplo no Capítulo 4,
+////
+<<Cap_Var_Ale>>>
+////
+vimos que latexmath:[$Y$] só 
 assume os valores latexmath:[$-1$] e latexmath:[$1$]. Além disso, calculamos sua função de probabilidade:
 [latexmath]
 ++++
