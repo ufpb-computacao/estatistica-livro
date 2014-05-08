@@ -339,7 +339,6 @@ Suponha que latexmath:[$X$] seja uma variável aleatória contínua com a funç�
 _Solução_::
 +
 --
-
 a. Temos da definição de latexmath:[$f(x)$] que para todo latexmath:[$x$] real, latexmath:[$f(x)\geq 0$]. 
 Basta verificar agora que latexmath:[$\int_{-\infty}^\infty f(x)dx=1$]. Note que latexmath:[$f(x)=0$] fora do intervalo latexmath:[$[0,1\]$],
 e portanto 
