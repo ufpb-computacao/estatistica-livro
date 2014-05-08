@@ -1,73 +1,258 @@
 == Variáveis Aleatórias e Suas Distribuições
 
-Imaginemos que existe a definição de que a temperatura de João Pessoa é considerada quente se é maior do que 27 graus Celsius, é considerada confortável se está entre 20 e 27 graus Celsius, e é considerada fria se é menor do que 20 graus Celsius. Suponha que nosso espaço amostral para o experimento medir a temperatura de João Pessoa pela manhã. Suponha que nosso espaço amostral, que contém todos os resultados possíveis para a temperatura, é latexmath:[$\Omega=R$]. Se queremos determinar se a temperatura é fria, confortável ou quente, a melhor ferramenta para isso é definir uma função latexmath:[$X:\Omega\to$] {fria,confortável,quente}. Ou seja, uma função que associa a cada valor de temperatura, a quantidade _fria_, _confortável_ ou _quente_. Por exemplo, latexmath:[$X(10)=$] frio; latexmath:[$X(34)=$] quente, e latexmath:[$X(22)=$] confortável. Neste exemplo, foram medidas temperaturas, 10, 34 e 22, respectivamente.
+Imaginemos que existe a definição de que a temperatura de João Pessoa é 
+considerada quente se é maior do que 27 graus Celsius, é considerada 
+confortável se está entre 20 e 27 graus Celsius, e é considerada fria se é 
+menor do que 20 graus Celsius. Suponha que nosso espaço amostral para o 
+experimento medir a temperatura de João Pessoa pela manhã. Suponha que nosso
+espaço amostral, que contém todos os resultados possíveis para a temperatura, 
+é latexmath:[$\Omega=R$]. Se queremos determinar se a temperatura é fria, 
+confortável ou quente, a melhor ferramenta para isso é definir uma função 
+latexmath:[$X:\Omega\to$] {fria,confortável,quente}. Ou seja, uma função que
+associa a cada valor de temperatura, a quantidade _fria_, _confortável_ ou _quente_. 
+Por exemplo, latexmath:[$X(10)=$] frio; latexmath:[$X(34)=$] quente, e latexmath:[$X(22)=$] 
+confortável. Neste exemplo, foram medidas temperaturas, 10, 34 e 22, respectivamente.
 
-Essa função latexmath:[$X$] que utilizamos é o que chamamos de uma variável aleatória. Ou seja, é um rótulo que damos para os valores possíveis no espaço amostral.
+(((Variável Aleatória)))
 
-Na prática, o mais comum é utilizar variáveis aleatórias, onde associamos cada valor do espaço amostral a um número real, ao invés de um conjunto arbitŕario. Isso se deve ao fato, de que existem muitas distribuições de probabilidade conhecidas tomando como valores números reais. Portanto, ao considerar uma variável aleatória que toma valores reais, estamos tornando um problema de probabilidade genérico, num problema de probabilidade de números reais, e podemos utilizar toda a teoria de distribuições discretas e contínuas para resolver diversos problemas.
+Essa função latexmath:[$X$] que utilizamos é o que chamamos 
+de uma variável aleatória. Ou seja, é um rótulo que damos 
+para os valores possíveis no espaço amostral.
+
+Na prática, o mais comum é utilizar variáveis aleatórias, onde associamos cada valor 
+do espaço amostral a um número real, ao invés de um conjunto arbitŕario. 
+Isso se deve ao fato, de que existem muitas distribuições de probabilidade 
+conhecidas tomando como valores números reais. Portanto, ao considerar uma variável
+aleatória que toma valores reais, estamos pegando um problema de probabilidade genérico, 
+e transformando num problema de probabilidade de números reais,
+e assim podemos utilizar toda a teoria de distribuições discretas 
+e contínuas para resolver o problema.
 
 Desta forma, mais precisamente, temos a
 
-Definição:: Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma função latexmath:[$X$] que associa a cada elemento latexmath:[$\omega\in\Omega$] um número real latexmath:[$X(\omega)$].
+Definição: Variável Aleatória::
++
+--
+Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$]
+uma função latexmath:[$X$] que associa a cada elemento latexmath:[$\omega\in\Omega$]
+um número real latexmath:[$X(\omega)\in\mathbb{R}$].
+--
 
-Exemplo:: Suponha que sorteamos 3 pessoas em João Pessoa e observamos se é homem ou mulher. Suponha que queremos saber o número de mulheres sorteadas.
-Para isso, defina a variável aleatória latexmath:[$X:\Omega\to R$], onde latexmath:[$X$] pode assumir os valores, 0,1,2 e 3. Se denotamos homem por H e mulher por M, temos que latexmath:[$\Omega= \{MMM,MMH,MHM,HMM,MHH,HMH,HHM,HHH\}$], e portanto latexmath:[$X(MMM)=3,X(MMH)=X(MHM)=X(HMM)=2,X(MHH)=X(HMH)=X(HHM)=1,X(HHH)=0.$]    
+.Exemplo de variável aleatória
+====
+Suponha que sorteamos 3 pessoas em João Pessoa e observamos se é homem ou mulher.
+Suponha que queremos saber o número de mulheres sorteadas.
+Para isso, defina a variável aleatória latexmath:[$X:\Omega\to R$], 
+onde latexmath:[$X$] pode assumir os valores, 0,1,2 e 3. Se denotamos homem por 
+H e mulher por M, temos que 
+latexmath:[$\Omega= \{MMM,MMH,MHM,HMM,MHH,HMH,HHM,HHH\}$], e portanto 
+latexmath:[$X(MMM)=3,X(MMH)=X(MHM)=X(HMM)=2,X(MHH)=X(HMH)=X(HHM)=1,X(HHH)=0.$]    
+====
 
-Definição:: Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma variável aleatória. Dado qualquer subconjunto latexmath:[$B\subset R$], definimos a imagem inversa de latexmath:[$B$] pela variável aleatória latexmath:[$X$] como o conjunto latexmath:[$X^{-1}(B) = \{\omega\in\Omega; X(\omega)\in B\}$]. Ou seja, latexmath:[$X^{-1}(B)$] consiste dos elementos de latexmath:[$\Omega$] que são levados no conjunto latexmath:[$B$] pela variável aleatória latexmath:[$X$].
+(((Variável Aleatória, Imagem inversa)))
 
-A partir da imagem inversa de latexmath:[$X^{-1}(B)$] podemos construir uma nova medida de probabilidade induzida pela variável aleatória latexmath:[$X$]. 
+Definição: Imagem Inversa:: 
++
+--
+Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma variável aleatória.
+Dado qualquer subconjunto latexmath:[$B\subset R$], definimos a imagem inversa de latexmath:[$B$]
+pela variável aleatória latexmath:[$X$] como o conjunto latexmath:[$X^{-1}(B) = \{\omega\in\Omega; X(\omega)\in B\}$].
+Ou seja, latexmath:[$X^{-1}(B)$] consiste dos elementos de latexmath:[$\Omega$] que são levados no 
+conjunto latexmath:[$B$] pela variável aleatória latexmath:[$X$].
+--
 
-Definição:: Definimos a probabilidade latexmath:[$P(X\in B)$] como sendo latexmath:[$P(X^{-1}(B))$], ou seja, como a probabilidade do evento latexmath:[$X^{-1}(B)$]. Da mesma forma, definimos latexmath:[$P(X=a)$] como sendo latexmath:[$P(X^{-1}(\{a\}))$], ou seja, a probabilidade da variável aleatória assumir o valor latexmath:[$a$]. 
+A partir da imagem inversa de latexmath:[$X^{-1}(B)$] podemos construir uma nova medida de probabilidade
+induzida pela variável aleatória latexmath:[$X$].
 
-Exercício:: Escreva o que significa latexmath:[$P(X\leq b)$] para algum número real latexmath:[$b$].
+(((Probabilidade, Induzida por uma variável aleatória)))
 
-_Solução_: Seguindo a mesma ideia da definição, temos que latexmath:[$P(X\leq b)$] deve ser definido como a probabilidade de latexmath:[$X$] ser menor ou igual a latexmath:[$b$], assim, é a probabilidade de latexmath:[$X$] pertencer ao intervalo da reta latexmath:[$(-\infty,b\]$]. Portanto, latexmath:[$P(X\leq b) = P(X^{-1}((-\infty,b\]))$].
+Definição: Probabilidade induzida pela variável aleatória latexmath:[$X$]::
++
+--
+Definimos a probabilidade latexmath:[$P(X\in B)$] como sendo 
+latexmath:[$P(X^{-1}(B))$], ou seja, como a probabilidade do evento latexmath:[$X^{-1}(B)$]. 
+Da mesma forma, definimos latexmath:[$P(X=a)$] como sendo latexmath:[$P(X^{-1}(\{a\}))$], ou seja, 
+a probabilidade da variável aleatória assumir o valor latexmath:[$a$]. 
+--
 
-'''
+Exercício::
++
+--
+Escreva o que significa latexmath:[$P(X\leq b)$] para algum número real latexmath:[$b$].
+--
 
-Exercício:: Suponha que na cidade de João Pessoa, temos a mesma quantidade de homens e de mulheres, e que cada sorteio de pessoas é feito com reposição e independentemente do(s) sorteio(s) anterior(es). Seja latexmath:[$X$] a variável aleatória que indica o número de mulheres sorteadas. Calcule: latexmath:[$P(X=0), P(X=1), P(X=2)$] e latexmath:[$P(X\leq 2)$]. 
+_Solução_::
++
+--
+Seguindo a mesma ideia da definição, temos que latexmath:[$P(X\leq b)$] deve ser 
+definido como a probabilidade de latexmath:[$X$] ser menor ou igual a latexmath:[$b$], 
+assim, é a probabilidade de latexmath:[$X$] pertencer ao intervalo da reta latexmath:[$(-\infty,b\]$]. 
+Portanto, latexmath:[$P(X\leq b) = P(X^{-1}((-\infty,b\]))$].
+--
 
-_Solução_: Temos que latexmath:[$P(X=0) = P(HHH) = \frac{1}{8}$]; latexmath:[$P(X=1) = P(\{HHM,HMH,MHH\}) = P(HHM)+P(HMH)+P(MHH) = \frac{3}{8}$]; latexmath:[$P(X=2) = P(HMM,MHM,MMH) = P(HMM)+P(MHM)+P(MMH) = \frac{3}{8}$]. Finalmente, latexmath:[$P(X\leq 2) = P(X=0) + P(X=1) + P(X=2) = \frac{1}{8} + \frac{3}{8}+\frac{3}{8} = \frac{7}{8}$]. Poderíamos também ter resolvido utilizando a técnica de tomar complementares. Como latexmath:[$X$] só pode assumir valores latexmath:[$0,1,2$] e 3, temos que, latexmath:[$P(X\leq 2) = 1-P(X>2) = 1 - P(X=3) = 1 - P(MMM) = 1-\frac{1}{8} = \frac{7}{8}.$]
+Exercício::
++
+--
+Suponha que na cidade de João Pessoa, temos a mesma quantidade de homens e de mulheres, 
+e que cada sorteio de pessoas é feito com reposição e independentemente do(s) sorteio(s) anterior(es). 
+Seja latexmath:[$X$] a variável aleatória que indica o número de mulheres sorteadas.
+Calcule: latexmath:[$P(X=0), P(X=1), P(X=2)$] e latexmath:[$P(X\leq 2)$]. 
+--
 
-'''
+_Solução_::
++
+--
+Temos que latexmath:[$P(X=0) = P(HHH) = \frac{1}{8}$]; 
+latexmath:[$P(X=1) = P(\{HHM,HMH,MHH\}) = P(HHM)+P(HMH)+P(MHH) = \frac{3}{8}$]; 
+latexmath:[$P(X=2) = P(HMM,MHM,MMH) = P(HMM)+P(MHM)+P(MMH) = \frac{3}{8}$]. 
+Finalmente, 
+[latexmath]
+++++
+\[P(X\leq 2) = P(X=0) + P(X=1) + P(X=2) = \frac{1}{8} + \frac{3}{8}+\frac{3}{8} = \frac{7}{8}.\]
+++++
+
+Poderíamos também ter resolvido utilizando a técnica de tomar complementares. Como latexmath:[$X$] só pode
+assumir valores latexmath:[$0,1,2$] e 3, temos que, 
+[latexmath]
+++++
+\[P(X\leq 2) = 1-P(X>2) = 1 - P(X=3) = 1 - P(MMM) = 1-\frac{1}{8} = \frac{7}{8}.\]
+++++
+
+--
 
 === Variáveis Aleatórias Discretas
 
-Como falamos anteriormente, nosso objetivo em considerar variáveis aleatórias tomando como valores números reais, se deve ao fato de haver uma teoria bem completa em torno dessas variáveis aleatórias. Dentre as variáveis aleatórias reais, existem dois grandes grupos: as variáveis aleatórias _discretas_ e as variáveis aleatórias _contínuas_. Nosso objetivo nesta seção consiste em definir, e apresentar vários exemplos de variáveis aleatórias discretas.
+(((Variáveis Aleatórias, Discretas)))
 
-Definição:: Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma variável aleatória. Se existe uma sequência números latexmath:[$a_1,a_2,a_3,\ldots$], tais que latexmath:[$X$] só pode assumir um dos valores dessa sequência. Então dizemos que latexmath:[$X$] é uma variável aleatória discreta. 
+Como falamos anteriormente, nosso objetivo em considerar variáveis aleatórias 
+tomando como valores números reais, se deve ao fato de haver uma teoria bem 
+completa em torno dessas variáveis aleatórias. Dentre as variáveis aleatórias
+reais, existem dois grandes grupos: as variáveis aleatórias _discretas_ e as 
+variáveis aleatórias _contínuas_. Nosso objetivo nesta seção consiste em definir,
+e apresentar vários exemplos de variáveis aleatórias discretas.
 
-_Observação_: Note que apesar da sequência latexmath:[$a_1,a_2,a_3,\ldots$] ser uma sequência infinita, o conjunto de valores possíveis para a variável aleatória latexmath:[$X$] pode ser _finito_ ou _infinito enumerável_. Por infinito enumerável, nós queremos dizer um conjunto infinito que pode ser indexado pelo conjunto dos números naturais, ou seja, pelo qual podemos escrever uma sequência numérica cobrindo todos os números.
+Definição: Variável aleatória discreta:: 
++
+--
+Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma variável 
+aleatória. Se existe uma sequência números latexmath:[$a_1,a_2,a_3,\ldots$], tais que 
+latexmath:[$X$] só pode assumir um dos valores dessa sequência. Então dizemos que 
+latexmath:[$X$] é uma variável aleatória discreta.
+--
 
-No caso de variáveis aleatórias discretas, sabemos que vale a seguinte identidade: latexmath:[$P(X\in \{a_1,a_2,a_3,\ldots\}) = 1$], pois latexmath:[$X$] necessariamente só assume valores nesse conjunto latexmath:[$\{a_1,a_2,a_3,\ldots\}$]. Portanto, utilizando a aditividade contável da medida de probabilidade, obtemos 
-latexmath:[$1 = P(X\in \{a_1,a_2,a_3,\ldots\}) = \sum_{i=1}^\infty P(X=a_i)$], e portanto temos que latexmath:[$\sum_{i=1}^\infty P(X=a_i) = 1$], e além disso, sabemos que para cada _i_, vale latexmath:[$P(X=a_i)\geq 0$]. 
+[NOTE]
+====
+Note que apesar da sequência latexmath:[$a_1,a_2,a_3,\ldots$] ser uma sequência infinita,
+o conjunto de valores possíveis para a variável aleatória latexmath:[$X$] pode ser _finito_ ou _infinito enumerável_. 
+Por infinito enumerável, nós queremos dizer um conjunto infinito que pode ser indexado pelo conjunto
+dos números naturais, ou seja, pelo qual podemos escrever uma sequência numérica cobrindo todos os números.
+====
+
+No caso de variáveis aleatórias discretas, sabemos que vale a seguinte 
+identidade: 
+[latexmath]
+++++
+\[P(X\in \{a_1,a_2,a_3,\ldots\}) = 1,\]
+++++
+pois latexmath:[$X$] necessariamente só assume valores nesse conjunto latexmath:[$\{a_1,a_2,a_3,\ldots\}$]. 
+Portanto, utilizando a aditividade contável da medida de probabilidade, obtemos 
+[latexmath]
+++++
+\[1 = P(X\in \{a_1,a_2,a_3,\ldots\}) = \sum_{i=1}^\infty P(X=a_i),\]
+++++
+e portanto temos que latexmath:[$\sum_{i=1}^\infty P(X=a_i) = 1$], e além disso, 
+sabemos que para cada latexmath:[$i$], vale latexmath:[$P(X=a_i)\geq 0$]. 
 
 Estes fatos motivam a seguinte definição:
 
-Definição:: Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma variável aleatória discreta, e seja latexmath:[$a_1,a_2,a_3,\ldots,$] o conjunto de valores possíveis de latexmath:[$X$]. Definimos a função de probabilidade da variável aleatória latexmath:[$X$] como uma função latexmath:[$p(a_i)$], que associa a cada latexmath:[$a_i$] a probabilidade da variável aleatória latexmath:[$X$] assumir o valor latexmath:[$a_i$], isto é, definimos latexmath:[$p(a_i) = P(X=a_i)$]. 
+(((Probabilidade, Função de)))
 
-_Observação_: Pelo que já vimos, uma função de probabilidade satisfaz as seguintes propriedades: 1. para todo _i_, latexmath:[$p(x_i)\geq 0$]; 2. latexmath:[$\sum_{i=1}^\infty p(x_i) = 1.$] 
+Definição: Função de probabilidade::
++
+--
+Seja latexmath:[$\Omega$] um espaço amostral e seja latexmath:[$X:\Omega\to R$] uma variável 
+aleatória discreta, e seja latexmath:[$a_1,a_2,a_3,\ldots,$] o conjunto de valores possíveis 
+de latexmath:[$X$]. Definimos a _função de probabilidade_ da variável aleatória latexmath:[$X$] 
+como uma função latexmath:[$p(a_i)$], que associa a cada latexmath:[$a_i$] a probabilidade da 
+variável aleatória latexmath:[$X$] assumir o valor latexmath:[$a_i$], isto é, definimos 
+latexmath:[$p(a_i) = P(X=a_i)$]. 
+--
 
-Exercício:: Suponha que uma urna contém 6 bolas azuis e 4 bolas vermelhas. Quatro bolas são tiradas aleatoriamente da urna, com reposição, e é observada a cor da bola, antes da bola ser devolvida à urna. Seja latexmath:[$X$] a variável aleatória que indica o número de bolas vermelhas que foram retiradas da urna. Obtenha a função de probabilidade de latexmath:[$X$]. 
+[NOTE]
+====
+Pelo que já vimos, uma função de probabilidade satisfaz as seguintes propriedades: 
+. para todo latexmath:[$i$], latexmath:[$p(x_i)\geq 0$];
+. latexmath:[$\sum_{i=1}^\infty p(x_i) = 1.$]
+====
 
-_Solução_: Denote por _V_ a bola vermelha e por _A_, a bola azul. Pelas informações do problema, temos que a probabilidade de se retirar uma bola vermelha é latexmath:[$\frac{4}{10}$] e a de se retirar uma bola azul é latexmath:[$\frac{6}{10}$]. Assim, latexmath:[$P(V) = \frac{4}{10}=0,4$] e latexmath:[$P(A) = \frac{6}{10}=0,6$]. O espaço amostral do problema é dado por
-latexmath:[$\Omega = \{VVVV,VVVA,VVAV,VAVV,AVVV,VVAA,VAVA,VAAV,AVAV,AAVV,AVVA,VAAA,AVAA,AAVA,AAAV,AAAA\}$]
+Exercício::
++
+--
+Suponha que uma urna contém 6 bolas azuis e 4 bolas vermelhas. Quatro bolas são tiradas
+aleatoriamente da urna, com reposição, e é observada a cor da bola, antes da bola ser 
+devolvida à urna. Seja latexmath:[$X$] a variável aleatória que indica o número de bolas 
+vermelhas que foram retiradas da urna. Obtenha a função de probabilidade de latexmath:[$X$].
+--
+
+_Solução_::
++
+--
+Denote por _V_ a bola vermelha e por _A_, a bola azul. Pelas informações do problema, 
+temos que a probabilidade de se retirar uma bola vermelha é latexmath:[$\frac{4}{10}$] e a 
+de se retirar uma bola azul é latexmath:[$\frac{6}{10}$]. 
+
+Assim, latexmath:[$P(V) = \frac{4}{10}=0,4$] e latexmath:[$P(A) = \frac{6}{10}=0,6$]. 
+
+O espaço amostral do problema é dado por
+[latexmath]
+++++
+\[\Omega = \{VVVV,VVVA,VVAV,VAVV,AVVV,VVAA,VAVA,VAAV,AVAV,AAVV,AVVA,VAAA,AVAA,AAVA,AAAV,AAAA\}.\]
+++++
 
 É fácil ver que o conjunto de valores possíveis para a variável aleatória latexmath:[$X$] é latexmath:[$\{0,1,2,3,4\}$]. 
 
 Assim:
 
-latexmath:[$p(0) = P(X=0) = P(AAAA) = (0,6)^4$];
+[latexmath]
+++++
+\[p(0) = P(X=0) = P(AAAA) = (0,6)^4;\]
+++++
 
-latexmath:[$p(1) =P(X=1)= P(AAAV,AAVA,AVAA,VAAA)$] latexmath:[$= P(AAAV)+P(AAVA)+P(AVAA)+P(VAAA)$] latexmath:[$=(0,6)^30,4+(0,6)^30,4+(0,6)^30,4+(0,6)^30,4 = 4(0,6)^30,4$];
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+p(1) &=&P (X=1)= P(AAAV,AAVA,AVAA,VAAA) = P(AAAV)+P(AAVA)+P(AVAA)+P(VAAA)\\
+&=&(0,6)^30,4+(0,6)^30,4+(0,6)^30,4+(0,6)^30,4 = 4(0,6)^30,4;
+\end{array}
+\]
+++++
 
-latexmath:[$p(2) =P(X=2)$] latexmath:[$= P(VVAA,VAVA,VAAV,AVAV,AAVV,AVVA)=P(VVAA)+P(VAVA)+P(VAAV)+P(AVAV)+P(AAVV)+P(AVVA)$]  latexmath:[$= (0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2 = 6(0,6)^2(0,4)^2$];
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+p(2) &=& P(X=2) = P(VVAA,VAVA,VAAV,AVAV,AAVV,AVVA)\\
+&=& P(VVAA)+P(VAVA)+P(VAAV)+P(AVAV)+P(AAVV)+P(AVVA)\\
+&=& (0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2\\
+&=& 6(0,6)^2(0,4)^2;
+\end{array}
+\]
+++++
 
-latexmath:[$p(3)=P(X=3)$] latexmath:[$=P(VVVA,VVAV,VAVV,AVVV) = P(VVVA)+P(VVAV)+P(VAVV)+P(AVVV)$] latexmath:[$= (0,4)^30,6+(0,4)^30,6+(0,4)^30,6+(0,4)^30,6 = 4(0,4)^30,6$];
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+p(3)&=&P(X=3) =P(VVVA,VVAV,VAVV,AVVV) = P(VVVA)+P(VVAV)+P(VAVV)+P(AVVV)\\
+&=& (0,4)^30,6+(0,4)^30,6+(0,4)^30,6+(0,4)^30,6 = 4(0,4)^30,6;
+\end{array}
+\]
+++++
 
 finalmente, latexmath:[$p(4)=P(X=4)=P(VVVV) = (0,4)^4$].
 
-'''
+--
 
 === Variáveis Aleatórias Contínuas
 
