@@ -344,6 +344,48 @@ e depois calcular a esperança de latexmath:[$Y$] diretamente:
 ++++
 ====
 
+=== Propriedades da Esperança
+
+Nessa seção vamos apresentar várias propriedades da esperança matemática e demonstrar algumas delas.
+
+Propriedades da esperança::
++
+--
+* (Esperança da constante): Seja latexmath:[$c\in\mathbb{R}$] um número real, e seja latexmath:[$X$]
+a variável aleatória constante igual a latexmath:[$c$], ou seja, latexmath:[$P(X=c)=1$]. Então
+latexmath:[$E(X) = c.$]. 
+
+* (Multiplicação por constante): Seja latexmath:[$c\in\mathbb{R}$] um número real, e seja 
+latexmath:[$X$] uma variável aleatória. Então latexmath:[$E(cX)=cE(X)$].
+
+* (Soma de variáveis aleatórias): Sejam latexmath:[$X$] e latexmath:[$Y$] variáveis aleatórias
+quaisquer, então latexmath:[$E(X+Y) = E(X) + E(Y)$]. 
+
+* (Combinação linear de variáveis aleatórias): Sejam latexmath:[$X_1,X_2,\ldots,X_n$] variáveis
+aleatórias, e latexmath:[$c_1,c_2,\ldots,c_n$] números reais. Então
+[latexmath]
+++++
+\[E\Big( \sum_{i=1}^n c_i X_i\Big) = \sum_{i=1}^n c_i E(X_i).\]
+++++
+
+* (Produto de variáveis aleatórias independentes): Sejam latexmath:[$X$] e latexmath:[$Y$] 
+variáveis aleatórias independentes, então
+[latexmath]
+++++
+\[ E(XY) = E(X)E(Y).\]
+++++
+--
+
+Demonstração::
++
+--
+* (Esperança da constante):
+--
+
+
+
+
+
 
 
 
