@@ -273,7 +273,7 @@ Suponha que latexmath:[$X$] é uma variável aleatória contínua com função d
 ++++
 \[ f(x) = \begin{cases}
 \frac{e^x}{2},& x\leq 0,\\
-\frac{e^{-x}{2},& x>0.
+\frac{e^{-x}}{2},& x>0.
 \end{cases}
 \]
 ++++
