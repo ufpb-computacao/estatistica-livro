@@ -262,7 +262,38 @@ temos duas opções:
 onde latexmath:[$Y$] toma valores em latexmath:[$\{b_1,b_2,\ldots\}$].
 ====
 
+.Exemplo de esperança de função de uma variável aleatória contínua
+====
+Suponha que latexmath:[$X$] é uma variável aleatória contínua com função de densidade
+[latexmath]
+++++
+\[ f(x) = \begin{cases}
+\frac{e^x}{2},& x\leq 0,\\
+\frac{e^{-x}{2},& x>0.
+\end{cases}
+\]
+++++
+Tome latexmath:[$Y = |X|$], então latexmath:[$E(Y)$] é dada por
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(Y) &=& E(|X|) = \int_{-\infty}^\infty |x|f(x)dx\\
+&=&  \int_{-\infty}^0-x\frac{e^x}{2} dx + \int_0^\infty x \frac{e^{-x}}{2} dx.
+\end{array}
+\]
+++++
 
+Observe que integrando por partes, obtemos que latexmath:[$F(x) = -xe^x + e^x$] é uma primitiva para latexmath:[$-xe^x$] e que 
+latexmath:[$G(x) = -xe^{-x} -e^{-x}$] é uma primitiva para latexmath:[$xe^{-x}$]. Daí,
+
+[latexmath]
+++++
+\[\int_{-\infty}^0-x\frac{e^x}{2} dx = (-xe^x + e^x)\Big|_{-\infty}^0 = 1\hbox{~~e~~} 
+\int_0^\infty x \frac{e^{-x}}{2} dx = (G(x) = -xe^{-x} -e^{-x})\Big|_0^\infty = 1.\]
+++++
+
+====
 
 
 
