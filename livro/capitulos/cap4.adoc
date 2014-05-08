@@ -791,7 +791,12 @@ latexmath:[$g^{-1}(\{1\}) = \{2,4,6,\ldots\}$]. Assim,
 
 [latexmath]
 ++++
-\[P(Y=1) = P(X\in \{2,4,6,\ldots\}) = (1/2)^2+(1/2)^4+(1/2)^6 +\cdots = 1/4 + (1/4)^2 + (1/4)^3 + \cdots = \frac{1/4}{1-1/4} = 1/3.\]
+\[
+\begin{array}{lll}
+P(Y=1) &=& P(X\in \{2,4,6,\ldots\}) = (1/2)^2+(1/2)^4+(1/2)^6 +\cdots = 1/4 + (1/4)^2 + (1/4)^3 + \cdots\\
+&=& \frac{1/4}{1-1/4} = 1/3.
+\end{array}
+\]
 ++++
 
 Por outro lado, latexmath:[$P(Y=-1) = 1 - P(Y=1) = 1 -1/3 = 2/3.$]
