@@ -339,7 +339,7 @@ Suponha que latexmath:[$X$] seja uma variável aleatória contínua com a funç�
 _Solução_::
 +
 --
-.. Temos da definição de latexmath:[$f(x)$] que para todo latexmath:[$x$] real, latexmath:[$f(x)\geq 0$]. 
+a\. Temos da definição de latexmath:[$f(x)$] que para todo latexmath:[$x$] real, latexmath:[$f(x)\geq 0$]. 
 Basta verificar agora que latexmath:[$\int_{-\infty}^\infty f(x)dx=1$]. Note que latexmath:[$f(x)=0$] fora do intervalo latexmath:[$[0,1\]$],
 e portanto 
 [latexmath]
@@ -349,13 +349,13 @@ e portanto
 
 Assim, latexmath:[$f(x)$] é função de densidade
 
-.. 
+b\. 
 [latexmath]
 ++++
 \[P(X\leq 1/2) = \int_0^{1/2} 2xdx = x^2\Big|_0^{1/2} = \frac{1}{4}.\]
 ++++
 
-.. 
+c\. 
 [latexmath]
 ++++
 \[
