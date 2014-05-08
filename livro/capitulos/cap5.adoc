@@ -194,6 +194,76 @@ e se latexmath:[$p$] é a função de probabilidade de latexmath:[$X$], temos qu
 ++++
 --
 
+.Exemplo de esperança de função de uma variável aleatória discreta
+====
+Vamos relembrar um exemplo estudando quando introduzimos funções de variáveis aleatórias: 
+seja latexmath:[$X$] uma variável aleatória discreta tomando valores no conjunto 
+latexmath:[$1,2,3,\ldots$]. Suponha que latexmath:[$P(X=n) = (1/2)^n$]. 
+Defina a função latexmath:[$g:\{1,2,3,\ldots\}\to R$] dada por 
+latexmath:[$f(2k) = 1$], latexmath:[$k=1,2,3,\ldots$], e latexmath:[$f(2k-1)=-1$], 
+para latexmath:[$k=1,2,3,\ldots$]. Ou seja, latexmath:[$g(x)$] é igual a 1 se 
+latexmath:[$x$] é par, e é igual a -1 se latexmath:[$x$] é ímpar. 
+Desta forma, definindo latexmath:[$Y=g(X)$], temos que 
+
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(Y) &=& E(g(X)) = \sum_{i=1}^\infty g(i) P(X=i)\\
+&=& \sum_{i\hbox{~par}} g(i) P(X=i) + \sum_{i\hbox{~ímpar}} g(i) P(X=i)\\
+&=& \sum_{i=1}^\infty g(2i)P(X=2i) + \sum_{i=1}^\infty g(2i-1)P(X=2i-1)\\
+&=& \sum_{i=1}^\infty P(X=2i) + \sum_{i=1}^\infty (-1) P(X=2i-1)\\
+&=& \sum_{i=1}^\infty (1/2)^{2i} - \sum_{i=1}^\infty (1/2)^{2i-1}\\
+&=& \sum_{i=1}^\infty (1/2)^{2i} - \sum_{i=1}^\infty 2\cdot (1/2)^{2i}\\
+&=& \sum_{i=1}^\infty (1/2)^{2i} - 2 \sum_{i=1}^\infty (1/2)^{2i}\\
+&=& - \sum_{i=1}^\infty (1/2)^{2i}\\
+&=& -\sum_{i=1}^\infty (1/4)^{i}\\
+&=& - \frac{1/4}{1-1/4}\\
+&=& -1/3.
+\end{array}
+\]
+++++
+
+Portanto, latexmath:[$E(Y) = -1/3$]. 
+
+Note que, quando apresentamos o exemplo no capítulo <<Cap_Var_Ale>>, vimos que latexmath:[$Y$] só 
+assume os valores latexmath:[$-1$] e latexmath:[$1$]. Além disso, calculamos sua função de probabilidade:
+[latexmath]
+++++
+\[
+P(Y=-1) = 2/3 \hbox{~~e~~} P(Y=1) = 1/3.
+\]
+++++
+
+Desta forma, usando diretamente a definição de esperança de variáveis aleatórias discretas, temos:
+
+[latexmath]
+++++
+\[E(Y) = (-1)\cdot 2/3 + 1\cdot 1/3 = -2/3 + 1/3 = -1/3.\]
+++++
+
+Logo, vemos que não há contradição entre as definições, e as esperanças sempre vão coincidir.
+====
+
+[IMPORTANT]
+====
+Como vimos no exemplo anterior, na hora de calcular a esperança de funções de variáveis aleatórias discretas,
+temos duas opções:
+* Calcular diretamente, usando a função de probabilidade de latexmath:[$X$], através da fórmula
+[latexmath]
+++++
+\[E(Y) = E(H(X)) = \sum_{i=1}^\infty H(a_i) P(X=a_i);\]
+++++
+* Obter a função de probabilidade de latexmath:[$Y$] e depois calcular a esperança de latexmath:[$Y$] diretamente:
+[latexmath]
+++++
+\[E(Y) = \sum_{j=1}^\infty b_j P(Y=b_j),\]
+++++
+onde latexmath:[$Y$] toma valores em latexmath:[$\{b_1,b_2,\ldots\}$].
+====
+
+
+
 
 
 
