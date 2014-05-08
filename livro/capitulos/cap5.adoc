@@ -32,6 +32,8 @@ latexmath:[$A,B\in R$], vale a fórmula:
 
 --
 
+[NOTE]
+====
 Sejam latexmath:[$X$] e latexmath:[$Y$] são duas variáveis 
 aleatórias discretas. 
 Suponha que latexmath:[$X$] toma valores no conjunto 
@@ -44,9 +46,11 @@ para cada latexmath:[$a_i$] e latexmath:[$b_j$], temos
 ++++
 \[P(X = a_i, Y=b_j) = P(X=a_i)P(Y=b_j).\]
 ++++
-
+====
 
 === Esperança matemática
+
+(((Esperança, Variável Aleatória)))
 
 Vamos começar motivando a definição de esperança. A esperança pode 
 ser pensada como uma generalização da média. 
@@ -106,6 +110,7 @@ entre os valores possíveis:
 ++++
 ====
 
+.Exemplo de esperança de variável aleatória discreta
 ====
 Seja latexmath:[$X$] uma variável aleatória que toma valor latexmath:[$1$] com 
 probabilidade latexmath:[$p$], e valor latexmath:[$0$]
@@ -139,6 +144,58 @@ se
 No caso da integral imprópria acima divergir, dizemos que a
 esperança de latexmath:[$X$] não existe.
 --
+
+.Exemplo de esperança de variável aleatória contínua
+====
+Seja latexmath:[$X$] uma variável aleatória contínua com função de densidade dada por 
+[latexmath]
+++++
+\[f(x) = \begin{cases}
+\frac{1}{b-a},& a< x< b,
+0,& \hbox{caso contrário.}
+\]
+++++
+Portanto,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \int_a^b \frac{x}{b-a} dx = \frac{1}{b-a} \cdot \frac{x^2}{2}\Big|_a^b\\
+&=& \frac{b^2-a^2}{2(b-a)} = \frac{(b+a)(b-a)}{2(b-a)}\\
+&=& \frac{a+b}{2}.
+\]
+++++
+====
+
+=== Esperança de uma Função de Variável Aleatória
+
+(((Esperança, Variável Aleatória, Função de)))
+
+Definição: Esperança de função de variável aleatória::
++
+--
+Seja latexmath:[$X$] uma variável aleatória e seja latexmath:[$Y = H(X)$], para uma função real latexmath:[$H$]. Temos então dois casos:
+
+. Se latexmath:[$X$] for uma variável aleatória discreta tomando valores em latexmath:[$\{a_1,a_2,\ldots\}$], 
+e se latexmath:[$p$] é a função de probabilidade de latexmath:[$X$], temos que
+
+[latexmath]
+++++
+\[ E(Y) = E(H(X)) = \sum_{i=1}^\infty H(a_i)P(X=a_i) = \sum_{i=1}^\infty H(a_i)p(a_i).\]
+++++
+
+. Se latexmath:[$X$] for uma variável aleatória contínua com função de densidade latexmath:[$f$], então temos que
+
+[latexmath]
+++++
+\[E(Y) = E(H(X)) = \int_{-\infty}^\infty H(x)f(x)dx.\]
+++++
+--
+
+
+
+
+
 
 
 
