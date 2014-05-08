@@ -206,7 +206,12 @@ Assim, latexmath:[$P(V) = \frac{4}{10}=0,4$] e latexmath:[$P(A) = \frac{6}{10}=0
 O espaço amostral do problema é dado por
 [latexmath]
 ++++
-\[\Omega = \{VVVV,VVVA,VVAV,VAVV,AVVV,VVAA,VAVA,VAAV,AVAV,AAVV,AVVA,VAAA,AVAA,AAVA,AAAV,AAAA\}.\]
+\[
+\begin{array}{lll}
+\Omega &=& \{VVVV,VVVA,VVAV,VAVV,AVVV,VVAA,VAVA,
+&&VAAV,AVAV,AAVV,AVVA,VAAA,AVAA,AAVA,AAAV,AAAA\}.
+\end{array}
+\]
 ++++
 
 É fácil ver que o conjunto de valores possíveis para a variável aleatória latexmath:[$X$] é latexmath:[$\{0,1,2,3,4\}$]. 
@@ -222,7 +227,8 @@ Assim:
 ++++
 \[
 \begin{array}{lll}
-p(1) &=&P (X=1)= P(AAAV,AAVA,AVAA,VAAA) = P(AAAV)+P(AAVA)+P(AVAA)+P(VAAA)\\
+p(1) &=&P (X=1)= P(AAAV,AAVA,AVAA,VAAA)\\
+&=& P(AAAV)+P(AAVA)+P(AVAA)+P(VAAA)\\
 &=&(0,6)^30,4+(0,6)^30,4+(0,6)^30,4+(0,6)^30,4 = 4(0,6)^30,4;
 \end{array}
 \]
@@ -234,7 +240,8 @@ p(1) &=&P (X=1)= P(AAAV,AAVA,AVAA,VAAA) = P(AAAV)+P(AAVA)+P(AVAA)+P(VAAA)\\
 \begin{array}{lll}
 p(2) &=& P(X=2) = P(VVAA,VAVA,VAAV,AVAV,AAVV,AVVA)\\
 &=& P(VVAA)+P(VAVA)+P(VAAV)+P(AVAV)+P(AAVV)+P(AVVA)\\
-&=& (0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2\\
+&=& (0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2\\
+&+&(0,6)^2(0,4)^2+(0,6)^2(0,4)^2+(0,6)^2(0,4)^2\\
 &=& 6(0,6)^2(0,4)^2;
 \end{array}
 \]
@@ -244,8 +251,10 @@ p(2) &=& P(X=2) = P(VVAA,VAVA,VAAV,AVAV,AAVV,AVVA)\\
 ++++
 \[
 \begin{array}{lll}
-p(3)&=&P(X=3) =P(VVVA,VVAV,VAVV,AVVV) = P(VVVA)+P(VVAV)+P(VAVV)+P(AVVV)\\
-&=& (0,4)^30,6+(0,4)^30,6+(0,4)^30,6+(0,4)^30,6 = 4(0,4)^30,6;
+p(3)&=&P(X=3) =P(VVVA,VVAV,VAVV,AVVV)\\
+&=& P(VVVA)+P(VVAV)+P(VAVV)+P(AVVV)\\
+&=& (0,4)^30,6+(0,4)^30,6+(0,4)^30,6+(0,4)^30,6\\
+&=& 4(0,4)^30,6;
 \end{array}
 \]
 ++++
