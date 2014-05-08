@@ -5,6 +5,7 @@ esperança matemática: variáveis aleatórias independentes.
 
 === Variáveis aleatórias independentes
 (((Variáveis Aleatórias, Independentes)))
+
 Relembre a definição de eventos independentes: sejam latexmath:[$\Omega$]
 um espaço amostral, latexmath:[$A$] e latexmath:[$B$] 
 eventos de latexmath:[$\Omega$]. Então, dizemos que os eventos 
@@ -18,7 +19,6 @@ variáveis aleatórias:
 Definição: Variáveis Aleatórias Independentes::
 +
 --
-
 Sejam latexmath:[$X:\Omega\to R$] e latexmath:[$Y:\Omega\to R$] 
 duas variáveis aleatórias. 
 Dizemos que latexmath:[$X$] e latexmath:[$Y$] são independentes 
@@ -69,7 +69,7 @@ Mais geralmente temos a
 
 (((Esperança, Variável Aleatória Discreta)))
 
-Definição: Esperança de Variáveis Aleatórias Discretas
+Definição: Esperança de Variáveis Aleatórias Discretas::
 +
 --
 
@@ -209,15 +209,14 @@ Desta forma, definindo latexmath:[$Y=g(X)$], temos que
 ++++
 \[
 \begin{array}{lll}
-E(Y) &=& E(g(X)) = \sum_{i=1}^\infty g(i) P(X=i)\\
-&=& \sum_{i\hbox{~par}} g(i) P(X=i) + \sum_{i\hbox{~ímpar}} g(i) P(X=i)\\
-&=& \sum_{i=1}^\infty g(2i)P(X=2i) + \sum_{i=1}^\infty g(2i-1)P(X=2i-1)\\
-&=& \sum_{i=1}^\infty P(X=2i) + \sum_{i=1}^\infty (-1) P(X=2i-1)\\
-&=& \sum_{i=1}^\infty (1/2)^{2i} - \sum_{i=1}^\infty (1/2)^{2i-1}\\
-&=& \sum_{i=1}^\infty (1/2)^{2i} - \sum_{i=1}^\infty 2\cdot (1/2)^{2i}\\
-&=& \sum_{i=1}^\infty (1/2)^{2i} - 2 \sum_{i=1}^\infty (1/2)^{2i}\\
-&=& - \sum_{i=1}^\infty (1/2)^{2i}\\
-&=& -\sum_{i=1}^\infty (1/4)^{i}\\
+E(Y) &=& E(g(X)) = \displaystyle\sum_{i=1}^\infty g(i) P(X=i)\\
+&=& \displaystyle\sum_{i=1}^\infty g(2i)P(X=2i) + \sum_{i=1}^\infty g(2i-1)P(X=2i-1)\\
+&=& \displaystyle\sum_{i=1}^\infty P(X=2i) + \sum_{i=1}^\infty (-1) P(X=2i-1)\\
+&=& \displaystyle\sum_{i=1}^\infty (1/2)^{2i} - \sum_{i=1}^\infty (1/2)^{2i-1}\\
+&=& \displaystyle\sum_{i=1}^\infty (1/2)^{2i} - \sum_{i=1}^\infty 2\cdot (1/2)^{2i}\\
+&=& \displaystyle\sum_{i=1}^\infty (1/2)^{2i} - 2 \sum_{i=1}^\infty (1/2)^{2i}\\
+&=& -\displaystyle\sum_{i=1}^\infty (1/2)^{2i}\\
+&=& -\displaystyle\sum_{i=1}^\infty (1/4)^{i}\\
 &=& - \frac{1/4}{1-1/4}\\
 &=& -1/3.
 \end{array}
@@ -226,11 +225,7 @@ E(Y) &=& E(g(X)) = \sum_{i=1}^\infty g(i) P(X=i)\\
 
 Portanto, latexmath:[$E(Y) = -1/3$]. 
 
-Note que, quando apresentamos o exemplo no Capítulo 4,
-////
-<<Cap_Var_Ale>>>
-////
-vimos que latexmath:[$Y$] só 
+Note que, quando apresentamos o exemplo no Capítulo 4, vimos que latexmath:[$Y$] só 
 assume os valores latexmath:[$-1$] e latexmath:[$1$]. Além disso, calculamos sua função de probabilidade:
 [latexmath]
 ++++
