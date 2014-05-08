@@ -341,6 +341,7 @@ e depois calcular a esperança de latexmath:[$Y$] diretamente:
 [latexmath]
 ++++
 \[E(Y) = \int_{-\infty}^\infty yf_Y(y)dy.\]
+++++
 ====
 
 
