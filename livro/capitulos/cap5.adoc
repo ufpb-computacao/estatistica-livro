@@ -151,7 +151,7 @@ Seja latexmath:[$X$] uma variável aleatória contínua com função de densidad
 [latexmath]
 ++++
 \[f(x) = \begin{cases}
-\frac{1}{b-a},& a< x< b,
+\frac{1}{b-a},& a< x< b,\\
 0,& \hbox{caso contrário.}
 \]
 ++++
