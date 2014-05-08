@@ -122,7 +122,7 @@ assumir valores latexmath:[$0,1,2$] e 3, temos que,
 
 === Variáveis Aleatórias Discretas
 
-(((Variáveis Aleatórias, Discretas)))
+(((Variável Aleatória, Discretas)))
 
 Como falamos anteriormente, nosso objetivo em considerar variáveis aleatórias 
 tomando como valores números reais, se deve ao fato de haver uma teoria bem 
@@ -265,64 +265,163 @@ finalmente, latexmath:[$p(4)=P(X=4)=P(VVVV) = (0,4)^4$].
 
 === Variáveis Aleatórias Contínuas
 
-As variáveis contínuas são aquelas na qual a variável aleatória pode assumir uma quantidade não-enumerável de valores. Isto faz com que a probabilidade de assumir um valor específico seja 0. Ou seja, se latexmath:[$X$] é uma variável aleatória contínua, para todo número real latexmath:[$a$], temos que latexmath:[$P(X=a)=0$]. A intuição para este fato inusitado, é que temos tantos valores possíveis para latexmath:[$X$], que faz com que a probabilidade de assumir um valor em particular seja 0. Neste caso, a probabilidade de latexmath:[$X$] assumir um valor é trocada pela probabilidade de latexmath:[$X$] pertencer a um intervalo da reta. Além disso, no cálculo da probabilidade, a soma é ``trocada'' por uma integral, conforme veremos na próxima definição.
+(((Variável Aleatória, Contínua)))
 
-Definição:: Dizemos que latexmath:[$X$] é uma variável aleatória contínua se existe uma função real latexmath:[$f:R\to R$], a qual chamamos de função de densidade de latexmath:[$X$], que satisfaz as seguintes condições:
+As variáveis contínuas são aquelas na qual a variável aleatória pode assumir uma 
+quantidade não-enumerável de valores. Isto faz com que a probabilidade de assumir
+um valor específico seja 0. Ou seja, se latexmath:[$X$] é uma variável aleatória contínua, 
+para todo número real latexmath:[$a$], temos que latexmath:[$P(X=a)=0$]. A intuição 
+para este fato inusitado, é que temos tantos valores possíveis para latexmath:[$X$],
+que faz com que a probabilidade de assumir um valor em particular seja 0. Neste caso, 
+a probabilidade de latexmath:[$X$] assumir um valor é trocada pela probabilidade de 
+latexmath:[$X$] pertencer a um intervalo da reta. Além disso, no cálculo da probabilidade,
+a soma é ``trocada'' por uma integral, conforme veremos na próxima definição.
+
+(((Função, densidade)))
+
+Definição: Variável Aleatória Contínua::
++
+--
+Dizemos que latexmath:[$X$] é uma variável aleatória contínua se existe uma função real 
+latexmath:[$f:\mathbb{R}\to \mathbb{R}$], a qual chamamos de _função de densidade_ de latexmath:[$X$],
+que satisfaz as seguintes condições:
+
 * Para todo latexmath:[$x$] real, latexmath:[$f(x)\geq 0$];
-* latexmath:[$\int_{-\infty}^\infty f(x)dx = 1$];
-* Se latexmath:[$f(x)$] satisfaz as duas primeiras condições, então temos que para quaisquer latexmath:[$a$] e latexmath:[$b$], latexmath:[$-\infty < a<b<\infty$], vale latexmath:[$P(a\leq X\leq b) = \int_a^b f(x)dx$].
+* latexmath:[$\displaystyle\int_{-\infty}^\infty f(x)dx = 1$];
+* Se latexmath:[$f(x)$] satisfaz as duas primeiras condições, então temos que para 
+quaisquer latexmath:[$a$] e latexmath:[$b$], latexmath:[$-\infty < a<b<\infty$], 
+vale latexmath:[$P(a\leq X\leq b) = \displaystyle\int_a^b f(x)dx$].
+--
 
-_Observação_: Note portanto, que pela definição, para checar se uma função latexmath:[$f(x)$] é uma função de densidade é suficiente verificar duas coisas: 1. se para todo latexmath:[$x$] real, temos latexmath:[$f(x)\geq 0$], e 2. se latexmath:[$\int_{-\infty}^\infty f(x)dx = 1.$] 
+[NOTE]
+====
+Note portanto, que pela definição, para checar se uma função latexmath:[$f(x)$] 
+é uma função de densidade é suficiente verificar duas coisas:
 
-_Observação_: Como mencionamos anteriormente, a definição de variável aleatória contínua implica que para todo latexmath:[$a$] real, latexmath:[$P(X=a)=0$]. De fato, como latexmath:[$X$] possui uma função de densidade latexmath:[$f$], temos que latexmath:[$P(X=a)=\int_a^a f(x)dx = 0.$]
+. se para todo latexmath:[$x$] real, temos latexmath:[$f(x)\geq 0$];
+. se latexmath:[$\displaystyle\int_{-\infty}^\infty f(x)dx = 1.$] 
+====
+
+[IMPORTANT]:
+====
+Como mencionamos anteriormente, a definição de variável aleatória contínua implica
+que para todo latexmath:[$a$] real, latexmath:[$P(X=a)=0$]. De fato, como
+latexmath:[$X$] possui uma função de densidade latexmath:[$f$], temos que 
+[latexmath]
+++++
+\[P(X=a)=\int_a^a f(x)dx = 0.\]
+++++
+
+====
 
 Uma consequência deste fato é que latexmath:[$P(a\leq X\leq b) = P(a < x<b) = P(a<x\leq b) = P(a\leq X <b)$]. 
 
-Exercício:: Suponha que latexmath:[$X$] seja uma variável aleatória contínua com a função de densidade 
-
-latexmath:[$f(x) = \begin{cases} 
+Exercício::
++
+--
+Suponha que latexmath:[$X$] seja uma variável aleatória contínua com a função de densidade 
+[latexmath]
+++++
+\[f(x) = \begin{cases} 
 2x,& 0<x<1;\\
 0,&\textrm{caso contrário}.
-\end{cases}.$].
+\end{cases}.\]
+++++
 
-a) Mostre que latexmath:[$f(x)$] é uma função de densidade;
+.. Mostre que latexmath:[$f(x)$] é uma função de densidade;
 
-b) Calcule latexmath:[$P(X\leq 1/2)$];
+.. Calcule latexmath:[$P(X\leq 1/2)$];
 
-c) Calcule latexmath:[$P(X\leq 1/2 | 1/3\leq X\leq 2/3)$] (probabilidade condicional). 
+.. Calcule latexmath:[$P(X\leq 1/2 | 1/3\leq X\leq 2/3)$] (probabilidade condicional). 
 
-_Solução_: 
+--
 
-a) Temos da definição de latexmath:[$f(x)$] que para todo latexmath:[$x$] real, latexmath:[$f(x)\geq 0$]. 
-Basta verificar agora que latexmath:[$\int_{-\infty}^\infty f(x)dx=1$]. Note que latexmath:[$f(x)=0$] fora do intervalo [0,1], e portanto 
-latexmath:[$\int_{-\infty}^\infty f(x)dx = \int_0^1 2xdx = \left. x^2\right|_0^1 = 1.$] 
+_Solução_::
++
+--
+.. Temos da definição de latexmath:[$f(x)$] que para todo latexmath:[$x$] real, latexmath:[$f(x)\geq 0$]. 
+Basta verificar agora que latexmath:[$\int_{-\infty}^\infty f(x)dx=1$]. Note que latexmath:[$f(x)=0$] fora do intervalo latexmath:[$[0,1\]$],
+e portanto 
+[latexmath]
+++++
+\[\int_{-\infty}^\infty f(x)dx = \int_0^1 2xdx = \left. x^2\right|_0^1 = 1.\]
+++++
 
-Portanto, latexmath:[$f(x)$] é função de densidade.
+Assim, latexmath:[$f(x)$] é função de densidade
 
-b) latexmath:[$P(X\leq 1/2) = \int_0^{1/2} 2xdx = \left. x^2\right|_0^{1/2} = \frac{1}{4}.
+.. 
+[latexmath]
+++++
+\[P(X\leq 1/2) = \int_0^{1/2} 2xdx = x^2\Big|_0^{1/2} = \frac{1}{4}.\]
+++++
 
-c) latexmath:[$P(X\leq 1/2|1/3\leq X\leq 2/3) = \frac{P(1/3\leq X\leq 1/2)}{P(1/3\leq X\leq 1/2)} = \frac{\int_{1/3}^{1/2} 2xdx}{\int_{1/3}^{2/3} 2xdx}= \frac{\left. x^2\right|_{1/3}^{1/2}}{\left. x^2\right|_{1/3}^{2/3}} = \frac{5/36}{3/9} = \frac{5}{12}.
+.. 
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(X\leq 1/2|1/3\leq X\leq 2/3) &=& \frac{P(1/3\leq X\leq 1/2)}{P(1/3\leq X\leq 1/2)}\\
+&=& \frac{\int_{1/3}^{1/2} 2xdx}{\int_{1/3}^{2/3} 2xdx}\\
+&=& \frac{ x^2\Big|_{1/3}^{1/2}}{x^2\Big|_{1/3}^{2/3}} = \frac{5/36}{3/9} 
+&=& \frac{5}{12}.
+\end{array}
+\]
+++++
 
-'''
+--
 
 === Função de Distribuição Acumulada
 
-Na teoria matemática da probabilidade é possível mostrar que, dada uma variável aleatória latexmath:[$X$], a probabilidade de qualquer evento pode ser obtida a partir das probabilidades latexmath:[$P(X\leq a)$], onde latexmath:[$a$] é número real. Ou seja, conhecendo latexmath:[$P(X\leq a)$] para todo latexmath:[$a$] real, significa dizer que conhecemos latexmath:[$P(X\in A)$] para qualquer evento latexmath:[$A$]. Este resultado é um importante resultado de Teoria da Medida, e mostra o quão rica é a função latexmath:[$F(a) = P(X\leq a)$]. Por conta disso, ela recebe um nome:
+(((Função, Distribuição acumulada)))
+(((Função, Distribuição)))
 
-Definição:: Seja latexmath:[$\Omega$] um espaço amostral, e seja latexmath:[$X:\Omega\to R$] uma variável aleatória discreta ou contínua. Defina a função latexmath:[$F_X:R\to R$] dada por latexmath:[$F_X(a) = P(X\leq a)$], onde latexmath:[$a$] é número real. latexmath:[$F_X$] é denominada a função de distribuição da variável aleatória latexmath:[$X$]. 
+Na teoria matemática da probabilidade é possível mostrar que, 
+dada uma variável aleatória latexmath:[$X$], 
+a probabilidade de qualquer evento pode ser obtida a partir das 
+probabilidades latexmath:[$P(X\leq a)$], onde latexmath:[$a$] é número real.
+Ou seja, conhecendo latexmath:[$P(X\leq a)$] para todo latexmath:[$a$] 
+real, significa dizer que conhecemos latexmath:[$P(X\in A)$] 
+para qualquer evento latexmath:[$A$]. Este resultado é um importante resultado 
+de Teoria da Medida, e mostra o quão rica é a função latexmath:[$F(a) = P(X\leq a)$]. 
+Por conta disso, ela recebe um nome:
+
+Definição: Função de Distribuição Acumulada::
++
+--
+Seja latexmath:[$\Omega$] um espaço amostral, e seja latexmath:[$X:\Omega\to R$] uma variável aleatória
+discreta ou contínua. Defina a função latexmath:[$F_X:R\to R$] dada por 
+latexmath:[$F_X(a) = P(X\leq a)$], onde latexmath:[$a$] é número real. latexmath:[$F_X$] é
+denominada a função de distribuição acumulada da variável aleatória latexmath:[$X$], ou simplesmente
+função de distribuição.
+--
 
 * Se latexmath:[$X$] for uma variável aleatória discreta, então 
-latexmath:[$F_X(a) = \sum_j p(a_j)$], onde a soma é feita sobre os indíces latexmath:[$j$], tais que latexmath:[$x_j\leq a$].
+[latexmath]
+++++
+\[F_X(a) = \sum_{j;a_j\leq a} p(a_j),\]
+++++
+onde a soma é feita sobre os indíces latexmath:[$j$], tais que latexmath:[$a_j\leq a$].
 
-* Se latexmath:[$X$] for uma variável aleatória contínua, então latexmath:[$F_X(a) = \int_{-\infty}^a f(x)dx$]. 
+* Se latexmath:[$X$] for uma variável aleatória contínua, então 
+[latexmath]
+++++
+\[F_X(a) = \int_{-\infty}^a f(x)dx.\]
+++++
 
-Exercício:: Seja latexmath:[$X$] uma variável aleatória discreta tomando valores 0,1 e 2. Suponha que sua função de probabilidade é dada por
-latexmath:[$p(0) = 1/2, p(1) = 1/3$] e latexmath:[$p(2) = 1/6$]. Obtenha latexmath:[$F_X$].
+Exercício::
++
+--
+Seja latexmath:[$X$] uma variável aleatória discreta tomando valores 0,1 e 2. 
+Suponha que sua função de probabilidade é dada por
+latexmath:[$p(0) = 1/2, p(1) = 1/3$] e latexmath:[$p(2) = 1/6$]. 
+Obtenha latexmath:[$F_X$].
+--
 
-_Solução_:
-Se latexmath:[$a<0$], então latexmath:[$F_X(a) = P(X<a) \leq P(X < 0) = 0$]. Como latexmath:[$F_X(a) = P(X\leq a) \geq 0$], segue que para todo latexmath:[$a<0$], latexmath:[$F_X(a) = 0$].
-
-'''
+_Solução_::
++
+--
+Se latexmath:[$a<0$], então latexmath:[$F_X(a) = P(X<a) \leq P(X < 0) = 0$]. 
+Como latexmath:[$F_X(a) = P(X\leq a) \geq 0$], segue que para todo latexmath:[$a<0$], latexmath:[$F_X(a) = 0$].
 
 Suponha agora, latexmath:[$0\leq a<1$], então latexmath:[$F_X(a) = P(X\leq a) = P(X=0) = p(0) = 1/2$].
 
@@ -332,99 +431,205 @@ Finalmente, se latexmath:[$a\geq 2$], então latexmath:[$F_X(a) = P(X\leq a) = P
 
 Assim, 
 
-latexmath:[$F_X(a) = \begin{cases}
+[latexmath]
+++++
+\[
+F_X(a) = \begin{cases}
 0,& a<0\\
 1/2,& 0\leq a<1,\\
 5/6,& 1\leq a <2,\\
 1,& a\geq 2.
-\end{cases}.$]
+\end{cases}.
+\]
+++++
 
-Exercício:: Seja latexmath:[$X$] uma variável aleatória contínua com função de densidade latexmath:[$f(x) = \begin{cases}
+--
+
+Exercício::
++
+--
+Seja latexmath:[$X$] uma variável aleatória contínua com função de densidade 
+[latexmath]
+++++
+\[f(x) = \begin{cases}
 2x,& 0<x<1;\\
 0,&\textrm{caso contrário}.
-\end{cases}.$].
+\end{cases}.\]
+++++
 
-Já sabemos que latexmath:[$f$] é função de densidade por um exercício anterior. Obtenha sua função de distribuição latexmath:[$F_X$].
+Já sabemos que latexmath:[$f$] é função de densidade por um exercício anterior. 
+Obtenha sua função de distribuição latexmath:[$F_X$].
+--
 
-_Solução_: Temos que se latexmath:[$a< 0$], então latexmath:[$P(X\leq a) \leq P(X < 0) = 0$]. Assim, para latexmath:[$a<0$], temos latexmath:[$F_X(a)=0$]. 
+_Solução_::
++
+--
+Temos que se latexmath:[$a< 0$], então latexmath:[$P(X\leq a) \leq P(X < 0) = 0$]. 
+Assim, para latexmath:[$a<0$], temos latexmath:[$F_X(a)=0$]. 
 
-Para latexmath:[$0\leq a \leq 1$], temos latexmath:[$P(X\leq a) = \int_0^a 2xdx = \left. x^2\right|_0^a = a^2$]. Assim, para latexmath:[$0\leq a\leq 1$], vale latexmath:[$F_X(a) = a^2$]. 
+Para latexmath:[$0\leq a \leq 1$], temos 
+[latexmath]
+++++
+\[P(X\leq a) = \int_0^a 2xdx = \left. x^2\right|_0^a = a^2.\]
+++++
 
-Finalmente, se latexmath:[$a>1$], então latexmath:[$P(X\leq a) = P(X\leq 1) = 1.$] Portanto, para latexmath:[$a>1$], segue latexmath:[$F_X(a) = 1$].
+Assim, para latexmath:[$0\leq a\leq 1$], vale latexmath:[$F_X(a) = a^2$]. 
+
+Finalmente, se latexmath:[$a>1$], então latexmath:[$P(X\leq a) = P(X\leq 1) = 1.$] 
+
+Portanto, para latexmath:[$a>1$], segue latexmath:[$F_X(a) = 1$].
 
 Desta forma,
 
-latexmath:[$F_X(a) = \begin{cases}
+[latexmath]
+++++
+\[F_X(a) = \begin{cases}
 0,& 0\leq a<0,\\
 a^2,& 0\leq a \leq 1,\\
 1,& a\geq 1.
-\end{cases}$]
+\end{cases}.\]
+++++
 
-''' 
+--
 
-_Observação_: Observe que se latexmath:[$a\leq b$], então sempre que latexmath:[$X(\omega) \leq a$], teremos latexmath:[$X(\omega)\leq a\leq b$], o que implica, latexmath:[$X(\omega)\leq b$]. Assim, vale a inclusão de conjuntos latexmath:[$\{\omega\in\Omega; X(\omega) \leq a\} \subset \{\omega\in\Omega; X(\omega)\leq b\}$]. Assim, latexmath:[$P(X\leq a) \leq P(X\leq b)$]. Portanto, temos que se latexmath:[$a\leq b$], então latexmath:[$F_X(a)\leq F_X(b)$], ou seja, latexmath:[$F_X$] é uma função não-decrescente.
+[NOTE]
+====
+Observe que se latexmath:[$a\leq b$], então sempre que latexmath:[$X(\omega) \leq a$], 
+teremos latexmath:[$X(\omega)\leq a\leq b$], o que implica, latexmath:[$X(\omega)\leq b$]. 
+Assim, vale a inclusão de conjuntos 
+latexmath:[$\{\omega\in\Omega; X(\omega) \leq a\} \subset \{\omega\in\Omega; X(\omega)\leq b\}$]. 
+Logo, latexmath:[$P(X\leq a) \leq P(X\leq b)$]. 
 
-_Observação_: É possível mostrar que para qualquer variável aleatória latexmath:[$X$], vale latexmath:[$\lim_{a\to -\infty} F_X(a) = 0$] e latexmath:[$\lim_{a\to\infty} F_X(a) = 1$]. 
+Portanto, temos que se latexmath:[$a\leq b$], então latexmath:[$F_X(a)\leq F_X(b)$], ou seja, 
+latexmath:[$F_X$] é uma função não-decrescente.
+====
 
-Note ainda que se latexmath:[$X$] é uma variável aleatória discreta com conjunto de valores possíveis dado por latexmath:[$\{a_1,a_2,a_3,\ldots\}$], ordenados de tal forma que latexmath:[$a_1<a_2<a_3<a_4<\ldots$], então temos que
+[NOTE] 
+====
+É possível mostrar que para qualquer variável aleatória latexmath:[$X$], 
+vale latexmath:[$\lim_{a\to -\infty} F_X(a) = 0$] e latexmath:[$\lim_{a\to\infty} F_X(a) = 1$]. 
+====
 
-latexmath:[$p(a_i) = P(X=a_i) = P(X\leq a_i) - P(X\leq a_{i-1}) = F_X(a_i) - F_X(a_{i-1})$]. 
+[IMPORTANT]
+====
+Note ainda que se latexmath:[$X$] é uma variável aleatória discreta com conjunto de 
+valores possíveis dado por latexmath:[$\{a_1,a_2,a_3,\ldots\}$], ordenados de tal forma 
+que latexmath:[$a_1<a_2<a_3<a_4<\ldots$], então temos que
 
-Ou seja, podemos obter a função de probabilidade de latexmath:[$X$] a partir da função de distribuição de latexmath:[$X$] desta forma.
+[latexmath]
+++++
+\[p(a_i) = P(X=a_i) = P(X\leq a_i) - P(X\leq a_{i-1}) = F_X(a_i) - F_X(a_{i-1}).\]
+++++
 
-Mais do que isso, este resultado nos diz que se temos uma função de distribuição de uma variável aleatória discreta, então o conjunto de valores que a variável aleatória latexmath:[$X$] pode assumir é exatamente o conjunto dos pontos de descontinuidade da função de distribuição latexmath:[$F_X$]. Assim, se latexmath:[$a_1$] é o menor ponto de descontinuidade de latexmath:[$X$], então latexmath:[$P(X=a_1) = F_X(a_1)$], e depois disso, se latexmath:[$F_X$] é descontínua no ponto latexmath:[$a_i$], então teremos que latexmath:[$P(X=a_i) = F_X(a_i)-F_X(a_{i-1})$].
+Ou seja, podemos obter a função de probabilidade de latexmath:[$X$] a partir da 
+função de distribuição de latexmath:[$X$] desta forma.
+====
 
-Exercício:: Suponha que latexmath:[$X$] é uma variável aleatória discreta com função de distribuição latexmath:[$F_X$] dada por
+[NOTE] 
+====
+Note que esta última observação nos diz que se temos uma função de distribuição de
+uma variável aleatória discreta, então o conjunto de valores que a variável aleatória
+latexmath:[$X$] pode assumir é exatamente o conjunto dos pontos de descontinuidade
+da função de distribuição latexmath:[$F_X$]. Assim, se latexmath:[$a_1$] é o menor 
+ponto de descontinuidade de latexmath:[$X$], então latexmath:[$P(X=a_1) = F_X(a_1)$], 
+e depois disso, se latexmath:[$F_X$] é descontínua no ponto latexmath:[$a_i$], então 
+teremos que latexmath:[$P(X=a_i) = F_X(a_i)-F_X(a_{i-1})$].
+====
 
-latexmath:[$F_X(a) = \begin{cases}
+Exercício::
++
+--
+Suponha que latexmath:[$X$] é uma variável aleatória discreta 
+com função de distribuição latexmath:[$F_X$] dada por
+
+[latexmath]
+++++
+\[F_X(a) = \begin{cases}
 0,& a<0,\\
 1/4,& 0\leq a < 1,\\
 1/2,& 1\leq a < 2,\\
 1,& a\geq 2.
-\end{cases}$]
+\end{cases}
+\]
+++++
+
 
 Obtenha a função de probabilidade latexmath:[$p(a_i)$]. 
+--
 
-_Solução_: Os pontos de descontinuidade da função de distribuição latexmath:[$F_X$] são 0, 1 e 2. Portanto, pelo que vimos, temos que latexmath:[$p(0) = F_X(0)=1/4$], latexmath:[$p(1) = F_X(1) - F_X(0) = 1/2-1/4 = 1/4$], e finalmente, latexmath:[$p(2) = F_X(2) - F_X(1) = 1 - 1/2 = 1/2$].
-
-'''
+_Solução_:: 
++
+--
+Os pontos de descontinuidade da função de distribuição latexmath:[$F_X$] são 0, 1 e 2.
+Portanto, pelo que vimos, temos que latexmath:[$p(0) = F_X(0)=1/4$], 
+latexmath:[$p(1) = F_X(1) - F_X(0) = 1/2-1/4 = 1/4$], e finalmente,
+latexmath:[$p(2) = F_X(2) - F_X(1) = 1 - 1/2 = 1/2$].
+--
 
 Temos um resultado análogo para variáveis aleatórias contínuas.
 
-'''
-
+[IMPORTANT]
+====
 Seja agora latexmath:[$X$] uma variável aleatória contínua. Então, vale que
 
-latexmath:[$F_X(x) = \int_{-\infty}^x f(t)dt$]. 
+[latexmath]
+++++
+\[F_X(x) = \int_{-\infty}^x f(t)dt.\]
+++++
 
-Ou seja, estamos dizendo que latexmath:[$F_X$] é uma primitiva para a função de densidade latexmath:[$f$]. Desta forma, podemos ``recuperar'' a função de densidade, a partir da função de distribuição, por simples derivação em todos os pontos em que latexmath:[$F_X$] for derivável:
+Ou seja, estamos dizendo que latexmath:[$F_X$] é uma primitiva para a 
+função de densidade latexmath:[$f$]. Desta forma, podemos ``recuperar'' 
+a função de densidade, a partir da função de distribuição, por simples derivação 
+em todos os pontos em que latexmath:[$F_X$] for derivável:
 
-latexmath:[$f(a) = \frac{d F_X(a)}{da} = F_X'(a)$]. 
+[latexmath]
+++++
+\[f(a) = \frac{d F_X(a)}{da} = F_X'(a).\]
+++++
+====
 
 
-Exercício:: Suponha que latexmath:[$X$] é uma variável aleatória contínua com função de distribuição latexmath:[$F_X$] dada por
+Exercício::
++
+--
+Suponha que latexmath:[$X$] é uma variável aleatória contínua com função de distribuição latexmath:[$F_X$] dada por
 
-latexmath:[$F_X(a) = \begin{cases}
+[latexmath]
+++++
+\[F_X(a) = \begin{cases}
 0,& a<0,\\
 1-e^{-a},& a\geq 0.
-\end{cases}$]
+\end{cases}.\]
+++++
 
 Obtenha a função de densidade latexmath:[$f(x)$].
+--
 
-_Solução_:
+_Solução_::
++
+--
+Sabemos que a função de densidade latexmath:[$f(x)$] é dada pela derivada da função de 
+distribuição em todos os pontos em que esta for derivável.
 
-Sabemos que a função de densidade latexmath:[$f(x)$] é dada pela derivada da função de distribuição em todos os pontos em que esta for derivável.
-
-Assim, se latexmath:[$x<0$], temos que latexmath:[$f(x) = F_X'(x) = 0$]. Se latexmath:[$x>0$], então latexmath:[$f(x) = F_X'(x) = e^{-x}$]. Em latexmath:[$x=0$], latexmath:[$F_X$] não é derivável, então podemos supor latexmath:[$f(x)=0$], já que o valor de uma função em um único ponto não altera o valor da integral.
+Assim, se latexmath:[$x<0$], temos que latexmath:[$f(x) = F_X'(x) = 0$]. 
+Se latexmath:[$x>0$], então latexmath:[$f(x) = F_X'(x) = e^{-x}$]. Em latexmath:[$x=0$], 
+latexmath:[$F_X$] não é derivável, então podemos supor latexmath:[$f(x)=0$], já que o valor de uma 
+função em um único ponto não altera o valor da integral.
 
 Portanto, a função de densidade latexmath:[$f$] da variável aleatória latexmath:[$X$] é dada por
 
-latexmath:[$f(x) = \begin{cases}
+[latexmath]
+++++
+\[f(x) = \begin{cases}
 0,& 0\leq x\leq 0,\\
 e^{-x},& x > 0.
-\end{cases}$]
+\end{cases}.\]
+++++
+--
 
 === Variáveis Aleatórias Mistas
+
+(((Variável Aleatória, Mista)))
 
 Podemos ter também um terceiro tipo de variável aleatória: a variável aleatória mista. Ela consiste em uma variável aleatória cuja probabilidade é uma mistura entre as variáveis aleatórias contínuas e discretas. Assim, se latexmath:[$X$] é uma variável aleatória mista, então existem números reais latexmath:[$a_1,a_2,a_3,\ldots,$] tais que para algum _i_, latexmath:[$P(X=a_i)>0$], e tais que 
 latexmath:[$\sum_{i=1}^\infty P(X=a_i) = p <1$], ou seja, isso garante que ela tem esse comportamento da variável aleatória discreta, mas não é uma variável aleatória discreta, pois a soma não é igual a 1.
