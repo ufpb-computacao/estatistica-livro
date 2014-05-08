@@ -248,6 +248,7 @@ Logo, vemos que não há contradição entre as definições, e as esperanças s
 ====
 Como vimos no exemplo anterior, na hora de calcular a esperança de funções de variáveis aleatórias discretas,
 temos duas opções:
+
 * Calcular diretamente, usando a função de probabilidade de latexmath:[$X$], através da fórmula
 [latexmath]
 ++++
@@ -277,8 +278,8 @@ Tome latexmath:[$Y = |X|$], então latexmath:[$E(Y)$] é dada por
 ++++
 \[
 \begin{array}{lll}
-E(Y) &=& E(|X|) = \int_{-\infty}^\infty |x|f(x)dx\\
-&=&  \int_{-\infty}^0-x\frac{e^x}{2} dx + \int_0^\infty x \frac{e^{-x}}{2} dx.
+E(Y) &=& E(|X|) = \displaystyle\int_{-\infty}^\infty |x|f(x)dx\\
+&=&  \displaystyle\int_{-\infty}^0-x\frac{e^x}{2} dx + \displaystyle\int_0^\infty x \frac{e^{-x}}{2} dx.
 \end{array}
 \]
 ++++
@@ -288,13 +289,59 @@ latexmath:[$G(x) = -xe^{-x} -e^{-x}$] é uma primitiva para latexmath:[$xe^{-x}$
 
 [latexmath]
 ++++
-\[\int_{-\infty}^0-x\frac{e^x}{2} dx = (-xe^x + e^x)\Big|_{-\infty}^0 = 1\hbox{~~e~~} 
-\int_0^\infty x \frac{e^{-x}}{2} dx = (G(x) = -xe^{-x} -e^{-x})\Big|_0^\infty = 1.\]
+\[\int_{-\infty}^0-x\frac{e^x}{2} dx =\frac{1}{2}(-xe^x + e^x)\Big|_{-\infty}^0 = \frac{1}{2}\hbox{~~e~~} 
+\int_0^\infty x \frac{e^{-x}}{2} dx = \frac{1}{2}(-xe^{-x} -e^{-x})\Big|_0^\infty = \frac{1}{2}.\]
 ++++
 
+Finalmente, juntando todas as informações, obtemos
+[latexmath]
+++++
+\[
+E(Y) = \displaystyle\int_{-\infty}^0-x\frac{e^x}{2} dx + \displaystyle\int_0^\infty x \frac{e^{-x}}{2} dx = \frac{1}{2}+\frac{1}{2} = 1.
+\]
+++++
+
+Assim como no caso de variáveis discretas, podemos calcular a esperança de latexmath:[$Y$] diretamente. Para isto, vamos obter
+a função de densidade de latexmath:[$Y$]. Observe que como latexmath:[$X$] é variável aleatória contínua, latexmath:[$P(X=y)=0$] para
+todo latexmath:[$y$] real. Assim, como latexmath:[$Y\geq 0$], segue que para todo latexmath:[$y\geq 0$]:
+[latexmath]
+++++
+\[F_Y(y) = P(Y\leq y) = P(|X|\leq y) = P(-y\leq X\leq y) = P(-y < X\leq y) = F_X(y) - F_X(-y).\]
+++++
+
+Desta forma, por derivação, obtemos que a função de densidade de latexmath:[$Y$], latexmath:[$f_Y(y)$] é dada por 
+[latexmath]
+++++
+\[f_Y(y) = f(y) + f(-y) = \frac{e^{-y}}{2} + \frac{e^{-y}}{2} = e^{-y},\]
+++++
+e latexmath:[$f(y) = 0$], se latexmath:[$y<0$].
+
+Portanto, 
+[latexmath]
+++++
+\[E(Y) = \int_{-\infty}^\infty yf_Y(y)dy = \int_0^\infty ye^{-y}dy = (ye^{-y} -e^y)\Big|_0^\infty = 1,\]
+++++
+donde usamos que latexmath:[$H(y) = ye^{-y} - e^y$] é primitiva de latexmath:[$ye^{-y}$].
+
+Assim como no caso de funções de variáveis aleatórias discretas, as duas formas de calcular a esperança fornecem o mesmo resultado.
 ====
 
+[IMPORTANT]
+====
+Como vimos no exemplo anterior, e no caso de funções de variáveis aleatórias discretas,
+na hora de calcular a esperança de funções de variáveis aleatórias contínuas, temos duas opções:
 
+* Calcular diretamente, usando a função de densidade de latexmath:[$X$], através da fórmula
+[latexmath]
+++++
+\[E(Y) = E(H(X)) = \int_{-\infty}^\infty H(x) f(x)dx;\]
+++++
+* Obter a função de densidade de latexmath:[$Y$], latexmath:[$f_Y(y)$], 
+e depois calcular a esperança de latexmath:[$Y$] diretamente:
+[latexmath]
+++++
+\[E(Y) = \int_{-\infty}^\infty yf_Y(y)dy.\]
+====
 
 
 
