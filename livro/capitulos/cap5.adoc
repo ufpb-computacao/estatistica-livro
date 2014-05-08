@@ -161,7 +161,7 @@ Portanto,
 ++++
 \[
 \begin{array}{lll}
-E(X) &=& \int_a^b \frac{x}{b-a} dx = \frac{1}{b-a} \cdot \frac{x^2}{2}\Big|_a^b\\
+E(X) &=& \displaystyle\int_a^b \frac{x}{b-a} dx = \frac{1}{b-a} \cdot \frac{x^2}{2}\Big|_a^b\\
 &=& \frac{b^2-a^2}{2(b-a)} = \frac{(b+a)(b-a)}{2(b-a)}\\
 &=& \frac{a+b}{2}.
 \end{array}
