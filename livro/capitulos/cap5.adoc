@@ -178,7 +178,7 @@ Definição: Esperança de função de variável aleatória::
 --
 Seja latexmath:[$X$] uma variável aleatória e seja latexmath:[$Y = H(X)$], para uma função real latexmath:[$H$]. Temos então dois casos:
 
-. Se latexmath:[$X$] for uma variável aleatória discreta tomando valores em latexmath:[$\{a_1,a_2,\ldots\}$], 
+* Se latexmath:[$X$] for uma variável aleatória discreta tomando valores em latexmath:[$\{a_1,a_2,\ldots\}$], 
 e se latexmath:[$p$] é a função de probabilidade de latexmath:[$X$], temos que
 
 [latexmath]
@@ -186,7 +186,7 @@ e se latexmath:[$p$] é a função de probabilidade de latexmath:[$X$], temos qu
 \[ E(Y) = E(H(X)) = \sum_{i=1}^\infty H(a_i)P(X=a_i) = \sum_{i=1}^\infty H(a_i)p(a_i).\]
 ++++
 
-. Se latexmath:[$X$] for uma variável aleatória contínua com função de densidade latexmath:[$f$], então temos que
+* Se latexmath:[$X$] for uma variável aleatória contínua com função de densidade latexmath:[$f$], então temos que
 
 [latexmath]
 ++++
