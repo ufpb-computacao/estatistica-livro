@@ -1,5 +1,5 @@
+[[Cap_Var_Ale]]
 == Variáveis Aleatórias e Suas Distribuições
-
 Imaginemos que existe a definição de que a temperatura de João Pessoa é 
 considerada quente se é maior do que 27 graus Celsius, é considerada 
 confortável se está entre 20 e 27 graus Celsius, e é considerada fria se é 
