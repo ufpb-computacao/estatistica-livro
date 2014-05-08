@@ -208,7 +208,7 @@ O espaço amostral do problema é dado por
 ++++
 \[
 \begin{array}{lll}
-\Omega &=& \{VVVV,VVVA,VVAV,VAVV,AVVV,VVAA,VAVA,
+\Omega &=& \{VVVV,VVVA,VVAV,VAVV,AVVV,VVAA,VAVA,\\
 &&VAAV,AVAV,AAVV,AVVA,VAAA,AVAA,AAVA,AAAV,AAAA\}.
 \end{array}
 \]
