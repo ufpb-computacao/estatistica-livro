@@ -220,7 +220,70 @@ pois, como vimos na distribuição Bernoulli, latexmath:[$E(X_i) = p$].
 ====
 --
 
+Variância::
++
+--
+Vamos começar calculando latexmath:[$E(X^2)$]:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X^2) &=& \displaystyle\sum_{k=0}^n k^2 {n\choose k}p^k (1-p)^{n-k}\\
+&=& \displaystyle\sum_{k=1}^n k(k-1 +1) {n\choose k}p^k (1-p)^{n-k}\\
+&=& \displaystyle\sum_{k=2}^n k(k-1) {n\choose k}p^k (1-p)^{n-k} + \displaystyle\sum_{k=1}^n k {n\choose k}p^k (1-p)^{n-k}\\
+&=& \displaystyle\sum_{k=2}^n k(k-1) {n\choose k}p^k (1-p)^{n-k} + E(X)\\
+&=& \displaystyle\sum_{k=2}^n k(k-1) {n\choose k}p^k (1-p)^{n-k} + np.
+\]
+\end{array}
+++++
+Vamos então calcular o último somatório do lado direito:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle\sum_{k=2}^n k(k-1) {n\choose k}p^k (1-p)^{n-k} &=& \displaystyle\sum_{k=2}^n k(k-1) \frac{n!}{k!(n-k)!}p^k (1-p)^{n-k}\\
+&=& \displaystyle\sum_{k=2}^n \frac{n!}{(k-2)!(n-k)!}p^k (1-p)^{n-k}.
+\]
+\end{array}
+++++
+Façamos agora a mudança de variável latexmath:[$m=k-2$], daí latexmath:[$k=m+2$]. Portanto,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle\sum_{k=2}^n k(k-1) {n\choose k}p^k (1-p)^{n-k} &=& \displaystyle\sum_{m=0}^{n-2}  \frac{n!}{m!(n-2-m)!}p^{m+2} (1-p)^{n-2-m}\\
+&=& \displaystyle\sum_{m=0}^{n-2}  n(n-1)\frac{(n-2)!}{m!(n-2-m)!}p^2\cdot p^{m} (1-p)^{n-2-m}\\
+&=& n(n-1)p^2 \displaystyle\sum_{m=0}^{n-2}  \frac{(n-2)!}{m!(n-2-m)!}p^{m} (1-p)^{n-2-m}\\
+&=& n(n-1)p^2 (p+1-p)^{n-2}\\
+&=& n(n-1)p^2.
+\]
+\end{array}
+++++
 
+Assim, juntando as contas, temos que
+[latexmath]
+++++
+\[
+E(X^2) = n(n-1)p^2 + np = (np)^2 + np - np^2 = (np)^2 + np(1-p). 
+\]
+++++
+
+Finalmente, obtemos
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+Var(X) &=& E(X^2) - (E(X))^2 = (np)^2 + np(1-p)-(np)^2\\
+&=& np(1-p).
+\end{array}
+\]
+++++
+--
+
+
+
+
+--
 
 
 
