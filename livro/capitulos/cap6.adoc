@@ -391,7 +391,7 @@ f(r) = \sum_{k=0}^\infty r^k = \frac{1}{1-r};
 \]
 ++++
 
-* Temos que para todo latexmath:[0\leq r < 1$], latexmath:[$f$] é infinitamente diferenciável, e sua derivada, para
+* Temos que para todo latexmath:[$0\leq r < 1$], latexmath:[$f$] é infinitamente diferenciável, e sua derivada, para
 latexmath:[$0\leq r <1$] é dada por
 [latexmath]
 ++++
