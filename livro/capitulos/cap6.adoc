@@ -417,11 +417,11 @@ Temos que
 ++++
 \[
 \begin{array}{lll}
-E(X)&=& \sum_{k=1}^\infty kp(1-p)^{k-1}\\
-&=& p \sum_{k=1}^\infty k (1-p)^{k-1}\\
-&=& p \frac{1}{(1-(1-p))^2}\\
-&=& p \frac{1}{p^2}\\
-&=&\frac{1}{p}.
+E(X)&=& \displaystyle\sum_{k=1}^\infty kp(1-p)^{k-1}\\
+&=& p \displaystyle\sum_{k=1}^\infty k (1-p)^{k-1}\\
+&=& p \displaystyle\frac{1}{(1-(1-p))^2}\\
+&=& p \displaystyle\frac{1}{p^2}\\
+&=&\displaystyle\frac{1}{p}.
 \end{array}
 \]
 ++++
