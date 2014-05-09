@@ -379,7 +379,7 @@ variáveis aleatórias independentes, então
 ++++
 --
 
-_emonstração_:
+_Demonstração_::
 +
 --
 * (Esperança da constante): Note que latexmath:[$X$] é uma variável aleatória discreta que toma
@@ -475,7 +475,9 @@ Seja latexmath:[$X$] uma variável aleatória. Definimos a variância de latexma
 
 [NOTE]
 ====
-Observe que como latexmath:[$(X-E(X))^2\geq 0$], temos que latexmath:[$Var(X)\geq 0$]. 
+Observe que como latexmath:[$(X-E(X))^2\geq 0$], temos pela propriedade do sinal
+da esperança que latexmath:[$E\big[ (X-E(X))^2\big\] \geq 0$], e portanto
+latexmath:[$Var(X)\geq 0$]. 
 ====
 (((Variável Aleatória, Desvio padrão)))
 
@@ -531,14 +533,169 @@ Então, temos que latexmath:[$E(X) = 0\cdot (1-p) + 1\cdot p = p$]. Daí,
 ++++
 ====
 
+.Exemplo de variância de uma variável aleatória contínua
+====
+Seja latexmath:[$X$] variável aleatória contínua com função de densidade
+[latexmath]
+++++
+\[
+f(x) = \begin{cases}
+1+x,& -1\leq x\leq 0,\\
+1-x,& 0\leq x\leq 1,\\
+0,& \hbox{caso contrário.}
+\end{cases}
+\]
+++++
+
+Comece notando que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \displaystyle\int_{-1}^0 x(1+x)dx + \displaystyle\int_0^1 x(1-x) dx\\
+&=& \displaystyle\int_{-1}^0 x+x^2 dx + \displaystyle\int_0^1x-x^2dx\\
+&=& \Big(\frac{x^2}{2}+\frac{x^3}{3}\Big)\Big|_{-1}^0 + \Big(\frac{x^2}{2}-\frac{x^3}{3}\Big)\Big|_0^1\\
+&=& -1/2 +1/3 +1/2 - 1/3\\
+&=& 0.
+\end{array}
+\]
+++++
+
+Além disso,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X^2) &=& \displaystyle\int_{-1}^0 x^2(1+x)dx + \displaystyle\int_0^1 x^2(1-x) dx\\
+&=& \displaystyle\int_{-1}^0 x^2+x^3 dx + \displaystyle\int_0^1x^2-x^3dx\\
+&=& \Big(\frac{x^3}{3}+\frac{x^4}{4}\Big)\Big|_{-1}^0 + \Big(\frac{x^3}{3}-\frac{x^4}{4}\Big)\Big|_0^1\\
+&=& 1/3-1/4 +1/3 -1/4\\
+&=& 1/6.
+\end{array}
+\]
+++++
+
+Logo, latexmath:[$Var(X) = E(X^2) = 1/6$]. 
+
+====
+
+=== Propriedades da variância
+Nesta seção vamos apresentar algumas propriedades da variância e provar algumas delas.
+
+Propriedades da variância::
++
+--
+* (Variância da constante): Seja latexmath:[$c\in\mathbb{R}$] um número real, e seja latexmath:[$X$]
+a variável aleatória constante igual a latexmath:[$c$], ou seja, latexmath:[$P(X=c)=1$]. Então,
+latexmath:[$Var(X) = 0$].
+
+* (Soma por constante): Seja latexmath:[$X$] uma variável aleatória e seja latexmath:[$c\in\mathbb{R}$] 
+uma constante. Então, latexmath:[$Var(X+c) = Var(X)$].
+
+* (Variância da soma de variáveis independentes): Sejam latexmath:[$X$] e latexmath:[$Y$] variáveis
+aleatórias independentes. Então, latexmath:[$Var(X+Y) = Var(X)+Var(Y)$]. 
+
+* (Variância da multiplicação por constante): Seja latexmath:[$X$] variável aleatória, e seja
+latexmath:[$c\in\mathbb{R}$] uma constante. Então, latexmath:[$Var(cX) = c^2 Var(x)$]. 
+
+* (Variância de uma função afim de latexmath:[$X$]): Sejam latexmath:[$a,b\in\mathbb{R}$], e seja
+latexmath:[$X$] variável aleatória. Então, latexmath:[$Var(aX+b) = a^2Var(X)$].
+
+--
 
 
+_Demonstração_::
++
+--
+* (Variância da constante): Observe que se latexmath:[$X$] é constante igual a latexmath:[$c$],
+temos pela propriedade da esperança que latexmath:[$E(X) = c$]. Daí
+[latexmath]
+++++
+\[Var(X) = E\Big[ (X-E(X))^2\Big] = E[ (c-c)^2] = 0.\]
+++++
 
 
+* (Soma por constante): Usando as propriedades da esperança,
+temos diretamente que
+[latexmath]
+++++
+\[
+Var(X+c) = E\Big[ (X+c - E(X+c))^2\Big] = E\Big[ (X+c -E(X)-c)^2\Big] = E\Big[(X-E(X))^2\Big] = Var(X).
+\]
+++++
 
 
+* (Variância da soma de variáveis independentes): Foge do escopo do livro.
+
+* (Variância da multiplicação por constante): Usando as propriedades da esperança, temos que
+[latexmath]
+++++
+\[
+Var(cX) = E\Big[ (cX - E(cX))^2\Big] = E\Big[ (cX - cE(X))^2\Big] = E\Big[c^2 (X-E(X))^2\Big] = c^2 E\Big[(X-E(X))^2\Big] = c^2Var(X).
+\]
+++++
 
 
+* (Variância de uma função afim de latexmath:[$X$]): Usando a variância da soma por constante, temos que
+latexmath:[$Var(aX+b) = Var(aX)$], e usando a variância da multiplicação por constante obtemos
+latexmath:[$Var(aX) = a^2Var(X)$]. Combinando as duas igualdades obtemos 
+latexmath:[$Var(aX+b) = a^2Var(X)$].
+--
+
+Exercício::
++
+--
+Seja latexmath:[$X$] uma variável aleatória contínua com função de densidade
+[latexmath]
+++++
+\[f(x) = \begin{cases}
+\frac{1}{b-a},& a< x< b,\\
+0,& \hbox{caso contrário.}
+\end{cases}
+\]
+++++
+Encontre latexmath:[$Var(X)$].
+--
+
+_Solução_::
++
+--
+Já vimos no exemplo de esperança de variável aleatória contínua que latexmath:[$E(X) = \frac{a+b}{2}$]. Temos agora que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X^2) &=& \displaystyle\int_a^b x^2\frac{1}{b-a} dx = \frac{1}{b-a}\Big|_a^b\\
+&=& \frac{1}{b-a} \Big(\frac{b^3}{3} - \frac{a^3}{3}\Big)\\
+&=& \frac{b^3-a^3}{3(b-a)}.
+\end{array}
+\]
+++++
+
+Mas observe agora que temos o produto notável:
+[latexmath]
+++++
+\[(b-a)(a^2+ab+b^2) = a^2b + ab^2+b^3-a^3-a^2b-ab^2 = b^3-a^3.\]
+++++
+
+Portanto, segue que
+[latexmath]
+++++
+\[
+E(X^2) = \frac{b^3-a^3}{3(b-a)} = \frac{(b-a)(a^2+ab+b^2)}{3(b-a)} = \frac{a^2+ab+b^2}{3}.
+\]
+++++
+
+Finalmente, temos
+[latexmath]
+++++
+\[
+Var(X) = E(X^2) - (E(X))^2 = \frac{a^2+ab+b^2}{3} - \frac{(a+b)^2}{4} = \frac{a^2-2ab+b^2}{12} = \frac{(b-a)^2}{12}.
+\]
+++++
+
+Resumindo, latexmath:[$Var(X) = (b-a)^2/12.$]
+--
 
 
 
