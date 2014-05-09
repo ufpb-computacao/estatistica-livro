@@ -379,7 +379,48 @@ variáveis aleatórias independentes, então
 Demonstração::
 +
 --
-* (Esperança da constante):
+* (Esperança da constante): Note que latexmath:[$X$] é uma variável aleatória discreta que toma
+apenas o valor latexmath:[$c$], e portanto
+[latexmath]
+++++
+\[E(X) = c P(X=c) = c.\]
+++++
+
+* (Multiplicação por contante): Vamos demonstrarpara variáveis aleatórias
+discretas e para variáveis aleatórias contínuas. O caso de variáveis aleatórias
+mistas fica como exercício para o leitor.
+
+Seja, então, latexmath:[$X$] variável aleatória discreta, e suponha que latexmath:[$X$]
+toma valores no conjunto latexmath:[$\{a_1,a_2,\ldots\}$]. Então, latexmath:[$cX$] 
+é função da variável aleatória discreta, daí
+[latexmath]
+++++
+\[E(cX) = \sum_{i=1}^\infty ca_i P(X=a_i) = c\sum_{i=1}^\infty a_i P(X=a_i) = cE(X).\]
+++++
+
+Suponha agora que latexmath:[$X$] é variável aleatória contínua com função de densidade
+latexmath:[$f(x)$]. Então, latexmath:[$cX$] é função de uma variável aleatória contínua, 
+e segue que
+[latexmath]
+++++
+\[E(X) = \int_{-\infty}^\infty cxf(x)dx = c\int_{-\infty}^\infty f(x)dx = cE(X).\]
+++++
+
+* (Soma de variáveis aleatórias): A demonstração foge do escopo do livro.
+
+* (Combinação linear de variáveis aleatórias): Usando a propriedade da soma de variáveis aleatórias
+latexmath:[$n$] vezes, temos que
+[latexmath]
+++++
+\[E\Big(\sum_{i=1}^n c_i X_i\Big) = \sum_{i=1}^n E(c_iX_i).\]
+++++
+Usando a propriedade da multiplicação por constante, obtemos o resultado desejado:
+[latexmath]
+++++
+\[E\Big(\sum_{i=1}^n c_i X_i\Big) = \sum_{i=1}^n E(c_iX_i) = \sum_{i=1}^n c_iE(X_i) .\]
+++++
+
+* (Produto de variáveis aleatórias independentes): Foge do escopo do livro.
 --
 
 
