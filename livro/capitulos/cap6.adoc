@@ -301,21 +301,21 @@ Note que latexmath:[$P(X\geq 2) = 1 - P(X=1) - P(X=0)$]. Daí,
 [latexmath]
 ++++
 \[
-P(X=0) = {20 \choose 0} (0.4)^0(0.6)^20 = (0.6)^20;
+P(X=0) = {20 \choose 0} (0.4)^0(0.6)^{20} = (0.6)^{20};
 \]
 ++++
 e
 [latexmath]
 ++++
 \[
-P(X=1) = {20\choose 1} 0.4(0.6)^19 = 20\cdot 0.4 (0.6)^19 = 8\cdot (0.6)^19.
+P(X=1) = {20\choose 1} 0.4(0.6)^{19} = 20\cdot 0.4 (0.6)^{19} = 8\cdot (0.6)^{19}.
 \]
 ++++
 Desta forma,
 [latexmath]
 ++++
 \[
-P(X\geq 2) = 1-(0.6)^20 - 8(0.6)^19.
+P(X\geq 2) = 1-(0.6)^{20} - 8(0.6)^{19}.
 \]
 ++++
 --
@@ -326,8 +326,108 @@ muito complicado. Suposições desta natureza para facilitar a resolução prát
 de problemas são muito comuns.
 
 
+=== A Distribuição Geométrica
+(((Distribuição, Geométrica)))
+
+Suponha que uma pessoa tem uma moeda que pode ser desonesta, 
+ou seja, assume cara com probabilidade latexmath:[$p$], e coroa com probabilidade
+latexmath:[$1-p$]. Vamos agora considerar o experimento aleatório:
+lançar esta moeda sucessivamente até obter cara.
+
+Qual a probabilidade da cara ser obtida no lançamento número latexmath:[$k$]?
+Ou colocando numa forma mais matemática, se latexmath:[$X$] é a variável
+aleatória dada pelo número do lançamento no qual a cara foi obtida, qual
+é a probabilidade latexmath:[$P(X=k)$]?
+
+A resposta é simples. Para obtermos cara no lançamento número latexmath:[$k$],
+esta pessoa terá que ter obtido coroa em todos os latexmath:[$k-1$] lançamentos
+anteriores e ter obtido cara exatamente no latexmath:[$k$]-ésimo lançamento. 
+Como os lançamentos das moedas são independentes, temos que esta probabilidade
+é
+[latexmath]
+++++
+\[
+P(X=k) = p(1-p)^{k-1},\quad k=1,2,\ldots.
+\]
+++++
+
+Essa variável aleatória latexmath:[$X$] é uma variável aleatória que segue distribuição geométrica. 
+Mais precisamente,
+
+Definição: Variável Aleatória Seguindo Distribuição Geométrica::
++
+--
+Sejam latexmath:[$X_1,X_2,X_3,\ldots$] variáveis aleatórias independentes seguindo distribuição
+Bernoulli com parâmetro latexmath:[$p$]. Seja latexmath:[$X$] a variável aleatória dada pela
+ocorrência do primeiro sucesso, ou seja, o menor índice latexmath:[$i$], tal que latexmath:[$X_i$]
+teve sucesso. Então, dizemos que latexmath:[$X$] segue distribuição geométrica com parâmetro latexmath:[$p$],
+e denotamos latexmath:[$X\sim G(p)$]. A função de probabilidade de latexmath:[$X$] é dada por
+[latexmath]
+++++
+\[
+P(X=k) = p(1-p)^{k-1},\quad k=1,2,\ldots.
+\]
+++++
+--
+
+Primeiro vamos observar que a nossa conta está correta e, de fato, a função descrita acima é uma função de probabilidade.
+Temos claramente que latexmath:[$p(1-p)^{k-1}\geq 0$], e pela soma dos termos de uma progressão *geométrica*, temos
+[latexmath]
+++++
+\[
+\sum_{k=1}^\infty p(1-p)^{k-1} = p\sum_{k=1}^\infty (1-p)^{k-1} = p\frac{1}{1-(1-p)} = \frac{p}{p} = 1.
+\]
+++++
+
+Antes de calcularmos a esperança e variância da distribuição geométrica utilizaremos os seguintes resultados
+sobre séries geométricas e suas derivadas:
+
+* Definindo a função latexmath:[$f(r) = \sum_{k=0}^\infty r^k$], temos que ela converge para 
+latexmath:[$0\leq r < 1$], e vale a igualdade
+[latexmath]
+++++
+\[
+f(r) = \sum_{k=0}^\infty r^k = \frac{1}{1-r};
+\]
+++++
+
+* Temos que para todo latexmath:[0\leq r < 1$], latexmath:[$f$] é infinitamente diferenciável, e sua derivada, para
+latexmath:[$0\leq r <1$] é dada por
+[latexmath]
+++++
+\[
+f'(r) = \sum_{k=1}^\infty k r^{k-1} = \frac{1}{(1-r)^2};
+\]
+++++
+
+* Para latexmath:[$0\leq r <1$] a segunda derivada de latexmath:[$f$] é dada por
+[latexmath]
+++++
+\[
+f''(r) = \sum_{k=2}^\infty k(k-1)r^{k-2} = \frac{2}{(1-r)^3}.
+\]
+++++
 
 
+Esperança::
++
+--
+Temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X)&=& \sum_{k=1}^\infty kp(1-p)^{k-1}\\
+&=& p \sum_{k=1}^\infty k (1-p)^{k-1}\\
+&=& p \frac{1}{(1-(1-p))^2}\\
+&=& p \frac{1}{p^2}\\
+&=&\frac{1}{p}.
+\end{array}
+\]
+++++
+--
+
+Variância::
 
 
 
