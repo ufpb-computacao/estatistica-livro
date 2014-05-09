@@ -631,7 +631,11 @@ Var(X+c) = E\Big[ (X+c - E(X+c))^2\Big] = E\Big[ (X+c -E(X)-c)^2\Big] = E\Big[(X
 [latexmath]
 ++++
 \[
-Var(cX) = E\Big[ (cX - E(cX))^2\Big] = E\Big[ (cX - cE(X))^2\Big] = E\Big[c^2 (X-E(X))^2\Big] = c^2 E\Big[(X-E(X))^2\Big] = c^2Var(X).
+\begin{array}{lll}
+Var(cX) &=& E\Big[ (cX - E(cX))^2\Big] = E\Big[ (cX - cE(X))^2\Big]\\
+&=& E\Big[c^2 (X-E(X))^2\Big] = c^2 E\Big[(X-E(X))^2\Big]\\
+&=& c^2Var(X).
+\end{array}
 \]
 ++++
 
@@ -666,8 +670,8 @@ Já vimos no exemplo de esperança de variável aleatória contínua que latexma
 \[
 \begin{array}{lll}
 E(X^2) &=& \displaystyle\int_a^b x^2\frac{1}{b-a} dx = \frac{1}{b-a}\Big|_a^b\\
-&=& \frac{1}{b-a} \Big(\frac{b^3}{3} - \frac{a^3}{3}\Big)\\
-&=& \frac{b^3-a^3}{3(b-a)}.
+&=& \displaystyle\frac{1}{b-a} \Big(\frac{b^3}{3} - \frac{a^3}{3}\Big)\\
+&=& \displaystyle\frac{b^3-a^3}{3(b-a)}.
 \end{array}
 \]
 ++++
