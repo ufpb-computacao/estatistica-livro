@@ -11,7 +11,7 @@ esperança e variância.
 O objetivo dessa seção é que o estudante saiba reconhecer qual distribuição utilizar em 
 cada situação. 
 
-=== A distribuição Bernoulli
+=== A Distribuição Bernoulli
 
 (((Distribuição, Bernoulli)))
 
@@ -279,6 +279,51 @@ Var(X) &=& E(X^2) - (E(X))^2 = (np)^2 + np(1-p)-(np)^2\\
 \]
 ++++
 --
+
+Exercício::
++
+--
+Um servidor de um jogo online possui 20 _slots_ disponíveis, ou seja,
+aceita até 20 jogadores simultaneamente. A probabilidade, em qualquer
+hora do dia, de que um desses _slots_ esteja disponível é de 40%, 
+e que a disponibilidade dos _slots_ são independentes.
+Qual a probabilidade de um par de amigos encontrarem dois slots disponíveis?
+--
+
+_Solução_::
++
+--
+Seja latexmath:[$X$] o número de _slots_ disponíveis no jogo. Sabemos,
+pela definição do problema que latexmath:[$X\sim Bin(20,0.4)$].
+Queremos calcular latexmath:[$P(X\geq 2)$]. 
+
+Note que latexmath:[$P(X\geq 2) = 1 - P(X=1) - P(X=0)$]. Daí,
+[latexmath]
+++++
+\[
+P(X=0) = {20 \choose 0} (0.4)^0(0.6)^20 = (0.6)^20;
+\]
+++++
+e
+[latexmath]
+++++
+\[
+P(X=1) = {20\choose 1} 0.4(0.6)^19 = 20\cdot 0.4 (0.6)^19 = 8\cdot (0.6)^19.
+\]
+++++
+Desta forma,
+[latexmath]
+++++
+\[
+P(X\geq 2) = 1-(0.6)^20 - 8(0.6)^19.
+\]
+++++
+--
+
+NOTE: Observe que a hipótese de independência no exemplo acima não é realista, porém
+é necessária para ser possível trabalhar matematicamente. Caso contrário seria
+muito complicado. Suposições desta natureza para facilitar a resolução prática
+de problemas são muito comuns.
 
 
 
