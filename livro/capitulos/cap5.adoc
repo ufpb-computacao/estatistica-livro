@@ -491,11 +491,45 @@ Proposição::
 Seja latexmath:[$X$] uma variável aleatória, então latexmath:[$Var(X) = E(X^2) - (E(X))^2$]. 
 --
 
+_Demonstração_::
++
+--
+Temos que como latexmath:[$E(X)$] é um número real constante, podemos utilizar
+as propriedades: esperança da multiplicação por constante; esperança da constante; e esperança da soma, para obter:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+Var(X) &=& E\big[(X-E(X))^2\Big]\\
+&=& E\big[ X^2 - 2X E(X) + E(X)^2\Big]\\
+&=& E(X^2) - 2E(XE(X)) + E(X)^2\\
+&=& E(X^2) - 2E(X)^2 + E(X)^2\\
+&=& E(X^2) - (E(X))^2.
+\end{array}
+\]
+++++
+--
 
+[IMPORTANT]
+====
+É possível mostrar que se latexmath:[$Var(X)=0$], então latexmath:[$P(X = E(X))=1$]. Ou seja, 
+latexmath:[$X$] é uma variável aleatória constante. Quanto maior o valor da variância,
+mais a variável aleatória pode se afastar da esperança, ou seja, maior a oscilação da variável
+aleatória em torno da esperança.
+====
 
+.Exemplo de variância de uma variável aleatória discreta
+====
+Seja latexmath:[$X$] a variável aleatória discreta que toma valor latexmath:[$1$] com 
+probabilidade latexmath:[$p$] e toma valor latexmath:[$0$] com probabilidade
+latexmath:[$1-p$]. 
 
-
-
+Então, temos que latexmath:[$E(X) = 0\cdot (1-p) + 1\cdot p = p$]. Daí,
+[latexmath]
+++++
+\[Var(X) = E(X^2) - E(X)^2 = E(X^2) - p^2 = 0^2\cdot (1-p) + 1\cdot p - p^2 = p(1-p).\]
+++++
+====
 
 
 
