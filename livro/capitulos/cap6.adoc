@@ -427,12 +427,98 @@ E(X)&=& \displaystyle\sum_{k=1}^\infty kp(1-p)^{k-1}\\
 ++++
 --
 
-////
+
 Variância::
-////
++
+--
 
+Para encontrar latexmath:[$E(X^2)$] vamos calcular primeiro
+latexmath:[$E[X(X-1)\]$], usando a fórmula da segunda derivada
+da série geométrica:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E[X(X-1)] &=& \displaystyle\sum_{k=2}^\infty k(k-1) p(1-p)^{k-1}\\
+&=& p(1-p) \displaystyle\sum_{k=2}^\infty k(k-1) (1-p)^{k-2}\\
+&=& p (1-p) \displaystyle\frac{2}{(1-(1-p))^3}\\
+&=& p (1-p) \displaystyle\frac{2}{p^3}\\
+&=& \displaystyle\frac{2(1-p)}{p^2}.
+\end{array}
+\]
+++++
 
+Assim, segue que:
+[latexmath]
+++++
+\[
+E[X(X-1)] = E(X^2-X) = E(X^2) - E(X) = E(X^2) - \frac{1}{p}.
+\]
+++++
+Ou seja, 
+[latexmath]
+++++
+\[
+E(X^2) = E(X^2) + \frac{1}{p} = \frac{2(1-p)}{p^2} + \frac{1}{p} = \frac{2-2p}{p^2}+\frac{p}{p^2} = \frac{2-p}{p^2}.
+\]
+++++
+Finalmente,
+[latexmath]
+++++
+\[
+Var(X) = E(X^2) - (E(X))^2 = \frac{2-p}{p^2} - \frac{1}{p^2} = \frac{1-p}{p^2}.
+\]
+++++
+--
 
+(((Distribuição, Geométrica, Perda de memória)))
+
+Perda de Memória::
++
+--
+Suponha que João está lançando moedas até o resultado sair cara. Suponha que esta João já lançou a moeda 12 vezes, e ainda não saiu cara,
+isto significa que a probabilidade do resultado sair cara no próximo lançamento será maior do que era 12 jogadas atrás?
+
+A resposta é não. Não importa o quanto tempo João tenha esperado, a probabilidade do próximo lançamento sempre será 1/2. Esta propriedade da
+distribuição geométrica é chamada de _perda de memória_.
+
+Mais precisamente, seja latexmath:[$X$] uma variável aleatória seguindo distribuição Geométrica com parâmetro latexmath:[$p$].
+Então, temos que para todo par de inteiros positivos, latexmath:[$m,n$], vale
+[latexmath]
+++++
+\[
+P(X>m+n|X>m) = P(X>n).
+\]
+++++
+
+De fato, temos que
+[latexmath]
+++++
+\[
+P(X>m+n|X>m) = \frac{P(X>m+n,X>m)}{P(X>m)} = \frac{P(X>m+n)}{P(X>m)},
+\]
+++++
+no entanto, usando a fórmula da soma dos termos de uma progressão geométrica infinita, temos
+[latexmath]
+++++
+\[
+P(X>m+n) = \sum_{k=m+n+1}^\infty p(1-p)^{k-1} = \frac{p(1-p)^{m+n}}{1-(1-p)} = (1-p)^{m+n}.
+\]
+++++
+Analogamente, latexmath:[$P(X>m) = (1-p)^m$]. Logo,
+
+[latexmath]
+++++
+\[
+P(X>m+n|X>m) = \frac{P(X>m+n)}{P(X>m)} = \frac{(1-p)^{m+n}}{(1-p)^m} = (1-p)^n = P(X>n).
+\]
+++++
+
+Isto prova a perda de memória. Observe que aqui, na realidade, mostra mais do que falamos. Não só diz que a próxima probabilidade não muda,
+mas essencialmente diz o seguinte: se João já esperou um certo tempo latexmath:[$m$] para sair cara, e a cara ainda não saiu,
+as probabilidades de sair cara dali para frente são as mesmas de como se ele tivesse começado a lançar naquele momento. Ou seja,
+a distribuiçã geométrica ``esquece'' todo o passado que já foi executado.
+--
 
 
 
