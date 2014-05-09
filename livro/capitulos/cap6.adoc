@@ -169,7 +169,7 @@ dada acima tem soma total igual a 1. Isto segue diretamente do binômio de Newto
 
 [latexmath]
 ++++
-\[\sum_{k=0}^n\[P(X=k) = \sum_{k=0}^n {n \choose k} p^k (1-p)^{n-k} = (p+1-p)^n = 1.\]
+\[\sum_{k=0}^n P(X=k) = \sum_{k=0}^n {n \choose k} p^k (1-p)^{n-k} = (p+1-p)^n = 1.\]
 ++++
 
 
