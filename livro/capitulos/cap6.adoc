@@ -1,4 +1,241 @@
 == Principais Distribuições Discretas
 
-Falta escrever
+(((Distribuição)))
+
+Aqui apresentaremos as principais distribuições de variáveis aleatórias discretas, ou seja, 
+apresentaremos a função de probabilidade de algumas variáveis aleatórias importantes.
+
+Além disso, apresentaremos algumas propriedades dessas variáveis aleatóriais, tais como
+esperança e variância.
+
+O objetivo dessa seção é que o estudante saiba reconhecer qual distribuição utilizar em 
+cada situação. 
+
+=== A distribuição Bernoulli
+
+(((Distribuição, Bernoulli)))
+
+A primeira e mais simples distribuição é a distribuição Bernoulli. É a distribuição de uma 
+variável aleatória que só pode assumir dois valores: 0 e 1.
+
+Esta distribuição é bastante útil, pois normalmente usa-se a interpretação do resultado
+1 como _sucesso_ e 0 como _fracasso_.  Mais precisamente, temos a
+
+Definição: Variável Aleatória Seguindo Distribuição Bernoulli::
++
+--
+Seja latexmath:[$X$] uma variável aleatória discreta tomando os valores latexmath:[$0,1$]. 
+Seja latexmath:[$p$], a probabilidade de latexmath:[$X$] assumir o valor 1, isto é,
+seja latexmath:[$P(X=1)=p$]. Então, pela probabilidade do complementar, segue que
+latexmath:[$P(X=0) = 1-p$]. Podemos escrever de forma compacta a função de probabilidade
+de latexmath:[$X$] como
+[latexmath]
+++++
+\[ P(X=i) = p^i (1-p)^{1-i},\quad i=0,1.\]
+++++
+Se latexmath:[$X$] satisfaz a definição acima dizemos que latexmath:[$X$] segue 
+distribuição de Bernoulli com parâmetro latexmath:[$p$], e denotamos
+latexmath:[$X\sim Ber(p)$]. 
+--
+
+Esperança::
++
+--
+Seja latexmath:[$X\sim Ber(p)$], então
+[latexmath]
+++++
+\[E(X) = 0\cdot P(X=0) + 1\cdot P(X=1) = p.\]
+++++
+--
+
+TIP: Observe que como latexmath:[$X$] só assume valor latexmath:[$0$] ou latexmath:[$1$], temos que 
+latexmath:[$X = X^2$], e portanto, latexmath:[$E(X) = E(X^2)$].
+
+Variância::
++
+--
+Seja latexmath:[$X\sim Ber(p)$], então
+[latexmath]
+++++
+\[
+Var(X) = E(X^2) - (E(X))^2 = E(X) - (E(X))^2 = p-p^2 = p(1-p).\]
+++++
+--
+
+.Onde surge o uso da distribuição Bernoulli
+====
+A distribuição Bernoulli aparece naturalmente em várias situações. Alguns exemplos incluem:
+
+* Lançamento de moedas;
+* Encontrar produtos perfeitos ou defeituosos;
+* Ganhar ou perder um sorteio.
+====
+
+=== A Distribuição Binomial
+
+(((Distribuição, Binomial)))
+
+A melhor maneira de ilustrar a distribuição binomial é com o seguinte exemplo:
+
+.Exemplo de distribuição binomial
+====
+Suponha que temos uma urna com um certo número de bolas, donde com probabilidade
+latexmath:[$p$] retiramos bolas azuis e com probabilidade latexmath:[$1-p$]
+retiramos bolas vermelhas, se a retirada for ao acaso. Suponha que então
+que latexmath:[$n$] bolas são retiradas *com reposição* (ou seja,
+a probabilidade de tirar uma bola azul, não muda após as retiradas). 
+Se latexmath:[$X$] é a variável aleatória dada pelo número de bolas azuis
+que foram retiradas entre as latexmath:[$n$] bolas, dizemos que 
+latexmath:[$X$] segue distribuição binomial com parâmetros latexmath:[$n$] 
+e latexmath:[$p$]. 
+====
+
+[IMPORTANT]
+====
+Olhando para o exemplo anterior é possível observar que podemos pensar
+numa distribuição binomial como uma distribuição que surge de 
+latexmath:[$n$] distribuições de Bernoulli. De fato, se latexmath:[$X_i$]
+é a variável aleatória que é igual a 1 se a _i_-ésima bola retirada foi
+azul, e zero caso contrário, temos que latexmath:[$X_i \sim Ber(p)$]. 
+Observe que como as retiradas das bolas são independentes, as variáveis
+aleatórias latexmath:[$X_i$] são independentes. 
+
+Desta forma, é fácil ver que o valor de latexmath:[$X$] é dado pela soma
+latexmath:[$\displaystyle\sum_{i=1}^n X_i$]. Pois teremos retirado 
+latexmath:[$k$] bolas azuis se, e somente se, tiver latexmath:[$k$]
+variáveis aleatórias latexmath:[$X_i$] sendo iguais a 1.
+
+Desta forma, podemos (e *devemos*) interpretar uma variável aleatória
+seguindo distribuição binomial
+como soma de latexmath:[$n$] variáveis aleatórias independentes
+seguindo distribuição Bernoulli.
+====
+
+Vamos agora calcular a probabilidade em questão.
+
+Note que para termos latexmath:[$k$] bolas azuis entre latexmath:[$n$] bolas
+retiradas, devemos  ter exatamente latexmath:[$n-k$] bolas vermelhas. 
+Como as retiradas de bolas são independentes, e a probabilidade de se 
+obter uma bola azul é latexmath:[$p$], segue que a probabilidade
+de termos latexmath:[$k$] bolas azuis e latexmath:[$n-k$] bolas vermelhas
+é latexmath:[$p^k(1-p)^{n-k}$]. 
+
+Para concluirmos o cálculo da probabilidade,
+devemos calcular de quantas formas podemos retirar latexmath:[$k$] bolas
+azuis e latexmath:[$n-k$] bolas vermelhas, se retiramos um total de 
+latexmath:[$n$] bolas.
+
+Esta quantidade é dada pelo número de subconjuntos de latexmath:[$k$] 
+elementos em um conjunto com latexmath:[$n$] elementos. Para entender
+esta conta, podemos pensar que temos um conjunto com latexmath:[$n$] 
+bolas brancas. Tomando um subconjunto com latexmath:[$k$] elementos,
+é a mesma coisa que retirar latexmath:[$k$] bolas. Então
+pintamos essas latexmath:[$k$] bolas retiradas de azul, e as bolas
+restantes pintamos de vermelho. Desta forma, temos uma maneira de 
+retirar latexmath:[$k$] bolas azuis entre um total de latexmath:[$n$]
+bolas retiradas. Assim, vemos que quando olhamos para todos os 
+subconjunto de latexmath:[$k$] elementos, estamos olhando para
+todas as formas de retirarmos latexmath:[$k$] bolas azuis 
+entre latexmath:[$n$] bolas disponíveis.
+
+Finalmente, o número de subconjuntos de latexmath:[$k$] elementos
+de um conjunto com latexmath:[$n$] elementos é dado por
+latexmath:[${n\choose k}$]. Portanto, temos que se latexmath:[$X$]
+é a variável aleatória dada pelo número de bolas azuis retiradas
+após retirarmos latexmath:[$n$] bolas, temos que
+[latexmath]
+++++
+\[P(X=k) = {n \choose k} p^k (1-p)^{n-k},\quad k=0,\ldots, n.\]
+++++
+
+Esta é a função de probabilidade de uma distribuição binomial. Portanto, podemos fornecer
+a seguinte
+
+Definição: Variável Aleatória Seguindo Distribuição Binomial::
++
+--
+Seja latexmath:[$X$] uma variável aleatória dada pelo número de sucessos em latexmath:[$n$] 
+ensaios de Bernoulli, ou seja, o número de sucessos obtidos em latexmath:[$n$]
+variáveis aleatórias de Bernoulli independentes. Então, dizemos que latexmath:[$X$]
+segue distribuição binomial, denotamos por latexmath:[$X\sim Bin(n,p)$], e sua função de probabilidade é dada por
+[latexmath]
+++++
+\[P(X=k) = {n \choose k} p^k (1-p)^{n-k},\quad k=0,\ldots, n.\]
+++++
+--
+
+É importante verificar que a nossa conta está correta, e que, de fato, a função de probabilidade
+dada acima tem soma total igual a 1. Isto segue diretamente do binômio de Newton:
+
+[latexmath]
+++++
+\[\sum_{k=0}^n\[P(X=k) = \sum_{k=0}^n {n \choose k} p^k (1-p)^{n-k} = (p+1-p)^n = 1.\]
+++++
+
+
+Esperança:: 
++
+--
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \displaystyle\sum_{k=0}^n k {n\choose k} p^k (1-p)^{n-k} \\
+&=& \displaystyle\sum_{k=1}^n k\frac{n!}{k!(n-k)!}p^k(1-p)^{n-k}\\
+&=& \displaystyle\sum_{k=1}^n \frac{n!}{(k-1)!(n-k)!}p^k(1-p)^{n-k}.
+\end{array}
+\]
+++++
+Faça agora a mudança de variável latexmath:[$m=k-1$]. Isto 
+implica latexmath:[$k=m+1$], e portanto, continuando,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \displaystyle\sum_{k=1}^n \frac{n!}{(k-1)!(n-k)!}p^k(1-p)^{n-k}\\
+&=& \displaystyle\sum_{m=0}^{n-1} \frac{n!}{m!(n-m-1)!}p^{m+1}(1-p)^{n-m-1}\\
+&=& \displaystyle\sum_{m=0}^{n-1} \frac{n\cdot (n-1)!}{m!((n-1)-m)!}p\cdot p^{m}(1-p)^{(n-1)-m}\\
+&=& np\displaystyle\sum_{m=0}^{n-1} \frac{(n-1)!}{m!(n-1-m)!} p^m(1-p)^{(n-1)-m}\\
+&=& np (p+1-p)^{n-1}\\
+&=& np.
+\end{array}
+\]
+++++
+
+Assim, latexmath:[$E(X) = np$]. 
+
+[IMPORTANT]
+====
+Temos outra forma de calcular a esperança usando ensaios de Bernoulli.
+
+Como mencionamos, se latexmath:[$X_i\sim Ber(p)$] são independentes para
+latexmath:[$i=1,\ldots, n$], então, latexmath:[$\displaystyle\sum_{i=1}^n X_i \sim Bin(n,p)$].
+Fazendo latexmath:[$X = \displaystyle\sum_{i=1}^n X_i$], temos que latexmath:[$X\sim Bin(n,p)$],
+e usando a propriedade de soma de esperança, segue que
+[latexmath]
+++++
+\[E(X) = E\Big(\sum_{i=1}^n X_i\Big) = \sum_{i=1}^n E(X_i) = \sum_{i=1}^n p = np,\]
+++++
+pois, como vimos na distribuição Bernoulli, latexmath:[$E(X_i) = p$]. 
+====
+--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
