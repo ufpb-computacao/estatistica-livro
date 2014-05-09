@@ -355,6 +355,9 @@ Propriedades da esperança::
 a variável aleatória constante igual a latexmath:[$c$], ou seja, latexmath:[$P(X=c)=1$]. Então
 latexmath:[$E(X) = c.$]. 
 
+* (Sinal da esperança): Se latexmath:[$X\geq 0$], então latexmath:[$E(X)\geq 0$], e 
+se latexmath:[$X\leq 0$], então latexmath:[$E(X)\leq 0$].
+
 * (Multiplicação por constante): Seja latexmath:[$c\in\mathbb{R}$] um número real, e seja 
 latexmath:[$X$] uma variável aleatória. Então latexmath:[$E(cX)=cE(X)$].
 
@@ -376,7 +379,7 @@ variáveis aleatórias independentes, então
 ++++
 --
 
-Demonstração::
+_emonstração_:
 +
 --
 * (Esperança da constante): Note que latexmath:[$X$] é uma variável aleatória discreta que toma
@@ -386,7 +389,29 @@ apenas o valor latexmath:[$c$], e portanto
 \[E(X) = c P(X=c) = c.\]
 ++++
 
-* (Multiplicação por contante): Vamos demonstrarpara variáveis aleatórias
+
+* (Sinal da esperança): Vamos demonstrar o caso latexmath:[$X\geq 0$] para variáveis aleatórias
+discretas e para variáveis aleatórias contínuas. Os casos de variáveis aleatórias
+mistas e latexmath:[$X\leq 0$] ficam como exercícios para o leitor.
+
+Seja latexmath:[$X$] variável aleatória discreta, latexmath:[$X\geq 0$], tomando valores
+no conjunto latexmath:[$\{a_1,a_2,\ldots\}$]. Como latexmath:[$X\geq 0$], segue que 
+para todo latexmath:[$i$], temos latexmath:[$a_i\geq 0$]. Além disso,
+latexmath:[$P(X=a_i)\geq 0$]. Logo,
+[latexmath]
+++++
+\[ E(X) = \sum_{i=1}^n a_i P(X=a_i) \geq 0.\]
+++++
+
+Seja, agora, latexmath:[$X$] variável aleatória contínua, latexmath:[$X\geq 0$], com função de densidade
+latexmath:[$f(x)$]. Então, como latexmath:[$X\geq 0$], vale latexmath:[$f(x)=0$] se latexmath:[$x<0$]. Daí
+
+[latexmath]
+++++
+\[ E(X) = \int_{-\infty}^\infty xf(x)dx = \int_0^\infty xf(x)dx \geq 0.\]
+++++
+
+* (Multiplicação por contante): Vamos demonstrar para variáveis aleatórias
 discretas e para variáveis aleatórias contínuas. O caso de variáveis aleatórias
 mistas fica como exercício para o leitor.
 
@@ -422,6 +447,60 @@ Usando a propriedade da multiplicação por constante, obtemos o resultado desej
 
 * (Produto de variáveis aleatórias independentes): Foge do escopo do livro.
 --
+
+=== Variância de uma variável aleatória
+(((Variância, Variável Aleatória)))
+(((Variável Aleatória, Variância)))
+Vamos agora utilizar a esperança para definir uma noção de variabilidade 
+da variável aleatória: a variância. 
+
+A variância de uma variável aleatória mede o quanto a variável aleatória
+flutua em torno da esperança. Ou seja, mede quanto os valores
+da variável aleatória latexmath:[$X$] podem se afastar da esperança.
+
+Vale observar também que se a variância de latexmath:[$X$] for igual a zero,
+então latexmath:[$X$] não varia nada, com relação à esperança, e portanto
+a variável aleatória latexmath:[$X$] é constante igual à esperança de 
+latexmath:[$X$].
+
+Definição: Variância de uma variável aleatória::
++
+--
+Seja latexmath:[$X$] uma variável aleatória. Definimos a variância de latexmath:[$X$] como
+[latexmath]
+++++
+\[ Var(X) = E\big[(X-E(X))^2\big].\]
+++++
+--
+
+[NOTE]
+====
+Observe que como latexmath:[$(X-E(X))^2\geq 0$], temos que latexmath:[$Var(X)\geq 0$]. 
+====
+(((Variável Aleatória, Desvio padrão)))
+
+Uma noção muito útil em estatística é dada pela raiz quadrada da variância (pois a variância é maior ou igual a zero). 
+Mais precisamente, seja latexmath:[$X$] uma variável aleatória, então o número latexmath:[$\sqrt{Var(X)}$] é chamado
+de _desvio padrão_ de latexmath:[$X$], e é denotado por latexmath:[$\sigma_X$]. 
+
+O seguinte resultado fornece uma simplificação do cálculo da variância:
+
+Proposição::
++
+--
+Seja latexmath:[$X$] uma variável aleatória, então latexmath:[$Var(X) = E(X^2) - (E(X))^2$]. 
+--
+
+
+
+
+
+
+
+
+
+
+
 
 
 
