@@ -514,11 +514,111 @@ P(X>m+n|X>m) = \frac{P(X>m+n)}{P(X>m)} = \frac{(1-p)^{m+n}}{(1-p)^m} = (1-p)^n =
 \]
 ++++
 
-Isto prova a perda de memória. Observe que aqui, na realidade, mostra mais do que falamos. Não só diz que a próxima probabilidade não muda,
-mas essencialmente diz o seguinte: se João já esperou um certo tempo latexmath:[$m$] para sair cara, e a cara ainda não saiu,
-as probabilidades de sair cara dali para frente são as mesmas de como se ele tivesse começado a lançar naquele momento. Ou seja,
+Isto prova a perda de memória. Observe que aqui, na realidade, 
+mostra mais do que falamos. Não só diz que a próxima probabilidade não muda,
+mas essencialmente diz o seguinte: se João já esperou um certo 
+tempo latexmath:[$m$] para sair cara, e a cara ainda não saiu,
+as probabilidades de sair cara dali para frente são as mesmas 
+de como se ele tivesse começado a lançar naquele momento. Ou seja,
 a distribuiçã geométrica ``esquece'' todo o passado que já foi executado.
 --
+
+
+
+=== A Distribuição Pascal (ou Binomial Negativa)
+
+(((Distribuição, Pascal)))
+(((Distribuição, Binomial Negativa)))
+
+==== Generalização do Binômio de Newton
+
+Antes de definirmos esta distribuição, vamos rever rapidamente um pouco de teoria matemática
+presente em cursos de cálculo.
+
+(((Série de Taylor)))
+
+(((Função, Analítica)))
+
+Existe uma classe de funções reais, tais que a seguinte fórmula, conhecida como
+_expansão em série de Taylor_, é verdade
+
+[latexmath]
+++++
+\[
+f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2} (x-a)^2 + \cdots = \sum_{k=0}^\infty \frac{f^{(k)}(a)}{k!} (x-a)^k,
+\]
+++++
+
+onde latexmath:[$f^{(k)}(a)$] denota a latexmath:[$k$]-ésima derivada de latexmath:[$f$] no ponto latexmath:[$a$],
+e latexmath:[$f:I\to\mathbb{R}$], onde latexmath:[$I\subset\mathbb{R}$] é um intervalo aberto.
+
+As funções tais que essa expansão é válida são conhecidas como _funções analíticas_. 
+
+IMPORTANT: Conhecemos várias funções analíticas: a função exponencial; seno; co-seno; logaritmo; poliônimos e frações de polinômios.
+
+Um caso particular importante é dado pelas funções do tipo latexmath:[$f(x) = (1-x)^{-r-1} = \frac{1}{(1-x)^{r+1}}$], onde latexmath:[$r$]
+é um número natural. Como latexmath:[$f$] é fração de polinômios, temos que latexmath:[$f$] é analítica. Assim, considerando o 
+ponto latexmath:[$a=0$], temos
+[latexmath]
+++++
+\[
+f(x) = (1-x)^{-r-1};\quad f'(x) = -(-r-1)(1-x)^{-r-2};\quad f''(x) = -(-r-2)(-r-1)(1-x)^{-r-3},\ldots,
+\]
+++++
+e em geral, temos
+[latexmath]
+++++
+\[
+f^{(k)}(x) = -(-r-k)(-r-(k-1))\cdots(-r-1)(1-x)^{-r-k-1}.
+\]
+++++
+
+(((Coeficiente Binomial Generalizado)))
+
+Definindo o _coeficiente binomial generalizado_ como
+[latexmath]
+++++
+\[
+{-r \choose k} = \frac{(-r)(-r-1)\ldots (-r-k+1)}{k!},\quad k=0,1,2,\ldots,
+\]
+++++
+podemos escrever
+[latexmath]
+++++
+\[
+f^{(k)}(x) = (-1)^k k! {-r-1\choose k} (1-x)^{-r-k-1}.
+\]
+++++
+
+Aplicando no ponto latexmath:[$a=0$], temos 
+
+[latexmath]
+++++
+\[
+f^{(k)}(0) = (-1)^k k! {-r-1\choose k},
+\]
+++++
+
+por sua vez, usando na série de Taylor, obtemos, 
+
+[latexmath]
+++++
+\[
+(1-x)^{-r-1} = f(x) = \sum_{k=0}^\infty \frac{f^{(k)}(0)}{k!} x^k = \sum_{k=0}^\infty (-1)^k {-r-1\choose k} x^k = \sum_{k=0}^\infty  {-r-1\choose k} (-x)^k.
+\]
+++++
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
