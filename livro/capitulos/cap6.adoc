@@ -778,10 +778,44 @@ E(X) = E\Big( \sum_{i=1}^r X_i \Big) = \sum_{i=1}^r E(X_i) = \sum_{i=1}^r \frac{
 ====
 --
 
+Variância::
++
+--
+Vamos começar calculando latexmath:[$E[X(X+1)\]$]:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle E[X(X+1)] &=& \displaystyle\sum_{k=r}^\infty k(k+1) {k-1 \choose r-1} p^r (1-p)^{k-r} \\
+&=& \displaystyle\sum_{j=0}^\infty (j+r+1)(j+r) {j+r-1\choose r-1} p^r (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty (j+r+1)(j+r)\frac{(j+r-1)!}{(r-1)!j!} (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty \frac{(j+r+1)!}{(r-1)!j!} (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty r(r+1) \frac{(j+r+1)!}{(r+1)!j!} (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty r(r+1) {j+r+1\choose j} (1-p)^j\\
+&=& r(r+1) p^r \displaystyle\sum_{j=0}^\infty {j+r+1\choose j} (1-p)^j\\
+&=& r(r+1) p^r \displaystyle\frac{1}{(1-(1-p))^{r+2}}\\
+&=& \displaystyle\frac{r(r+1)}{p^2}.
+\end{array}
+\]
+++++
 
+Portanto, temos que latexmath:[$E[X(X+1)\] = E(X^2+X) = E(X^2)+E(X)$]. Como latexmath:[$E(X) = r/p$] e 
+latexmath:[$E[X(X+1)\] = r(r+1)/p^2$], temos que
+[latexmath]
+++++
+\[
+E(X^2) = \frac{r(r+1)}{p^2} - \frac{r}{p} = \frac{r^2 + r - rp}{p^2}.
+\]
+++++
+Finalmente, a variância é dada por
+[latexmath]
+++++
+\[
+Var(X) = E(X^2) - (E(X))^2 = \frac{r^2+r-rp}{p^2} - \frac{r^2}{p^2} = \frac{r-rp}{p^2} = \frac{r(1-p)}{p^2}.
+\]
+++++
 
-
-
+--
 
 
 
