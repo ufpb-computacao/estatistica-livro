@@ -736,6 +736,8 @@ entre os sucessos, até a obtenção de um sucesso.
 ====
 
 Esperança::
++
+--
 
 Temos que, fazendo a mudança latexmath:[$j=k-r$], 
 
@@ -756,8 +758,25 @@ Temos que, fazendo a mudança latexmath:[$j=k-r$],
 \]
 ++++
 
-
-
+[IMPORTANT]
+====
+Vale a pena notar que utilizando a caracterização de latexmath:[$X$] como soma de variáveis
+aleatórias independentes seguindo distribuição geométrica, temos que
+[latexmath]
+++++
+\[
+X = \sum_{i=1}^r X_i,
+\]
+++++
+onde latexmath:[$X_i\sim G(p)$]. Daí,
+[latexmath]
+++++
+\[
+E(X) = E\Big( \sum_{i=1}^r X_i \Big) = \sum_{i=1}^r E(X_i) = \sum_{i=1}^r \frac{1}{p} = \frac{r}{p}.
+\]
+++++
+====
+--
 
 
 
