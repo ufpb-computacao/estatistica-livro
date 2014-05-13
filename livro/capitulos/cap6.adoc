@@ -910,9 +910,11 @@ Assim, o coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^n(1+
 \]
 ++++
 
+(((Identidade de Chu-Vandermonte)))
+
 Portanto, notando que o coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^n(1+x)^{N-n}$] é igual ao
 coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^N$], pois latexmath:[$(1+x)^N = (1+x)^n(1+x)^{N-n}$], 
-chegamos à identidade:
+chegamos à identidade de _Chu-Vandermonte_:
 
 [latexmath]
 ++++
@@ -932,6 +934,59 @@ Dividindo ambos os lados por latexmath:[${N\choose m}$], temos
 
 Isto é o que queríamos provar, pois latexmath:[$P(X=k) = \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}}$].
 
+Esperança::
++
+--
+Temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle E(X) &=& \displaystyle \sum_{k=0}^m k \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle \sum_{k=1}^m k \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle \sum_{k=1}^m k {n\choose k} \frac{{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle \sum_{k=1}^m k \frac{n!}{k!(n-k)!} \frac{{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle \sum_{k=1}^m \frac{n!}{(k-1)!(n-k)!} \frac{{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle \sum_{k=1}^m n \frac{(n-1)!}{(k-1)!(n-k)!} \frac{{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle n \sum_{k=1}^m  {n-1 \choose k-1} \frac{{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle n \sum_{k=1}^m \frac{{n-1 \choose k-1}{N-n\choose m-k}}{{N\choose m}}\\
+&=& \displaystyle n \sum_{k=1}^m \frac{{n-1 \choose k-1}{N-n\choose m-k}}{N/m {N-1 \choose m-1}}\\
+&=& \displaystyle \frac{nm}{N} \sum_{k=1}^m \frac{{n-1 \choose k-1}{N-n\choose m-k}}{{N-1\choose m-1}}\\
+&=& \displaystyle \frac{nm}{N},
+\end{array}
+\]
+++++
+onde na última igualdade utilizamos a identidade de Chu-Vandermonte com a terna latexmath:[$(N-1,n-1,m-1)$]. 
+
+[NOTE]
+====
+Podemos também utilizar a caracterização de latexmath:[$X$] como a soma
+[latexmath]
+++++
+\[
+X = \sum_{i=1}^m X_i,
+\]
+++++
+onde latexmath:[$X_i$] denota a variável aleatória que assume valor 1 se a latexmath:[$i$]-ésima seleção foi _boa_,
+e assume valor 0 se a latexmath:[$i$]-ésima seleção foi _ruim_. 
+
+Observe que temos latexmath:[$n$] seleções boas, entre um total de latexmath:[$N$] possibilidades, ou seja, 
+para cada latexmath:[$i$], as variáveis latexmath:[$X_i$] possuem a mesma função de probabilidade:
+[latexmath]
+++++
+\[
+P(X_i =1 ) = \frac{n}{N},
+\]
+++++
+daí, latexmath:[$E(X_i) = n/N$], e portanto,
+[latexmath]
+++++
+\[
+E(X) = E\Big\sum_{i=1}^m X_i\Big) = \sum_{i=1}^m E(X_i) = \sum_{i=1}^m \frac{n}{N} = \frac{nm}{N}.
+\]
+++++
+====
+--
 
 
 
