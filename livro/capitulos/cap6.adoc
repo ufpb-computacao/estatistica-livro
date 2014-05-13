@@ -849,8 +849,35 @@ P(X=k) = \frac{{n\choose k}{N-m\choose m-k}}{{N\choose m}}.
 \]
 ++++
 
+Temos então a
 
-
+Definição: Variável Aleatória Seguindo Distribuição Hipergeométrica::
++
+--
+Suponha que temos latexmath:[$N$] objetos para selecionarmos.
+Suponha que temos latexmath:[$n$] formas de obter uma seleção  ``boa'', 
+e latexmath:[$N-n$] formas de obter uma seleção ``ruim''.
+Suponha que tomemos  uma amostra de tamanho latexmath:[$m$], *sem reposição*,
+e seja latexmath:[$X_i$] a variável aleatória que assume valor 1, se a 
+latexmath:[$i$]-ésima seleção foi _boa_ e assume valor 0, se a latexmath:[$i$]-ésima
+seleção foi _ruim_. Então se latexmath:[$X$] denota o número de seleções _boas_,
+ou seja, se
+[latexmath]
+++++
+\[
+X = \sum_{i=1}^m X_i,
+\]
+++++
+dizemos que latexmath:[$X$] segue distribuição hipergeométrica com parâmetros
+latexmath:[$N,n, m$], denotamos por latexmath:[$X\sim HG(N,n,m)$], e sua
+função de probabilidade é dada por
+[latexmath]
+++++
+\[
+P(X=k) = \frac{{n\choose k}{N-m\choose m-k}}{{N\choose m}}.
+\]
+++++
+--
 
 
 
