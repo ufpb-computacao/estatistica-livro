@@ -817,6 +817,48 @@ Var(X) = E(X^2) - (E(X))^2 = \frac{r^2+r-rp}{p^2} - \frac{r^2}{p^2} = \frac{r-rp
 
 --
 
+=== Distribuição Hipergeométrica
+
+Assim como na distribuição binomial, vamos ilustrar a distribuição hipergeométrica com um exemplo:
+
+.Exemplo de distribuição hipergeométrica
+====
+Suponha que temos uma urna com latexmath:[$N$] bolas, das quais latexmath:[$n$] bolas são _azuis_, e 
+latexmath:[$N-n$] bolas são _vermelhas_. Suponha que latexmath:[$m$] bolas foram retiradas aleatoriamente
+da urna *sem reposição*. Se latexmath:[$X$] é a variável aleatória dada pelo número de bolas azuis
+que foram retiradas entre as latexmath:[$m$] bolas, dizemos que latexmath:[$X$] segue distribuição
+hipergeométrica com parâmetros latexmath:[$N,n,m$].
+====
+
+Vamos agora calcular a probabilidade em questão. 
+
+Queremos calcular a probabilidade de termos latexmath:[$k$] bolas azuais. 
+Note que temos latexmath:[$m$] retiradas de bolas, entre as quais queremos 
+latexmath:[$k$] bolas azuis e latexmath:[$m-k$] bolas vermelhas. O
+total de bolas azuis é latexmath:[$n$], então temos
+latexmath:[${n\choose k}$] formas de selecionar estas bolas azuis
+e como temos latexmath:[$N-m$] bolas vermelhas, temos latexmath:[${N-m\choose m-k}$]
+formas de selecionar as bolas vermelhas. Como temos latexmath:[$N$] bolas
+no total, e queremos selecionar latexmath:[$m$] bolas, temos
+latexmath:[${N\choose m}$] formas de selecionar latexmath:[$m$] bolas. Portanto,
+a probabilidade é dada por
+[latexmath]
+++++
+\[
+P(X=k) = \frac{{n\choose k}{N-m\choose m-k}}{{N\choose m}}.
+\]
+++++
+
+
+
+
+
+
+
+
+
+
+
 
 
 
