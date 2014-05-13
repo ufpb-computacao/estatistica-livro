@@ -624,7 +624,10 @@ Observe que vale também a igualdade:
 [latexmath]
 ++++
 \[
-{r+k\choose k} = \frac{(r+k)(r+k-1)\cdots (r+1)r}{k!} = (-1)^k \frac{(-r-k)(-r-(k-1))\cdots (-r-1)(-r)}{k!} = (-1)^k {-r-1 \choose k}.
+\begin{array}{lll}
+\displaystyle{r+k\choose k} &=& \displaystyle\frac{(r+k)(r+k-1)\cdots (r+1)r}{k!}\\
+&=& \displaystyle(-1)^k \frac{(-r-k)(-r-(k-1))\cdots (-r-1)(-r)}{k!} = (-1)^k {-r-1 \choose k}.
+\end{array}
 \]
 ++++
 
