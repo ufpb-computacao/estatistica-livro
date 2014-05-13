@@ -988,6 +988,19 @@ E(X) = E\Big(\sum_{i=1}^m X_i\Big) = \sum_{i=1}^m E(X_i) = \sum_{i=1}^m \frac{n}
 ====
 --
 
+Variância::
++
+--
+Utilizando a mesma técnica da esperança é possível mostrar que 
+[latexmath]
+++++
+\[
+Var(X) = \frac{mn(N-n)(N-m)}{N^2(N-1)}.
+\]
+++++
+--
 
+=== Distribuição Poisson
 
+A
 
