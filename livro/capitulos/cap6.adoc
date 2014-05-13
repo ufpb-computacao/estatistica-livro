@@ -608,9 +608,72 @@ por sua vez, usando na série de Taylor, obtemos,
 \]
 ++++
 
+(((Binômio de Newton, Generalizado)))
 
+Assim, temos o binômio de Newton generalizado:
 
+[latexmath]
+++++
+\[
+(1-x)^{-r-1} = \sum_{k=0}^\infty  {-r-1\choose k} (-x)^k.
+\]
+++++
 
+Observe que vale também a igualdade:
+
+[latexmath]
+++++
+\[
+{r+k\choose k} = \frac{(r+k)(r+k-1)\cdots (r+1)r}{k!} = (-1)^k \frac{(-r-k)(-r-(k-1))\cdots (-r-1)(-r)}{k!} = (-1)^k {-r-1 \choose k}.
+\]
+++++
+
+Daí, vale também a fórmula do binômio de Newton generalizado:
+
+[latexmath]
+++++
+\[
+(1-x)^{-r-1} = \sum_{k=0}^\infty {r+k\choose k} x^k.
+\]
+++++
+
+==== Distribuição de Pascal
+
+A distribuição de Pascal (ou Binomial Negativa) é uma generalização natural da distribuição geométrica. Para entendermos melhor
+esta distribuição, voltemos ao exemplo do lançamento de moedas. 
+
+Se uma pessoa tem uma moeda que pode ser desonesta, ou seja, assume cara com probabilidade latexmath:[$p$], e coroa com probabilidade
+latexmath:[$1-p$]. Suponha que temos o seguinte experimento aleatório: lançar uma moeda sucessivamente até obter latexmath:[$r$] caras.
+
+Qual a probabilidade da latexmath:[$r$]-ésima cara ser obtida no lançamento latexmath:[$k$]? Ou, escrevendo de uma maneira
+matematicamente mais precisa, se latexmath:[$X$] denota a variável aleatória dada pelo número do lançamento pelo qual a 
+latexmath:[$r$]-ésima cara foi obtida, qual é a probabilidade latexmath:[$P(X=k)$]?
+
+Vamos calcular essa probabilidade por partes. Comece notando que latexmath:[$X=k$], se e somente se, no latexmath:[$k$]-ésimo
+lançamento o resultado foi cara e nos latexmath:[$k-1$] lançamentos anteriores, obtemos latexmath:[$r-1$] caras. O número de 
+formas de isso acontecer é simples: escolher latexmath:[$r-1$] resultados para sair cara, entre latexmath:[$k-1$] resultados possíveis,
+ou seja, temos latexmath:[${k-1\choose r-1}$] possibilidades. 
+
+Finalmente, como
+em um total de latexmath:[$k$] lançamentos, saíram latexmath:[$r$] caras e latexmath:[$k-r$] coroas, e temos latexmath:[${k-1 \choose r-1}$]
+possibilidades, a probabilidade é dada por
+[latexmath]
+++++
+\[
+P(X=k) = {k-1\choose r-1} p^r(1-p)^{k-r},\quad k=r,r+1,\ldots,
+\]
+++++
+onde latexmath:[$k\geq r$], pois para obter latexmath:[$r$] caras, temos que no mínimo ter latexmath:[$k$] lançamentos.
+
+IMPORTANT: Observe que se latexmath:[$r=1$], temos que latexmath:[$X$] segue uma distribuição geométrica com parâmetro 
+latexmath:[$p$].
+
+[NOTE]
+====
+A distribuição de Pascal, ou Binomial Negativa, recebe o nome de binomial negativa, por utilizar o binômio de Newton
+generalizado (com expoente negativo) para calcular sua esperança e variância, assim como para mostrar que a 
+soma das probabilidades é igual a 1.
+====
 
 
 
