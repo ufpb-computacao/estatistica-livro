@@ -832,12 +832,12 @@ hipergeométrica com parâmetros latexmath:[$N,n,m$].
 
 Vamos agora calcular a probabilidade em questão. 
 
-Queremos calcular a probabilidade de termos latexmath:[$k$] bolas azuais. 
+Queremos calcular a probabilidade de termos latexmath:[$k$] bolas azuis. 
 Note que temos latexmath:[$m$] retiradas de bolas, entre as quais queremos 
 latexmath:[$k$] bolas azuis e latexmath:[$m-k$] bolas vermelhas. O
 total de bolas azuis é latexmath:[$n$], então temos
 latexmath:[${n\choose k}$] formas de selecionar estas bolas azuis
-e como temos latexmath:[$N-m$] bolas vermelhas, temos latexmath:[${N-m\choose m-k}$]
+e como temos latexmath:[$N-n$] bolas vermelhas, temos latexmath:[${N-n\choose m-k}$]
 formas de selecionar as bolas vermelhas. Como temos latexmath:[$N$] bolas
 no total, e queremos selecionar latexmath:[$m$] bolas, temos
 latexmath:[${N\choose m}$] formas de selecionar latexmath:[$m$] bolas. Portanto,
@@ -845,11 +845,13 @@ a probabilidade é dada por
 [latexmath]
 ++++
 \[
-P(X=k) = \frac{{n\choose k}{N-m\choose m-k}}{{N\choose m}}.
+P(X=k) = \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}}.
 \]
 ++++
 
 Temos então a
+
+(((Distribuição, Hipergeométrica)))
 
 Definição: Variável Aleatória Seguindo Distribuição Hipergeométrica::
 +
@@ -874,19 +876,61 @@ função de probabilidade é dada por
 [latexmath]
 ++++
 \[
-P(X=k) = \frac{{n\choose k}{N-m\choose m-k}}{{N\choose m}}.
+P(X=k) = \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}},\quad k=0,\ldots, m.
 \]
 ++++
 --
 
+Vamos mostrar que a função acima é uma função de probabilidade. Claramente, latexmath:[$\frac{{n\choose k}{N-m\choose m-k}}{{N\choose m}}\geq 0$].
+Para mostrar que a soma sobre todos os valores de latexmath:[$k$] é igual a 1, vamos obter uma identidade de
+coeficientes binomiais.
 
+Considere o coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^N$] em binômio de Newton. Este coeficiente
+é dado por latexmath:[${N\choose m}$]. 
 
+Por outro lado, sabemos que latexmath:[$(1+x)^N = (1+x)^n (1+x)^{N-n}$]. Vamos olhar então o coeficiente de
+latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^n (1+x)^{N-n}$], que é igual a latexmath:[${N\choose m}$].
 
+Mas, observe que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle (1+x)^n (1+x)^{N-n} &=& \displaystyle\Big( \sum_{i=0}^n {n\choose i} x^i\Big) \Big( \sum_{j=0}^{N-n} {N-n\choose j} x^j\Big)\\
+&=& \displaystyle \sum_{i=0}^N \Big( \sum_{j=0}^i {n\choose j} {N-n\choose i-j} \Big) x^i. 
+\end{array}
+\]
+++++
 
+Assim, o coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^n(1+x)^{N-n}$] é dado por
+[latexmath]
+++++
+\[
+\sum_{k=0}^m {n\choose k} {N-n\choose m-k}.
+\]
+++++
 
+Portanto, notando que o coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^n(1+x)^{N-n}$] é igual ao
+coeficiente de latexmath:[$x^m$] na expansão de latexmath:[$(1+x)^N$], pois latexmath:[$(1+x)^N = (1+x)^n(1+x)^{N-n}$], 
+chegamos à identidade:
 
+[latexmath]
+++++
+\[
+{N\choose m} = \sum_{k=0}^m {n\choose k}{N-n\choose m-k}.
+\]
+++++
 
+Dividindo ambos os lados por latexmath:[${N\choose m}$], temos
 
+[latexmath]
+++++
+\[
+\sum_{k=0}^m \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}} = 1.
+\]
+++++
+
+Isto é o que queríamos provar, pois latexmath:[$P(X=k) = \frac{{n\choose k}{N-n\choose m-k}}{{N\choose m}}$].
 
 
 
