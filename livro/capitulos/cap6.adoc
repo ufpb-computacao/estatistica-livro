@@ -695,10 +695,10 @@ e, temos ainda que usando a mudança de variável latexmath:[$j=k-r$],
 ++++
 \[
 \begin{array}{lll}
-\sum_{k=r}^\infty {k-1\choose r-1} p^r(1-p)^{k-r} &=& \sum_{j=0}^\infty {j+r-1\choose r-1} p^r (1-p)^j\\
-&=& p^r \sum_{j=0}^\infty {j+r-1 \choose j} (1-p)^j\\
-&=& p^r \frac{1}{(1-(1-p))^r}\\
-&=& p^r\frac{1}{p^r}\\
+\displaystyle\sum_{k=r}^\infty {k-1\choose r-1} p^r(1-p)^{k-r} &=& \displaystyle\sum_{j=0}^\infty {j+r-1\choose r-1} p^r (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty {j+r-1 \choose j} (1-p)^j\\
+&=& p^r \displaystyle\frac{1}{(1-(1-p))^r}\\
+&=& p^r\displaystyle\frac{1}{p^r}\\
 &=& 1,
 \end{array}
 \]
@@ -722,7 +722,7 @@ soma das probabilidades é igual a 1.
 
 Esperança::
 
-
+Vamos
 
 
 
