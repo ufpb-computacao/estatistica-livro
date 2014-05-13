@@ -640,7 +640,7 @@ Daí, vale também a fórmula do binômio de Newton generalizado:
 \]
 ++++
 
-==== Distribuição de Pascal
+==== Distribuição Pascal
 
 A distribuição de Pascal (ou Binomial Negativa) é uma generalização natural da distribuição geométrica. Para entendermos melhor
 esta distribuição, voltemos ao exemplo do lançamento de moedas. 
@@ -671,6 +671,47 @@ onde latexmath:[$k\geq r$], pois para obter latexmath:[$r$] caras, temos que no 
 IMPORTANT: Observe que se latexmath:[$r=1$], temos que latexmath:[$X$] segue uma distribuição geométrica com parâmetro 
 latexmath:[$p$].
 
+Mais precisamente,
+
+Definição: Variável Aleatória Seguindo Distribuição Pascal::
++
+--
+Sejam latexmath:[$X_1,X_2,\ldots$] variáveis aleatórias independentes seguindo distribuição Bernoulli com parâmetro 
+latexmath:[$p$]. Seja latexmath:[$X$] a variável aleatória dada pela ocorrência do latexmath:[$r$]-ésimo sucesso, ou
+seja, o índice latexmath:[$i$], tal que latexmath:[$X_i$] é o latexmath:[$r$]-ésimo sucesso. Então, dizemos que 
+latexmath:[$X$] segue distribuição Pascal (ou binomial negativa) com parâmetros latexmath:[$r$] e latexmath:[$p$],
+e denotamos latexmath:[$X\sim Pas(r,p)$]. A função de probabilidade de latexmath:[$X$] é
+[latexmath]
+++++
+\[
+P(X=k) = {k-1\choose r-1} p^r(1-p)^{k-r},\quad k=r,r+1,\ldots,
+\]
+++++
+--
+
+Vamos começar mostrando que a função acima é, de fato, uma função de probabilidade. Claramente, latexmath:[${k-1\choose r-1} p^r(1-p)^{k-r}\geq 0$],
+e, temos ainda que usando a mudança de variável latexmath:[$j=k-r$], 
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\sum_{k=r}^\infty {k-1\choose r-1} p^r(1-p)^{k-r} &=& \sum_{j=0}^\infty {j+r-1\choose r-1} p^r (1-p)^j\\
+&=& p^r \sum_{j=0}^\infty {j+r-1 \choose j} (1-p)^j\\
+&=& p^r \frac{1}{(1-(1-p))^r}\\
+&=& p^r\frac{1}{p^r}\\
+&=& 1,
+\end{array}
+\]
+++++
+
+onde usamos o binômio de Newton generalizado e usamos que 
+[latexmath]
+++++
+\[
+{j+r-1\choose r-1} =\frac{(j+r-1)!}{(r-1)!j!} =  {j+r-1\choose j}.
+\]
+++++
+
 [NOTE]
 ====
 A distribuição de Pascal, ou Binomial Negativa, recebe o nome de binomial negativa, por utilizar o binômio de Newton
@@ -679,6 +720,7 @@ soma das probabilidades é igual a 1.
 ====
 
 
+Esperança::
 
 
 
