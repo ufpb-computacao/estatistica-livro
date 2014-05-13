@@ -750,8 +750,8 @@ Temos que, fazendo a mudança latexmath:[$j=k-r$],
 &=& p^r \displaystyle\sum_{j=0}^\infty r \frac{(j+r)!}{r!j!} (1-p)^j\\
 &=& p^r \displaystyle\sum_{j=0}^\infty r {j+r\choose j} (1-p)^j\\
 &=& r p^r \displaystyle\sum_{j=0}^\infty {j+r\choose j} (1-p)^j\\
-&=& r p^r \frac{1}{(1-(1-p))^{r+1}}\\
-&=& \frac{r}{p}.
+&=& r p^r \displaystyle\frac{1}{(1-(1-p))^{r+1}}\\
+&=& \displaystyle\frac{r}{p}.
 \end{array}
 \]
 ++++
