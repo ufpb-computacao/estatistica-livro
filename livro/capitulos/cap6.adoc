@@ -719,11 +719,42 @@ generalizado (com expoente negativo) para calcular sua esperança e variância, 
 soma das probabilidades é igual a 1.
 ====
 
+[IMPORTANT]
+====
+Existe uma caracterização da distribuição Pascal em termos de soma de variáveis aleatórias
+seguindo distribuição geométrica:
+sejam latexmath:[$X_1,X_2,\ldots,X_r$] variáveis aleatórias independentes seguindo distribuição
+Geométrica com parâmetro latexmath:[$p$]. Assim, definindo latexmath:[$X=\sum_{k=1}^r X_k$], temos
+que latexmath:[$X$] segue distribuição Pascal com parâmetros latexmath:[$r$] e latexmath:[$p$]. 
+
+A intuição é que para termos a ``posição'' do latexmath:[$r$]-ésimo sucesso, contabilizamos a posição
+do primeiro sucesso com a variável latexmath:[$X_1$], adicionamos a variável latexmath:[$X_2$]
+para obter a posição do segundo sucesso, latexmath:[$\ldots,$],
+adicionamos a variável latexmath:[$X_r$] para obter a posição do latexmath:[$r$]-ésimo sucesso. Ou seja,
+cada variável geométrica latexmath:[$X_i$] representa o tempo que temos que esperar
+entre os sucessos, até a obtenção de um sucesso.
+====
 
 Esperança::
 
-Vamos
+Temos que, fazendo a mudança latexmath:[$j=k-r$], 
 
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle E(X) &=& \displaystyle\sum_{k=r}^\infty k {k-1 \choose r-1} p^r (1-p)^{k-r} \\
+&=& \displaystyle\sum_{j=0}^\infty (j+r) {j+r-1\choose r-1} p^r (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty (j+r)\frac{(j+r-1)!}{(r-1)!j!} (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty \frac{(j+r)!}{(r-1)!j!} (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty r \frac{(j+r)!}{r!j!} (1-p)^j\\
+&=& p^r \displaystyle\sum_{j=0}^\infty r {j+r\choose j} (1-p)^j\\
+&=& r p^r \displaystyle\sum_{j=0}^\infty {j+r\choose j} (1-p)^j\\
+&=& r p^r \frac{1}{(1-(1-p))^{r+1}}\\
+&=& \frac{r}{p}.
+\end{array}
+\]
+++++
 
 
 
