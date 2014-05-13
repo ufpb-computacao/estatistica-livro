@@ -982,7 +982,7 @@ daí, latexmath:[$E(X_i) = n/N$], e portanto,
 [latexmath]
 ++++
 \[
-E(X) = E\Big\sum_{i=1}^m X_i\Big) = \sum_{i=1}^m E(X_i) = \sum_{i=1}^m \frac{n}{N} = \frac{nm}{N}.
+E(X) = E\Big\(sum_{i=1}^m X_i\Big) = \sum_{i=1}^m E(X_i) = \sum_{i=1}^m \frac{n}{N} = \frac{nm}{N}.
 \]
 ++++
 ====
