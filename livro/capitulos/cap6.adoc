@@ -1051,6 +1051,17 @@ Finalmente, para sabermos a probabilidade exata, temos que calcular o limite do 
 latexmath:[$n$] tende a infinito. Faremos isso na próxima subseção.
 ====
 
+[NOTE] 
+====
+Vale a pena observar que calcular a probabilidade do exemplo anterior usando a aproximação acima sem 
+calcular o limite é uma tarefa computacionalmente complicada, pois envolve cálculo de fatoriais de números
+muito grandes. 
+
+Por este motivo também, é muito comum usar uma aproximação inversa: se temos uma variável aleatória 
+latexmath:[$X$] seguindo distribuição binomial com parâmetros latexmath:[$n$] e latexmath:[$p$], onde
+latexmath:[$n$] é muito grande, é mais fácil calcular uma aproximação desta probabilidade usando a 
+distribuição Poisson.
+====
 
 (((Distribuição, Poisson, Aproximação da Binomial)))
 
