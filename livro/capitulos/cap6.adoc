@@ -1041,7 +1041,7 @@ recebidas hoje durante as 4 horas, temos que latexmath:[$P(X=k)$], ou seja,
 a probabilidade de termos latexmath:[$k$] ligações é aproximadamente
 [latexmath]
 ++++
-\[P(X=k) \approx {n \choose k} \Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k}\].
+\[P(X=k) \approx {n \choose k} \Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k}.\]
 ++++
 Em outras palavras, latexmath:[$X$] segue aproximadamente distribuição binomial latexmath:[$(n,500/n)$].
 
