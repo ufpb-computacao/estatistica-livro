@@ -1043,7 +1043,9 @@ a probabilidade de termos latexmath:[$k$] ligações é aproximadamente
 ++++
 \[P(X=k) \approx {n \choose k} \Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k}.\]
 ++++
-Em outras palavras, latexmath:[$X$] segue aproximadamente distribuição binomial latexmath:[$(n,500/n)$].
+Em outras palavras, latexmath:[$X$] segue aproximadamente distribuição binomial latexmath:[$(n,500/n)$]. 
+Observe que o valor esperado dessa aproximação binomial é dado por latexmath:[$500$], o que mostra que a
+aproximação está consistente com o problema em questão.
 
 Finalmente, para sabermos a probabilidade exata, temos que calcular o limite do lado direito quando
 latexmath:[$n$] tende a infinito. Faremos isso na próxima subseção.
