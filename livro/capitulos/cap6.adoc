@@ -1002,5 +1002,74 @@ Var(X) = \frac{mn(N-n)(N-m)}{N^2(N-1)}.
 
 === Distribuição Poisson
 
-A
+(((Distribuição, Poisson)))
+
+(((Lei dos eventos raros)))
+
+Vamos começar motivando a definição da distribuição de Poisson por meio da aproximação
+conhecida como _lei dos eventos raros_. Também é conhecida como aproximação da distribuição
+binomial pela distribuição Poisson. 
+
+Para tanto, considere o seguinte exemplo:
+
+.Motivação para a distribuição de Poisson
+====
+Suponha que uma empresa tem uma linha telefônica dedicada exclusivamente a reclamações. 
+Num período fixado de 4 horas (por exemplo 08:00 às 12:00) essa linha recebe em média 
+500 ligações. Entretanto, essas ligações ocorrem aleatoriamente ao longo dessas 4 horas. Assim,
+sabemos que ao longo dos dias, teremos uma quantidade média de 500 ligações ao final das 4 horas, mas não sabemos
+em que momentos essas ligações são recebidas, nem o número exato de ligações recebidas em cada dia.
+
+A pergunta que surge é: Qual a probabilidade de termos latexmath:[$k$] ligações no período de 4 horas no dia de hoje?
+
+
+Responder a pergunta acima não é uma tarefa trivial, e essa resposta envolve o uso da distribuição de Poisson. 
+
+Para resolver este problema, divida o intervalo de 4 horas em latexmath:[$n$] subintervalos, de mesmo tamanho, 
+dado por latexmath:[$4/n$] horas, onde latexmath:[$n>500$]. Como 500 é o número médio de ligações recebidas
+durante todo o período, é esperado que tenhamos no máximo uma ligação em cada intervalo (observe que se latexmath:[$n$] 
+é muito grande, o intervalo fica muito pequeno, e a probabilidade de termos duas ligações no mesmo
+intervalo é próxima de zero, assim essa aproximação faz sentido). 
+
+Assim, temos aproximadamente uma probabilidade latexmath:[$500/n$] de termos uma ligação em cada intervalo. Como
+temos latexmath:[$n$] intervalos, a probabilidade de termos latexmath:[$k$] ligações no total é dada pela 
+probabilidade de escolhermos latexmath:[$k$] intervalos entre os latexmath:[$n$] intervalos disponíveis:
+temos latexmath:[$n\choose k$] formas de escolher esses latexmath:[$k$] intervalos, e 
+cada escolha dessas tem probabilidade latexmath:[$\Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k}$].
+Resumindo, se latexmath:[$X$] denota a variável aleatória cujo valor é o número de ligações
+recebidas hoje durante as 4 horas, temos que latexmath:[$P(X=k)$], ou seja, 
+a probabilidade de termos latexmath:[$k$] ligações é aproximadamente
+[latexmath]
+++++
+\[P(X=k) \approx {n \choose k} \Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k}\].
+++++
+Em outras palavras, latexmath:[$X$] segue aproximadamente distribuição binomial latexmath:[$(n,500/n)$].
+
+Finalmente, para sabermos a probabilidade exata, temos que calcular o limite do lado direito quando
+latexmath:[$n$] tende a infinito. Faremos isso na próxima subseção.
+====
+
+
+(((Distribuição, Poisson, Aproximação da Binomial)))
+
+==== Aproximação da distribuição binomial pela Poisson
+
+Suponha que temos um intervalo 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
