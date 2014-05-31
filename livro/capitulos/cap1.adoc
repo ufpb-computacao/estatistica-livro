@@ -2,12 +2,15 @@
 
 === Conceitos Básicos
 
+// O que é estatística?
+
 A Estatística é a ciência voltada para a construção de técnicas e métodos que permitem tomar 
 decisões nos mais deferentes setores do conhecimento. O que hoje se conhece por _Estatística_,
 é justamente esse conjunto de ferramentas de pesquisa que envolve, entre outros, o planejamento 
 do experimento a ser realizado, a coleta qualificada dos dados, os processos de inferência estatística, 
 bem como a análise e o processamento das informações coletadas.
 
+// Definições importantes na estatística
 
 Na estatística temos algumas definições importantes:
 
@@ -18,6 +21,31 @@ Na estatística temos algumas definições importantes:
 
 .População e Amostra
 image::images/descritiva/fig1.png[scaledwidth="60%"] 
+
+.Exemplo de variável
+image::images/descritiva/fig2.png[scaledwidth="60%"] 
+
+// Tipos de variáveis
+
+Temos dois tipos de variáveis:
+
+[latexmath]
+++++
+\[
+Qualitativa  \begin{cases}
+          Nominal:& \text{sexo, cor dos olhos.} \\[15pt]
+          Ordinal:& \text{classe social, grau de instrução.}
+      \end{cases}
+\]
+\bigskip
+\[
+Quantitativa  \begin{cases}
+          Discreta:& \text{número de filhos.} \\[15pt]
+          Contínua:& \text{altura, peso, salário.}
+      \end{cases}
+\]
+++++
+
 
 ////
 Sempre termine os arquivos com uma linha em branco.
