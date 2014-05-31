@@ -1118,14 +1118,14 @@ Desta forma, temos
 [latexmath]
 ++++
 \[
-\begin{eqnarray*}
-P(X_n = k) &=& {n\choose k} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
-&=& \frac{n(n-1)\cdots (n-k+1)}{k!} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
-&=& \frac{1}{k!} n(n-1)\cdots (n-k+1) \frac{\lambda^k}{n^k} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
-&=& \frac{\lambda^k}{k!} \frac{n(n-1)\cdots (n-k+1)}{n^k} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
-&=& \frac{\lambda^k}{k!} \frac{n}{n} \frac{n-1}{n} \cdots \frac{n-k+1}{n} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
-&=& \frac{\lambda^k}{k!} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) \Big(1-\frac{\lambda}{n}\Big)^{n-k}.
-\end{eqnarray*}
+\begin{array}{lll}
+P(X_n = k) &=& \displaystyle {n\choose k} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \displaystyle\frac{n(n-1)\cdots (n-k+1)}{k!} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \displaystyle\frac{1}{k!} n(n-1)\cdots (n-k+1) \frac{\lambda^k}{n^k} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \displaystyle\frac{\lambda^k}{k!} \frac{n(n-1)\cdots (n-k+1)}{n^k} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \displaystyle\frac{\lambda^k}{k!} \frac{n}{n} \frac{n-1}{n} \cdots \frac{n-k+1}{n} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \displaystyle\frac{\lambda^k}{k!} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) \Big(1-\frac{\lambda}{n}\Big)^{n-k}.
+\end{array}
 \]
 ++++
 
@@ -1141,10 +1141,10 @@ Portanto, obtemos
 [latexmath]
 ++++
 \[
-\begin{eqnarray*}
-\lim_{n\to\infty} P(X_n = k) &=& \lim_{n\to\infty} \frac{\lambda^k}{k!} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
-&=& \frac{\lambda^k}{k!} e^{-\lambda}.
-\end{eqnarray*}
+\begin{array}{lll}
+\displaystyle\lim_{n\to\infty} P(X_n = k) &=& \displaystyle\lim_{n\to\infty} \frac{\lambda^k}{k!} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \displaystyle\frac{\lambda^k}{k!} e^{-\lambda}.
+\end{array}
 \]
 ++++
 
