@@ -62,7 +62,13 @@ O cabeçalho deve conter o suficiente para que sejam respondidas as questões:
 *	Onde ocorreu?
 *	Quando ocorreu?
 
+Além disso, a tabela é um quadro  que resume um conjunto de dados dispostos segundo linhas e colunas de maneira sistemática.
+
 ==== Série Cronológica ou Temporal
+Um exemplo muito comum e muito útil de tabela é dado pelas séries temporais. 
+Uma série temporal consiste em uma sequência numérica cujos valores variam com o tempo. 
+
+Abaixo vemos como inserir os dados de uma série temporal em uma tabela:
 
 x:[\centerline{\textbf{Vendas da Companhia Alfa - 2007-2009}}]
 [latexmath]
@@ -80,6 +86,52 @@ Anos & Vendas em R\$ 1.000,00 \\
 \]
 ++++
 x:[\centerline{\textit{Fonte: Departamento de Marketing.}}]
+
+==== Série Geográfica
+Muitas vezes o dado de interesse pode depender a posição geográfica de onde foram coletados.
+Assim, uma série geográfica consiste em uma sequência numérica obtidas em diferentes regiões
+em um determinado instante do tempo.
+
+
+x:[\centerline{\textbf{Empresas Fiscalizadas em 2008}}]
+[latexmath]
+++++
+\begin{tabular}{c|c}
+\hline
+Regiões & Número de Empresas \\
+\hline
+Norte &11.425 \\
+Nordeste& 18.258\\
+Sudeste&28.157\\
+Sul& 15.798\\
+Centro-Oeste &9.236 \\
+\hline
+\end{tabular}
+\]
+++++
+x:[\centerline{\textit{Fonte: Mensário Estatístico.}}]
+
+==== Série Específica
+Uma série importante é formada por dados agrupados por alguma espécie ou característica comum. 
+Assim, uma série específica é uma série numérica agrupada por tipo. Temos o exemplo abaixo:
+
+x:[\centerline{\textbf{Matrículas na Pós-graduação da UFPB - 2008}}]
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c}
+\hline
+Áreas de Ensino & Matrículas \\
+\hline
+Ciências Biológicas &125 \\
+Ciências Exatas e Tecnologia& 158\\
+Ciências Humanas& 128\\
+\hline
+\end{tabular}
+\]
+++++
+x:[\centerline{\textit{Fonte: Serviço de Educação e Cultura.}}]
+
 
 
 
