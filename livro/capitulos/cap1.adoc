@@ -337,7 +337,7 @@ Total&-&30&-\\
 Em seguida, inclui-se as frequências relativas dos dados, ou seja, para cada intervalo calcula-se x:[f_i = F_i/n]. A frequência
 relativa, nos informa a proporção dos dados que pertencem a um determinado intervalo.
 
-* *Frequência Relativa* x[f_i]:
+* *Frequência Relativa* x:[f_i]:
 
 [latexmath]
 ++++
@@ -383,6 +383,12 @@ Total&-&30&-&1,00&-\\
 \end{tabular}
 \]
 ++++
+
+=== Gráficos Estatísticos
+
+==== Histograma
+
+Bla
 
 ////
 Sempre termine os arquivos com uma linha em branco.
