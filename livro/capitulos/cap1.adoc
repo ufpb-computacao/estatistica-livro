@@ -162,7 +162,7 @@ Uma distribuição de frequência é uma tabela que contém um resumo dos dados 
 A distribuição é organizada em formato de tabela, e cada entrada da tabela contém a frequência dos dados
 em um determinado intervalo, ou em um grupo.
 
-Abaixo vemos um exemplo de tabela de distribuição de frequência:
+Abaixo vemos um exemplo simplificado de tabela de distribuição de frequência:
 
 x:[\centerline{\textbf{Altura dos Alunos da UFPB - 2008}}]
 [latexmath]
@@ -181,6 +181,8 @@ Alturas em metros & Número dos Alunos \\
 \]
 ++++
 x:[\centerline{\textit{Fonte: Serviço de Saúde.}}]
+
+Na próxima subseção aprenderemos a construir uma distribuição de frequência completa.
 
 ==== Construção de uma distribuição de frequência
 
@@ -330,7 +332,57 @@ Total&-&30&-\\
 \]
 ++++
 
+(((Frequência, Relativa)))
 
+Em seguida, inclui-se as frequências relativas dos dados, ou seja, para cada intervalo calcula-se x:[f_i = F_i/n]. A frequência
+relativa, nos informa a proporção dos dados que pertencem a um determinado intervalo.
+
+* *Frequência Relativa* x[f_i]:
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c|c|c}
+\hline
+Classes &$pm_i$ & $F_i$ &$F_{ac}$&$f_i$ \\
+\hline
+$21|\!-24$&22,5&7&7&0,23\\
+$24|\!-27$&25,5&8&15&0,27\\
+$27|\!-30$&28,5&2&17&0,07\\
+$30|\!-33$&31,5&4&21&0,13\\
+$33|\!-36$&34,5&8&29&0,27\\
+$36|\!-39$&37,5&1&30&0,03\\
+\hline
+Total&-&30&-&1,00\\
+\hline
+\end{tabular}
+\]
+++++
+
+(((Frequência, Relativa, Acumulada)))
+
+Para finalizar, calculamos a frequência acumulada relativa, ou seja, calculamos para cada intervalo x:[f_{ac} = F_{ac}/n]:
+
+* *Frequência Relativa Acumulada* x:[f_{ac}]:
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c|c|c}
+\hline
+Classes &$pm_i$& $F_i$ &$F_{ac}$&$f_i$&$f_{ac}$ \\
+\hline
+$21|\!-24$&22,5&7&7&0,23&0,23\\
+$24|\!-27$&25,5&8&15&0,27&0,50\\
+$27|\!-30$&28,5&2&17&0,07&0,57\\
+$30|\!-33$&31,5&4&21&0,13&0,70\\
+$33|\!-36$&34,5&8&29&0,27&0,97\\
+$36|\!-39$&37,5&1&30&0,03&1,00\\
+\hline
+Total&-&30&-&1,00&-\\
+\hline
+\end{tabular}
+\]
+++++
 
 ////
 Sempre termine os arquivos com uma linha em branco.
