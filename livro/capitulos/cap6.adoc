@@ -1264,8 +1264,8 @@ Temos que
 E(X) &=& \sum_{k=0}^\infty k P(X=k)\\
 &=& \sum_{k=0}^\infty k \frac{\lambda^k}{k!} e^{-\lambda}\\
 &=& \sum_{k=1}^\infty k\frac{\lambda^k}{k!} e^{-\lambda}\\
-&=& \sum_{k=1}^\infty \lambda\frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}\\
-&=& \lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}.
+&=& \sum_{k=1}^\infty \lambda\frac{\lambda^{k-1}}{(k-1)!} e^{-\lambda}\\
+&=& \lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}}{(k-1)!} e^{-\lambda}.
 \end{array}
 \]
 ++++
