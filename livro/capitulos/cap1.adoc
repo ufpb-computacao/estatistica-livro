@@ -281,17 +281,14 @@ somando a amplitude para definir cada limite de intervalo:
 [latexmath]
 ++++
 \[
-21|\!-24\medskip
-
-24|\!-27\medskip
-
-27|\!-30\medskip
-
-30|\!-33\medskip
-
-33|\!-36\medskip
-
+\begin{array}{l}
+21|\!-24\\
+24|\!-27\\
+27|\!-30\\
+30|\!-33\\
+33|\!-36\\
 36|\!-39
+\end{array}
 \]
 ++++
 
