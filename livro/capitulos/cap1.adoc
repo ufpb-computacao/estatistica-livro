@@ -96,6 +96,7 @@ em um determinado instante do tempo.
 x:[\centerline{\textbf{Empresas Fiscalizadas em 2008}}]
 [latexmath]
 ++++
+\[
 \begin{tabular}{c|c}
 \hline
 Regiões & Número de Empresas \\
