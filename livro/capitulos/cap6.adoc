@@ -1067,11 +1067,46 @@ distribuição Poisson.
 
 ==== Aproximação da distribuição binomial pela Poisson
 
-Suponha que temos um intervalo 
+Baseado no exemplo da seção anterior, suponha que temos uma taxa média x:[\lambda>0],
+e considere a sequência de variáveis aleatórias x:[X_1,X_2,\ldots,] onde 
+cada x:[X_n] segue distribuição x:[Bin(n,\lambda/n)]. Observe que precisamos que 
+x:[n] seja grande para que x:[\lambda/n<1] e portanto seja uma probabilidade.
 
+Nosso objetivo nesta seção é calcular o limite
+[latexmath]
+++++
+\[\lim_{n\to\infty} P(X_n=k) = \lim_{n\to\infty} {n\choose k} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}.\]
+++++
 
+[NOTE]
+====
+Para calcular o limite em questão, precisaremos relembrar alguns fatos básicos de cálculo
+em uma variável. Relembre que o número de Euler, x:[e], é definido como
+[latexmath]
+++++
+\[ e = \lim_{n\to\infty} \Big(1+\frac{1}{n}\Big)^n.\]
+++++
 
+Utilizando a regra de L'Hopital, podemos mostrar que para todo x:[x\in\mathbb{R}]
+[latexmath]
+++++
+\[e^{x} = \lim_{n\to\infty} \Big(1+\frac{x}{n}\Big)^n.\]
+++++
 
+Desta forma, se tomarmos x:[x=-\lambda] na expressão acima, obtemos,
+
+[latexmath]
+++++
+\[e^{-\lambda} = \lim_{n\to\infty} \Big(1-\frac{\lambda}{n}\Big)^n.\]
+++++
+
+Finalmente, para cada x:[k] natural fixado (constante, não muda com x:[n]), temos que
+x:[\lim_{n\to\infty} \Big(1-\frac{\lambda}{n}\Big)^{k} = 1,] e portanto
+[latexmath]
+++++
+\[\lim_{n\to\infty} \Big(1-\frac{\lambda}{n}\Big)^{n-k} = \lim_{n\to\infty} \frac{\Big(1-\frac{\lambda}{n}\Big)^n}{\Big(1-\frac{\lambda}{n}\Big)^k} = e^{-\lambda}.\]
+++++
+====
 
 
 
