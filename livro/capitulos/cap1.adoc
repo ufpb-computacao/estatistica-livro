@@ -12,6 +12,11 @@ bem como a análise e o processamento das informações coletadas.
 
 ==== Definições importantes
 
+(((População)))
+(((Amostra)))
+(((Variável)))
+(((Censo)))
+
 Na estatística temos algumas definições importantes:
 
 * *População*: Qualquer conjunto de informação que tenha entre si uma característica comum que delimite os elementos pertencentes a ela.
@@ -46,7 +51,14 @@ Quantitativa  \begin{cases}
 \]
 ++++
 
+(((Variável, Qualitativa, Nominal)))
+(((Variável, Qualitativa, Ordinal)))
+(((Variável, Quantitativa, Discreta)))
+(((Variável, Quantitativa, Contínua)))
+
 === Tabelas Estatísticas
+
+(((Tabelas)))
 
 Na estatística é fundamental aprendermos a representar os dados que serão analisados  por meio de tabelas. 
 
@@ -65,6 +77,10 @@ O cabeçalho deve conter o suficiente para que sejam respondidas as questões:
 Além disso, a tabela é um quadro  que resume um conjunto de dados dispostos segundo linhas e colunas de maneira sistemática.
 
 ==== Série Cronológica ou Temporal
+(((Série, Cronológica)))
+(((Série, Temporal)))
+
+
 Um exemplo muito comum e muito útil de tabela é dado pelas séries temporais. 
 Uma série temporal consiste em uma sequência numérica cujos valores variam com o tempo. 
 
@@ -88,6 +104,8 @@ Anos & Vendas em R\$ 1.000,00 \\
 x:[\centerline{\textit{Fonte: Departamento de Marketing.}}]
 
 ==== Série Geográfica
+(((Série, Geográfica)))
+
 Muitas vezes o dado de interesse pode depender a posição geográfica de onde foram coletados.
 Assim, uma série geográfica consiste em uma sequência numérica obtidas em diferentes regiões
 em um determinado instante do tempo.
@@ -113,6 +131,8 @@ Centro-Oeste &9.236 \\
 x:[\centerline{\textit{Fonte: Mensário Estatístico.}}]
 
 ==== Série Específica
+(((Série, Específica)))
+
 Uma série importante é formada por dados agrupados por alguma espécie ou característica comum. 
 Assim, uma série específica é uma série numérica agrupada por tipo. Temos o exemplo abaixo:
 
@@ -132,6 +152,54 @@ Ciências Humanas& 128\\
 \]
 ++++
 x:[\centerline{\textit{Fonte: Serviço de Educação e Cultura.}}]
+
+=== Distribuição de Frequência
+
+(((Distribuição de Frequência)))
+
+Uma distribuição de frequência é uma tabela que contém um resumo dos dados obtido em uma amostra.
+
+A distribuição é organizada em formato de tabela, e cada entrada da tabela contém a frequência dos dados
+em um determinado intervalo, ou em um grupo.
+
+Abaixo vemos um exemplo de tabela de distribuição de frequência:
+
+x:[\centerline{\textbf{Altura dos Alunos da UFPB - 2008}}]
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c}
+\hline
+Alturas em metros & Número dos Alunos \\
+\hline
+1,50 $|\!-$ 1,60 &5 \\
+1,60 $|\!-$ 1,70 & 15\\
+1,70 $|\!-$ 1,80& 17\\
+1,80 $|\!-$ 1,90&3\\
+\hline
+\end{tabular}
+\]
+++++
+x:[\centerline{\textit{Fonte: Serviço de Saúde.}}]
+
+==== Construção de uma distribuição de frequência
+
+Para ilustrar como se constrói uma distribuição de frequência, nós vamos considerar um exemplo específico.
+
+Assim, suponha que uma pesquisa foi feita, e o seguinte conjunto de dados foi obtido:
+
+* *Dados Brutos*:
+
+24-23-22-28-35-21-23-33-34-24-21-25-36-26-22-30-32-25-26-33-34-21-31-25-31-26-25-35-33-31.
+
+(((Rol de dados)))
+
+A primeira coisa que fazemos é ordenar os dados do menor para o maior, formando o _rol de dados_:
+
+* *Rol de dados*:
+
+21-21-21-22-22-23-23-24-25-25-25-25-26-26-26-28-30-31-31-31-32-33-33-33-34-34-34-35-35-36.
+
 
 
 
