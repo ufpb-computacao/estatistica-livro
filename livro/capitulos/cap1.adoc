@@ -670,7 +670,166 @@ Assim, x:[h = 4, F_{\rm Mo} = 10, l_{\rm Mo} = 4, F_{\rm ant} = 4] e x:[F_{\rm p
 ====
 
 ==== Mediana
-Bla
+
+Definimos a mediana de um conjunto de dados como o valor que divide um conjunto de dados 
+(ordenados) em duas partes com a mesma quantidade de dados.
+
+(((Mediana)))
+
+Notação: representamos a mediana de um conjunto de dados por x:[Md].
+
+
+(((Elemento Mediano)))
+
+O *elemento mediano* (x:[E_{\rm Md}]) aponta o local (nos dados) onde a mediana está localizada. 
+A mediana será o valor assumido na posição x:[E_{\rm Md}]. 
+
+* *Dados não agrupados* (brutos) 
+
+** No caso de dados brutos, se o tamanho amostral (x:[n]) é ímpar, temos que x:[E_{\rm Md} = (n+1)/2]. 
+
+** Note que no caso tamanho amostral é par, teremos dois valores possíveis para o elemento mediano: 
+x:[n/2] e x:[n/2 +1]. Neste caso a mediana será a média dos valores assumidos nestas posições.
+
+.Exemplo de cálculo de mediana para dados brutos
+====
+* 1, 2, 4, 5 e 8. Como x:[n] é ímpar, temos x:[E_{\rm Md} = 3], e x:[Md = 4].
+
+* 2, 2, 3, 7, 8 e 10. Aqui x:[n] é par, assim x:[E_{\rm Md,1} = 6/2 = 3] e 
+x:[E_{\rm Md,2} = 6/2+1 = 4]. Daí x:[{\rm Md} = (3+7)/2 = 5]. 
+====
+
+* *Dados agrupados*
+
+Neste caso, olhar a frequência acumulada ajuda a encontrar a médiana.
+
+** _Caso 1_: x:[n] ímpar. 
+
+.Exemplo de cálculo de mediana com dados agrupados para x:[n] ímpar
+====
+Considere a seguinte tabela:\vfill
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c}
+\hline
+Faltas $(X_i)$& $F_i$& $F_{\rm ac}$ \\
+\hline
+2 &1& 1 \\
+3& 7 & 8\\
+4& 3& 11\\
+\hline
+Total&11 & - \\
+\hline
+\end{tabular}
+\]
+++++
+
+Como x:[n=11], temos que x:[E_{\rm Md} = (11 + 1)/2 = 6]. Daí x:[{\rm Md} = 3]. 
+Note que a frequência acumulada indica que nas posições de x:[2] até x:[8] temos o valor x:[3].
+====
+
+** _Caso 2_: x:[n] par.
+
+.Exemplo de cálculo de mediana com dados agrupados para x:[n] par
+====
+Considere a seguinte tabela:
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c}
+\hline
+Tempo de Serviço $(X_i)$& $F_i$ & $F_{\rm ac}$ \\
+\hline
+4 &3 & 3\\
+6& 5 & 8\\
+8& 10& 18\\
+\hline
+Total&18\\
+\hline
+\end{tabular}
+\]
+++++
+
+Neste caso x:[n=18], daí temos x:[E_{\rm Md,1} = 18/2 = 9] e x:[E_{\rm Md,2} = 18/2 +1 = 10]. 
+Portanto x:[{\rm Md} = (8+8)/2 = 8.] Note, novamente, que a frequência acumulada indica que nas posições de
+x:[9] até x:[18] temos o valor x:[8].
+====
+
+
+(((Fórmula da Mediana)))
+
+* *Dados agrupados em intervalos*
+
+Neste caso, utilizamos x:[E_{\rm Md} = n/2] independentemente de x:[n] ser par ou ímpar.
+
+A classe mediana é a primeira classe tal que x:[F_{\rm ac} \geq E_{\rm Md}].
+
+Portanto, definimos a mediana pela fórmula
+[latexmath]
+++++
+\[
+{\rm Md} = l_{\rm Md} + h\cdot\left[ \frac{E_{\rm Md} - F_{\rm ac,ant}}{F_{\rm Md}}\right],
+\]
+++++
+
+onde,
+
+* x:[l_{\rm Md}] é o limite inferior da classe mediana,
+
+* x:[h] é a amplitude do intervalo,
+
+* x:[F_{\rm ac,ant}] é a frequência acumulada da classe anterior à classe mediana,
+
+* x:[F_{\rm Md}] é a frequência da classe mediana.
+
+.Exemplo do cálculo da mediana para dados agrupados em intervalos
+====
+Considere a seguinte tabela:
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c}
+\hline
+Anos $(X_i)$& $F_i$ & $F_{\rm ac}$\\
+\hline
+$0\vdash 4$ &4 & 4 \\
+$4\vdash 8$& 10 & 14\\
+$8\vdash 12$& 7& 21\\
+\hline
+Total&21\\
+\hline
+\end{tabular}
+\]
+++++
+
+Assim, x:[E_{\rm Md} = 21/2 = 10,5], e desta forma temos que a segunda classe é a classe mediana. 
+Daí x:[l_{\rm Md} = 4, h = 4, F_{\rm ac,ant} = 4] e x:[F_{\rm Md} = 10]. Portanto,
+[latexmath]
+++++
+\[
+{\rm Md} = 4 + 4\cdot\left[\frac{10,5-4}{10}\right] = 6,6.
+\]
+++++
+====
+
+=== Medidas de Dispersão
+
+(((Medidas, de Dispersão)))
+
+* As medidas de dispersão medem o grau de variabilidade dos elementos de uma distribuição;
+
+* O valor zero indica ausência de dispersão;
+
+* A dispersão aumenta à medida que aumenta o valor da medida de dispersão.
+
+
+
+
+
 ////
 Sempre termine os arquivos com uma linha em branco.
 ////
