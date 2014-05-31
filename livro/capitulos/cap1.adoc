@@ -10,7 +10,7 @@ decisões nos mais deferentes setores do conhecimento. O que hoje se conhece por
 do experimento a ser realizado, a coleta qualificada dos dados, os processos de inferência estatística, 
 bem como a análise e o processamento das informações coletadas.
 
-// Definições importantes na estatística
+
 
 Na estatística temos algumas definições importantes:
 
@@ -25,7 +25,7 @@ image::images/descritiva/fig1.png[scaledwidth="60%"]
 .Exemplo de variável
 image::images/descritiva/fig2.png[scaledwidth="60%"] 
 
-// Tipos de variáveis
+
 
 Temos dois tipos de variáveis:
 
