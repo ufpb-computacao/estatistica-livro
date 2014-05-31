@@ -10,7 +10,7 @@ decisões nos mais deferentes setores do conhecimento. O que hoje se conhece por
 do experimento a ser realizado, a coleta qualificada dos dados, os processos de inferência estatística, 
 bem como a análise e o processamento das informações coletadas.
 
-
+==== Definições importantes
 
 Na estatística temos algumas definições importantes:
 
@@ -45,6 +45,45 @@ Quantitativa  \begin{cases}
       \end{cases}
 \]
 ++++
+
+=== Tabelas Estatísticas
+
+Na estatística é fundamental aprendermos a representar os dados que serão analisados  por meio de tabelas. 
+
+Uma tabela deve apresentar a seguinte estrutura:
+
+*	Cabeçalho;
+*	Corpo;
+*	Rodapé.
+
+O cabeçalho deve conter o suficiente para que sejam respondidas as questões:
+
+*	O que está representado?
+*	Onde ocorreu?
+*	Quando ocorreu?
+
+==== Série Cronológica ou Temporal
+
+[latexmath]
+++++
+\[
+\begin{center}
+Vendas da Companhia Alfa - 2007-2009
+\begin{tabular}{c|c}
+\hline
+Anos & Vendas em R\$ 1.000,00 \\
+\hline
+2007 &11.425 \\
+2008& 18.258\\
+2009& 15.798\\
+\hline
+\end{tabular}\\
+{\small Fonte: Departamento de Marketing.}
+\end{center}
+\]
+++++
+
+
 
 
 ////
