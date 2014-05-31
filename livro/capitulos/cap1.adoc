@@ -367,7 +367,7 @@ Para finalizar, calculamos a frequência acumulada relativa, ou seja, calculamos
 [latexmath]
 ++++
 \[
-\begin{tabular}{c|c|c|c|c}
+\begin{tabular}{c|c|c|c|c|c}
 \hline
 Classes &$pm_i$& $F_i$ &$F_{ac}$&$f_i$&$f_{ac}$ \\
 \hline
