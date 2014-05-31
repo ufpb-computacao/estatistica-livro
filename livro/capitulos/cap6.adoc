@@ -1148,11 +1148,186 @@ Portanto, obtemos
 \]
 ++++
 
+Este é o valor do limite procurado no final do exemplo, e assim, voltando ao exemplo:
+.Motivação para a definição da distribuição Poisson
+====
+Relembremos que se latexmath:[$X$] denota a variável aleatória cujo valor é o número de ligações
+recebidas hoje durante as 4 horas, temos que latexmath:[$P(X=k)$], ou seja, 
+a probabilidade de termos latexmath:[$k$] ligações é aproximadamente
+[latexmath]
+++++
+\[P(X=k) \approx {n \choose k} \Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k}.\]
+++++
+Em outras palavras, latexmath:[$X$] segue aproximadamente distribuição binomial latexmath:[$(n,500/n)$]. 
+
+O valor exato da probabilidade é então dado por
+[latexmath]
+++++
+\[P(X=k) = \lim_{n\to\infty} {n \choose k} \Big(\frac{500}{n}\Big)^{k}\Big(1-\frac{500}{n}\Big)^{n-k} = \frac{500^k}{k!} e^{-500}.\]
+++++
+
+====
+
+[IMPORTANT]
+====
+Este resultado de aproximação também pode ser usado para calcular aproximações de probabilidades
+de distribuições binomiais quando x:[n] é muito grande.
+
+Mais precisamente, se temos uma variável aleatória x:[X] seguindo distribuição binomial com
+parâmetros x:[n] e x:[p], e x:[n] é muito grande, podemos aproximar esta probabilidade por
+[latexmath]
+++++
+\[P(X=k) \approx \frac{(np)^k}{k!} e^{-np}.\]
+++++
+====
+
+
+==== Distribuição Poisson
+
+Definição: Variável Aleatória Seguindo Distribuição Poisson::
++
+--
+Suponha que temos ocorrências de eventos em um intervalo (de tempo ou espaço) latexmath:[$I$].
+Suponha que temos um número médio de ocorrências em x:[I] é dado por latexmath:[$\lambda>0$],
+e que a ocorrência de cada evento subsequente é independente da ocorrência dos eventos
+anteriores. Então se latexmath:[$X$] denota o número de ocorrências do evento no intervalo x:[I],
+dizemos que latexmath:[$X$] segue distribuição Poisson com parâmetro
+latexmath:[$\lambda$], denotamos por latexmath:[$X\sim P(\lambda)$], e sua
+função de probabilidade é dada por
+[latexmath]
+++++
+\[
+P(X=k) = \frac{\lambda^k}{k!}e^{-\lambda},\quad k=0,1,\ldots.
+\]
+++++
+--
+
+Para verificar que a função definida acima é realmente uma função de probabilidade, como temos,
+claramente, que x:[\lambda^k/k! e^{-\lambda}>0], basta verificar que a soma sobre todos os
+valores de x:[k] é igual a 1.
+
+Para tanto, relembre a definição de função analítica. É um fato conhecido que a função
+exponencial x:[f(x) = e^x] é analítica. Como temos que
+[latexmath]
+++++
+\[
+f(x) = e^x,\quad f'(x) = e^x,\quad f''(x) = e^x, \quad f'''(x) = e^x,
+\]
+++++
+e, em geral, vale
+[latexmath]
+++++
+\[
+f^{(k)}(x) = e^x.
+\]
+++++
+Portanto, aplicando em x:[a=0], temos que x:[f^{(k)}(0) = 1]. Assim, obtemos a série de Taylor da função
+exponencial, 
+[latexmath]
+++++
+\[
+e^x = f(x) = \sum_{k=0}^\infty \frac{f^{(k)}(0)}{k!} x^k = \sum_{k=0}^\infty \frac{1}{k!}x^k.
+\]
+++++
+Em particular, obtemos
+
+[latexmath]
+++++
+\[
+e^\lambda = \sum_{k=0}^\infty \frac{1}{k!}\lambda^k.
+\]
+++++
+
+Vamos então mostrar que as probabilidades da Poisson formam, de fato, uma função de probabilidade:
+
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\sum_{k=0}^\infty P(X=k) &=& \sum_{k=0}^\infty \frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& e^{-\lambda} \sum_{k=0}^\infty \frac{\lambda^k}{k!}\\
+&=& e^{-\lambda} e^\lambda\\
+&=& 1.
+\end{array}
+\]
+++++
+
+
+Esperança::
++
+--
+Temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \sum_{k=0}^\infty k P(X=k)\\
+&=& \sum_{k=0}^\infty k \frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& \sum_{k=1}^\infty k\frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& \sum_{k=1}^\infty \lambda\frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}\\
+&=& \lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}.
+\end{array}
+\]
+++++
+Fazendo x:[j=k-1], temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}\\
+&=& \lambda \sum_{j=0}^\infty \frac{\lambda^{j}{j!} e^{-\lambda}\\
+&=& \lambda e^\lambda e^{-\lambda}\\
+&=& \lambda.
+\end{array}
+\]
+++++
+
+--
+
+
+Variância::
++
+--
+Vamos começar calculando x:[E[X(X-1)\]]. Daí,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E[X(X-1)] &=& \sum_{k=0}^\infty k(k-1) P(X=k)\\
+&=& \sum_{k=0}^\infty k(k-1) \frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& \sum_{k=2}^\infty k(k-1) \frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& \sum_{k=2}^\infty \frac{\lambda^k}{(k-2)!} e^{-\lambda}\\
+&=& \sum_{k=2}^\infty \lambda^2\frac{\lambda^{k-2}}{(k-2)!} e^{-\lambda}.
+\end{array}
+\]
+++++
+Fazendo a mudança de variável x:[j=k-2], temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E[X(X-1)] &=& \sum_{k=2}^\infty \lambda^2\frac{\lambda^{k-2}}{(k-2)!} e^{-\lambda}\\
+&=& \lambda^2\sum_{j=0}^\infty \frac{\lambda^j}{j!} e^{-\lambda}\\
+&=& \lambda^2 e^\lambda e^{-\lambda}\\
+&=& \lambda^2.
+\end{array}
+\]
+++++
+Porém, como temos que x:[E[X(X-1)\] = E(X^2) - E(X)], e portanto x:[E(X^2) = E[X(X-1)\] + E(X) = \lambda^2+\lambda].
+Portanto, temos que
+[latexmath]
+++++
+\[
+Var(X) = E(X^2) - (EX)^2 = \lambda^2+\lambda - \lambda^2 = \lambda.
+\]
+++++
+
+Desta forma, uma variável aleatória com distribuição Poisson com parâmetro x:[\lambda] possui esperança
+e variância iguais a x:[\lambda].
 
 
 
 
 
-
-
+--
 
