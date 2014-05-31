@@ -253,13 +253,42 @@ assim, queremos definir o número de classes a ser considerado na tabela de dist
 
 * *Número de Classes* x:[K]:
 
-** x:[K=5] para x:[n\leq 25] e x:[K\approx \sqrt{n}], para x:[n>25]. x:[\Rightarrow K=\sqrt{30}\approx 5,48 \approx 6.]
+** x:[K=5] para x:[n\leq 25] e x:[K\approx \sqrt{n}], para x:[n>25]. 
 
-** Fórmula de Sturges x:[K\approx 1+3,22\log n.] x:[\Rightarrow K\approx 1+3,22\log 30\approx 5,75 \approx 6.] 
+** Fórmula de Sturges x:[K\approx 1+3,22\log n.] 
 
+Logo, pela primeira regra temos x:[K=\sqrt{30}\approx 5,48 \approx 6], e pela segunda regra 
+x:[K\approx 1+3,22\log 30\approx 5,75 \approx 6.] Desta forma, em ambos os casos temos x:[K=6], que será o valor considerado.
 
+O próximo passo é saber o comprimento de cada intervalo a ser considerado, ou seja, calcular a amplitude de cada
+classe. Queremos que todas as classes tenham a mesma amplitude e portanto, temos:
 
+* *Amplitude das Classes* x:[h]:
+[latexmath]
+++++
+\[
+h=\frac{R}{K}.
+\]
+++++
 
+Daí, para o nosso caso, x:[h= \frac{15}{6}=2,5\approx 3]. 
+
+Vamos agora definir os limites das classes. Ou seja, definir os intervalos propriamente ditos. Para tanto, começamos
+com o menor valor obtido da amostra, ou equivalentemente, o primeiro valor do _rol de dados_, e vamos
+somando a amplitude para definir cada limite de intervalo:
+
+* *Limite das Classes*:
+[latexmath]
+++++
+\[
+21|\!-24\\
+24|\!-27\\
+27|\!-30\\
+30|\!-33\\
+33|\!-36\\
+36|\!-39
+\]
+++++
 
 
 
