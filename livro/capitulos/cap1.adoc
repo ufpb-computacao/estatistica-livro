@@ -282,10 +282,15 @@ somando a amplitude para definir cada limite de intervalo:
 ++++
 \[
 21|\!-24\\
+
 24|\!-27\\
+
 27|\!-30\\
+
 30|\!-33\\
+
 33|\!-36\\
+
 36|\!-39
 \]
 ++++
