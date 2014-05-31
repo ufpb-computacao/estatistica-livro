@@ -388,9 +388,26 @@ Total&-&30&-&1,00&-\\
 
 ==== Histograma
 
-Bla
+O histograma é uma representação gráfica da distribuição de frequência. O histograma é formado 
+por uma justaposição de retângulos de bases com mesmo comprimento. O comprimento da base é justamente
+a amplitude do intervalo e a altura do retângulo é dada pela frequência absoluta do intervalo.
+
+Assim, uma vez feita a distribuição de frequência, a construção do histograma é uma tarefa muito simples.
+
+Abaixo vemos um exemplo de histograma:
+
+.Histograma
+image::images/descritiva/fig3.png[scaledwidth="60%"] 
+
+
+
+
 
 ////
 Sempre termine os arquivos com uma linha em branco.
 ////
+
+
+
+
 
