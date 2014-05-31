@@ -1,6 +1,22 @@
 == Estatística Descritiva
 
-Falta texto do capítulo 1 aqui.
+=== Conceitos Básicos
+
+A Estatística é a ciência voltada para a construção de técnicas e métodos que permitem tomar 
+decisões nos mais deferentes setores do conhecimento. O que hoje se conhece por _Estatística_,
+é justamente esse conjunto de ferramentas de pesquisa que envolve, entre outros, o planejamento 
+do experimento a ser realizado, a coleta qualificada dos dados, os processos de inferência estatística, 
+bem como a análise e o processamento das informações coletadas.
+
+
+Na estatística temos algumas definições importantes:
+
+* *População*: Qualquer conjunto de informação que tenha entre si uma característica comum que delimite os elementos pertencentes a ela.
+* *Amostra*: É um subconjunto de elementos pertencentes a uma população.
+* *Variável*: Dados referêntes a uma característica de interesse, coletados a partir de uma amostra.
+* *Censo*: Exame de todos os elementos da população.
+
+
 
 ////
 Sempre termine os arquivos com uma linha em branco.
