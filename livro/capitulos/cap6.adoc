@@ -1274,8 +1274,8 @@ Fazendo x:[j=k-1], temos que
 ++++
 \[
 \begin{array}{lll}
-E(X) &=& \displaystyle\lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}\\
-&=& \displaystyle\lambda \sum_{j=0}^\infty \frac{\lambda^{j}{j!} e^{-\lambda}\\
+E(X) &=& \displaystyle\lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}}{(k-1)!} e^{-\lambda}\\
+&=& \displaystyle\lambda \sum_{j=0}^\infty \frac{\lambda^j}{j!} e^{-\lambda}\\
 &=& \lambda e^\lambda e^{-\lambda}\\
 &=& \lambda.
 \end{array}
