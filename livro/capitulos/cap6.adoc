@@ -1244,7 +1244,7 @@ Vamos então mostrar que as probabilidades da Poisson formam, de fato, uma funç
 ++++
 \[
 \begin{array}{lll}
-\sum_{k=0}^\infty P(X=k) &=& \sum_{k=0}^\infty \frac{\lambda^k}{k!} e^{-\lambda}\\
+\displaystyle\sum_{k=0}^\infty P(X=k) &=& \displaystyle\sum_{k=0}^\infty \frac{\lambda^k}{k!} e^{-\lambda}\\
 &=& e^{-\lambda} \sum_{k=0}^\infty \frac{\lambda^k}{k!}\\
 &=& e^{-\lambda} e^\lambda\\
 &=& 1.
@@ -1274,8 +1274,8 @@ Fazendo x:[j=k-1], temos que
 ++++
 \[
 \begin{array}{lll}
-E(X) &=& \lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}\\
-&=& \lambda \sum_{j=0}^\infty \frac{\lambda^{j}{j!} e^{-\lambda}\\
+E(X) &=& \displaystyle\lambda \sum_{k=1}^\infty \frac{\lambda^{k-1}{(k-1)!} e^{-\lambda}\\
+&=& \displaystyle\lambda \sum_{j=0}^\infty \frac{\lambda^{j}{j!} e^{-\lambda}\\
 &=& \lambda e^\lambda e^{-\lambda}\\
 &=& \lambda.
 \end{array}
@@ -1293,11 +1293,11 @@ Vamos começar calculando x:[E[X(X-1)\]]. Daí,
 ++++
 \[
 \begin{array}{lll}
-E[X(X-1)] &=& \sum_{k=0}^\infty k(k-1) P(X=k)\\
-&=& \sum_{k=0}^\infty k(k-1) \frac{\lambda^k}{k!} e^{-\lambda}\\
-&=& \sum_{k=2}^\infty k(k-1) \frac{\lambda^k}{k!} e^{-\lambda}\\
-&=& \sum_{k=2}^\infty \frac{\lambda^k}{(k-2)!} e^{-\lambda}\\
-&=& \sum_{k=2}^\infty \lambda^2\frac{\lambda^{k-2}}{(k-2)!} e^{-\lambda}.
+E[X(X-1)] &=& \displaystyle\sum_{k=0}^\infty k(k-1) P(X=k)\\
+&=& \displaystyle\sum_{k=0}^\infty k(k-1) \frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& \displaystyle\sum_{k=2}^\infty k(k-1) \frac{\lambda^k}{k!} e^{-\lambda}\\
+&=& \displaystyle\sum_{k=2}^\infty \frac{\lambda^k}{(k-2)!} e^{-\lambda}\\
+&=& \displaystyle\sum_{k=2}^\infty \lambda^2\frac{\lambda^{k-2}}{(k-2)!} e^{-\lambda}.
 \end{array}
 \]
 ++++
@@ -1306,8 +1306,8 @@ Fazendo a mudança de variável x:[j=k-2], temos que
 ++++
 \[
 \begin{array}{lll}
-E[X(X-1)] &=& \sum_{k=2}^\infty \lambda^2\frac{\lambda^{k-2}}{(k-2)!} e^{-\lambda}\\
-&=& \lambda^2\sum_{j=0}^\infty \frac{\lambda^j}{j!} e^{-\lambda}\\
+E[X(X-1)] &=& \displaystyle\sum_{k=2}^\infty \lambda^2\frac{\lambda^{k-2}}{(k-2)!} e^{-\lambda}\\
+&=& \displaystyle\lambda^2\sum_{j=0}^\infty \frac{\lambda^j}{j!} e^{-\lambda}\\
 &=& \lambda^2 e^\lambda e^{-\lambda}\\
 &=& \lambda^2.
 \end{array}
@@ -1324,10 +1324,6 @@ Var(X) = E(X^2) - (EX)^2 = \lambda^2+\lambda - \lambda^2 = \lambda.
 
 Desta forma, uma variável aleatória com distribuição Poisson com parâmetro x:[\lambda] possui esperança
 e variância iguais a x:[\lambda].
-
-
-
-
 
 --
 
