@@ -315,7 +315,7 @@ considera a soma das frequências dos intervalos anteriores até o intervalo con
 \[
 \begin{tabular}{c|c|c|c}
 \hline
-Classes &pm_i& $F_i$ &$F_{ac}$ \\
+Classes &$pm_i$& $F_i$ &$F_{ac}$ \\
 \hline
 $21|\!-24$&22,5&7&7\\
 $24|\!-27$&25,5&8&15\\
