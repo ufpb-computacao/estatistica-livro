@@ -386,6 +386,8 @@ Total&-&30&-&1,00&-\\
 
 === Gráficos Estatísticos
 
+(((Histograma)))
+
 ==== Histograma
 
 O histograma é uma representação gráfica da distribuição de frequência. O histograma é formado 
@@ -397,7 +399,73 @@ Assim, uma vez feita a distribuição de frequência, a construção do histogra
 Abaixo vemos um exemplo de histograma:
 
 .Histograma
+image::images/descritiva/fig4.png[scaledwidth="60%"] 
+
+==== Polígono de Frequência
+
+(((Polígono de Frequência)))
+
+O polígono de frequência é uma representação gráfica obtida após ligar os pontos médios de cada classe entre si. Se
+já tivermos um histograma, basta ligar os pontos médios das bases superiores dos retângulos. 
+
+Abaixo vemos um exemplo de polígono de frequência obtido a partir de um histograma:
+
+.Polígono de Frequência Obtido a Partir de um Histograma
 image::images/descritiva/fig3.png[scaledwidth="60%"] 
+
+==== Gráfico de Linhas
+
+(((Gráfico, de Linhas)))
+
+Suponha que temos duas variáveis, por exemplo, podemos ter os dados de uma série temporal, donde uma variável seria
+o valor obtido, e a outra variável seria a data em que o valor foi obtido. Outra possibilidade seria colocar
+dados de uma série geográfica, onde uma variável seria formada pelos dados e a outra seria a localização geográfica.
+
+O gráfico de linhas então é formado construindo pontos no plano (a partir das duas variáveis) e, em seguida, 
+estes pontos são ligados por segmentos de retas.
+
+Abaixo vemos um exemplo de gráfico de linhas de uma série temporal
+image::images/descritiva/fig5.png[scaledwidth="60%"] 
+
+==== Gráfico de Colunas
+
+(((Gráfico, de Colunas)))
+
+Um gráfico de colunas é formado por uma coleção de colunas, com bases de mesmo comprimento, e igualmente espaçados.
+O eixo horizontal do gráfico consiste das diferentes categorias consideradas, e o eixo vertical é proporcional ao valor
+do dado.
+
+Abaixo vemos um exemplo de gráfico de colunas:
+image::images/descritiva/fig6.png[scaledwidth="60%"] 
+
+==== Gráfico em Barras
+
+(((Gráfico, em Barras)))
+
+O gráfico em barras pode ser entendido como uma variação do gráfico de colunas. De fato, o gráfico em barras
+é formado por uma coleção de barras, de mesma altura e igualmente espaçadas. Entretanto, neste caso o eixo
+vertical representa as diferentes categorias consideradas e o eixo horizontal é proporcional ao valor dado.
+
+Abaixo vemos um exemplo de gráfico em barras:
+image::images/descritiva/fig7.png[scaledwidth="60%"] 
+
+==== Gráfico de Setores
+
+(((Gráfico, de Setores)))
+
+(((Gráfico, Pizza)))
+
+O gráfico de setores, que também é popularmente conhecido como gráfico pizza, é um gráfico em que um círculo é dividido
+em setores (que podem ser pensados como as fatias da pizza), onde cada setor representa uma categoria considerada pelo
+conjunto de dados, e os ângulos dos setores são proporcionais aos valores dos dados em cada categoria. Assim,
+quanto maior o valor obtido, maior será o ângulo do setor (e assim, maior será a fatia da pizza).
+
+Abaixo vemos um exemplo de gráfico de setores:
+image::images/descritiva/fig8.png[scaledwidth="60%"] 
+
+== Medidas de Posição
+
+As medidas de posição são valores que representam a tendência de concentração dos dados observados.
 
 
 
