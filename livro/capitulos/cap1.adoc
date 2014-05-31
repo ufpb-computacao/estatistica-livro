@@ -64,7 +64,7 @@ O cabeçalho deve conter o suficiente para que sejam respondidas as questões:
 
 ==== Série Cronológica ou Temporal
 
-*Vendas da Companhia Alfa - 2007-2009*
+x:[\centerline{Vendas da Companhia Alfa - 2007-2009}]
 [latexmath]
 ++++
 \[
