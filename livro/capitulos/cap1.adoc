@@ -277,7 +277,7 @@ Vamos agora definir os limites das classes. Ou seja, definir os intervalos propr
 com o menor valor obtido da amostra, ou equivalentemente, o primeiro valor do _rol de dados_, e vamos
 somando a amplitude para definir cada limite de intervalo:
 
-* *Limite das Classes*:
+* *Limites das Classes*:
 [latexmath]
 ++++
 \[
@@ -292,9 +292,43 @@ somando a amplitude para definir cada limite de intervalo:
 \]
 ++++
 
+Em seguida, calculamos os pontos médios das classes, que nada mais é que a média aritmética entre os limites 
+das classes:
 
+* *Pontos Médios das Classes* x:[pm_i]:
 
+[latexmath]
+++++
+\[
+pm_1=\frac{21+24}{2}=22,5, \quad pm_2=\frac{24+27}{2}=25,5, \quad, etc.
+\]
+++++
+(((Frequência, Absoluta, Acumulada)))
 
+Agora, calculamos as frequências dos dados em cada intervalo e, chamada de _frequência absoluta_, e também a frequência acumulada,
+chamada de _frequência absoluta acumulada_, que
+considera a soma das frequências dos intervalos anteriores até o intervalo considerado:
+
+* *Frequência Absoluta Acumulada* x:[F_{ac}]:
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c|c}
+\hline
+Classes &pm_i& $F_i$ &$F_{ac}$ \\
+\hline
+$21|\!-24$&22,5&7&7\\
+$24|\!-27$&25,5&8&15\\
+$27|\!-30$&28,5&2&17\\
+$30|\!-33$&31,5&4&21\\
+$33|\!-36$&34,5&8&29\\
+$36|\!-39$&37,5&1&30\\
+\hline
+Total&-&30&-\\
+\hline
+\end{tabular}
+\]
+++++
 
 
 
