@@ -1108,10 +1108,45 @@ x:[\lim_{n\to\infty} \Big(1-\frac{\lambda}{n}\Big)^{k} = 1,] e portanto
 ++++
 ====
 
+Para começarmos a calcular o limite, observe que para cada x:[k], temos
+[latexmath]
+++++
+\[{n \choose k} = \frac{n!}{k!(n-k)!} = \frac{n(n-1)\cdots (n-k+1)}{k!}.\]
+++++
 
+Desta forma, temos
+[latexmath]
+++++
+\[
+\begin{eqnarray*}
+P(X_n = k) &=& {n\choose k} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \frac{n(n-1)\cdots (n-k+1)}{k!} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \frac{1}{k!} n(n-1)\cdots (n-k+1) \frac{\lambda^k}{n^k} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \frac{\lambda^k}{k!} \frac{n(n-1)\cdots (n-k+1)}{n^k} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \frac{\lambda^k}{k!} \frac{n}{n} \frac{n-1}{n} \cdots \frac{n-k+1}{n} \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \frac{\lambda^k}{k!} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) \Big(1-\frac{\lambda}{n}\Big)^{n-k}.
+\end{eqnarray*}
+\]
+++++
 
+Temos que valem os seguintes limites:
+[latexmath]
+++++
+\[\lim_{n\to\infty} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) = 1,\hbox{~~and~~}\quad
+\lim_{n\to\infty} \Big(1-\frac{\lambda}{n}\Big)^{n-k} = e^{-\lambda}.
+\]
+++++
 
-
+Portanto, obtemos
+[latexmath]
+++++
+\[
+\begin{eqnarray*}
+\lim_{n\to\infty} P(X_n = k) &=& \lim_{n\to\infty} \frac{\lambda^k}{k!} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) \Big(1-\frac{\lambda}{n}\Big)^{n-k}\\
+&=& \frac{\lambda^k}{k!} e^{-\lambda}.
+\end{eqnarray*}
+\]
+++++
 
 
 
