@@ -17,7 +17,7 @@ Na estatística temos algumas definições importantes:
 * *Censo*: Exame de todos os elementos da população.
 
 .População e Amostra
-image::images/descritiva/fig1.JPG[scaledwidth="60%"] 
+image::images/descritiva/fig1.png[scaledwidth="60%"] 
 
 ////
 Sempre termine os arquivos com uma linha em branco.
