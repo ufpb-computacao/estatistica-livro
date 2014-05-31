@@ -16,7 +16,8 @@ Na estatística temos algumas definições importantes:
 * *Variável*: Dados referêntes a uma característica de interesse, coletados a partir de uma amostra.
 * *Censo*: Exame de todos os elementos da população.
 
-
+.População e Amostra
+image::images/descritiva/fig1.JPG[caption="Figura ilustrando as diferenças entre população e amostra."]
 
 ////
 Sempre termine os arquivos com uma linha em branco.
