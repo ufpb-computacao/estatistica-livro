@@ -67,7 +67,6 @@ O cabeçalho deve conter o suficiente para que sejam respondidas as questões:
 [latexmath]
 ++++
 \[
-\begin{center}
 Vendas da Companhia Alfa - 2007-2009
 \begin{tabular}{c|c}
 \hline
@@ -77,9 +76,8 @@ Anos & Vendas em R\$ 1.000,00 \\
 2008& 18.258\\
 2009& 15.798\\
 \hline
-\end{tabular}\\
+\end{tabular}
 {\small Fonte: Departamento de Marketing.}
-\end{center}
 \]
 ++++
 
