@@ -580,9 +580,97 @@ Assim, x:[\overline{X}=\frac{138}{21} = 6,57.]
 --
 
 ==== Moda
+
+Definimos a moda de um conjunto de dados como o valor mais frequente deste conjunto. 
+
+(((Moda)))
+
+Notação: representamos a moda de um conjunto de dados por x:[Mo].
+
+.Exemplo de modas
+====
+* 1, 2, 4, 5 e 8 - não existe valor mais frequente - não existe moda (Amodal).
+* 2, 2, 3, 7 e 8 - Mo = 2 (Unimodal).
+* 1, 1, 10, 5, 5, 8, 7, 2 - Mo = 1 e 5 (Bimodal). 
+====
+
+* *Dados agrupados* - Neste caso, a moda é definida como ``classe modal'', isto é, a classe com a maior frequencia.
+
+.Exemplo de cálculo de classe modal
+====
+Considere a seguinte tabela:
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c}
+\hline
+Tempo de Serviço $(X_i)$& $F_i$ \\
+\hline
+4 &3 \\
+6& 5\\
+8& 10\\
+\hline
+Total&18\\
+\hline
+\end{tabular}
+\]
+++++
+Assim, Mo = 8 (x:[F_3]).
+====
+
+(((Fórmula de Czuber)))
+
+* *Dados agrupados em intervalos*: Neste caso, utiliza-se a fórmula de Czuber:
+
+[latexmath]
+++++
+\[
+{\rm Mo}=l_{\rm Mo} + \left[\frac{h(F_{\rm Mo} - F_{\rm ant})}{2 F_{\rm Mo}-(F_{\rm ant}+F_{\rm Pos})} \right],
+\]
+++++
+onde:
+
+* x:[h] é a amplitude intervalar,
+
+* x:[F_{\rm Mo}] é a frequência da classe modal,
+
+* x:[l_{\rm Mo}] é o limite inferior da classe modal,
+
+* x:[F_{\rm ant}] é a frequência da classe anterior à classe modal,
+
+* x:[F_{\rm Pos}] é a frequência da classe posterior à classe modal.
+
+.Exemplo de cálculo de moda pela fórmula de Czuber
+====
+Considere a seguinte tabela:
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c}
+\hline
+Anos $(X_i)$& $F_i$ \\
+\hline
+$0\vdash 4$ &4 \\
+$4\vdash 8$& 10\\
+$8\vdash 12$& 7\\
+\hline
+Total&21\\
+\hline
+\end{tabular}
+\]
+++++
+
+Assim, x:[h = 4, F_{\rm Mo} = 10, l_{\rm Mo} = 4, F_{\rm ant} = 4] e x:[F_{\rm pos} = 7]. Daí
+[latexmath]
+++++
+\[
+{\rm Mo} = 4 + \left[ \frac{4\cdot (10-4)}{2\cdot 10 - (4+7)}\right]=6,67.
+\]
+++++
+====
+
+==== Mediana
 Bla
-
-
 ////
 Sempre termine os arquivos com uma linha em branco.
 ////
