@@ -465,10 +465,122 @@ image::images/descritiva/fig8.png[scaledwidth="60%"]
 
 === Medidas de Posição
 
+(((Medidas, de Tendência  Central)))
+(((Média)))
+(((Moda)))
+(((Mediana)))
+
 As medidas de posição são valores que representam a tendência de concentração dos dados observados.
 
+As mais importantes são as _medidas de tendência central_. As três medidas de tendência central 
+mais utilizadas são: _média aritmética_, _moda_ e _mediana_.
 
+==== Média Aritmética
+É um valor que representa uma característica do conjunto de dados. Essa característica é tal que
+a soma dos dados é preservada. A média é obtida a partir de todos os elementos da 
+distribuição e do tamanho da amostra x:[n].
 
+(((Média Aritmética)))
+
+Notação: representamos a média de um conjunto de dados por x:[\overline{X}]  (lê-se x:[x] barra).
+
+.Cálculo da Média Aritmética
++
+--
+* *Dados não agrupados* (brutos) - média aritmética simples.
+
+No caso de uma lista de dados não-agrupados, calculamos a média aritmética pela fórmula:
+[latexmath]
+++++
+\[
+\overline{X}=\sum_{i=1}^{n}\frac{X_i}{n}.
+\]
+++++
+
+.Exemplo de cálculo de média aritmética com dados brutos:
+====
+Considere os dados x:[2, 3, 7] e x:[8]. Então,
+[latexmath]
+++++
+\[
+\overline{X} =\frac{2+3+7+8}{4}=\frac{20}{4}=5.
+\]
+++++
+====
+
+* *Dados agrupados* - média aritmética ponderada.
+
+(((Média Aritmética, Ponderada)))
+
+No caso em que temos os dados agrupados, ou seja, sabemos a frequência de cada observação, 
+o cálculo da média aritmética pode ser simplificado. Assim, a média aritmética pode
+ser cálculada pela fórmula:
+[latexmath]
+++++
+\[
+\overline{X}=\sum_{i=1}^{n}\frac{X_i\cdot F_i}{n}.
+\]
+++++
+
+.Exemplo de cálculo de média aritmética ponderada
+====
+Considere a seguinte tabela:
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c}
+\hline
+Tempo de Serviço $(X_i)$& $F_i$ & $X_i\cdot F_i$ \\
+\hline
+4 &3 &12\\
+6& 5&30\\
+8& 10&80\\
+\hline
+Total&18 &122\\
+\hline
+\end{tabular}
+\]
+++++
+
+Assim, x:[\overline{X}=\frac{122}{18} = 6,78.]
+====
+
+* *Dados agrupados em intervalos* - média aritmética ponderada
+
+No caso em que temos os dados agrupados em intervalos, utilizamos a média aritmética ponderada, onde
+os pesos são dados pelo ponto médio do intervalo. Assim, a média aritmética é calculada pela fórmula:
+[latexmath]
+++++
+\[
+\overline{X}=\sum_{i=1}^{n}\frac{X_i\cdot pm_i}{n},
+\]
+++++
+
+.Exemplo de cálculo de médias com dados agrupados em intervalos
+====
+Considere a seguinte tabela:
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c|c}
+\hline
+Anos $(X_i)$& $F_i$ &$pm_i$ &$X_i\cdot pm_i$ \\
+\hline
+$0\vdash 4$ &4 &2&8\\
+$4\vdash 8$& 10&6&60\\
+$8\vdash 12$& 7&10&70\\
+\hline
+Total&21 &-&138\\
+\hline
+\end{tabular}
+\]
+++++
+Assim, x:[\overline{X}=\frac{138}{21} = 6,57.]
+====
+--
+
+==== Moda
+Bla
 
 
 ////
