@@ -463,7 +463,7 @@ quanto maior o valor obtido, maior será o ângulo do setor (e assim, maior ser�
 Abaixo vemos um exemplo de gráfico de setores:
 image::images/descritiva/fig8.png[scaledwidth="60%"] 
 
-== Medidas de Posição
+=== Medidas de Posição
 
 As medidas de posição são valores que representam a tendência de concentração dos dados observados.
 
