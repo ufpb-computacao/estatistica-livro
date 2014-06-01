@@ -956,7 +956,88 @@ ponto médio  da classe (x:[pm_i]), no caso de uma distribuição de frequência
 ====
 
 
+==== Variância
 
+(((Variância, Populacional)))
+
+A variância é a medida de dispersão mais utilizada. É o quociente entre a soma dos quadrados dos desvios e o número de elementos. 
+Assim, temos a seguinte definição de _variância populacional_:
+
+* *Dados não agrupados* - (brutos):
+
+Neste caso, a variância é dada pela fórmula:
+
+[latexmath]
+++++
+\[
+\sigma^2=\sum_{i=1}^{N} \frac{d_i^2}{N}= \sum_{i=1}^{N} \frac{(X_i-\overline{X})^2}{N}.
+\]
+++++
+
+* *Dados agrupados*:
+
+Aqui, podemos utilizar a frequência para simplificar a fórmula:
+
+[latexmath]
+++++
+\[
+\sigma^2=\sum_{i=1}^{N} \frac{d_i^2\cdot F_i}{N}= \sum_{i=1}^{N} \frac{(X_i-\overline{X})^2\cdot F_i}{N}.
+\]
+++++
+
+
+NOTE: x:[\sigma^2] indica a variância populacional e lê-se sigma ao quadrado ou sigma dois. Neste caso, 
+x:[\overline{X}] e x:[N] da formúla representam a média populacional e o tamanho populacional, respectivamente.
+
+(((Variância, Amostral)))
+
+Temos ainda a seguinte definição de _variância amostral_:
+ 
+* *Dados não agrupados* - (brutos):
+
+Neste caso, a fórmula é dada por
+[latexmath]
+++++
+\[
+S^2=\sum_{i=1}^{n} \frac{d_i^2}{n-1}= \sum_{i=1}^{n} \frac{(X_i-\overline{X})^2}{n-1}
+\]
+++++
+
+* *Dados agrupados*:
+
+Podemos, novamente, utilizar as frequências para simplificar a fórmula:
+
+[latexmath]
+++++
+\[
+S^2=\sum_{i=1}^{n} \frac{d_i^2\cdot F_i}{n-1}= \sum_{i=1}^{n} \frac{(X_i-\overline{X})^2\cdot F_i}{n-1}.
+\]
+++++
+
+NOTE: x:[X_i] representa um valor individual, no caso de uma distribuição de frequência simples, 
+ou o ponto médio  da classe (x:[pm_i]), no caso de uma distribuição de frequência em classes.
+
+[IMPORTANT]
+====
+Fórmulas práticas para os cálculos das variâncias são dadas a seguir:
+[latexmath]
+++++
+\[
+\sigma^2=\frac{1}{N}\Big[\sum_{i=1}^{N}X_i^2\cdot F_i-\frac{(\sum_{i=1}^{N}X_i\cdot F_i)^2}{N}\Big]
+\]
+++++
+
+ou
+
+[latexmath]
+++++
+\[
+S^2=\frac{1}{n-1}\Big[\sum_{i=1}^{n}X_i^2\cdot F_i-\frac{(\sum_{i=1}^{n}X_i\cdot F_i)^2}{n}\Big]
+\]
+++++
+
+que foram obtidas por transformações nas respecitivas fórmulas originais.
+====
 
 
 
