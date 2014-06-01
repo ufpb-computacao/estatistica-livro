@@ -325,17 +325,30 @@ temos que
 [latexmath]
 ++++
 \[
-\widehat{p} \stackrel{\hbox{aprox.}}{\sim} N\Big( p, \frac{p(1-p)}{n}\Big),
+\widehat{p} \stackrel{aprox.}{\sim} N\Big( p, \frac{p(1-p)}{n}\Big),
 \]
 ++++
 ou equivalentemente,
 [latexmath]
 ++++
 \[
-Z = \frac{\widehat{p}-p}{\sqrt{p(1-p)/n}} \stackrel{aprox.}{\sim} N(0,1).
+Z = \frac{\widehat{p}-p}{\sqrt{p(1-p)/n}} \stackrel{aprox.}{\sim} N(0,1),
 \]
 ++++
-
+pois, temos que
+[latexmath]
+++++
+\[
+E(\widehat{p}) = E\Big(\frac{S_n}{n}\Big) = \frac{1}{n} E(S_n) = n\frac{p}{n} = p,
+\]
+++++
+e
+[latexmath]
+++++
+\[
+Var(\widehat{p}) = Var\Big(\frac{S_n}{n}\Big) = \frac{1}{n^2} Var(S_n) = \frac{np(1-p)}{n^2} = \frac{p(1-p)}{n}.
+\]
+++++
 
 
 
