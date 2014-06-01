@@ -726,6 +726,76 @@ r = \frac{5\times 460 - 40\times 56}{\sqrt{(5\times 360-(40)^2)(5\times 648-(56)
 Logo, a correlação linear entre as variáveis x:[X] e x:[Y] é positiva, porém fraca.
 ====
 
+==== Regressão
+
+Podemos dizer que a análise de regressão tem como objetivo descrever, através de um modelo matemático, a relação entre duas
+variáveis.
+
+(((Variável, Dependente)))
+(((Variável, Independente)))
+
+A variável sobre a qual desejamos fazer uma estimativa recebe o nome de _variável dependente_ e a outra variável
+recebe o nome de _variável independente_.
+
+Assim, supondo que x:[X] é a variável independente e x:[Y] é a variável dependente, procuramos determinar através de ajuste de uma reta
+a relação entre essas variáveis, ou seja, vamos obter a função definida por
+[latexmath]
+++++
+\[
+Y = a + bX,
+\]
+++++
+onde x:[a] e x:[b] são os parâmetros da regressão. Entretanto, sabemos que essa fórmula não é exata,
+assim, existe a presença de um erro aleatório:
+[latexmath]
+++++
+\[
+Y_i = a + bX_i + e_i,\quad i=1,\ldots,n,
+\]
+++++
+onde x:[e_i] é um erro aleatório que possui valor esperado igual a zero. 
+
+A maneira que vamos utilizar para determinar valores adequados para x:[a] e x:[b] é a de minimizar
+a soma de quadrado dos erros. Ou seja, queremos escolher os valores x:[a] e x:[b] de tal forma
+que o nosso modelo ``erre'' pouco.
+
+(((Método, Mínimos Quadrados)))
+
+Este método é chamado de _método de mínimos quadrados_. Assim, dadas as observações x:[(X_i,Y_i),i=1,\ldots,n], desejamos minimizar
+[latexmath]
+++++
+\[
+\sum_{i=1}^n e_i^2 = \sum_{i=1}^n (Y_i-a-bX_i)^2.
+\]
+++++
+
+Desta forma, para encontrarmos o ponto de mínimo, precisamos calcular as derivadas parciais:
+[latexmath]
+++++
+\[
+\frac{\partial \sum_{i=1}^n e_i}{\partial a} = -2 \sum_{i=1}^n (Y_i-a-bX_i),
+\]
+++++
+e
+[latexmath]
+++++
+\[
+\frac{\partial \sum_{i=1}^n e_i}{\partial b} = -2 \sum_{i=1}^n (Y_i-a-bX_i)X_i.
+\]
+++++
+Assim, como os nossos estimadores x:[\widehat{a}] e x:[\widehat{b}] são os valores que minimizam a soma de quadrados 
+dos erros, temos que x:[\widehat{a}] e x:[\widehat{b}] são tais que as derivadas parciais calculadas acima se anulam.
+
+Logo, temos que:
+
+
+
+
+
+
+
+
+
 
 
 
