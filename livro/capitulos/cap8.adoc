@@ -649,6 +649,45 @@ Esse diagrama nos fornece uma ideia grosseira, porém útil, da correlação exi
 .Exemplo de diagrama de dispersão
 image::images/inferencia/disper1.eps[scaledwidth="60%"] 
 
+.Correlação Linear
+
+(((Correlação Linear, Positiva)))
+(((Correlação Linear, Negativa)))
+(((Correlação Não-Linear)))
+
+* Se os pontos do diagrama apresentam uma tendência linear ascendente, temos correlação linear positiva:
+
+.Exemplo de diagrama de dispersão com correlação linear positiva
+image::images/inferencia/disper2.eps[scaledwidth="60%"] 
+
+* Se os pontos apresentam uma tendência linear descendente, temos correlação linear negativa
+.Exemplo de diagrama de dispersão com correlação linear negativa
+image::images/inferencia/disper3.eps[scaledwidth="60%"] 
+
+* Se os pontos apresentam uma tendência curvilínea, temos correlação não-linear
+.Exemplo de diagrama de dispersão com correlação não-linear
+image::images/inferencia/disper4.eps[scaledwidth="60%"] 
+
+* Se os pontos apresentam-se dispersos, não oferecendo uma tendência definida, concluímos que não há correlação entre as variáveis
+em estudo
+
+.Exemplo de diagrama de dispersão sem correlação
+image::images/inferencia/disper5.eps[scaledwidth="60%"] 
+
+===== Coeficiente de Correlação de Pearson
+
+(((Correlação, de Pearson)))
+
+É usado para indicar o grau de intensidade da correlação _linear_ entre duas variáveis e, ainda, o sentido dessa correlação: 
+se positivo ou negativo. O coeficiente de correlação de Pearson entre duas amostras x:[(x_1,\ldots,x_n)]
+e x:[(y_1,\ldots,y_n)] é dado por 
+
+[latexmath]
+++++
+\[
+r = \frac{n\sum_{i=1}^n x_iy_i - \big( \sum_{i=1}^n x_i \big) \big(\sum_{i=1}^n y_i\big)}{\sqrt{\Big[n\sum_{i=1}^nx_i^2-\big(\sum_{i=1}^n x_i\big)^2\Big]\Big[n\sum_{i=1}^n y_i^2 - \big(\sum_{i=1}^n y_i\big)^2\big]}}.
+\]
+++++
 
 
 
