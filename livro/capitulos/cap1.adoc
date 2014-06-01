@@ -826,6 +826,136 @@ Daí x:[l_{\rm Md} = 4, h = 4, F_{\rm ac,ant} = 4] e x:[F_{\rm Md} = 10]. Portan
 
 * A dispersão aumenta à medida que aumenta o valor da medida de dispersão.
 
+.Exemplo de motivação para as medidas de dispersão
+====
+x:[\centerline{\textbf{Notas de alunos em cinco avaliações, UFPB, 2009.}}]
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|ccccc|c}
+\hline
+Alunos& & & Notas& & & Média \\
+\hline
+Antônio &5&5&5&5&5&5\\
+João &6&4&5&4&6&5\\
+José &10&5&5&5&0&5\\
+Pedro &10&10&5&0&0&5\\
+\hline
+\end{tabular}
+\]
+++++
+
+Observa-se que:
+* As notas de Antônio não variaram;
+
+* As notas de João variaram menos do que as notas de José;
+
+* As notas de Pedro variaram mais do que as notas de todos os outros alunos.
+
+====
+
+Principais Medidas de Dispersão:
+
+* Amplitude,
+
+* Desvio Médio,
+
+* Variância,
+
+* Desvio Padrão,
+
+* Coeficiente de Variação.
+
+==== Amplitude
+
+(((Amplitude)))
+
+A amplitude nos fornece uma idéia do campo de variação dos elementos. Mais precisamente, ela fornece a maior variação possível dos dados.
+
+A amplitude é dada pela fórmula
+[latexmath]
+++++
+\[
+A = X_{\max} -  X_{\min}.
+\]
+++++
+
+.Exemplo de cálculo de amplitude
+====
+No exemplo anterior:   
+[latexmath]
+++++
+\[
+A_{\hbox{Antônio}}=0;\quad A_{\hbox{João}}=2;\quad A_{\hbox{José}}=10;\quad A_{\hbox{Pedro}}=10.
+\[
+++++
+====
+
+NOTE: A amplitude não mede bem a dispersão dos dados porque, usam-se apenas os valores extremos, 
+ao invés de utilizar todos os elementos da distribuição. 
+
+
+==== Desvio Médio
+
+(((Desvio, Médio)))
+
+Desejando-se medir a dispersão dos dados em relação a média, parece interessante a análise dos desvios
+em torno da média. Isto é, análise dos desvios:
+
+[latexmath]
+++++
+\[
+d_i=(X_i-\overline{X}).
+\]
+++++
+
+Mas a soma de todos os desvios é igual a zero. Isto é:
+
+[latexmath]
+++++
+\[
+\sum_{i=1}^{n} d_i= \sum_{i=1}^{n} (X_i-\overline{X})=0.
+\]
+++++
+
+Logo, será preciso encontrar uma maneira de se trabalhar com os desvios sem que a soma dê zero.
+Dessa forma, define-se o _desvio médio_.
+
+* *Dados não agrupados* (brutos):
+
+Neste caso, calculamos o desvio médio como:
+
+[latexmath]
+++++
+\[
+DM=\sum_{i=1}^{n} \frac{|d_i|}{n}= \sum_{i=1}^{n} \frac{|X_i-\overline{X}|}{n}.
+\]
+++++
+
+NOTE: Veja que os desvios foram considerados em módulo, evitando-se assim que a soma fosse nula. 
+
+* *Dados agrupados*:
+
+[latexmath]
+++++
+\[
+DM=\sum_{i=1}^{n} \frac{|d_i|\cdot F_i}{n}= \sum_{i=1}^{n} \frac{|X_i-\overline{X}|\cdot F_i}{n}.
+\]
+++++
+
+NOTE: x:[X_i] representa um valor individual, no caso de uma distribuição de frequência simples, ou o 
+ponto médio  da classe (x:[pm_i]), no caso de uma distribuição de frequência em classes.
+
+
+IMPORTANT
+====
+* O desvio médio é mais vantajoso que a amplitude, visto que leva em consideração todos os valores da distribuição.
+
+* No entanto, não é tão frequentemente empregado, pois não apresenta propriedades matemáticas interessantes.
+====
+
+
 
 
 
