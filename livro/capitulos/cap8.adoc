@@ -685,9 +685,45 @@ e x:[(y_1,\ldots,y_n)] é dado por
 [latexmath]
 ++++
 \[
-r = \frac{n\sum_{i=1}^n x_iy_i - \big( \sum_{i=1}^n x_i \big) \big(\sum_{i=1}^n y_i\big)}{\sqrt{\Big[n\sum_{i=1}^nx_i^2-\big(\sum_{i=1}^n x_i\big)^2\Big]\Big[n\sum_{i=1}^n y_i^2 - \big(\sum_{i=1}^n y_i\big)^2\big]}}.
+r = \frac{n\sum_{i=1}^n x_iy_i - \big( \sum_{i=1}^n x_i \big) \big(\sum_{i=1}^n y_i\big)}{\sqrt{\Big[n\sum_{i=1}^nx_i^2-\big(\sum_{i=1}^n x_i\big)^2\Big]\Big[n\sum_{i=1}^n y_i^2 - \big(\sum_{i=1}^n y_i\big)^2\Big]}},
 \]
 ++++
+onde x:[n] é o número de observações. Observe que x:[r\in [-1,1\]]. 
+
+Temos que
+
+* Se x:[r=1], há uma correlação perfeita e positiva entre as variáveis.
+
+* Se x:[r=-1] há uma correlação perfeita e negativa entre as variáveis.
+
+* Se x:[r=0] não há correlação entre as variáveis.
+
+.Exemplo de cálculo do coeficiente de correlação de Pearson
+====
+Considere uma amostra aleatória das variáveis x:[(X,Y)], dada por x:[(x_i,y_i)] na tabela abaixo:
+
+[options="header,footer"]
+|==========================
+|      x:[x_i]|x:[y_i] | x:[x_iy_i] | x:[x_i^2] | x:[y_i^2]
+| 4|12|48|16|144
+|6|10|60|36|100
+|8|8|64|64|64
+|10|12|120|100|144
+|12|14|168|144|196
+|40|56|460|360|648
+|==========================
+
+====
+
+
+
+
+
+
+
+
+
+
 
 
 
