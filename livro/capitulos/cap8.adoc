@@ -661,10 +661,12 @@ image::images/inferencia/disper1.eps[scaledwidth="60%"]
 image::images/inferencia/disper2.eps[scaledwidth="60%"] 
 
 * Se os pontos apresentam uma tendência linear descendente, temos correlação linear negativa
+
 .Exemplo de diagrama de dispersão com correlação linear negativa
 image::images/inferencia/disper3.eps[scaledwidth="60%"] 
 
 * Se os pontos apresentam uma tendência curvilínea, temos correlação não-linear
+
 .Exemplo de diagrama de dispersão com correlação não-linear
 image::images/inferencia/disper4.eps[scaledwidth="60%"] 
 
@@ -931,16 +933,74 @@ Na figura abaixo apresentamos o diagrama de dispersão juntamente com a reta de 
 .Exemplo de ajuste de regressão
 image::images/inferencia/regressao.eps[scaledwidth="60%"] 
 
+===== O Poder Explicativo do Modelo
+
+(((Coeficiente, de Determinação)))
+
+Existe uma medida utilizada para avaliar a ``qualidade'' do ajuste. Esta medida é conhecida como _coeficiente de determinação_ ou
+poder explicativo da regressão. Seu valor fornece a proporção da variação total da variável x:[Y] explicada pela variável x:[X]
+através da função ajustada. 
+
+O coeficiente de determinação é denotado por x:[R^2] e pode ser expresso por
+[latexmath]
+++++
+\[
+R^2 = \frac{\widehat{b}^2 S_{XX}}{S_{YY}}\quad \hbox{~ou~}\quad R^2 = \frac{\widehat{b}S_{YX}}{S_{YY}},
+\]
+++++
+onde
+[latexmath]
+++++
+\[
+S_{XX} = \sum_{i=1}^n X_i^2 - \frac{\big(\sum_{i=1}^n X_i\big)^2}{n},
+\]
+++++
+[latexmath]
+++++
+\[
+S_{YY} = \sum_{i=1}^n Y_i^2 - \frac{\big(\sum_{i=1}^n Y_i\big)^2}{n},
+\]
+++++
+e
+[latexmath]
+++++
+\[
+S_{YX} = \sum_{i=1}^n Y_iX_i - \frac{\big(\sum_{i=1}^n Y_i\big)\big(\sum_{i=1}^n X_i\big)}{n}.
+\]
+++++
+
+O coeficiente de determinação pode assumir valores no intervalo x:[[0,1\]], isto é, x:[0\leq R^2\leq 1].
+
+Quando x:[R^2=0], a variação explicada de x:[Y] é zero, ou seja, a reta ajustada é paralela ao eixo da variável x:[X].
+Se x:[R^2=1], a reta ajustada explicará toda a variação de x:[Y]. Assim, quanto mais próximo de 1 estiver o valor de
+x:[R^2], melhor será a ``qualidade'' do ajuste da regressão aos pontos do diagrama de dispersão e quanto mais próximo
+de zero, pior será a ``qualidade'' do ajuste.
+
+Se o poder explicativo for, por exemplo, 98%, isto significa que 98% das variações de x:[Y] são explicadas por x:[X]
+através da função escolhida para relacionar as duas variáveis e 2% são atribuídas a causas aleatórias.
+
+Na figura abaixo vemos um exemplo no qual x:[R^2 =1]:
+
+.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=1]
+image::images/inferencia/r2um.eps[scaledwidth="60%"] 
 
 
+Nesta figura vemos um exemplo no qual x:[R^2<1], mas é próximo de 1, x:[R^2 = 0,9..]:
+
+.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,9]
+image::images/inferencia/r2alto.eps[scaledwidth="60%"] 
 
 
+Nesta figura vemos um exemplo no qual x:[0<R^2], mas é próximo de 0, x:[R^2 = 0,1..]:
+
+.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,31]
+image::images/inferencia/r2baixo.eps[scaledwidth="60%"] 
 
 
+Na figura abaixo vemos um exemplo com x:[R^2=0]:
 
-
-
-
+.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0]
+image::images/inferencia/r2zero.eps[scaledwidth="60%"] 
 
 
 
