@@ -51,7 +51,7 @@ população pode ser representada por uma _variável aleatória_.
 A relação entre inferência e amostragem é ilustrada na figura abaixo:
 
 .Amostragem e Inferência
-image::images/inferencia/amos-infe.eps
+image::images/inferencia/amos-infe.eps[scaledwidth="60%"] 
 
 
 
