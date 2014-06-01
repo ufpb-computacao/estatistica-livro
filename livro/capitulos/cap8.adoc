@@ -239,10 +239,10 @@ Temos que
 ++++
 \[
 \begin{array}{lll}
-E(\overline{X}) &=& E\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
-&=& \sum_{i=1}^n \frac{E(X_i)}{n}\\
-&=& \frac{1}{n} \sum_{i=1}^n \mu\\
-&=& \frac{n\mu}{n}\\
+E(\overline{X}) &=& \displaystyle E\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
+&=& \displaystyle\sum_{i=1}^n \frac{E(X_i)}{n}\\
+&=& \displaystyle\frac{1}{n} \sum_{i=1}^n \mu\\
+&=& \displaystyle\frac{n\mu}{n}\\
 &=&\mu.
 \end{array}
 \]
@@ -253,11 +253,11 @@ soma das variâncias, e as propriedades da variância, temos:
 ++++
 \[
 \begin{array}{lll}
-Var(\overline{X}) &=& Var\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
-&=& \sum_{i=1}^n Var\Big(\frac{X_i}{n}\Big)\\
-&=& \frac{1}{n^2} \sum_{i=1}^n \sigma^2\\
-&=& \frac{n\sigma^2}{n^2}\\
-&=&\frac{\sigma^2}{n}.
+Var(\overline{X}) &=& \displaystyle Var\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
+&=& \displaystyle\sum_{i=1}^n Var\Big(\frac{X_i}{n}\Big)\\
+&=& \displaystyle\frac{1}{n^2} \sum_{i=1}^n \sigma^2\\
+&=& \displaystyle\frac{n\sigma^2}{n^2}\\
+&=&\displaystyle\frac{\sigma^2}{n}.
 \end{array}
 \]
 ++++
