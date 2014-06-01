@@ -1,5 +1,67 @@
 == Introdução à Inferência Estatística
 
-Falta escrever
+=== Definições Básicas
+
+Vamos começar relembrando dois conceitos básicos importantes de estatística, a saber, _população_ e _amostra.
+
+(((População)))
+(((Amostra)))
+
+De uma maneira mais precisa, temos a seguinte definição:
+
+Definição: População::
++
+--
+O conjunto de todos os elementos, ou resultados, sob investigação é chamado de população.
+--
+
+Quando estamos lidando com uma população é interessante observar:
+
+* Características mensuráveis (expressas por variáveis numéricas);
+
+* Características qualitativas (expressas por variáveis nominais ou categóricas).
+
+(((Parâmetros Populacionais)))
+
+Definição: Parâmetros Populacionais::
++
+--
+Damos o nome de parâmetros da população ou parâmetros populacionais aos valores numéricos que caracterizam globalmente
+uma população.
+--
+
+(((Amostra, Tamanho)))
+
+Relacionadas à população temos as seguintes definições:
+
+Definição: Amostra e Tamanho Amostral::
++
+--
+Um subconjunto da população é chamado de _amostra_. Chamamos o número de elementos da amostra de de
+_tamanho amostral_.
+--
+
+[IMPORTANT]
+====
+O objetivo da inferência estatística é produzir afirmações sobre dada característica da população na qual estamos
+interessados, a partir de informações colhidas de uma parte dessa população. Esta característica na 
+população pode ser representada por uma _variável aleatória_.
+====
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
