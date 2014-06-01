@@ -790,9 +790,54 @@ Logo, temos que:
 [latexmath]
 ++++
 \[
--2\sum_{i=1}^n (Y_i-\widehat{a}-\widehat{b}X_i) = 0 \Rightarrow \sum_{i=1}^n Y_i - n\widehat{a} - \widehat{b}\sum_{i=1}^n X_i = 0 \Rightarrow \frac{1}{n}\sum_{i=1}^n Y_i = \widehat{a} + \widehat{b} \frac{1}{n}\sum_{i=1}^n X_i \Rightarrow \widehat{a} = \overline{Y} - \widehat{b}\overline{X}.
+-2\sum_{i=1}^n (Y_i-\widehat{a}-\widehat{b}X_i) = 0 \Rightarrow \sum_{i=1}^n Y_i - n\widehat{a} - \widehat{b}\sum_{i=1}^n X_i = 0 \Rightarrow \frac{1}{n}\sum_{i=1}^n Y_i = \widehat{a} + \widehat{b} \frac{1}{n}\sum_{i=1}^n X_i,
 \]
 ++++
+e portanto
+[latexmath]
+++++
+\[
+\widehat{a} = \overline{Y} - \widehat{b}\overline{X}.
+\]
+++++
+
+Por outro lado, temos também que
+[latexmath]
+++++
+\[
+-2\sum_{i=1}^n (Y_i-\widehat{a}-\widehat{b}X_i)X_i = 0 \Rightarrow \sum_{i=1}^n Y_iX_i - \widehat{a}\sum_{i=1}^n X_i - \widehat{b}\sum_{i=1}^nX_i^2 =0,
+\]
+++++
+daí,
+[latexmath]
+++++
+\[
+\sum_{i=1}^n Y_iX_i = \widehat{a} \sum_{i=1}^n X_i + \widehat{b} \sum_{i=1}^n X_i^2.
+\]
+++++
+
+Substituindo o valor de x:[\widehat{a}] na equação acima, obtemos
+[latexmath]
+++++
+\[
+\sum_{i=1}^n Y_iX_i = (\overline{Y}-\widehat{b}\overline{X})\sum_{i=1}^n X_i + \widehat{b}\sum_{i=1}^n X_i^2.
+\]
+++++
+Isolando x:[\widehat{b}], obtemos
+[latexmath]
+++++
+\[
+\widehat{b}\Big(\sum_{i=1}^n X_i^2 - \frac{\big(\sum_{i=1}^n X_i\big)^2}{n}\Big) = \sum_{i=1}^n Y_iX_i - \frac{\big(\sum_{i=1}^n Y_i\big)\big(\sum_{i=1}^n X_i\big)}{n}.
+\]
+++++
+Isto nos fornece
+[latexmath]
+++++
+\[
+\widehat{b} = \frac{\sum_{i=1}^n Y_iX_i - \big(\sum_{i=1}^n Y_i\big)\big(\sum_{i=1}^n X_i\big)/n}{\sum_{i=1}^n X_i^2 - \big(\sum_{i=1}^n X_i\big)^2/n}
+\]
+++++
+
 
 
 
