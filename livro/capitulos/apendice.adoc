@@ -1,20 +1,6 @@
 == Apêndice - Tabela da Distribuição Normal
 
-[latexmath]
-++++
-\[
- \P(X \leq x) = \Phi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2 \pi}}\,
-      e^{-y^2/2}\, dy
-\]
-++++
 
-[latexmath]
-++++
-\[
- \Phi(-x) = 1 - \Phi(x)
- \]
- ++++
- 
 [latexmath]
 ++++
 \[
