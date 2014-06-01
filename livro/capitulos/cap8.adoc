@@ -924,15 +924,13 @@ Logo, temos a equação
 \widehat{Y}_i = 0,91 + 0,86X_i.
 \]
 ++++
+====
 
-A figura abaixo mostra o diagrama de dispersão juntamente com a reta de regressão estimada acima:
+Na figura abaixo apresentamos o diagrama de dispersão juntamente com a reta de regressão estimada no exemplo anterior:
 
 .Exemplo de ajuste de regressão
 image::images/inferencia/regressao.eps[scaledwidth="60%"] 
 
-Bla ble
-
-====
 
 
 
