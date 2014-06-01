@@ -948,7 +948,7 @@ NOTE: x:[X_i] representa um valor individual, no caso de uma distribuição de f
 ponto médio  da classe (x:[pm_i]), no caso de uma distribuição de frequência em classes.
 
 
-IMPORTANT
+[IMPORTANT]
 ====
 * O desvio médio é mais vantajoso que a amplitude, visto que leva em consideração todos os valores da distribuição.
 
