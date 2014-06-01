@@ -930,6 +930,7 @@ A figura abaixo mostra o diagrama de dispersão juntamente com a reta de regress
 .Exemplo de ajuste de regressão
 image::images/inferencia/regressao.eps[scaledwidth="60%"] 
 
+Bla
 
 ====
 
