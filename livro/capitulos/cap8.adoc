@@ -79,24 +79,24 @@ seja obtida aleatoriamente.
 
 Temos dois grandes grupos de amostragem:
 
-* *Amostragem Probabilística*: O mecanismo de escolha dos elementos da amostra é tal 
+* _Amostragem Probabilística_: O mecanismo de escolha dos elementos da amostra é tal 
 que existe uma probabilidade conhecida de cada elemento da população
 vir a participar da amostra.
 
-* *Amostragem Não-Probabilística*: Não existe nenhum mecanismo probabilístico na seleção da amostra.
+* _Amostragem Não-Probabilística_: Não existe nenhum mecanismo probabilístico na seleção da amostra.
 
 .Tipos de Amostragem Probabilística
 
 (((Amostragem, Aleatória Simples)))
 
-. *Amostragem Aleatória Simples* (AAS):
+* *Amostragem Aleatória Simples* (AAS):
 .. Supomos que a população é homogênea, ou seja, a característica que estamos procurando pode aparecer
 em qualquer elemento da população com a mesma probabilidade;
 .. Procedimento: Rotular os elementos da população e sortear os indivíduos que farão parte da amostra.
 
 (((Amostragem, Sistemática)))
 
-. *Amostragem Sistemática*:
+* *Amostragem Sistemática*:
 .. Supomos que a população é homogênea;
 .. Procedimento: Os elementos da população são ordenados, a retirada do primeiro elemento é aleatória, e 
 a partir do segundo elemento a retirada é feita periodicamente (com período determinístico). Por exemplo,
@@ -105,7 +105,7 @@ retirado, depois o décimo elemento após o segundo retirado, e assim por diante
 
 (((Amostragem, Estratificada)))
 
-. *Amostragem Estratificada*:
+* *Amostragem Estratificada*:
 .. Supomos que a população é heterogênea, ou seja, a característica que estamos procurando pode variar dependendo de 
 onde os dados são retirados. Entretanto, supomos que podemos dividir a população em grupos (estratos) homogêneos;
 .. Procedimento: A seleção dos elementos de cada estrato é realizada de forma aleatória, ou seja, realizamos uma
@@ -113,7 +113,7 @@ amostragem aleatória simples em cada estrato.
 
 (((Amostragem, por Conglomerado)))
 
-. *Amostragem por Conglomerado*:
+* *Amostragem por Conglomerado*:
 .. Supomos que a população pode ser dividida em subgrupos (conglomerados) heterogêneos;
 .. Procedimento: A amostragem é realizada sobre os conglomerados, e não mais sobre os indivíduos da população,
 ou seja, realiza-se uma amostragem aleatória simples, onde os elementos escolhidos são os conglomerados a serem utilizados,
@@ -145,7 +145,76 @@ será uma variável aleatória. Assim, as estatísticas, sendo variáveis aleat�
 
 .Formalização do Problema
 
-Seja
+(((AAS)))
+
+Seja x:[X_1,\ldots,X_n] uma amostra aleatória simples (AAS) de uma população de tamanho x:[n]. Para realizarmos uma afirmação
+sobre algum parâmetro x:[\theta] da população (média, variância, etc.), utilizaremos uma estatística x:[T] que, como sabemos,
+é uma função da amostra, isto é, x:[T=f(X_1,\ldots,X_n)], para alguma função x:[f].
+
+(((Distribuição Amostral)))
+
+[NOTE]
+====
+Quando conhecemos melhor o comportamento da estatística x:[T], ou seja, se conhecemos sua _distribuição amostral_, que
+nada mais é que a distribuição de probabilidade da variável aleatória x:[T], poderemos realizar afirmações sobre o
+parâmetro x:[\theta]. 
+
+
+A distribuição amostral relata o comportamento da estatística x:[T], caso retirássemos todas as possíveis amostras de tamanho
+x:[n].
+====
+
+===== Distribuição Amostral da Média
+
+(((Média Amostral)))
+
+Consideremos uma população identificada pela variável aleatória x:[X], cujos parâmetros _média populacional_ 
+x:[\mu = E(X)] e variância populacional x:[\sigma^2 = Var(X)] são supostos conhecidos. Vamos tirar
+todas as possíveis amostras de tamanho x:[n] dessa população e, para ccada uma, calcular a média
+amostral x:[\overline{X}] dada por
+[latexmath]
+++++
+\[
+\overline{X} = \frac{1}{n} \sum_{i=1}^n X_i,
+\]
+++++
+e em seguida vamos obter algumas propriedades de x:[\overline{X}].
+
+.Exemplo de distribuição amostral de x:[\overline{X}]
+====
+Considere a população x:[\{1,3,5,7\}]. Sabemos que a média populacional é x:[\mu = 4,2] e a variância populacional é
+x:[\sigma^2 = 4,16]. Se retiramos uma amostra de tamanho x:[n=2], segundo amostragem aleatória simples (então
+todos os elementos possuem a mesma probabilidade de serem retirados), a distribuição amostral de 
+[latexmath]
+++++
+\[
+\overline{X} = \frac{X_1+X_2}{2}
+\]
+++++
+será dada por
+|=======================
+|x:[\overline{x}]|  1,2,3,4,5,6,7  |Total
+|x:[P(\overline{X}=\overline{x})]    |x:[1/25], x:[2/25],x:[5/25],x:[6/25],x:[4/25],x:[1/25]     |1
+|=======================
+
+====
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
