@@ -773,14 +773,14 @@ Desta forma, para encontrarmos o ponto de mínimo, precisamos calcular as deriva
 [latexmath]
 ++++
 \[
-\frac{\partial \sum_{i=1}^n e_i}{\partial a} = -2 \sum_{i=1}^n (Y_i-a-bX_i),
+\frac{\partial \sum_{i=1}^n e_i^2}{\partial a} = -2 \sum_{i=1}^n (Y_i-a-bX_i),
 \]
 ++++
 e
 [latexmath]
 ++++
 \[
-\frac{\partial \sum_{i=1}^n e_i}{\partial b} = -2 \sum_{i=1}^n (Y_i-a-bX_i)X_i.
+\frac{\partial \sum_{i=1}^n e_i^2}{\partial b} = -2 \sum_{i=1}^n (Y_i-a-bX_i)X_i.
 \]
 ++++
 Assim, como os nossos estimadores x:[\widehat{a}] e x:[\widehat{b}] são os valores que minimizam a soma de quadrados 
@@ -838,12 +838,112 @@ Isto nos fornece
 \]
 ++++
 
+Costuma-se usar as seguintes notações para o numerador e denominador da expressão que define x:[\widehat{b}]:
+[latexmath]
+++++
+\[
+S_{YX} = \sum_{i=1}^n Y_iX_i - \frac{\big(\sum_{i=1}^n Y_i\big)\big(\sum_{i=1}^n X_i\big)}{n},
+\]
+++++
+e
+[latexmath]
+++++
+\[
+S_{XX} = \sum_{i=1}^n X_i^2 - \frac{\big(\sum_{i=1}^n X_i\big)^2}{n}.
+\]
+++++
+
+Assim, temos as fórmulas para x:[\widehat{b}] e x:[\widehat{a}] em notação simplificada:
+
+[latexmath]
+++++
+\[
+\widehat{b} = \frac{S_{YX}}{S_{XX}}\quad\hbox{~e~}\quad \widehat{a} = \overline{Y} - \widehat{b}\overline{X}.
+\]
+++++
+
+[IMPORTANT]
+====
+Como estamos fazendo uso de uma amostra para obtermos os valores dos parâmetros, o resultado, na realidade, é um
+_estimador_ para a verdadeira equação de regressão, e portanto, temos
+[latexmath]
+++++
+\[
+\widehat{Y}_i = \widehat{a} + \widehat{b}X_i,
+\]
+++++
+onde x:[\widehat{Y}_i] é um estimador para x:[Y_i].
+====
+
+.Exemplo de cálculo das estimativas dos parâmetros em um modelo de regressão
+====
+Abaixo apresentamos os valores de uma amostra de 10 observações de duas variáveis aleatórias x:[X] e x:[Y]:
+
+[options="header,footer"]
+|==========================
+|      x:[y_i]|x:[x_i] | x:[y_ix_i] | x:[x_i^2] 
+| 6|5|30|25
+|9|8|72|64
+|8|7|56|49
+|10|10|100|100
+|5|6|30|36
+|7|7|49|49
+|8|9|72|81
+|4|3|12|9
+|6|8|48|64
+|2|2|4|4
+|x:[\sum x_i]| x:[\sum y_i] | x:[\sum x_iy_i] | x:[\sum x_i^2] 
+|65|65|473|481
+|==========================
+
+Daí,
+[latexmath]
+++++
+\[
+S_{YX} = 473 - \frac{65^2}{10} = 473-422,5 = 50,5,
+\]
+++++
+e
+[latexmath]
+++++
+\[
+S_{XX} = 481-\frac{65^2}{10} = 481 - 422,5 = 58,5,
+\]
+++++
+assim
+[latexmath]
+++++
+\[
+\widehat{b} = \frac{50,5}{58,5} = 0,86\quad\hbox{~e~} \quad \widehat{a} = \frac{65}{10}-0,86\cdot\frac{65}{10} = 0,91.
+\]
+++++
+Logo, temos a equação
+[latexmath]
+++++
+\[
+\widehat{Y}_i = 0,91 + 0,86X_i.
+\]
+++++
+
+A figura abaixo mostra o diagrama de dispersão juntamente com a reta de regressão estimada acima:
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+====
 
 
 
