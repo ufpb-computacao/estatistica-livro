@@ -714,6 +714,16 @@ Considere uma amostra aleatória das variáveis x:[(X,Y)], dada por x:[(x_i,y_i)
 |40|56|460|360|648
 |==========================
 
+Assim, temos x:[n=5], e portanto
+
+[latexmath]
+++++
+\[
+r = \frac{5\times 460 - 40\times 56}{\sqrt{(5\times 360-(40)^2)(5\times 648-(56)^2)}} = 0,4160.
+\]
+++++
+
+Logo, a correlação linear entre as variáveis x:[X] e x:[Y] é positiva, porém fraca.
 ====
 
 
