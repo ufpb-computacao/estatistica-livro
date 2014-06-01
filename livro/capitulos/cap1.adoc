@@ -1039,7 +1039,228 @@ S^2=\frac{1}{n-1}\Big[\sum_{i=1}^{n}X_i^2\cdot F_i-\frac{(\sum_{i=1}^{n}X_i\cdot
 que foram obtidas por transformações nas respecitivas fórmulas originais.
 ====
 
+==== Desvio Padrão
 
+(((Desvio, Padrão)))
+
+Temos também outra medida de dispersão, que é a raiz
+quadrada da variância, chamada de _desvio padrão_. Assim,
+
+[latexmath]
+++++
+\[
+\sigma = \sqrt{\sigma^2} \quad \hbox{é o desvio desvio padrão populacional}
+\]
+++++
+
+e
+
+[latexmath]
+++++
+\[
+S = \sqrt{S^2} \quad \hbox{é o desvio desvio padrão amostral.}
+\]
+++++
+
+NOTE: Para o cálculo do desvio padrão deve-se primeiramente determinar o valor da variância e, em seguida, 
+extrair a raiz quadrada desse resultado.
+
+
+.Exemplo de cálculo das medidas de dispersão
+====
+Calcular a amplitude, o desvio médio, a variância e o desvio padrão da seguinte distribuição amostral:
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c}
+\hline
+$X_i$& $F_i$ \\
+\hline
+5&2\\
+7& 3\\
+8&5 \\
+9& 4\\
+11& 2\\
+\hline
+Total&16\\
+\hline
+\end{tabular}
+\]
+++++
+
+* *Cálculo da amplitude*:
+
+[latexmath]
+++++
+\[
+A= X_{\max} -  X_{\min}=11-5=6.
+\]
+++++
+
+* *Cálculo do desvio médio:* 
+
+Primeiramente é preciso do valor da média. Assim,
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c}
+\hline
+$X_i$& $F_i$ & $X_i\cdot F_i$ \\
+\hline
+5&2&10 \\
+7& 3&21 \\
+8&5 &40 \\
+9& 4&36 \\
+11& 2&22 \\
+\hline
+Total&16& 129\\
+\hline
+\end{tabular}
+\]
+++++
+
+[latexmath]
+++++
+\[
+\overline{X}=\sum_{i=1}^{n} \frac{X_i\cdot F_i}{n}= \frac{129}{16}=8,06.
+\]
+++++
+
+Para o cálculo do x:[DM] são abertas novas colunas:
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c|c|c}
+\hline
+$X_i$& $F_i$ & $X_i\cdot F_i$&$|X_i-\overline{X}|=|d_i|$&$|d_i|\cdot F_i$ \\
+\hline
+5&2&10  &$|5-8,06|=3,06$&6,12\\
+7& 3&21 &$|7-8,06|=1,06$&3,18\\
+8&5 &40 &$|8-8,06|=0,06$&0,30\\
+9& 4&36 &$|9-8,06|=0,94$&3,76\\
+11& 2&22 &$|11-8,06|=2,94$&5,88\\
+\hline
+Total&16& 129&-&19,24\\
+\hline
+\end{tabular}
+\]
+++++
+
+Portanto,
+
+[latexmath]
+++++
+\[
+DM=\sum_{i=1}^{n} \frac{|d_i|}{n}= \frac{19,24}{16}=1,20.
+\]
+++++
+
+* *Cálculo do variância amostral*: 
+
+Observe que o cálculo será facilitado, pois sabe-se que: x:[n=16]; 
+x:[\sum X_i\cdot F_i= 129]. Resta encontrar x:[\sum X_i^2\cdot F_i]. 
+Para tanto, uma nova coluna é considerada na tabela.
+
+[latexmath]
+++++
+\[
+\begin{tabular}{c|c|c|c}
+\hline
+$X_i$& $F_i$ & $X_i\cdot F_i$ & $X_i^2\cdot F_i$\\
+\hline
+5&2&10& 50\\
+7& 3&21 &147\\
+8&5 &40 &320\\
+9& 4&36 &324\\
+11& 2&22 &242\\
+\hline
+Total&16& 129&1083\\
+\hline
+\end{tabular}
+\]
+++++
+
+Portanto,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+S^2&=&\displaystyle\frac{1}{n-1}\Big[\sum_{i=1}^{n}X_i^2\cdot F_i-\frac{(\sum_{i=1}^{n}X_i\cdot F_i)^2}{n}\Big]\\
+&=&\displaystyle\frac{1}{16-1}\Big[1083-\frac{(129)^2}{16}\Big]=\frac{1}{15}\Big[1083-\frac{16641}{16}\Big]\\
+&=&\displaystyle\frac{1}{15}\Big[\frac{17328-16641}{16}\Big] = \frac{687}{15\cdot 16}=2,86.
+\end{array}
+\]
+++++
+
+
+Logo, a variância amostral x:[S^2 = 2,86].
+
+* *Cálculo do desvio padrão amostral*:
+
+
+Como x:[S=\sqrt{S^2}], logo x:[S=\sqrt{2,86}=1,69].
+
+Dessa forma, podemos observar que a distribuição possui média x:[8,06]. Isto é, seus valores estão em torno de 
+x:[8,06] e seu grau de concentração é de x:[1,2], medido pelo desvio médio e de x:[1,69], medido pelo desvio padrão.
+
+====
+
+
+==== Coeficiente de Variação
+(((Coeficiente de Variação)))
+
+Trata-se de uma medida relativa de dispersão útil para a comparação em termos relativos do grau de concentração 
+em torno da média de séries distintas. É dado por
+
+[latexmath]
+++++
+\[
+CV=\frac{S}{\overline{X}}\times 100.
+\]
+++++
+
+onde, x:[S] é o desvio padrão amostral e x:[\overline{X}] é a média amostral.
+
+O coeficiente de variação é expresso em porcentagens.
+
+.Exemplo de cálculo do coeficiente de variação
+====
+Numa empresa, o salário médio dos homens é de R$ 4.000,00, com desvio padrão de R$ 1.500,00, e o das 
+mulheres é em média de R$ 3.000,00, com um desvio padrão de R$ 1.200,00. Então:
+
+
+* Para os homens: 
+[latexmath]
+++++
+\[
+CV= \frac{1.500}{4.000}\times 100= 37,5\%.
+\]
+++++
+
+* Para as mulheres: 
+[latexmath]
+++++
+\[
+CV= \frac{1.200}{3.000}\times 100= 40\%.
+\]
+++++
+
+
+Logo, podemos concluir que os salários da mulheres apresenta maior dispersão relativa do que o dos homens.
+====
+
+Diz-se que a distribuição possui pequena variabilidade, ou dispersão, quando o coeficiente 
+der até 10%; média dispersão quando estiver acima de 10% até 20%; e grande dispersão quando superar 20%. 
+Alguns analistas consideram:
+
+
+* Baixa dispersão: x:[CV \leq 15\%];
+
+
+* Média dispersão: x:[15\% < CV < 30\%];
 
 ////
 Sempre termine os arquivos com uma linha em branco.
