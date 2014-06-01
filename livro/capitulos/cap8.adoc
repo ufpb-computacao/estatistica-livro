@@ -2,7 +2,7 @@
 
 === Definições Básicas
 
-Vamos começar relembrando dois conceitos básicos importantes de estatística, a saber, _população_ e _amostra.
+Vamos começar relembrando dois conceitos básicos importantes de estatística, a saber, _população_ e _amostra_.
 
 (((População)))
 (((Amostra)))
@@ -53,10 +53,41 @@ A relação entre inferência e amostragem é ilustrada na figura abaixo:
 .Amostragem e Inferência
 image::images/inferencia/amos-infe.eps[scaledwidth="60%"] 
 
+[NOTE]
+====
+* Se tivermos informações completas sobre a distribuição, não haverá necessidade de obter amostras.
 
+* Podemos supor que as variáveis vêm de uma família de distribuições de probabilidade, mas não podemos
+supor qual o valor do parâmetro. Por exemplo, podemos supor que os dados seguem distribuição normal,
+mas não podemos informar os valores das médias e variâncias.
 
+* Existem casos onde a amostragem é necessária. Por exemplo, se quisermos saber o número de glóbulos brancos.
 
+* É importante que a amostra seja representativa da população, ou seja, que o comportamento da amostra seja próximo
+do comportamento da população. Para garantir isso, é preciso saber escolher bem o tamanho amostral, e que a amostra
+seja obtida aleatoriamente. 
+====
 
+=== Amostragem
+
+(((Amostragem)))
+
+==== Tipos de Amostragem
+
+(((Amostragem, Probabilística)))
+(((Amostragem, Não-Probabilística)))
+
+Temos dois grandes grupos de amostragem:
+
+* *Amostragem Probabilística*: O mecanismo de escolha dos elementos da amostra é tal 
+que existe uma probabilidade conhecida de cada elemento da população
+vir a participar da amostra.
+
+* *Amostragem Não-Probabilística*: Não existe nenhum mecanismo probabilístico na seleção da amostra.
+
+===== Tipos de Amostragem Probabilística
+
+Bla
 
 
 
