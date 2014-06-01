@@ -987,13 +987,13 @@ image::images/inferencia/r2um.eps[scaledwidth="60%"]
 
 Nesta figura vemos um exemplo no qual x:[R^2<1], mas é próximo de 1, x:[R^2 = 0,9..]:
 
-.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,9]
+.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,93]
 image::images/inferencia/r2alto.eps[scaledwidth="60%"] 
 
 
 Nesta figura vemos um exemplo no qual x:[0<R^2], mas é próximo de 0, x:[R^2 = 0,1..]:
 
-.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,31]
+.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,32]
 image::images/inferencia/r2baixo.eps[scaledwidth="60%"] 
 
 
