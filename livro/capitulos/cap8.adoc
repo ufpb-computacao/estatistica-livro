@@ -787,6 +787,12 @@ Assim, como os nossos estimadores x:[\widehat{a}] e x:[\widehat{b}] são os valo
 dos erros, temos que x:[\widehat{a}] e x:[\widehat{b}] são tais que as derivadas parciais calculadas acima se anulam.
 
 Logo, temos que:
+[latexmath]
+++++
+\[
+-2\sum_{i=1}^n (Y_i-\widehat{a}-\widehat{b}X_i) = 0 \Rightarrow \sum_{i=1}^n Y_i - n\widehat{a} - \widehat{b}\sum_{i=1}^n X_i = 0 \Rightarrow \frac{1}{n}\sum_{i=1}^n Y_i = \widehat{a} + \widehat{b} \frac{1}{n}\sum_{i=1}^n X_i \Rightarrow \widehat{a} = \overline{Y} - \widehat{b}\overline{X}.
+\]
+++++
 
 
 
