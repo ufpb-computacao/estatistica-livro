@@ -193,7 +193,7 @@ todos os elementos possuem a mesma probabilidade de serem retirados), a distribu
 ++++
 será dada por
 
-[cols="3,2,2,2,2,2,2,2,2",frame="topbot",grid="none"]
+[format="csv",cols="3,2,2,2,2,2,2,2,2",frame="topbot",grid="none"]
 |=======================
 x:[\overline{x}],  1,2,3,4,5,6,7  ,Total
 x:[P(\overline{X}=\overline{x})],    x:[1/25], x:[2/25],x:[5/25],x:[6/25],x:[6/25],x:[4/25],x:[1/25]     ,1
