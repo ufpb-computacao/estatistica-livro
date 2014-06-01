@@ -714,6 +714,7 @@ Considere uma amostra aleatória das variáveis x:[(X,Y)], dada por x:[(x_i,y_i)
 |12|14|168|144|196
 |==========================
 
+Daí,
 
 [options="header,footer"]
 |==========================
@@ -901,6 +902,8 @@ Abaixo apresentamos os valores de uma amostra de 10 observações de duas variá
 |2|2|4|4
 |==========================
 
+Daí,
+
 [options="header,footer"]
 |==========================
 |x:[\sum x_i]| x:[\sum y_i] | x:[\sum x_iy_i] | x:[\sum x_i^2] 
@@ -1030,6 +1033,8 @@ temos os valores de uma amostra de 10 observações de duas variáveis aleatóri
 |6|8|48|64|36
 |2|2|4|4|4
 |==========================
+
+Daí,
 
 [options="header,footer"]
 |==========================
