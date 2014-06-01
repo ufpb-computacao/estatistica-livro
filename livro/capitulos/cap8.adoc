@@ -85,12 +85,67 @@ vir a participar da amostra.
 
 * *Amostragem Não-Probabilística*: Não existe nenhum mecanismo probabilístico na seleção da amostra.
 
-===== Tipos de Amostragem Probabilística
+.Tipos de Amostragem Probabilística
 
-Bla
+(((Amostragem, Aleatória Simples)))
 
+. *Amostragem Aleatória Simples* (AAS):
+.. Supomos que a população é homogênea, ou seja, a característica que estamos procurando pode aparecer
+em qualquer elemento da população com a mesma probabilidade;
+.. Procedimento: Rotular os elementos da população e sortear os indivíduos que farão parte da amostra.
 
+(((Amostragem, Sistemática)))
 
+. *Amostragem Sistemática*:
+.. Supomos que a população é homogênea;
+.. Procedimento: Os elementos da população são ordenados, a retirada do primeiro elemento é aleatória, e 
+a partir do segundo elemento a retirada é feita periodicamente (com período determinístico). Por exemplo,
+o primeiro elemento é retirado aleatoriamente, e em seguida, retiramos o décimo elemento depois do primeiro
+retirado, depois o décimo elemento após o segundo retirado, e assim por diante.
+
+(((Amostragem, Estratificada)))
+
+. *Amostragem Estratificada*:
+.. Supomos que a população é heterogênea, ou seja, a característica que estamos procurando pode variar dependendo de 
+onde os dados são retirados. Entretanto, supomos que podemos dividir a população em grupos (estratos) homogêneos;
+.. Procedimento: A seleção dos elementos de cada estrato é realizada de forma aleatória, ou seja, realizamos uma
+amostragem aleatória simples em cada estrato.
+
+(((Amostragem, por Conglomerado)))
+
+. *Amostragem por Conglomerado*:
+.. Supomos que a população pode ser dividida em subgrupos (conglomerados) heterogêneos;
+.. Procedimento: A amostragem é realizada sobre os conglomerados, e não mais sobre os indivíduos da população,
+ou seja, realiza-se uma amostragem aleatória simples, onde os elementos escolhidos são os conglomerados a serem utilizados,
+ao invés de já se sortear os elementos da amostra.
+
+==== Distribuição Amostral
+
+*Interesse*::
++
+--
+Uma medida que descreva certa característica da população. Normalmente temos interesse em um 
+parâmetro desconhecido da população, seja média, variância, ou outro parâmetro.
+--
+
+(((Estatística)))
+
+_Solução_::
++
+--
+A partir da amostra, podemos construir uma função, utilizando apenas os valores obtidos nesta amostra, para
+descrever tal característica. Esta função é chamada de *estatística*.
+--
+
+[NOTE]
+====
+Como os valores da amostra são aleatórios, qualquer quantidade calculada em função dos elementos da amostra também 
+será uma variável aleatória. Assim, as estatísticas, sendo variáveis aleatórias, terão alguma distribuição de probabilidade.
+====
+
+.Formalização do Problema
+
+Seja
 
 
 
