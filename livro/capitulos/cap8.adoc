@@ -48,6 +48,11 @@ interessados, a partir de informações colhidas de uma parte dessa população.
 população pode ser representada por uma _variável aleatória_.
 ====
 
+A relação entre inferência e amostragem é ilustrada na figura abaixo:
+
+.Amostragem e Inferência
+image::images/inferencia/amos-infe.eps
+
 
 
 
