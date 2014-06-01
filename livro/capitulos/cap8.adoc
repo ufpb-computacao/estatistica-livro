@@ -199,10 +199,37 @@ x:[\overline{x}],  1,2,3,4,5,6,7  ,Total
 x:[P(\overline{X}=\overline{x})],    x:[1/25], x:[2/25],x:[5/25],x:[6/25],x:[6/25],x:[4/25],x:[1/25]     ,1
 |=======================
 
+Assim, 
+[latexmath]
+++++
+\[
+E(\overline{X}) = \sum_{i=1}^7 \overline{x}_iP(\overline{X}=\overline{x}_i) = 4,2,
+\]
+++++
+e
+[latexmath]
+++++
+\[
+Var(\overline{X}) = 2,08.
+\]
+++++
 
 ====
 
+Temos então a seguinte proposição:
 
+Proposição::
++
+--
+Seja x:[X] uma variável aleatória com média x:[\mu] e variância x:[\sigma^2], e seja x:[(X_1,\ldots,X_n)]
+uma AAS de x:[X]. Então,
+[latexmath]
+++++
+\[
+E(\overline{X}) = \mu\quad\hbox{~e~} Var(\overline{X}) = \frac{\sigma^2}{n}.
+\]
+++++
+--
 
 
 
