@@ -646,8 +646,8 @@ O diagrama de dispersão apresenta os pares ordenados x:[(x_i,y_i)] de uma amost
 Esse diagrama nos fornece uma ideia grosseira, porém útil, da correlação existente.
 
 
-
-
+.Exemplo de diagrama de dispersão
+image::images/inferencia/disper1.eps[scaledwidth="60%"] 
 
 
 
