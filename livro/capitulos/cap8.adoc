@@ -238,7 +238,7 @@ Temos que
 [latexmath]
 ++++
 \[
-\begin{array}{ll}
+\begin{array}{lll}
 E(\overline{X}) &=& E\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
 &=& \sum_{i=1}^n \frac{E(X_i)}{n}\\
 &=& \frac{1}{n} \sum_{i=1}^n \mu\\
@@ -252,7 +252,7 @@ soma das variâncias, e as propriedades da variância, temos:
 [latexmath]
 ++++
 \[
-\begin{array}{ll}
+\begin{array}{lll}
 Var(\overline{X}) &=& Var\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
 &=& \sum_{i=1}^n Var\Big(\frac{X_i}{n}\Big)\\
 &=& \frac{1}{n^2} \sum_{i=1}^n \sigma^2\\
