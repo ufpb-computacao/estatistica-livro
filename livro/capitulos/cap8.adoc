@@ -609,7 +609,41 @@ da amostra.
 
 
 
+=== Regressão e Correlação
 
+(((Correlação)))
+
+==== Correlação
+
+(((Relação, Funcional)))
+(((Relação, Estatística)))
+
+.Relação Funcional e Relação Estatística
+
+Como sabemos, o perímetro e o lado de um quadrado estão relacionados. A relação que os liga é perfeitamente definida
+e pode ser expressa matematicamente por
+[latexmath]
+++++
+\[
+\hbox{perímetro} = 4l,
+\]
+++++
+onde x:[l] é o lado do quadrado. Atribuindo-se, então, um valor qualquer a x:[l], é possível determinar _exatamente_
+o valor do perímetro.
+
+Consideremos agora a relação entre o peso e a altura de um grupo de pessoas. É evidente que esta relação não é do mesmo tipo da anterior.
+Assim, podemos ter duas pessoas com a mesma altura e pesos diferentes, assim como pessoas com mesmo peso e alturas diferentes. Porém,
+existe uma tendência clara de que, quanto maior a altura, maior o peso.
+
+As relações do tipo perímetro-lado são chamadas de _relações funcionais_ e as relações do tipo peso-altura são chamadas de
+_relações estatística_.
+
+Quando duas variáveis estão ligadas por uma relação estatística, dizemos que existe *correlação* entre elas.
+
+===== Diagrama de Dispersão
+
+O diagrama de dispersão apresenta os pares ordenados x:[(x_i,y_i)] de uma amostra aleatória bidimensional em um plano cartesiano.
+Esse diagrama nos fornece uma ideia grosseira, porém útil, da correlação existente.
 
 
 
