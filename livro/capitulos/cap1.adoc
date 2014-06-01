@@ -425,6 +425,8 @@ O gráfico de linhas então é formado construindo pontos no plano (a partir das
 estes pontos são ligados por segmentos de retas.
 
 Abaixo vemos um exemplo de gráfico de linhas de uma série temporal
+
+.Gráfico de linhas
 image::images/descritiva/fig5.png[scaledwidth="60%"] 
 
 ==== Gráfico de Colunas
@@ -436,6 +438,8 @@ O eixo horizontal do gráfico consiste das diferentes categorias consideradas, e
 do dado.
 
 Abaixo vemos um exemplo de gráfico de colunas:
+
+.Gráfico de colunas
 image::images/descritiva/fig6.png[scaledwidth="60%"] 
 
 ==== Gráfico em Barras
@@ -447,6 +451,8 @@ O gráfico em barras pode ser entendido como uma variação do gráfico de colun
 vertical representa as diferentes categorias consideradas e o eixo horizontal é proporcional ao valor dado.
 
 Abaixo vemos um exemplo de gráfico em barras:
+
+.Gráfico em barras
 image::images/descritiva/fig7.png[scaledwidth="60%"] 
 
 ==== Gráfico de Setores
@@ -461,6 +467,8 @@ conjunto de dados, e os ângulos dos setores são proporcionais aos valores dos 
 quanto maior o valor obtido, maior será o ângulo do setor (e assim, maior será a fatia da pizza).
 
 Abaixo vemos um exemplo de gráfico de setores:
+
+.Gráfico de setores
 image::images/descritiva/fig8.png[scaledwidth="60%"] 
 
 === Medidas de Posição
