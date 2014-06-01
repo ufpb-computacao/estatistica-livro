@@ -981,28 +981,72 @@ através da função escolhida para relacionar as duas variáveis e 2% são atri
 
 Na figura abaixo vemos um exemplo no qual x:[R^2 =1]:
 
-.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=1]
+.Exemplo contendo diagrama de dispersão e reta de regressão ajustada para x:[R^2=1]
 image::images/inferencia/r2um.eps[scaledwidth="60%"] 
 
 
-Nesta figura vemos um exemplo no qual x:[R^2<1], mas é próximo de 1, x:[R^2 = 0,9..]:
+Nesta figura vemos um exemplo no qual x:[R^2<1], mas é próximo de 1, x:[R^2 = 0,93]:
 
-.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,93]
+.Exemplo contendo diagrama de dispersão e reta de regressão ajustada para x:[R^2=0,93]
 image::images/inferencia/r2alto.eps[scaledwidth="60%"] 
 
 
-Nesta figura vemos um exemplo no qual x:[0<R^2], mas é próximo de 0, x:[R^2 = 0,1..]:
+Nesta figura vemos um exemplo no qual x:[0<R^2], mas é próximo de 0, x:[R^2 = 0,32]:
 
-.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0,32]
+.Exemplo contendo diagrama de dispersão e reta de regressão ajustada para x:[R^2=0,32]
 image::images/inferencia/r2baixo.eps[scaledwidth="60%"] 
 
 
 Na figura abaixo vemos um exemplo com x:[R^2=0]:
 
-.Exemplo contendo diagrama de dispersão e reta de regressão para x:[R^2=0]
+.Exemplo contendo diagrama de dispersão e reta de regressão ajustada para x:[R^2=0]
 image::images/inferencia/r2zero.eps[scaledwidth="60%"] 
 
+.Exemplo de cálculo do x:[R^2]
+====
+Vamos calcular o coeficiente de determinação, x:[R^2], para o exemplo considerado na última seção. A saber,
+temos os valores de uma amostra de 10 observações de duas variáveis aleatórias x:[X] e x:[Y]:
 
+[options="header,footer"]
+|==========================
+|      x:[y_i]|x:[x_i] | x:[y_ix_i] | x:[x_i^2] | x:[y_i^2]
+| 6|5|30|25|36
+|9|8|72|64|81
+|8|7|56|49|64
+|10|10|100|100|100
+|5|6|30|36|25
+|7|7|49|49|49
+|8|9|72|81|64
+|4|3|12|9|16
+|6|8|48|64|36
+|2|2|4|4|4
+|x:[\sum x_i]| x:[\sum y_i] | x:[\sum x_iy_i] | x:[\sum x_i^2] |x:[\sum y_i^2]
+|65|65|473|481|475
+|==========================
+
+Daí,
+[latexmath]
+++++
+\[
+S_{YY} = 475 - \frac{65^2}{10} = 475-422,5 = 52,5,
+\]
+++++
+e
+[latexmath]
+++++
+\[
+S_{XX} = 481-\frac{65^2}{10} = 481 - 422,5 = 58,5.
+\]
+++++
+Como calculado anteriormente, temos que x:[\widehat{b} = 0,86] e, portanto,
+[latexmath]
+++++
+\[
+R^2 = (0,86)^2\frac{58,5}{52,5} \approx 0,83.
+\]
+++++
+Logo, 83% da variação total está sendo explicada pela regressão.
+====
 
 
 
