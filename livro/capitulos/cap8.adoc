@@ -926,21 +926,8 @@ Logo, temos a equação
 ++++
 
 A figura abaixo mostra o diagrama de dispersão juntamente com a reta de regressão estimada acima:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Exemplo de ajuste de regressão
+image::images/inferencia/regressao.eps[scaledwidth="60%"] 
 
 
 ====
