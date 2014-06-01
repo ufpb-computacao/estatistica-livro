@@ -264,16 +264,77 @@ Var(\overline{X}) &=& \displaystyle Var\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
 
 --
 
+===== Teorema Central do Limite
 
+(((Teorema, Central do Limite)))
 
+Vamos agora enunciar um dos principais resultados da probabilidade moderna: o teorema central do limite. 
+A demonstração deste teorema pode ser encontrada em livros mais avançados de probabilidade.
 
+Teorema Central do Limite::
++
+--
+Sejam x:[X_1,\ldots,X_n] uma AAS da variável aleatória x:[X], com distribuição comum satisfazendo
+x:[E(X_i) = \mu] e x:[Var(X_i)=\sigma^2]. Como a amostragem foi AAS, temos que as variáveis são independentes.
+Assim, se x:[n] é grande, temos que,
+[latexmath]
+++++
+\[
+P(\overline{X}\leq x) \approx \Phi_{\mu,\sigma^2/n}(x),
+\]
+++++
+onde x:[\Phi_{\mu,\sigma^2}] é a função de distribuição de uma variável aleatória x:[N\sim N(\mu,\sigma^2/n)]. 
 
+Assim, dizemos que x:[\overline{X}] segue aproximadamente distribuição normal com média x:[\mu] e variância
+x:[\sigma^2/n]. 
+--
 
+Podemos fazer a mudança de variáveis:
+[latexmath]
+++++
+\[
+Z = \frac{\overline{X}-\mu}{\sigma/\sqrt{n}}.
+\]
+++++
 
+Desta forma, o teorema central do limite nos diz que se x:[n] é suficientemente grande, temos que x:[Z] segue 
+aproximadamente distribuição normal com média 0 e variância 1.
 
+[NOTE]
+====
+No caso em que a distribuição de x:[X] é normal, a distribuição de x:[\overline{X}] será normal, mesmo para valores pequenos de x:[n].
+====
 
+===== Distribuição Amostral da Proporção
 
+Seja x:[X] uma variável aleatória com distribuição Bernoulli com parâmetro x:[p], isto é, 
+x:[P(X=1)=p] e x:[P(X=0)=1-p]. Temos que x:[E(X)=p] e x:[Var(X) = p(1-p)]. Considere
+uma AAS de tamanho x:[n] dessa população. Seja 
+[latexmath]
+++++
+\[
+S_n = \sum_{i=1}^n X_i,
+\]
+++++
+o número de indivíduos com a característica de interesse da amostra. Sabemos que 
+x:[S_n\sim Bin(n,p)]. 
 
+Pelo teorema central do limite temos que x:[\overline{X}] tem distribuição aproximadamente normal,
+para x:[n] suficientemente grande. Seja x:[\widehat{p} = \overline{X}], a proporção amostral. Então, 
+temos que
+[latexmath]
+++++
+\[
+\widehat{p} \stackrel{\hbox{aprox.}}{\sim} N\Big( p, \frac{p(1-p)}{n}\Big),
+\]
+++++
+ou equivalentemente,
+[latexmath]
+++++
+\[
+Z = \frac{\widehat{p}-p}{\sqrt{p(1-p)/n}} \stackrel{aprox.}{\sim} N(0,1).
+\]
+++++
 
 
 
