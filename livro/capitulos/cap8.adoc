@@ -231,7 +231,38 @@ E(\overline{X}) = \mu\quad\hbox{~e~} Var(\overline{X}) = \frac{\sigma^2}{n}.
 ++++
 --
 
+_Demonstração_::
++
+--
+Temos que
+[latexmath]
+++++
+\[
+\begin{array}{ll}
+E(\overline{X}) &=& E\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
+&=& \sum_{i=1}^n \frac{E(X_i)}{n}\\
+&=& \frac{1}{n} \sum_{i=1}^n \mu\\
+&=& \frac{n\mu}{n}\\
+&=&\mu.
+\end{array}
+\]
+++++
+e, usando que a variância de soma de variáveis independentes é dada pela
+soma das variâncias, e as propriedades da variância, temos:
+[latexmath]
+++++
+\[
+\begin{array}{ll}
+Var(\overline{X}) &=& Var\Big(\frac{1}{n}\sum_{i=1}^n X_i\Big)\\
+&=& \sum_{i=1}^n Var\Big(\frac{X_i}{n}\Big)\\
+&=& \frac{1}{n^2} \sum_{i=1}^n \sigma^2\\
+&=& \frac{n\sigma^2}{n^2}\\
+&=&\frac{\sigma^2}{n}.
+\end{array}
+\]
+++++
 
+--
 
 
 
