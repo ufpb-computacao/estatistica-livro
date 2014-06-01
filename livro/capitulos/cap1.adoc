@@ -888,7 +888,7 @@ No exemplo anterior:
 ++++
 \[
 A_{\hbox{Antônio}}=0;\quad A_{\hbox{João}}=2;\quad A_{\hbox{José}}=10;\quad A_{\hbox{Pedro}}=10.
-\[
+\]
 ++++
 ====
 
