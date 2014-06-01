@@ -1,3 +1,4 @@
+[appendix]
 == Apêndice - Tabela da Distribuição Normal
 [latexmath]
 ++++
