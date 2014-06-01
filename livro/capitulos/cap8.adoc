@@ -350,6 +350,70 @@ Var(\widehat{p}) = Var\Big(\frac{S_n}{n}\Big) = \frac{1}{n^2} Var(S_n) = \frac{n
 \]
 ++++
 
+===== Distribuição Amostral da Diferença entre Médias
+
+Em vários problemas práticos, deseja-se comparar duas populações de interesse. Por exemplo,
+podemos estar interessados em avaliar a diferença de desempenho entre duas linhas de produção.
+
+Suponha que duas populações de interesse, x:[X_1] e x:[X_2], com médias x:[\mu_1] e x:[\mu_2],
+e variâncias x:[\sigma_1^2] e x:[\sigma_2^2], respectivamente. 
+
+Considere duas AAS independentes de tamanhos x:[n_1] e x:[n_2] das duas populações. Pelo
+teorema central do limite, a distribuição amostral da diferença x:[(\overline{X}_1-\overline{X}_2)],
+para x:[n_1] e x:[n_2] suficientemente grandes, será dada por
+[latexmath]
+++++
+\[
+(\overline{X}_1-\overline{X}_2)\stackrel{aprox.}{\sim} N\Big(\mu_1-\mu_2,\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}\Big),
+\]
+++++
+ou equivalentemente,
+[latexmath]
+++++
+\[
+Z = \frac{(\overline{X}_1-\overline{X}_2)-(\mu_1-\mu_2)}{\sqrt{\sigma_1^2/n_1+\sigma_2^2/n_2}}  \stackrel{aprox.}{\sim} N(0,1),
+\]
+++++
+pois,
+[latexmath]
+++++
+\[
+E(\overline{X}_1-\overline{X}_2) = E(\overline{X}_1) - E(\overline{X}_2) = \mu_1-\mu_2,
+\]
+++++
+e
+[latexmath]
+++++
+\[
+Var(\overline{X}_1-\overline{X}_2) = Var(\overline{X}_1)+Var(\overline{X}_2)=\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}.
+\]
+++++
+
+===== Distribuição Amostral da Diferença entre Proporções
+
+Neste caso, supomos que as duas populações de interesse apresentam distribuição binomial com proporções x:[p_1] e x:[p_2].
+Considere que são feitas duas AAS independentes de tamanhos x:[n_1] e x:[n_2]. A distribuição amostral da diferença
+entre proporções x:[(\widehat{p}_1-\widehat{p}_2)], para x:[n_1] e x:[n_2] suficientemente grandes, pelo teorema
+central do limite temos
+[latexmath]
+++++
+\[
+(\widehat{p}_1-\widehat{p}_2)\stackrel{aprox.}{\sim} N\Big(p_1-p_2,\frac{p_1(1-p_1)}{n_1}+\frac{p_2(1-p_2)}{n_2}\Big),
+\]
+++++
+ou equivalentemente,
+[latexmath]
+++++
+\[
+Z = \frac{(\widehat{p}_1-\widehat{p}_2)-(p_1-p_2)}{\sqrt{p_1(1-p_1)/n_1+p_2(1-p_2)/n_2}}  \stackrel{aprox.}{\sim} N(0,1).
+\]
+++++
+
+
+
+
+
+
 
 
 
