@@ -710,6 +710,7 @@ Considere uma amostra aleatória das variáveis x:[(X,Y)], dada por x:[(x_i,y_i)
 |8|8|64|64|64
 |10|12|120|100|144
 |12|14|168|144|196
+|x:[\sum x_i]| x:[\sum y_i] | x:[\sum x_iy_i] | x:[\sum x_i^2] | x:[\sum y_i^2]
 |40|56|460|360|648
 |==========================
 
