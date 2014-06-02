@@ -213,7 +213,11 @@ negativos, e portanto, teremos que usar a simetria da distribuição normal. Ass
 [latexmath]
 ++++
 \[
-P(-2,55\leq Z\leq 1,2) = \Phi(1,2) - \Phi(-2,55) = \Phi(1,2) - (1-\Phi(2,55)) = \Phi(1,2)+\Phi(2,55) - 1 = 0,8849+0,9946-1=0,8795.
+\begin{array}{lll}
+P(-2,55\leq Z\leq 1,2) &=& \Phi(1,2) - \Phi(-2,55) = \Phi(1,2) - (1-\Phi(2,55))\\
+&=& \Phi(1,2)+\Phi(2,55) - 1 = 0,8849+0,9946-1\\
+&=&0,8795.
+\end{array}
 \]
 ++++
 
