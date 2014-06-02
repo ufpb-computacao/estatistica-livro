@@ -18,7 +18,7 @@ x:[a] e x:[b] sejam ambos finitos. Se a função de densidade de x:[X] for dada 
 \[
 f(x) = \begin{cases}
 \frac{1}{b-a},& a\leq x\leq b,\\
-0,& \hbox{caso contrário},
+0,& \textrm{caso contrário},
 \]
 ++++
 dizemos que x:[X] é uniformemente distribuída sobre o intervalo x:[[a,b\]], e denotamos x:[X\sim U[a,b\]].
@@ -77,7 +77,7 @@ Seja x:[X] a variável aleatória que representa a coordenada do ponto escolhido
 \[
 f(x) = \begin{cases}
 1/2,&0\leq x\leq 2,\\
-0,&\hbox{caso contrário},
+0,&\textrm{caso contrário},
 \]
 ++++
 e
