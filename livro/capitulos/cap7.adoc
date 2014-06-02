@@ -430,7 +430,7 @@ Observe que x:[f(x)] é, de fato, uma função de densidade, pois x:[f(x)\geq 0]
 \[
 \begin{array}{lll}
 \displaystyle\int_{-\infty}^\infty f(x)dx &=& \displaystyle\int_0^\infty \lambda e^{-\lambda x} dx\\
-&=& \displaystyle\lambda \frac{e^{-\lambda x}}{-\lambda}\Big_0^\infty = \lambda\frac{1}{\lambda}\\
+&=& \displaystyle\lambda \frac{e^{-\lambda x}}{-\lambda}\Big|_0^\infty = \lambda\frac{1}{\lambda}\\
 &=&1.
 \end{array}
 \]
@@ -477,7 +477,7 @@ Integrando por partes com x:[dv = \lambda e^{-\lambda x}dx] e x:[u = x], temos q
 ++++
 \[
 \begin{array}{lll}
-E(X) &=& \displaystyle -x e^{-\lambda x}\Big_0^\infty - \int_0^\infty - e^{-\lambda x} dx\\
+E(X) &=& \displaystyle -x e^{-\lambda x}\Big|_0^\infty - \int_0^\infty - e^{-\lambda x} dx\\
 &=& 0 + \frac{e^{-\lambda x}}{-\lambda} \Big|_0^\infty\\
 &=& \frac{1}{\lambda}.
 \end{array}
