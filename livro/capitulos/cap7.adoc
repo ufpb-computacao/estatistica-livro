@@ -115,7 +115,294 @@ de x:[\mu] e x:[\sigma^2]:
 .Exemplo de funções de densidade da distribuição normal para valores de x:[\mu] e x:[\sigma^2] descritos no par ordenado x:[(\mu;\sigma^2)]
 image::images/densidades/densidadenormal.eps[scaledwidth="60%"] 
 
+Esperança e Variância::
++
+--
+Temos que se x:[X\sim N(\mu,\sigma^2)], então
+[latexmath]
+++++
+\[
+E(X) = \mu\quad\hbox{~e~} Var(X) = \sigma^2.
+\]
+++++
+--
+
+==== Padronização e Tabulação da Distribuição Normal
+
+(((Distribuição, Normal, Tabulação)))
+(((Distribuição, Normal, Padronização)))
+
+Temos que se x:[X\sim N(\mu,\sigma^2)], então a variável _padronizada_
+[latexmath]
+++++
+\[
+Z = \frac{X-\mu}{\sigma}
+\]
+++++
+terá distribuição normal padrão, ou seja, x:[Z\sim N(0,1)], e sua função de densidade é dada por
+[latexmath]
+++++
+\[
+f(z) = \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}},\quad -\infty<z<\infty.
+\]
+++++
+
+Logo, temos que
+[latexmath]
+++++
+\[
+P(a\leq Z\leq b) = \int_a^b \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}}dz.
+\]
+++++
+
+Desta forma, dada uma variável aleatória x:[X\sim N(\mu,\sigma^2)], podemos padronizá-la
+na variável x:[Z], e obter as probabilidades a partir da tabela de valores da 
+função de distribuição da normal padrão
+[latexmath]
+++++
+\[
+\Phi(z) = P(Z\leq z) = \int_{-\infty}^z \frac{1}{\sqrt{2\pi}} e^{-\frac{z^2}{2}}dz.
+\]
+++++
+
+NOTE: Observe que na padronização dividimos por x:[\sigma], que é o desvio padrão da variável aleatória normal. *Não* dividimos pela variância.
+
+A distribuição normal padrão satisfaz a seguinte propriedade se *simetria*:
+[latexmath]
+++++
+\[
+\Phi(-x) = 1-\Phi(x).
+\]
+++++
+
+[IMPORTANT]
+====
+A identidade de simetria acima nos diz que podermos calcular as probabilidades x:[P(Z\leq -x)] a partir 
+das probabilidades x:[P(Z\leq x)]. Assim, como a tabela da normal apresentada no apêndice não contém 
+valores negativos de x:[x], para calcularmos estas probabilidades, utilizamos a fórmula acima.
+====
+
+.Exemplo de cálculo de probabilidades utilizando a tabela da normal
+====
+Seja x:[Z\sim N(0,1)]. Vamos calcular as probabilidades x:[P(0\leq Z\leq 1), P(Z\geq 1,93), P(-2,55\leq Z\leq 1,2)] e 
+x:[P(Z\leq 1,93)]. 
+
+Observe inicialmente que
+[latexmath]
+++++
+\[
+P(0\leq Z \leq 1) = \Phi(1) - \Phi(0).
+\]
+++++
+
+Olhando para a tabela da normal (que pode ser encontrada no Apêndice deste livro), obtemos que
+x:[\Phi(1) = 0,8413] e x:[\Phi(0) = 0,5]. Portanto
+[latexmath]
+++++
+\[
+P(0\leq Z \leq 1) = \Phi(1) - \Phi(0)=0,8413-0,5 = 0,3413.
+\]
+++++
+
+Para a próxima probabilidade, temos que x:[P(Z\geq 1,93) = 1 - P(Z\leq 1,93) = 1-\Phi(1,93)]. Olhando para a tabela no apêndice, obtemos
+x:[P(Z\geq 1,93) = 1-\Phi(1,93) =1- 0,9732 = 0,0268]. 
+
+
+A próxima probabilidade deve ser observada com cuidado, pois temos um valor negativo, e se olharmos na tabela, não há valores
+negativos, e portanto, teremos que usar a simetria da distribuição normal. Assim,
+[latexmath]
+++++
+\[
+P(-2,55\leq Z\leq 1,2) = \Phi(1,2) - \Phi(-2,55) = \Phi(1,2) - (1-\Phi(2,55)) = \Phi(1,2)+\Phi(2,55) - 1 = 0,8849+0,9946-1=0,8795.
+\]
+++++
+
+Finalmente, x:[P(Z\leq 1,93) = \Phi(1,93) = 0,0268.]
+====
+
+Veremos agora mais alguns exemplos de aplicações da distribuição normal.
+
+.Exemplo de aplicação da distribuição normal
+====
+Suponha que as alturas dos alunos de ciências da computação da UFPB seguem distribuição normal
+com média 1,60m e desvio padrão 0,30m. Seja x:[X] a variável aleatória que indica a altura de
+um aluno de ciências da computação da UFPB escolhido ao acaso.
+Encontre a probabilidade de um aluno medir:
+
+a) Entre 1,50m e 1,80m;
+
+Queremos calcular x:[P(1,50\leq X\leq 1,80)].  Observe que 
+[latexmath]
+++++
+\[
+Z = \frac{X-1,60}{0,30} \sim N(0,1).
+\]
+++++
+
+Temos então que:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(1,50\leq X\leq 1,80) &=& P(1,50-1,60 \leq X-1,60\leq 1,80-1,60) = P(-0,1\leq X-1,60\leq 0,2)\\
+&=& P(-0,1/0,3 \leq (X-1,60)/0,30 \leq 0,2/0,3) = P(-1/3\leq Z\leq 2/3)\\
+&=& \Phi(0,67) - \Phi(-0,33)\\
+&=& \Phi(0,67) - (1-\Phi(0,33))\\
+&=& \Phi(0,67)+\Phi(0,33) -1\\
+&=& 0,7486+0,6293-1\\
+&=& 0,3779.
+\end{array}
+\]
+++++
+
+b) Mais de 1,75m;
+
+Queremos calcular x:[P(X\geq 1,75)].
+
+Temos então que:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(X\geq 1,75) &=& P(X-1,60\geq 1,75-1,60) = P(X-1,60\geq 0,15)\\
+&=& P((X-1,60)/0,30 \geq 0,15/0,3) = P( Z\geq 1/2)\\
+&=& 1 - P(Z\leq 1/2)\\
+&=& 1-\Phi(0,5)\\
+&=& 1-0,6915\\
+&=& 0,3085.
+\end{array}
+\]
+++++
+
+c) Menos de 1,48m;
+
+Queremos calcular x:[P(X\leq 1,48)].
+
+Temos então que:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(X\leq 1,48) &=& P(X-1,60\leq 1,48-1,60) = P(X-1,60\leq -0,12)\\
+&=& P((X-1,60)/0,30 \leq -0,12/0,3) = P( Z\leq -4/10)\\
+&=&\Phi(-0,4)\\
+&=& 1-\Phi(0,4)\\
+&=& 0,3446.
+\end{array}
+\]
+++++
+
+d) Qual deve ser a altura mínima para escolhermos 10% dos alunos mais altos?
+
+Queremos encontrar um valor x:[c], tal que x:[P(X>c)=0,10].
+
+Assim, temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(X> c) &=& P(X-1,60> c-1,60)\\
+&=& P((X-1,60)/0,30 > (c-1,60)/0,3) = P( Z> (c-1,60)/0,3)\\
+&=&1-\Phi((c-1,60)/0,3).
+\end{array}
+\]
+++++
+Assim, queremos encontrar x:[c], tal que x:[0,1 = 1-\Phi((c-1,60)/0,3)], ou seja,
+x:[\Phi((c-1,60)/0,3) = 0,9]. Seja x:[z = (c-1,60)/0,3], temos que x:[\Phi(z) = 0,9].
+Olhando para a tabela, vemos que z = 1,28. 
+
+Logo, x:[(c-1,60)/0,3 = 1,28], o que implica que x:[c = 1,6 + 0,384 = 1,984]. Desta forma,
+a altura em questão é 1,98m.
+====
+
+
+==== Aproximação da Distribuição Binomial pela Normal
+
+Vimos no capítulo de variáveis aleatórias discretas que podemos aproximar a distribuição binomial pela
+distribuição Poisson. 
+
+A aproximação da distribuição binomial pela Poisson é boa quando o parâmetro x:[p] da distribuição binomial
+é pequeno. Se este valor for grande, a aproximação pela distribuição Poisson é pobre. Neste caso,
+devemos aproximar pela distribuição normal.
+
+Proposição: Aproximação da distribuição binomial pela normal::
++
+--
+Suponha que x:[X_n] é uma sequência de variáveis aleatórias tais que x:[X_n\sim Bin(n,p)].
+Então, vale o seguinte resultado:
+[latexmath]
+++++
+\[
+\lim_{n\to\infty} P\Big(\frac{X_n-np}{\sqrt{np(1-p)} \leq z\Big) = \Phi(z),
+\]
+++++
+onde x:[\Phi(z)] é a função de distribuição da normal padrão.
+
+Desta forma, vale a aproximação para x:[n] grande:
+[latexmath]
+++++
+\[
+P(X_n\leq x) \approx \Phi\big( \frac{x-np}{\sqrt{np(1-p)}}\big).
+\]
+++++
+--
+
+.Exemplo de aplicação da aproximação da binomial pela normal
+====
+Suponha que lançamos uma moeda honesta 200 vezes. Obtenha a probabilidade do número de caras
+estar entre 45% e 55% dos lançamentos (incluindo os extremos). Ou seja, se
+x:[X_n] denota o número de caras obtidas após os 200 lançamentos, temos que
+x:[X_n\sim Bin(200,1/2)], e queremos calcular 
+[latexmath]
+++++
+\[
+P(90\leq X_n\leq 110) = P(X_n\leq 110) - P(X_n<89).
+\]
+++++
+
+Como o parâmetro x:[p] da binomial não é pequeno, ou seja, não está próximo de zero,
+a aproximação ideal é dada pela normal. 
+
+Assim, como x:[\sqrt{np(1-p)}=7,07] e x:[np = 100], pela proposição anterior, temos que
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(90\leq X_n\leq 110) &\approx& \Phi\Big(\frac{110-100}{7,07}\Big) - \Phi\Big(\frac{90-100}{7,07}\Big)\\
+&=& \Phi(1,41) - \Phi(-1,41)\\
+&=& \Phi(1,41) - (1-\Phi(1,41))\\
+&=& 2\cdot \Phi(1,41) - 1\\
+&=& 2\cdot 0,9207-1
+&=& 0,8414.
+\end{array}
+\]
+++++
+
+Logo, a probabilidade é de aproximadamente 0,8414.
+====
+
+[NOTE]
+====
+No exemplo anterior:
+
+* A probabilidade exata é dada por 0,8626. 
+
+* A probabilidade obtida pela aproximação de Poisson é dada por 0,7065. Vemos que a aproximação é, de fato, muito pobre neste caso.
+
+O motivo da aproximação ser ruim é que a aproximação da binomial pela Poisson supõe que a probabilidade x:[p] da binomial tende a zero
+quando x:[n] tende a infinito, o que não acontece no exemplo anterior.
+====
+
+=== A Distribuição Exponencial
+
+(((Distribuição, Exponencial)))
+
 Bla
+
+
+
+
+
 
 
 
