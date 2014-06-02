@@ -346,7 +346,7 @@ Desta forma, vale a aproximação para x:[n] grande:
 [latexmath]
 ++++
 \[
-P(X_n\leq x) \approx \Phi\big( \frac{x-np}{\sqrt{np(1-p)}}\big).
+P(X_n\leq x) \approx \Phi\Big( \frac{x-np}{\sqrt{np(1-p)}}\Big).
 \]
 ++++
 --
