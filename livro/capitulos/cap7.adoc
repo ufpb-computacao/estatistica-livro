@@ -8,7 +8,7 @@ Além disso, apresentaremos algumas propriedades destas distribuições, tais co
 
 (((Distribuição, Uniforme)))
 
-.Definição: Variável Aleatória Seguindo Distribuição Uniforme::
+Definição: Variável Aleatória Seguindo Distribuição Uniforme::
 +
 --
 Suponha que x:[X] seja uma variável aleatória contínua que assuma valores no intervalo x:[[a,b\]], no qual
@@ -401,13 +401,360 @@ quando x:[n] tende a infinito, o que não acontece no exemplo anterior.
 
 (((Distribuição, Exponencial)))
 
-Bla
+A distribuição exponencial é uma distribuição muito utilizada na prática para modelar tempo de falha de objetos.
+Por exemplo, pode ser usada para modelar o tempo que demora até uma lâmpada falhar. Ela possui um parâmetro,
+x:[\lambda], que pode ser interpretado da seguinte forma: x:[1/\lambda] é o tempo de vida médio do objeto.
+
+Mais precisamente, temos a
+
+Definição: Variável Aleatória Seguindo Distribuição Exponencial::
++
+--
+Uma variável aleatória contínua x:[X] assumindo valores não-negativos é dita seguir
+distribuição exponencial com parâmetro x:[\lambda>0], se sua função de densidade é dada por
+[latexmath]
+++++
+\[
+f(x) = \begin{cases}
+\lambda e^{-\lambda x},& x\geq 0,\\
+0,& x< 0.
+\end{cases}
+\]
+++++
+Denotamos x:[X\sim Exp(\lambda)].
+--
+
+Observe que x:[f(x)] é, de fato, uma função de densidade, pois x:[f(x)\geq 0] para todo x:[x], e, além disso,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle\int_{-\infty}^\infty f(x)dx &=& \displaystyle\int_0^\infty \lambda e^{-\lambda x} dx\\
+&=& \displaystyle\lambda \frac{e^{-\lambda x}}{-\lambda}\Big_0^\infty = \lambda\frac{1}{\lambda}\\
+&=&1.
+\end{array}
+\]
+++++
 
 
+Na figura abaixo apresentamos gráficos das funções de densidade da distribuição exponencial para alguns valores
+de x:[\lambda]:
+
+.Exemplo de funções de densidade da distribuição exponencial para valores de x:[\lambda] descritos no parêntese x:[(\lambda)]
+image::images/densidades/densidadeexp.eps[scaledwidth="60%"] 
+
+Podemos também calcular a função de distribuição de uma variável aleatória seguindo distribuição exponencial
+explicitamente:
+
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+F(x) &=& P(X\leq x) = \int_0^x \lambda e^{-\lambda x}dx = \lambda\frac{e^{-\lambda x}}{-\lambda}\Big|_0^x\\
+&=& \lambda\Big[\frac{-e^{-\lambda x}}{\lambda} - \frac{1}{\lambda}\Big]\\
+&=& 1 - e^{-\lambda x},
+\end{array}
+\]
+++++
+para x:[x\geq 0], e x:[F(x) = 0], se x:[x<0]. 
+
+Em particular, obtemos x:[P(X>x) = e^{-\lambda x}.]
+
+Esperança::
++
+--
+Temos que
+[latexmath]
+++++
+\[
+E(X) = \int_0^\infty x \lambda e^{-\lambda x} dx.
+\]
+++++
+
+Integrando por partes com x:[dv = \lambda e^{-\lambda x}dx] e x:[u = x], temos que x:[v = -e^{-\lambda x}] e x:[du = dx], e portanto,
+
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+E(X) &=& \displaystyle -x e^{-\lambda x}\Big_0^\infty - \int_0^\infty - e^{-\lambda x} dx\\
+&=& 0 + \frac{e^{-\lambda x}}{-\lambda} \Big|_0^\infty\\
+&=& \frac{1}{\lambda}.
+\end{array}
+\]
+++++
+--
+
+Variância::
++
+--
+Integrando por partes duas vezes, obtemos que
+[latexmath]
+++++
+\[
+E(X^2) = \frac{2}{\lambda^2}.
+\]
+++++
+Portanto,
+[latexmath]
+++++
+\[
+Var(X) = E(X^2) - (E(X))^2 = \frac{2}{\lambda^2} - \frac{1}{\lambda^2} = \frac{1}{\lambda^2}.
+\]
+++++
+--
+
+.Exemplo de cálculo envolvendo a distribuição exponencial
+====
+Suponha que x:[X\sim Exp(\lambda)]. Vamos encontrar a probabilidade de que x:[X] seja maior que seu valor esperado.
+De fato, como x:[E(X) = 1/\lambda], queremos calcular:
+[latexmath]
+++++
+\[
+P(X>1/\lambda) = 1 - F(1/\lambda) = 1- (1 - e^{-\lambda \cdot 1/\lambda}) = e^{-1} \approx 0,37.
+\]
+++++
+====
+
+Exercício::
++
+--
+O tempo médio de falha das lâmpadas produzidas em uma certa fábrica é de 17500 horas. Sabendo que o tempo de falha destas lâmpadas segue
+distribuição exponencial, qual é a probabilidade de uma lâmpada falhar no primeiro ano de uso?
+--
+
+_Solução_::
++
+--
+Primeiro, observe que como o tempo médio de falha é de 17500 horas, o parâmetro da exponencial é dado por
+[latexmath]
+++++
+\[
+\frac{\lambda} = \frac{1}{17500}.
+\]
+++++
+
+Como um ano tem 365 dias (em geral não considera-se anos bissextos), temos x:[24\cdot 365 = 8760] horas em um ano. Assim, queremos
+calcular
+[latexmath]
+++++
+\[
+P(X\leq 8760) = 1-e^{-\frac{1}{17500}\cdot 8760} \approx 1-e^{-0,5} \approx 0,39.
+\]
+++++
+Assim, temos uma probabilidade de aproximadamente 39% de que a lâmpada venha a falhar no primeiro ano de uso.
+--
+
+==== Perda de Memória
+
+(((Distribuição, Exponencial, Perda de Memória)))
+
+Assim como a distribuição Geométrica é a única distribuição discreta que possui perda de memória,
+a distribuição exponencial é a única distribuição contínua que possui perda de memória.
+
+Mais precisamente, considere o seguinte exemplo: 
+
+.Ilustração da perda de memória da distribuição exponencial
+====
+Suponha que Pedro é funcionário da fábrica de lâmpadas e sua função é esperar
+até que uma lâmpada falhe. Suponha que Pedro já esperou 6 meses e a lâmpada ainda não falhou,
+isto significa que a probabilidade da lâmpada falhar nos próximos 30 dias será maior do que a probabilidade de falhar nos primeiros
+30 dias de uso da lâmpada?
+
+A resposta é não. Não importa o quanto tempo Pedro tenha esperado, a probabilidade de falha nos próximos 30 dias sempre será a mesma. 
+Assim como para a distribuição geométrica, esta propriedade da distribuição exponencial é chamada de _perda de memória_.
+====
+
+Mais precisamente, seja latexmath:[$X$] uma variável aleatória seguindo distribuição exponencial com parâmetro latexmath:[$\lambda$].
+Então, temos que para todo par de números reais positivos, latexmath:[$t,s$], vale
+[latexmath]
+++++
+\[
+P(X>t+s|X>t) = P(X>s).
+\]
+++++
+
+De fato, temos que
+[latexmath]
+++++
+\[
+P(X>t+s|X>t) = \frac{P(X>t+s,X>t)}{P(X>t)} = \frac{P(X>t+s)}{P(X>t)},
+\]
+++++
+no entanto, já vimos que, para todo x:[x>0], x:[P(X>x) = e^{-\lambda x}]. Daí,
+
+[latexmath]
+++++
+\[
+P(X>t+s|X>t) = \frac{P(X>t+s)}{P(X>t)} = \frac{e^{-\lambda (t+s)}}{e^{-\lambda t} = e^{-\lambda s} = P(X>s).
+\]
+++++
+
+Isto prova a perda de memória. Observe que aqui, assim como na geométrica, na realidade, 
+mostra mais do que falamos. Não só diz que a próxima probabilidade não muda,
+mas essencialmente diz o seguinte: se Pedro já esperou um certo 
+tempo latexmath:[$t$] para a lâmpada falhar, e ela ainda não falhou,
+as probabilidades de falhas dali para frente são as mesmas 
+de como se ele tivesse começado a esperar naquele momento. Ou seja,
+a distribuiçã exponencial ``esquece'' todo o passado que já foi esperado.
+
+=== A Distribuição Gama
+
+(((Distribuição, Gama)))
+
+==== A Função Gama
+ 
+(((Função, Gama)))
+
+Definição: Função Gama::
++
+--
+A função gama, denotada por x:[\Gamma(\cdot)], é dada por
+[latexmath]
+++++
+\[
+\Gamma(p) = \int_0^\infty x^{p-1} e^{-x} dx,\quad p>0.
+\]
+++++
+--
+
+Realizando a integral por partes na função gama, fazendo x:[u = x^{p-1}] e 
+x:[dv = e^{-x}dx], temos que
+
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+\displaystyle \Gamma(p) &=& \displaystyle -e^{-x}x^{p-1}\Big|_0^\infty - \int_0^\infty \big(-e^{-x}(p-1)x^{p-2}\big) dx\\
+&=& \displaystyle 0 + (p-1)\int_0^\infty e^{-x} x^{p-2}dx\\
+&=& (p-1)\Gamma(p-1).
+\end{array}
+\]
+++++
+
+Se x:[p = n] um número natural, então teremos que
+[latexmath]
+++++
+\[
+\Gamma(n) = (n-1)\Gamma(n-1) = \cdots = (n-1)(n-2)\cdots 1 \cdot \Gamma(1).
+\]
+++++
+
+Porém, temos que
+[latexmath]
+++++
+\[
+\Gamma(1) = \int_0^\infty e^{-x}dx = 1.
+\]
+++++
+
+Assim, temos que se x:[n] é um número natural, x:[\Gamma(n) = (n-1)!], e portanto a função gama generaliza o fatorial, e pode
+ser pensada como o fatorial de números reais positivos.
+
+==== Distribuição Gama
+
+Definição: Variável Aleatória Seguindo Distribuição Gama::
++
+--
+Seja x:[X] uma variável aleatória contínua tomando valores não-negativos. Dizemos que x:[X]
+segue distribuição gama com parâmetros x:[r>0] e x:[\alpha>0], se sua função de densidade for dada por
+[latexmath]
+++++
+\[
+f(x) = \frac{\alpha}{\Gamma(r)}(\alpha x)^{r-1} e^{-\alpha x},\quad x\geq 0.
+\]
+++++
+Denotamos x:[X\sim Gama(r,\alpha)].
+--
+
+A distribuição gama é mais flexível que a distribuição exponencial, isto é, as densidades podem
+assumir as mesmas formas das densidades da distribuição exponencial, mas também podem assumir
+formas diferentes. Isso se deve à inclusão do segundo parâmetro.
+
+Na figura abaixo apresentamos gráficos das funções de densidade da distribuição gama para alguns valores
+de x:[r] e x:[\alpha]:
+
+.Exemplo de funções de densidade da distribuição gama para valores de x:[r] e x:[\alpha] descritos no par ordenado x:[(r,\alpha)]
+image::images/densidades/densidadegama.eps[scaledwidth="60%"] 
+
+[NOTE]
+====
+Observe que se x:[X\sim Gama(1,\alpha)], então na realidade x:[X\sim Exp(\alpha)]. Assim, a distribuição 
+exponencial é caso particular da distribuição gama. 
+
+Além disso, por este fato, o parâmetro x:[\alpha] da distribuição gama é chamado de taxa, e 
+o parâmetro x:[r] é chamado de parâmetro de forma.
+====
 
 
+Esperança e Variância::
++
+--
+É possível mostrar que se x:[X\sim Gama(r,\alpha)], então
+[latexmath]
+++++
+\[
+E(X) = \frac{r}{\alpha}\hbox{~e~}Var(X) = \frac{r}{\alpha^2}.
+\]
+++++
+--
 
 
+Exercício::
++
+--
+Suponha que o tempo de vida útil, em anos, de uma máquina de lavar é uma
+variável aleatória x:[X] com função de densidade dada por
+[latexmath]
+++++
+\[
+f(x) = \frac{xe^{-x/2}}{4},\quad x\geq 0.
+\]
+++++
+Determine a distribuição de x:[X]. 
+
+Além disso, se o fabricante fornece seis meses de garantia para o produto,
+qual a proporção de aparelhos que devemos esperar que usem
+essa garantia?
+--
+
+_Solução_::
++
+--
+Olhando a função de densidade, observamos que não se trata
+de uma distribuição exponencial, mas que se parece com uma
+distribuição gama.
+
+Comparando a densidade acima com a densidade geral da 
+distribuição gama, vemos que x:[X] segue distribuição
+gama com parâmetros x:[r=2] e x:[\alpha=1/2].
+
+Como o tempo de vida está sendo dado em anos, queremos calcular
+a probabilidade 
+[latexmath]
+++++
+\[
+P(X\leq 1/2) = \int_0^{1/2} \frac{xe^{-x/2}}{4} dx = \frac{1}{4}\int_0^{1/2} xe^{-x/2}dx.
+\]
+++++
+Para calcular a probabilidade acima, vamos integrar por partes.
+Fazendo x:[u=x] e x:[dv = e^{-x/2}dx], obtemos que
+x:[du=dx] e x:[v = -2e^{-x/2}]. Desta forma,
+
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P(X\leq 1/2) &=&  -\frac{1}{2}xe^{-x/2}\Big|_0^{1/2} - \frac{1}{4}\int_0^{1/2} (-2e^{-x/2})dx\\
+&=& -\frac{e^{-1/4}}{2} + \frac{1}{2}\int_0^{1/2} e^{-x/2}dx\\
+&=& -\frac{e^{-1/4}}{2} - e^{-x/2}\Big|_0^{1/2}\\
+&=& -\frac{e^{-1/4}}{2} -(e^{-1/4}-1)\\
+&\approx& 0,0265. 
+\end{array}
+\]
+++++
+Desta forma, é esperado que aproximadamente 2,65% das máquinas de lavar utilizarão o serviço de garantia.
+--
 
 
 

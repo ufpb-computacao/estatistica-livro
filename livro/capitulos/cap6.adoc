@@ -471,16 +471,18 @@ Var(X) = E(X^2) - (E(X))^2 = \frac{2-p}{p^2} - \frac{1}{p^2} = \frac{1-p}{p^2}.
 ++++
 --
 
+==== Perda de Memória
+
 (((Distribuição, Geométrica, Perda de memória)))
 
-Perda de Memória::
-+
---
+.Ilustração da perda de memória da distribuição geométrica
+====
 Suponha que João está lançando moedas até o resultado sair cara. Suponha que esta João já lançou a moeda 12 vezes, e ainda não saiu cara,
 isto significa que a probabilidade do resultado sair cara no próximo lançamento será maior do que era 12 jogadas atrás?
 
 A resposta é não. Não importa o quanto tempo João tenha esperado, a probabilidade do próximo lançamento sempre será 1/2. Esta propriedade da
 distribuição geométrica é chamada de _perda de memória_.
+====
 
 Mais precisamente, seja latexmath:[$X$] uma variável aleatória seguindo distribuição Geométrica com parâmetro latexmath:[$p$].
 Então, temos que para todo par de inteiros positivos, latexmath:[$m,n$], vale
@@ -521,7 +523,6 @@ tempo latexmath:[$m$] para sair cara, e a cara ainda não saiu,
 as probabilidades de sair cara dali para frente são as mesmas 
 de como se ele tivesse começado a lançar naquele momento. Ou seja,
 a distribuiçã geométrica ``esquece'' todo o passado que já foi executado.
---
 
 
 
