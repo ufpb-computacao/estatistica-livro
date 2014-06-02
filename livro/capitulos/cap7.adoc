@@ -2,5 +2,120 @@
 
 Aqui apresentaremos algumas das principais distribuições contínuas. Para tanto, apresentaremos suas funções de densidade.
 
+Além disso, apresentaremos algumas propriedades destas distribuições, tais como esperança e variância.
+
+=== Distribuição Uniforme
+
+(((Distribuição, Uniforme)))
+
+.Definição: Variável Aleatória Seguindo Distribuição Uniforme::
++
+--
+Suponha que x:[X] seja uma variável aleatória contínua que assuma valores no intervalo x:[[a,b\]], no qual
+x:[a] e x:[b] sejam ambos finitos. Se a função de densidade de x:[X] for dada por
+[latexmath]
+++++
+\[
+f(x) = \begin{cases}
+\frac{1}{b-a},& a\leq x\leq b,\\
+0,& \hbox{caso contrário},
+\]
+++++
+dizemos que x:[X] é uniformemente distribuída sobre o intervalo x:[[a,b\]], e denotamos x:[X\sim U[a,b\]].
+--
+
+Uma variável aleatória uniformemente distribuída representa o análogo contínuo dos resultados equiprováveis 
+no seguinte sentido: Para qualquer subintervalo x:[[c,d\]], onde x:[a\leq c<d\leq b], x:[P(c\leq X\leq d)]
+é a mesma para todos os subintervalos que tenham o mesmo comprimento. Ou seja,
+[latexmath]
+++++
+\[
+P(c\leq X\leq d)= \int_c^d f(x)dx = \frac{d-c}{b-a},
+\]
+++++
+e, por isso, depende unicamente do comprimento do intervalo.
+
+Esperança:: 
++
+--
+Temos que 
+[latexmath]
+++++
+\[
+E(X) = \int_a^b x\frac{b-a}dx = \frac{x^2}{2(b-a)}\Big|_a^b = \frac{b^2-a^2}{2(b-a)} = \frac{a+b}{2}.
+\]
+++++
+--
+
+Variância::
++
+--
+Temos que
+[latexmath]
+++++
+\[
+E(X^2) = \int_a^b \frac{x^2}{b-a}dx = \frac{x^3}{3(b-a)}\Big|_a^b = \frac{b^3-a^3}{3(b-a)} = \frac{a^2+ab+b^2}{3}.
+\]
+++++
+Portanto, obtemos que
+[latexmath]
+++++
+\[
+Var(X) = E(X^2)-(E(X))^2 = \frac{a^2+ab+b^2}{3} - \frac{(a+b)^2}{4} = \frac{(b-a)^2}{12}.
+\]
+++++
+--
+
+.Exemplo de aplicação da distribuição uniforme
+====
+Um ponto é escolhido ao acaso no segmento de reta x:[[0,2\]]. Qual será a probabilidade de que o ponto escolhido esteja entre 
+1 e 3/2?
+
+Seja x:[X] a variável aleatória que representa a coordenada do ponto escolhido. Temos que x:[X\sim U[0,2\]], daí
+[latexmath]
+++++
+\[
+f(x) = \begin{cases}
+1/2,&0\leq x\leq 2,\\
+0,&\hbox{caso contrário},
+\]
+++++
+e
+[latexmath]
+++++
+\[
+P(1\leq X\leq 3/2) = \int_1^{3/2} \frac{1}{2} dx = \frac{1}{2}\Big(\frac{3}{2}-1\Big) = \frac{1}{4}.
+\]
+++++
+====
+
+=== A Distribuição Normal
+
+(((Distribuição, Normal)))
+
+Definição: Variável Aleatória Seguindo Distribuição Normal::
++
+--
+A variável aleatória x:[X], que assume valores na reta, x:[-\infty<x<\infty], tem distribuição normal
+se sua função de densidade é da forma
+[latexmath]
+++++
+\[
+f(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}},\quad -\infty<x<\infty, 
+\]
+++++
+onde x:[-\infty<\mu<\infty] e x:[\sigma>0], e denotamos x:[X\sim N(\mu,\sigma^2)].
+--
+
+Na figura abaixo apresentamos gráficos das funções de densidade da distribuição normal para alguns valores
+de x:[\mu] e x:[\sigma^2]:
+
+.Exemplo de funções de densidade da distribuição normal para valores de x:[\mu] e x:[\sigma^2] descritos no par ordenado x:[(\mu;\sigma^2)]
+image::images/densidades/densidadenormal.eps[scaledwidth="60%"] 
+
+Bla
+
+
+
 
 
