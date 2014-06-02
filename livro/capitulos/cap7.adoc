@@ -356,7 +356,7 @@ x:[X_n\sim Bin(200,1/2)], e queremos calcular
 [latexmath]
 ++++
 \[
-P(90\leq X_n\leq 110) = P(X_n\leq 110) - P(X_n<89).
+P(90\leq X_n\leq 110) = P(X_n\leq 110) - P(X_n\leq 89).
 \]
 ++++
 
@@ -369,16 +369,16 @@ Assim, como x:[\sqrt{np(1-p)}=7,07] e x:[np = 100], pela proposição anterior, 
 \[
 \begin{array}{lll}
 P(90\leq X_n\leq 110) &\approx& \Phi\Big(\frac{110-100}{7,07}\Big) - \Phi\Big(\frac{90-100}{7,07}\Big)\\
-&=& \Phi(1,41) - \Phi(-1,41)\\
-&=& \Phi(1,41) - (1-\Phi(1,41))\\
-&=& 2\cdot \Phi(1,41) - 1\\
-&=& 2\cdot 0,9207-1\\
-&=& 0,8414.
+&=& \Phi(1,41) - \Phi(-1,27)\\
+&=& \Phi(1,41) - (1-\Phi(1,27))\\
+&=& \Phi(1,41)+\Phi(1,27) - 1\\
+&=&  0,9207+0,8980-1\\
+&=& 0,8187.
 \end{array}
 \]
 ++++
 
-Logo, a probabilidade é de aproximadamente 0,8414.
+Logo, a probabilidade é de aproximadamente 0,8187.
 ====
 
 [NOTE]
