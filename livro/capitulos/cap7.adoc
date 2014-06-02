@@ -333,7 +333,7 @@ Então, vale o seguinte resultado:
 [latexmath]
 ++++
 \[
-\lim_{n\to\infty} P\Big(\frac{X_n-np}{\sqrt{np(1-p)} \leq z\Big) = \Phi(z),
+\lim_{n\to\infty} P\Big(\frac{X_n-np}{\sqrt{np(1-p)}} \leq z\Big) = \Phi(z),
 \]
 ++++
 onde x:[\Phi(z)] é a função de distribuição da normal padrão.
