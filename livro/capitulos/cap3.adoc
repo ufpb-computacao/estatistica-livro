@@ -29,7 +29,7 @@ Consiste em um experimento em que, mesmo mantendo as mesmas condições, o resul
 
 === Fundamentos de Probabilidade
 
-(((Espaço, amostral)))
+(((Espaço, Amostral)))
 
 Definição: Espaço amostral:: 
 +
