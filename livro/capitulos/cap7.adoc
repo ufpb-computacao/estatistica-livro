@@ -586,7 +586,7 @@ no entanto, já vimos que, para todo x:[x>0], x:[P(X>x) = e^{-\lambda x}]. Daí,
 [latexmath]
 ++++
 \[
-P(X>t+s|X>t) = \frac{P(X>t+s)}{P(X>t)} = \frac{e^{-\lambda (t+s)}}{e^{-\lambda t} = e^{-\lambda s} = P(X>s).
+P(X>t+s|X>t) = \frac{P(X>t+s)}{P(X>t)} = \frac{e^{-\lambda (t+s)}}{e^{-\lambda t}} = e^{-\lambda s} = P(X>s).
 \]
 ++++
 
