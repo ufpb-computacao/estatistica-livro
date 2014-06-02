@@ -1,4 +1,6 @@
 == Principais Distribuições Contínuas
 
-Falta escrever
+Aqui apresentaremos algumas das principais distribuições contínuas. Para tanto, apresentaremos suas funções de densidade.
+
+
 
