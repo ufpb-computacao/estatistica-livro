@@ -372,7 +372,7 @@ P(90\leq X_n\leq 110) &\approx& \Phi\Big(\frac{110-100}{7,07}\Big) - \Phi\Big(\f
 &=& \Phi(1,41) - \Phi(-1,41)\\
 &=& \Phi(1,41) - (1-\Phi(1,41))\\
 &=& 2\cdot \Phi(1,41) - 1\\
-&=& 2\cdot 0,9207-1
+&=& 2\cdot 0,9207-1\\
 &=& 0,8414.
 \end{array}
 \]
