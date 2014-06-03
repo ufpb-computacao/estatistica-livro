@@ -1,1 +1,94 @@
 === Atividades
+
+==== Conjuntos
+
+1. Verdadeiro ou Falso?
++
+--
+a. x:[\{a,a,b,c\} = \{a,b,c\}];
+
+b. x:[\{a,\{a\}\} = \{a\}];
+
+c. x:[\{a\} \in \{a,\{a\}\}];
+
+d. x:[\{a\}\subset \{a,\{a\}\}];
+
+e. x:[\{\{a\}\} \subset \{a,\{a\}\}];
+
+f. x:[\{a,b\} \subset \{a,\{a,b\}\}];
+
+g. x:[\{a,b\}\in \{a,\{a,b\}\}];
+
+h. x:[b\in \{a,\{a,b\}\}];
+
+i. x:[\emptyset\in \{\emptyset\}];
+
+j. x:[\emptyset=\{\emptyset\}];
+
+l. x:[\emptyset\subset\{\emptyset\}];
+
+m. x:[\{\emptyset\}\subset\{\{\emptyset\}\}];
+
+n. x:[ \{\emptyset\}\in\{\{\emptyset\}\}];
+
+o. \{\emptyset\}=\{\{\emptyset\}\}].
+--
+
+2. Sejam x:[A = \{1,2,3,4,\{5\},\{6,7\}\}], x:[B= \{4,\{5\},6,7\}] e x:[C = \{5,6,7\}]. 
+Determine os seguintes conjuntos:
++
+--
+a. x:[A\setminus\emptyset];
+
+b. x:[A\setminus A];
+
+c. x:[A\setminus C];
+
+d. x:[C\setminus A];
+
+e. x:[A\setminus B];
+
+f. x:[B\setminus A];
+
+g. x:[B\setminus C].
+--
+
+3. Seja x:[M=\{1,2,3,4,\{1\},\{2\},\{3\},\{4\}\}]. Sejam x:[A = \{1,\{2\},3,\{4\}\}] e 
+x:[B = \{\{1\},2,\{3\},4\}].
++
+--
+a. Mostre que x:[A] e x:[B] são subconjuntos de x:[M], e conclua que podemos falar sobre o complementar
+de x:[A] e sobre o complementar de x:[B] (ambos com relação a x:[M]);
+
+b. Determine os conjuntos: x:[A^c], x:[B^c], x:[A\cup B^c], x:[A^c\cup B], x:[A^c\cup B^c], x:[A\cup B],
+x:[A\cup A^c] e x:[B\cup B^c].
+
+c. Determine os conjuntos: x:[A\cap B], x:[A^c\cap B], x:[A^c\cap B^c], x:[A\cap B^c], x:[A\cap A^c] e x:[B\cap B^c].
+--
+
+==== Contagem
+
+4. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
