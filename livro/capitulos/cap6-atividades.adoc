@@ -30,6 +30,8 @@ b) Qual a probabilidade do aluno resolver pelo menos 5 exercícios da prova.
 
 // 1/2.
 
+--
+
 *3.* Um estudante preenche ao acaso um exame de múltipla escolha com 5 respostas possíveis (uma das quais é a correta) 
 para cada uma de 10 questões. 
 --
