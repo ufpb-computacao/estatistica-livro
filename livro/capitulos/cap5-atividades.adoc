@@ -36,6 +36,7 @@ a) Mostre que x:[f] é, de fato, uma densidade;
 b) A esperança de x:[X] existe? Se sim, quanto vale?
 
 // x:[E(X) = \infty]
+--
 
 *5.* Seja x:[X] uma variável aleatória com distribuição de Laplace (também conhecida como exponencial dupla), 
 ou seja, x:[X] tem densidade
