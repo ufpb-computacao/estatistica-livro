@@ -1,5 +1,141 @@
 === Atividades
 
-1.
+*1.* Se x:[Y] tem distribuição uniforme em x:[(0,5)], qual é a probabilidade de que as raízes da equação
+x:[4x^2+4xY+Y+2 =0] sejam ambas reais?
+
+// 3/5
+
+*2.* Numa população, o nível sérico de colesterol em adultos (medido em mg/dl) é uma variável aleatória
+com distribuição normal com parâmetros x:[\mu = 225] e x:[\sigma = 75]. Calcule:
+--
+a) a proporção de pessoas com nível de colesterol entre 200 e 350.
+
+// 58,2%
+
+b) o valor acima do qual se encontra o colesterol da parcela de 10% da população que tem os níveis mais elevados.
+
+// 321
+
+--
+
+*3.* Seja x:[X\sim N(5,16)]. Obtenha:
+--
+a) x:[P(X\leq 13)];
+
+// 0,9772
+
+b) x:[P(X\geq 1)];
+
+// 0,8413
+
+c) x:[P(4\leq X\leq 9)];
+
+// 0,44
+
+d) o valor de x:[a] tal que x:[P(X\leq a) = 0,04];
+
+// -2
+
+e) o valor de x:[b] tal que x:[P(X\geq b) = 0,01];
+
+// 14,32
+
+f) o intervalo que contém 95% dos valores centrais (intervalo simétrico em torno de x:[\mu]) de x:[X].
+
+// [-2,84,12,84].
+
+--
+
+*4.* Em uma fábrica de refrigerante, uma máquina é usada para encher garrafas de 600ml. O conteúdo líquido (em ml)
+por garrafa varia segundo a distribuição normal com parâmetros x:[\mu = 600] e x:[\sigma = 4]. Calcule:
+--
+a) a porcentagem de garrafas produzidas com conteúdo inferior a 592ml ou superior a 612ml;
+
+// 2,41%
+
+b) o conteúdo mínimo encontrado em 96% das garrafas fabricadas.
+
+// 593ml
+
+--
+
+*5.* O peso em gramas de recém-nascidos em uma maternidade tem distribuição normal com parâmetro x:[\mu = 3000g]. Sabe-se que
+98% dos bebês nascem com um peso compreendido entre 2,5kg e 3,5kg. Determine:
+--
+a) o parâmetro x:[\sigma];
+ 
+// 214,6
+
+b) o peso abaixo do qual nascem 0,4% dos bebês dessa maternidade.
+
+// 2431g
+
+--
+
+*6.* Se 55% da população de uma cidade é a favor de um projeto proposto pelo prefeito,
+estime (usando a aproximação da binomial pela normal) de que, em uma amostra aleatória de 176
+pessoas, no máximo 93 sejam favoráveis ao projeto.
+
+// 0,281.
+
+*7.* Seja x:[U] uma variável aleatória uniforme no intervalo x:[(a,b)]. Calcule, para todo x:[n\geq 1], 
+x:[E(U^n)].
+
+// x:[\frac{b^{n+1}-a^{n+1}}{(n+1)(b-a)}]
+
+*8.* Seja x:[X] uma variável aleatória seguindo distribuição Exponencial com parâmetro x:[\lambda].
+Calcule x:[E(X^n)].
+
+// n!/\lambda^n.
+
+*9.* Obtenha a esperança da área de um triângulo retângulo isósceles cuja hipotenusa
+tem comprimento uniformemente distribuído no intervalo x:[(2,8)].
+
+// 7
+
+
+*10.* Um computador foi usado para gerar sete números aleatórios independentes uniformemente distribuídos no intervalo
+x:[(0,1)]. Calcule a probabilidade de que:
+--
+a) exatamente de três números estejam entre 1/2 e 1;
+
+// 35/128
+
+b) menos do que três sejam maiores que 3/4.
+
+// 12393/16384.
+
+--
+
+*11.* (Distribuição Log-Normal): Seja x:[Y= e^X], onde x:[X\sim N(0,1)]. Encontre a densidade de x:[Y].
+
+//x:[f_Y(y) = y^{-1}(2\pi)^{-1/2} \exp\{-(\log(y))^2/2\},\quad y>0].
+
+*12.* Seja x:[X\sim N(0,1)]. Seja x:[Y=X^2]. Obtenha a densidade de x:[Y], mostre que x:[Y] segue distribuição Gama
+e determine os parâmetros. (Dica: Use que x:[\Gamma(1/2)=\sqrt{\pi}].)
+
+// x:[Y] segue distribuição Gama x:[(1/2,1/2)].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
