@@ -113,7 +113,7 @@ f)  x:[(A\cap B^c\cap C^c)\cup (A^c\cap B\cap C^c)\cup (A^c\cap B^c\cap C)]
 --
 
 
-2.  x:[\frac{{26 \choose 2}{26 \choose 2}}{52\choose 4}].
+2.  x:[\frac{{26 \choose 2}{26 \choose 2}}{{52\choose 4}}].
 
 3. x:[\frac{12!}{12^{12}}].
 
