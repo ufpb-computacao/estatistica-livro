@@ -6,7 +6,6 @@
 
 === Capítulo 2
 
-==== Conjuntos
 
 *1.* Respostas:
 --
@@ -67,7 +66,6 @@ x:[A\cup B = M], x:[A\cup A^c = M], x:[B\cup B^c = M].
 c. x:[A\cap B = \emptyset], x:[A^c\cap B^c = \emptyset], x:[A\cap A^c = \emptyset] e x:[B\cap B^c=\emptyset].
 --
 
-==== Contagem
 
 *4.*  x:[26\cdot 25\cdot 24 = 15600].
 
@@ -146,7 +144,7 @@ h)  4/5
 
 --
 
-==== Probabilidade Condicional e Independência
+
 
 *6.* 14/15
 
