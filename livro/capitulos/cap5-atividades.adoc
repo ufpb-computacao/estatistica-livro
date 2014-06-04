@@ -1,6 +1,73 @@
 === Atividades
 
-1.
+*1.* Duas bolas são escolhidas aleatoriamente de uma urna contendo 4 bolas azuis, 3 vermelhas e 2 laranjas.
+Suponha que ganhamos 10 reais para cada bola azul selecionada, ganhamos 1 real para cada bola laranja,
+porém perdemos 8 reais para cada bola vermelha. Seja x:[X] o nosso lucro.
+--
+a) Determine a função de probabilidade de x:[X];
+
+// x:[ p(-16) = 1/12, p(-7) = 1/6, p(2) = 13/36, p(11)=2/9, p(20) = 1/6].
+
+b) Calcule a esperança e variância de x:[X].
+
+// x:[E(X) = 4, Var(X) = 108,5].
+--
+
+*2.* Exatamente uma entre 6 chaves parecidas abre uma determinada porta. Tenta-se uma chave após a outra. Qual o número médio de tentativas
+necessárias para se conseguir abrir a porta?
+
+// 7/2.
+
+*3.* Cinquenta pessoas lançam uma moeda honesta dez vezes. Obtenha a média e a variância do número de pessoas
+que obtêm exatamente 5 caras.
+
+// média = 12,3; variância = 9,3.
+
+*4.* Seja x:[X] uma variável aleatória contínua com densidade
+[latexmath]
+++++
+\[
+f(x) = \frac{1}{x^2},\quad x\geq 1.
+\]
+++++
+--
+a) Mostre que x:[f] é, de fato, uma densidade;
+
+b) A esperança de x:[X] existe? Se sim, quanto vale?
+
+// x:[E(X) = \infty]
+
+*5.* Seja x:[X] uma variável aleatória com distribuição de Laplace (também conhecida como exponencial dupla), 
+ou seja, x:[X] tem densidade
+[latexmath]
+++++
+\[
+f(x) = \frac{1}{2} e^{|x|},\quad x\in\mathbb{R}.
+\]
+++++
+Obtenha:
+--
+a) x:[E(X)];
+
+// x:[E(X)=0];
+
+b) x:[E(|X|)];
+
+// x:[E(|X|) = 1.]
+
+c) x:[Var(X)];
+
+// x:[Var(X) = 2.]
+
+--
+
+
+
+
+
+
+
+
 
 
 
