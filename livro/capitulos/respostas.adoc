@@ -9,7 +9,6 @@
 ==== Conjuntos
 
 *1.* Respostas:
-+
 --
 a. V;
 
@@ -41,7 +40,6 @@ o. F.
 --
 
 *2.* Respostas:
-+
 --
 a. x:[\{1,2,3,4,\{5\},\{6,7\}\}];
 
@@ -60,7 +58,6 @@ g. x:[\{\{5\}\}].
 
 *3.* Seja x:[M=\{1,2,3,4,\{1\},\{2\},\{3\},\{4\}\}]. Sejam x:[A = \{1,\{2\},3,\{4\}\}] e 
 x:[B = \{\{1\},2,\{3\},4\}].
-+
 --
 a. Justifique!;
 
@@ -96,7 +93,6 @@ c. x:[A\cap B = \emptyset], x:[A^c\cap B^c = \emptyset], x:[A\cap A^c = \emptyse
 === Capítulo 3
 
 *1.* Respostas:
-+
 --
 a)  x:[A\cap B^c\cap C^c]
 
@@ -118,7 +114,6 @@ f)  x:[(A\cap B^c\cap C^c)\cup (A^c\cap B\cap C^c)\cup (A^c\cap B^c\cap C)]
 *3.* x:[\frac{12!}{12^{12}}].
 
 *4.* Respostas:
-+
 --
 a)  x:[\frac{7}{{10\choose 4}}]
 
@@ -132,7 +127,6 @@ e)  1/42
 --
 
 *5.* Respostas:
-+
 --
 a)  1/2
 
@@ -157,7 +151,6 @@ h)  4/5
 *6.* 14/15
 
 *7.* Respostas:
-+
 --
 a)  319/324
 
@@ -168,7 +161,6 @@ c)  7/792
 --
 
 *8.* Respostas:
-+
 --
 a)  2/15
 
@@ -181,7 +173,6 @@ b)  1/2
 
 
 *10.* Respostas:
-+
 --
 a)  0,92
 
