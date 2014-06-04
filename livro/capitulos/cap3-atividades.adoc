@@ -32,34 +32,34 @@ f) Exatamente um dos três ocorre;
 
 2. Extraem-se 4 cartas de um baralho com 52 cartas. Qual é a probabilidade de que 2 sejam vermelhas e 2 sejam pretas?
 
-//// x:[\frac{{26 \choose 2}{26 \choose 2}}{52\choose 4}].
+
 
 3. Qual a probabilidade de que os aniversários de 12 pessoas sejam em meses diferentes?
 
-//// x:[\frac{12!}{12^{12}}].
+
 
 4. Quatro números são sorteados ao acaso, sem reposição, do conjunto x:[\{0,1,2,\ldots,9\}]. Calcule a probabilidade de que:
 +
 --
 a) Os quatro números sorteados podem ser ordenados de forma consecutiva, por exemplo, x:[\{1,2,3,4\}]. 
 
-//// x:[\frac{7}{{10\choose 4}}]
+
 
 b) Todos sejam maiores do que 5.
 
-//// 1/210 
+
 
 c) O número 0 seja escolhido.
 
-//// 2/5
+
 
 d) Pelo menos um seja maior do que 7.
 
-//// 2/3
+
 
 e) Todos sejam ímpares.
 
-//// 1/42
+
 --
 
 5. Sejam x:[A] e x:[B] dois eventos em um espaço de probabilidade tais que x:[P(A)=1/2],
@@ -68,35 +68,35 @@ x:[P(B)=1/4] e x:[P(A\cap B)=1/5]. Calcule as probabilidades dos seguintes event
 --
 a) x:[A] não ocorre;
 
-//// 1/2
+
 
 b) x:[B] não ocorre;
 
-//// 3/4
+
 
 c) Pelo menos um entre x:[A] e x:[B] ocorrem;
 
-//// 11/20
+
 
 d) x:[A] não ocorre e x:[B] sim;
 
-//// 1/20
+
 
 e) x:[B] não ocorre e x:[A] sim;
 
-//// 3/10
+
 
 f) Ocorre exatamente um de x:[A] e x:[B];
 
-//// 7/20
+
 
 g) Não ocorre nenhum de x:[A] e x:[B];
 
-//// 9/20
+
 
 h) Pelo menos um de x:[A] e x:[B] não ocorre.
 
-//// 4/5
+
 
 --
 
@@ -105,7 +105,7 @@ h) Pelo menos um de x:[A] e x:[B] não ocorre.
 6. Escolhe-se ao acaso um número entre 1 e 50. Sabendo que o número é primo, qual é a probabilidade de que seja
 ímpar?
 
-//// 14/15
+
 
 7. Em um programa de auditório o participante lança um dado honesto 6 vezes. Ele ganha um prêmio de participação
 se obtiver o mesmo número pelo menos duas vezes, e ganha um prêmio milionário se a face 6 aparecer pelo menos
@@ -114,15 +114,15 @@ quatro vezes. Qual a probabilidade de que o participante:
 --
 a) Ganhe o prêmio de participação?
 
-//// 319/324
+
 
 b) Ganhe o prêmio milionário?
 
-//// 203/23328
+
 
 c) Tenha ganho o prêmio milionário dado que ganhou o prêmio de participação?
 
-//// 7/792
+
 
 --
 
@@ -133,11 +133,11 @@ de que:
 --
 a) Um estudante escolhido ao acaso estude matemática.
 
-//// 2/15
+
 
 b) Um estudante de matemática escolhido ao acaso seja do sexo feminino.
 
-//// 1/2
+
 
 --
 
@@ -158,7 +158,7 @@ B = \{\hbox{A soma das faces obtidas nos dois primeiros lançamentos é pelo men
 ++++
 x:[A] e x:[B] são independentes?
 
-//// Sim
+
 
 
 10. Dois estudantes, Pedro e Paulo, estão matriculados na turma de Probabilidade e Estatística. Pedro comparece
@@ -168,11 +168,11 @@ que, em determinado dia:
 --
 a) pelo menos um dos estudantes compareça a aula.
 
-//// 0,92
+
 
 b) apenas um deles esteja presente.
 
-//// 0,44
+
 
 --
 
