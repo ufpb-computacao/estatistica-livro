@@ -6,26 +6,27 @@ de x:[A,B] e x:[C]:
 --
 a) Apenas x:[A] ocorre;
 
-//// x:[A\cap B^c\cap C^c]
+
 
 b) x:[A] e x:[B] ocorrem, mas x:[C] não ocorre;
-//// x:[A\cap B\cap C^c]
+
+
 
 c) Os três eventos ocorrem;
 
-//// x:[A\cap B\cap C]
+
 
 d) Pelo menos um dos três ocorrem;
 
-//// x:[A\cup B\cup C]
+
 
 e) Nenhum dos três ocorrem;
 
-//// x:[(A\cup B\cup C)^c]
+
 
 f) Exatamente um dos três ocorre;
 
-//// x:[(A\cap B^c\cap C^c)\cup (A^c\cap B\cap C^c)\cup (A^c\cap B^c\cap C)]
+
 
 --
 
