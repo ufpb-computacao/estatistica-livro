@@ -8,7 +8,7 @@
 
 ==== Conjuntos
 
-1. 
+1. Respostas:
 +
 --
 a. V;
@@ -40,8 +40,7 @@ n. V;
 o. F.
 --
 
-2. Sejam x:[A = \{1,2,3,4,\{5\},\{6,7\}\}], x:[B= \{4,\{5\},6,7\}] e x:[C = \{5,6,7\}]. 
-Determine os seguintes conjuntos:
+2. Respostas:
 +
 --
 a. x:[\{1,2,3,4,\{5\},\{6,7\}\}];
