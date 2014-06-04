@@ -399,7 +399,7 @@ Assim, uma vez feita a distribuição de frequência, a construção do histogra
 Abaixo vemos um exemplo de histograma:
 
 .Histograma
-image::images/descritiva/fig4.png[scaledwidth="60%"] 
+image::images/descritiva/histograma.eps[scaledwidth="60%"] 
 
 ==== Polígono de Frequência
 
@@ -411,7 +411,12 @@ já tivermos um histograma, basta ligar os pontos médios das bases superiores d
 Abaixo vemos um exemplo de polígono de frequência obtido a partir de um histograma:
 
 .Polígono de Frequência Obtido a Partir de um Histograma
-image::images/descritiva/fig3.png[scaledwidth="60%"] 
+image::images/descritiva/poligono-hist.eps[scaledwidth="60%"] 
+
+Abaixo vemos um exemplo contendo apenas o polígono de frequência:
+
+.Polígono de Frequência Obtido a Partir de um Histograma
+image::images/descritiva/poligono.eps[scaledwidth="60%"] 
 
 ==== Gráfico de Linhas
 
@@ -427,7 +432,7 @@ estes pontos são ligados por segmentos de retas.
 Abaixo vemos um exemplo de gráfico de linhas de uma série temporal
 
 .Gráfico de linhas
-image::images/descritiva/fig5.png[scaledwidth="60%"] 
+image::images/descritiva/linha.eps[scaledwidth="60%"] 
 
 ==== Gráfico de Colunas
 
@@ -440,7 +445,7 @@ do dado.
 Abaixo vemos um exemplo de gráfico de colunas:
 
 .Gráfico de colunas
-image::images/descritiva/fig6.png[scaledwidth="60%"] 
+image::images/descritiva/colunas.eps[scaledwidth="60%"] 
 
 ==== Gráfico em Barras
 
@@ -453,7 +458,7 @@ vertical representa as diferentes categorias consideradas e o eixo horizontal é
 Abaixo vemos um exemplo de gráfico em barras:
 
 .Gráfico em barras
-image::images/descritiva/fig7.png[scaledwidth="60%"] 
+image::images/descritiva/barras.eps[scaledwidth="60%"] 
 
 ==== Gráfico de Setores
 
@@ -469,7 +474,7 @@ quanto maior o valor obtido, maior será o ângulo do setor (e assim, maior ser�
 Abaixo vemos um exemplo de gráfico de setores:
 
 .Gráfico de setores
-image::images/descritiva/fig8.png[scaledwidth="60%"] 
+image::images/descritiva/pizza.eps[scaledwidth="60%"] 
 
 === Medidas de Posição
 
