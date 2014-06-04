@@ -1,6 +1,133 @@
 === Atividades
 
-1.
+*1.* Seja x:[X] uma variável aleatória discreta com função de probabilidade dada por
+[latexmath]
+++++
+\[
+p(x) = cx,\quad x=1,\ldots,6.
+\]
+++++
+Encontre:
+--
+a) o valor de x:[c];
+
+// 1/21
+
+b) a probabilidade de x:[X] ser um número ímpar.
+
+// 3/7
+
+--
+
+
+*2.* Seja x:[X] uma variável aleatória discreta com função de probabilidade dada por
+[latexmath]
+++++
+\[
+p(x)=\frac{c}{4^x},\quad x=0,1,\ldots.
+\]
+++++
+Obtenha:
+--
+a) o valor de x:[x].
+
+// 3/4
+
+b) a probabilidade de x:[X] ser um número par.
+
+// 4/5
+--
+
+*3.* Seja x:[X] uma variável aleatória discreta com função de distribuição dada por
+[latexmath]
+++++
+\[
+F(x) = \begin{cases}
+0,&\hbox{~se~} x<0,\\
+1/2,&\hbox{~se~}0\leq x <1,\\
+3/5, &\hbox{~se~} 1\leq x <2,\\
+4/5,&\hbox{~se~} 2\leq x < 3,\\
+9/10,&\hbox{~se~} 3\leq x <4,\\
+1,&\hbox{~se~} x\geq 4.
+\end{cases}
+\]
+++++
+Calcule:
+--
+a) a função de probabilidade de x:[X].
+
+// x:[P(X=0) = 1/2, P(X=1)=P(X=3)=P(X=4)=1/10, P(X=2)=1/5].
+
+b) x:[P(X=0|X\hbox{~é par})].
+
+// 5/8
+--
+
+*4.* Uma urna contém cinco bolas numeradas de 1 a 5. Duas bolas são retiradas simultaneamente. Obtenha a função
+de probabilidade das seguintes variáveis aleatórias:
+--
+a) o maior número sorteado;
+
+// x:[p(2) = 1/10, p(3)=1/5, p(4)=3/10, p(5)=2/5.]
+
+b) a soma dos números retirados.
+
+// x:[p(x) = 1/10] se x:[x\in \{3,4,8,9\}] e x:[p(x)=1/5] se x:[x\in \{5,6,7\}].
+--
+
+
+*5.* Verifique que as seguintes funções são densidades:
+--
+a) 
+[latexmath]
+++++
+\[
+f(x) = \begin{cases}
+1/8,&\hbox{~se~}0\leq x\leq 2,\\
+3/4,&\hbox{~se~}4\leq x\leq 5,\\
+0,&\hbox{caso contrário}.
+\end{cases}
+\]
+++++
+
+b) x:[f(x) = 3(1-x)^2, 0\leq x\leq 1.]
+
+c) x:[f(x) = 4xe^{-2x},\quad x\geq 0.]
+
+--
+
+*6.* Seja x:[X] uma variável aleatória contínua com densidade dada por
+[latexmath]
+++++
+\[
+f(x) = \frac{c}{x^3},\quad x\geq 1.
+\]
+++++
+Calcule:
+--
+a) o valor de x:[c];
+
+// 2
+
+b) a probabilidade de x:[X] ser maior do que x:[2];
+
+// 1/4
+
+c) a função de distribuição de x:[X].
+
+// x:[F(x) = \begin{cases} 1 - x^2,&\hbox{~se~}x\geq 1,\\ 0,&\hbox{~se~} x<1.\end{cases}]
+
+--
+
+
+
+
+
+
+
+
+
+
 
 
 
