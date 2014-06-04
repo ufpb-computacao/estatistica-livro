@@ -1,6 +1,131 @@
 === Atividades
 
-1.
+*1.* Quinze pessoas portadoras de determinada doença são selecionadas para se submeter a um tratamento.
+Sabe-se que este tratamento é eficaz na cura da doença em 80% dos casos. Suponha que os indivíduos submetidos
+ao tratamento curam-se (ou não) independentemente uns dos outros. Seja x:[X] o número de pessoas curadas
+dentre os 15 pacientes submetidos ao tratamento.
+--
+a) Qual a distribuição de x:[X]?
+
+// Binomial com n=15, p=0,8.
+
+b) Qual a probabilidade de que os 15 pacientes sejam curados?
+
+// 0,035
+
+c) Qual a probabilidade de que pelo menos dois não sejam curados?
+
+// 0,83
+--
+
+
+*2.* Um aluno estuda 12 exercícios, dos quais o professor vai escolher 6 aleatoriamente para uma prova.
+O estudante sabe resolver 9 dos 12 problemas. Seja x:[X] o número de exercícios resolvidos por ele na prova.
+--
+a) Qual a distribuição de x:[X]?
+
+// Hipergeométrica com parâmetros 6, 9 e 12. 
+
+b) Qual a probabilidade do aluno resolver pelo menos 5 exercícios da prova.
+
+// 1/2.
+
+*3.* Um estudante preenche ao acaso um exame de múltipla escolha com 5 respostas possíveis (uma das quais é a correta) 
+para cada uma de 10 questões. 
+--
+a) Qual a distribuição do número de respostas certas?
+
+// Binomial com n = 10 e p = 1/5.
+
+b) Qual a probabilidade de que o estudante obtenha 9 ou mais respostas certas?
+
+// x:[4,2\cdot 10^{-6}].
+
+c) Qual a probabilidade de que acerte pelo menos duas questões?
+
+// x:[0,62].
+
+--
+
+*4.* Em uma pizzaria com entrega a domicílio, 30% dos pedidos por telefone são de mais de uma pizza.
+Certo dia, o dono decide mandar um brinde ao cliente que fizer o primeiro pedido com mais de uma pizza.
+Seja x:[X] o número de pedidos recebidos até o ganhador ganhar o brinde.
+--
+a) Qual a distribuição de x:[X]?
+
+// Geométrica com x:[p=0,3].
+
+b) Determine o menor número de pedidos necessários para garantir que o brinde saia com probabilidade maior do que 0,9.
+
+// 7
+
+--
+
+*5.* Um vendedor que vai de porta em porta, consegue concretizar uma venda em 40% das visitas que faz. Este
+vendedor pretende efetuar no mínimo duas vendas por dia. Seja x:[X] o número de visitas feitas até que a segunda venda
+seja efetivada.
+--
+a) Qual a distribuição de x:[X]?
+
+// Binomial negativa x:[n = 2] e x:[p=2/5].
+
+b) Calcule a probabilidade de que o vendedor faça no máximo seis visitas para concluir as duas vendas.
+
+// 0,7667
+
+--
+
+*6.* O número x:[X] de acidentes de trabalho que ocorrem em uma fábrica por semana segue distribuição
+Poisson. Sabendo que a porcentagem de semanas em que ocorre um acidente é um terço da porcentagem de
+semanas em que não acontece nenhum, calcule:
+--
+a) o parâmetro da distribuição;
+
+// 1/3
+
+b) a probabilidade de que ocorra um acidente em uma semana e também um na semana seguinte,
+sabendo que acidentes em semanas diferentes são independentes;
+
+// 0,057
+--
+
+*7.* Se uma variável aleatória tem distribuição Poisson e x:[P(X=0) = 1/2], quanto vale
+a variância de x:[X]?
+
+// x:[\log(2)].
+
+*8.* Suponha que 1% das lâmpadas de enfeite de natal de certa marca apresentem defeito.
+Estime a probabilidade de que uma caixa com 30 lâmpadas contenha no máximo uma lâmpada com defeito.
+(Dica: Aproxime essa probabilidade pela distribuição Poisson)
+
+// 0,9631
+
+*9.* Sabe-se que 0,6% dos parafusos produzidos em uma fábrica são defeituosos. Usando a aproximação
+da Binomial pela Poisson, estime a probabilidade
+de que, em um pacote com 1000 parafusos:
+--
+a) tenhamos exatamente 4 parafusos defeituosos;
+
+// 0,1339
+
+b) não tenhamos mais do que 4 parafusos defeituosos;
+
+// 0,2851
+
+c) encontrem-se pelo menos 3 parafusos defeituosos.
+
+// 0,9380
+
+--
+
+
+
+
+
+
+
+
+
 
 
 
