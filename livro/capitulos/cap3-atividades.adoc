@@ -97,7 +97,7 @@ h) Pelo menos um de x:[A] e x:[B] não ocorre.
 
 --
 
-==== Probabilidade Condicional e Independência
+
 
 *6.* Escolhe-se ao acaso um número entre 1 e 50. Sabendo que o número é primo, qual é a probabilidade de que seja
 ímpar?
