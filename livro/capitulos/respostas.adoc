@@ -291,6 +291,8 @@ a)  Hipergeométrica com parâmetros 6, 9 e 12.
 
 b)  1/2.
 
+--
+
 *3.* Respostas: 
 --
 a) Binomial com x:[n = 10] e x:[p = 1/5.]
