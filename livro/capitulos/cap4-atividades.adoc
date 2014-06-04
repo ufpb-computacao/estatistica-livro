@@ -119,9 +119,18 @@ c) a função de distribuição de x:[X].
 
 --
 
-
-
-
+*7.* Seja x:[X] uma variável aleatória com densidade dada por
+[latexmath]
+++++
+\[
+f(x) = \begin{cases}
+1/2,&\hbox{~se~}-1<x<0,\\
+e^{-x}/2,&\hbox{~se~}x\geq 0,\\
+0,&\hbox{caso contrário}.
+\end{cases}
+\]
+++++
+Obtenha a densidade de x:[Y=X^2].
 
 
 
