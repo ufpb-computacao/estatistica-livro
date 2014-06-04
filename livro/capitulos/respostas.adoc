@@ -228,6 +228,18 @@ c) x:[F(x) = \begin{cases} 1 - x^2,&\hbox{~se~}x\geq 1,\\ 0,&\hbox{~se~} x<1.\en
 
 --
 
+*7.* x:[f(x) = (2/\pi)^{1/2} \exp\{-y^2/2\},\quad y>0.]
+
+*8.* 
+[latexmath]
+++++
+\[
+f_Y(y) = \begin{cases}
+\frac{1}{4\sqrt{y}}\big(1+e^{-\sqrt{y}}\big),&\hbox{~se~}0\leq y <1,\\
+\frac{1}{4\sqrt{y}}e^{-\sqrt{y}},&\hbox{~se~}y\geq 1,\\
+0,&\hbox{caso contrário}.
+\]
+++++
 
 === Capítulo 5
 
