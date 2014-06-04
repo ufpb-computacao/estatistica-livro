@@ -1,0 +1,8 @@
+curve(dnorm(x,0,sqrt(0.2)),-5,5,ylab="f(x)")
+curve(dnorm(x,0,1),-5,5,add=T)
+curve(dnorm(x,0,sqrt(5)),-5,5,add=T)
+curve(dnorm(x,-2,sqrt(0.5)),-5,5,add=T)
+text(1.2,0.7,"(0;0.2)")
+text(1.8,0.3,"(0;1)")
+text(3,0.15,"(0;5)")
+text(-3.7,0.35,"(-2;0.5)")
