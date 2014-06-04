@@ -302,7 +302,7 @@ Note portanto, que pela definição, para checar se uma função latexmath:[$f(x
 . se latexmath:[$\displaystyle\int_{-\infty}^\infty f(x)dx = 1.$] 
 ====
 
-[IMPORTANT]:
+[IMPORTANT]
 ====
 Como mencionamos anteriormente, a definição de variável aleatória contínua implica
 que para todo latexmath:[$a$] real, latexmath:[$P(X=a)=0$]. De fato, como
