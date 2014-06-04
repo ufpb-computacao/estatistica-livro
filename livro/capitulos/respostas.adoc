@@ -240,6 +240,7 @@ f_Y(y) = \begin{cases}
 \frac{1}{4\sqrt{y}}\big(1+e^{-\sqrt{y}}\big),&\hbox{~se~}0\leq y <1,\\
 \frac{1}{4\sqrt{y}}e^{-\sqrt{y}},&\hbox{~se~}y\geq 1,\\
 0,&\hbox{caso contrário}.
+\end{cases}
 \]
 ++++
 
