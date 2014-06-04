@@ -1,0 +1,122 @@
+== Respostas das Atividades
+
+=== Capítulo 1
+
+1.
+
+=== Capítulo 2
+
+=== Atividades
+
+==== Conjuntos
+
+1. 
++
+--
+a. V;
+
+b. F;
+
+c. V;
+
+d. V;
+
+e. V;
+
+f. F;
+
+g. V;
+
+h. F;
+
+i. V;
+
+j. F;
+
+l. V;
+
+m. F;
+
+n. V;
+
+o. F.
+--
+
+2. Sejam x:[A = \{1,2,3,4,\{5\},\{6,7\}\}], x:[B= \{4,\{5\},6,7\}] e x:[C = \{5,6,7\}]. 
+Determine os seguintes conjuntos:
++
+--
+a. x:[\{1,2,3,4,\{5\},\{6,7\}\}];
+
+b. x:[\emptyset];
+
+c. x:[\{1,2,3,4,\{5\},\{6,7\}\}];
+
+d. x:[\{5,6,7\}];
+
+e. x:[\{1,2,3,\{6,7\}\}];
+
+f. x:[\{6,7\}];
+
+g. x:[\{\{5\}\}].
+--
+
+3. Seja x:[M=\{1,2,3,4,\{1\},\{2\},\{3\},\{4\}\}]. Sejam x:[A = \{1,\{2\},3,\{4\}\}] e 
+x:[B = \{\{1\},2,\{3\},4\}].
++
+--
+a. Justifique!;
+
+b. x:[A^c = B], x:[B^c = A], x:[A\cup B^c = A], x:[A^c\cup B= B], x:[A^c\cup B^c = M], 
+x:[A\cup B = M], x:[A\cup A^c = M], x:[B\cup B^c = M].
+
+c. x:[A\cap B = \emptyset], x:[A^c\cap B^c = \emptyset], x:[A\cap A^c = \emptyset] e x:[B\cap B^c=\emptyset].
+--
+
+==== Contagem
+
+*4.*  26*25*24 = 15600
+
+*5.*  6
+
+*6.*  5^10 = 9765625
+
+*7.*  60
+
+*8.*  6840
+
+*9.*  8! = 40320
+
+*10.*  5! = 120
+
+*11.* 210
+
+*12.* 120
+
+
+*13.*  371.
+
+=== Capítulo 3
+
+1.
+
+=== Capítulo 4
+
+1.
+
+=== Capítulo 5
+
+1.
+
+=== Capítulo 6
+
+1.
+
+=== Capítulo 7
+
+1.
+
+=== Capítulo 8
+
+1.
+
