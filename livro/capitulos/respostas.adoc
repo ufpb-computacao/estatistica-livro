@@ -6,8 +6,6 @@
 
 === Capítulo 2
 
-=== Atividades
-
 ==== Conjuntos
 
 1. 
@@ -99,6 +97,25 @@ c. x:[A\cap B = \emptyset], x:[A^c\cap B^c = \emptyset], x:[A\cap A^c = \emptyse
 === Capítulo 3
 
 1.
++
+--
+a)  x:[A\cap B^c\cap C^c]
+
+b)  x:[A\cap B\cap C^c]
+
+c)  x:[A\cap B\cap C]
+
+d)  x:[A\cup B\cup C]
+
+e)  x:[(A\cup B\cup C)^c]
+
+f)  x:[(A\cap B^c\cap C^c)\cup (A^c\cap B\cap C^c)\cup (A^c\cap B^c\cap C)]
+
+--
+
+2. 
+
+
 
 === Capítulo 4
 
