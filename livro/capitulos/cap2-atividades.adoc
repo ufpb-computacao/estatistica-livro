@@ -1,7 +1,5 @@
 === Atividades
 
-==== Conjuntos
-
 *1.* Verdadeiro ou Falso?
 --
 a. x:[\{a,a,b,c\} = \{a,b,c\}];
@@ -63,7 +61,6 @@ x:[A\cup A^c] e x:[B\cup B^c].
 c. Determine os conjuntos: x:[A\cap B], x:[A^c\cap B], x:[A^c\cap B^c], x:[A\cap B^c], x:[A\cap A^c] e x:[B\cap B^c].
 --
 
-==== Contagem
 
 *4.* Quantas palavras contendo 3 letras diferentes podem ser formadas com um alfabeto de 26 letras?
 
