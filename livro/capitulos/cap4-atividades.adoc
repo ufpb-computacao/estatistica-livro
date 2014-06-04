@@ -119,7 +119,16 @@ c) a função de distribuição de x:[X].
 
 --
 
-*7.* Seja x:[X] uma variável aleatória com densidade dada por
+*7.* Encontre a densidade de x:[|X|], se x:[X] é uma variável aleatória contínua com densidade dada por
+[latexmath]
+++++
+\[
+f(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2},\quad x\in\mathbb{R}.
+\]
+++++
+
+
+*8.* Seja x:[X] uma variável aleatória com densidade dada por
 [latexmath]
 ++++
 \[
