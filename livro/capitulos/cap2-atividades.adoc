@@ -70,53 +70,51 @@ c. Determine os conjuntos: x:[A\cap B], x:[A^c\cap B], x:[A^c\cap B^c], x:[A\cap
 
 4. Quantas palavras contendo 3 letras diferentes podem ser formadas com um alfabeto de 26 letras?
 
-//// 26*25*24 = 15600
 
 5. Para fazer uma viagem João Pessoa-Salvador-João Pessoa, posso ir de carro, ônibus ou avião. 
 De quantos modos posso escolher os transportes se não desejo usar na volta o mesmo meio
 de transporte da ída?
 
-//// 6
 
 6. Quantos são os gabaritos possíveis de um teste de 10 questões de múltipla escolha, com cinco alternativas 
 por questão?
 
-//// 5^10 = 9765625
+
 
 7. De quantos modos 3 pessoas podem sentar-se em 5 cadeiras em fila?
 
-//// 60
+
 
 8. O departamento de computação científica de uma universidade possui 20 professores.
 De quantos modos podem ser escolhidos um chefe de departamento, um coordenador da gradução
 e um coordenador de pós-graduação?
 
-//// 6840
+
 
 9. Quantos são os anagramas da palavra CAPÍTULO?
 
-//// 8! = 40320
+
 
 10. Quantos são os anagramas da palavra CAPÍTULO que têm a letra C no primeiro lugar E a letra
 A no segundo lugar E a letra P no terceiro lugar?
 
-//// 5! = 120
+
 
 11. João tem 10 frutas diferentes e deseja fazer vários tipos de saladas de frutas, onde cada salada
 contém exatamente 4 frutas. Quantos tipos de saladas de frutas ele pode fazer?
 
-//// 210
+
 
 12. Em uma prova, o estudante deve escolher exatamente 7 questões entre 10 disponíveis. 
 Quantas escolhas ele tem?
 
-//// 120
+
 
 
 13. De quantos modos podemos escolher 6 pessoas, incluindo pelo menos duas mulheres, em um grupo de 7
 homens e 4 mulheres?
 
-//// 371.
+
 
 
 
