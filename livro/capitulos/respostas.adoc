@@ -95,7 +95,7 @@ c. x:[A\cap B = \emptyset], x:[A^c\cap B^c = \emptyset], x:[A\cap A^c = \emptyse
 
 === Capítulo 3
 
-1.
+1. Respostas:
 +
 --
 a)  x:[A\cap B^c\cap C^c]
