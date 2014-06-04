@@ -185,7 +185,49 @@ b) 0,44
 
 === Capítulo 4
 
-1.
+
+*1.* Respostas:
+--
+a) 1/21
+
+b) 3/7
+
+--
+
+
+*2.* Respostas:
+--
+a) 3/4
+
+b) 4/5
+--
+
+*3.* Respostas:
+--
+a) x:[P(X=0) = 1/2, P(X=1)=P(X=3)=P(X=4)=1/10, P(X=2)=1/5].
+
+b) 5/8
+--
+
+*4.* Respostas:
+--
+a) x:[p(2) = 1/10, p(3)=1/5, p(4)=3/10, p(5)=2/5.]
+
+b) x:[p(x) = 1/10] se x:[x\in \{3,4,8,9\}] e x:[p(x)=1/5] se x:[x\in \{5,6,7\}].
+--
+
+
+
+*6.* Respostas:
+--
+a) 2
+
+b) 1/4
+
+c) x:[F(x) = \begin{cases} 1 - x^2,&\hbox{~se~}x\geq 1,\\ 0,&\hbox{~se~} x<1.\end{cases}]
+
+--
+
 
 === Capítulo 5
 
