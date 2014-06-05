@@ -609,6 +609,8 @@ da amostra.
 
 ==== Estimação Intervalar
 
+(((Intervalo de Confiança)))
+
 Suponha que temos um estimador para um certo parâmetro x:[\theta] dado por x:[\widehat{\theta}].
 Além disso, suponha que temos a seguinte aproximação:
 [latexmath]
@@ -625,12 +627,15 @@ dependem de x:[\widehat{\theta}] tal que
 [latexmath]
 ++++
 \[
-P(T_1< \theta \leq T_2)) \approx \alpha,
+P(T_1< \theta \leq T_2)) \approx 1-\alpha,
 \]
 ++++
 onde x:[\alpha] é um nível de significância determinado previamente. Normalmente 
-costuma-se escolher x:[\alpha = 0,99, \alpha = 0,95] ou x:[\alpha = 0,90], isto é,
-níveis de 99%, 95% ou 90%, respectivamente.
+costuma-se escolher x:[\alpha = 0,01, \alpha = 0,05] ou x:[\alpha = 0,10], isto é,
+estamos afirmando que em apenas em 1%, ou 5%, ou 10%, das amostras possíveis (de mesmo tamanho)
+da população, o intervalo de confiança não contém o parâmetro x:[\theta]. Nestes casos,
+dizemos que estamos construindo intervalos de confiança de níveis de confiança
+de 99%, 95% ou 90%, respectivamente.
 
 Observe que a aproximação acima obtida para x:[\widehat{\theta}] nos fornece:
 [latexmath]
@@ -666,15 +671,15 @@ P\Big( -C\sigma + \widehat{\theta} \leq \theta < C\sigma + \widehat{\theta}\Big)
 \]
 ++++
 
-Se quisermos um nível x:[\alpha], temos que resolver x:[2\Phi(C) -1 = \alpha] o que fornece
+Se quisermos um nível x:[1-\alpha], temos que resolver x:[2\Phi(C) -1 = 1-\alpha] o que fornece
 [latexmath]
 ++++
 \[
-C = \Phi^{-1}\Big(\frac{1+\alpha}{2}\Big),
+C = \Phi^{-1}\Big(1-\frac{\alpha}{2}\Big),
 \]
 ++++
-onde x:[\Phi^{-1}((1+\alpha)/2)] é o valor encontrado na tabela da normal, tal que a probabilidade
-de ser menor ou igual a este valor é de x:[(1+\alpha)/2].
+onde x:[\Phi^{-1}(1-\alpha/2)] é o valor encontrado na tabela da normal, tal que a probabilidade
+de ser menor ou igual a este valor é de x:[1-\alpha/2].
 
 Finalmente, obtemos que um intervalo de confiança de nível x:[\alpha] para x:[\theta] é dado por
 [latexmath]
@@ -683,7 +688,68 @@ Finalmente, obtemos que um intervalo de confiança de nível x:[\alpha] para x:[
 \big[ -C\sigma + \widehat{\theta}; C\sigma + \widehat{\theta}\big],
 \]
 ++++
-onde x:[C] é dado por x:[C = \Phi^{-1}\Big(\frac{1+\alpha}{2}\Big)]. 
+onde x:[C] é dado por x:[C = \Phi^{-1}\Big(1-\frac{\alpha}{2}\Big)]. 
+
+==== Intervalo de Confiança para a Média
+
+(((Intervalo de Confiança, para a Média)))
+
+Seja x:[X_1,\ldots,X_n] uma AAS de uma variável aleatória comum x:[X] satisfazendo x:[E(X_i) = \mu] 
+e x:[Var(X_i)=\sigma^2]. Então, seja x:[\overline{X}] a média dessa AAS:
+[latexmath]
+++++
+\[
+\overline{X} = \frac{1}{n} \sum_{i=1}^n X_i.
+\]
+++++
+
+Vimos que a distribuição amostral da média é, pelo Teorema Central do Limite, aproximadamente:
+[latexmath]
+++++
+\[
+\frac{\overline{X} - \mu}{\sigma/\sqrt{n}} \approx N(0,1).
+\]
+++++
+
+Pelo que vimos na subseção anterior, isto nos diz que um intervalo de confiança de nível x:[\alpha] para
+a média é dado por
+[latexmath]
+++++
+\[
+\Big[ -C \frac{\sigma}{\sqrt{n}} + \overline{X}; C \frac{\sigma}{\sqrt{n}} + \overline{X} \Big],
+\]
+++++
+onde x:[C] é dado por x:[C = \Phi^{-1}\Big(1-\frac{\alpha}{2}\Big)].
+
+.Exemplo de cálculo de intervalo de confiança para a média
+====
+Suponha que as alturas dos alunos da UFPB tenham distribuição normal com  
+x:[\sigma = 15]cm. Foi retirada uma amostra aleatória de 100 alunos obtendo-se
+x:[\overline{X}=175]cm. Vamos construir um intervalo de 95\% de confiança para 
+a verdadeira altura média dos alunos.
+
+Primeiramente, note que estamos querendo x:[1-\alpha = 0,95], o que nos fornece
+x:[\alpha = 0,05] e desta forma, x:[1-\alpha/2 = 0,975].
+
+Olhando para a tabela da normal, vemos que x:[C = \Phi^{-1}(1-\alpha/2)] é dado
+por 1,96.
+
+Desta forma, o intervalo de confiança é dado por
+[latexmath]
+++++
+\[
+\Big[ -1,96\cdot \frac{15}{sqrt{100}} + 175; 1,96\cdot \frac{15}{\sqrt{100}} + 175\Big].
+\]
+++++
+Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
+valor da altura média dos alunos da UFPB é 
+[latexmath]
+++++
+\[
+\Big[ -1,72; 1,78\Big].
+\]
+++++
+====
 
 === Regressão e Correlação
 
