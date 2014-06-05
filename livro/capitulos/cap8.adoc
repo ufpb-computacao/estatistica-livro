@@ -607,7 +607,83 @@ Um estimador para a proporção populacional é dado pela proporção amostral:
 onde x:[S_n] é o número de elementos que apresentam uma determinada característica de interesse entre os x:[n] elementos
 da amostra.
 
+==== Estimação Intervalar
 
+Suponha que temos um estimador para um certo parâmetro x:[\theta] dado por x:[\widehat{\theta}].
+Além disso, suponha que temos a seguinte aproximação:
+[latexmath]
+++++
+\[
+\frac{\widehat{\theta}-\theta}{\sigma} \stackrel{aprox.}{\sim} N(0,1).
+\]
+++++
+
+Queremos então utilizar x:[\widehat{\theta}] e a aproximação acima para construir um 
+intervalo de confiança para x:[\theta], ou seja, queremos utilizar x:[\widehat{\theta}]
+para construir um intervalo aleatório, do tipo x:[[T_1,T_2\]], onde x:[T_1] e x:[T_2]
+dependem de x:[\widehat{\theta}] tal que 
+[latexmath]
+++++
+\[
+P(T_1< \theta \leq T_2)) \approx \alpha,
+\]
+++++
+onde x:[\alpha] é um nível de significância determinado previamente. Normalmente 
+costuma-se escolher x:[\alpha = 0,99, \alpha = 0,95] ou x:[\alpha = 0,90], isto é,
+níveis de 99%, 95% ou 90%, respectivamente.
+
+Observe que a aproximação acima obtida para x:[\widehat{\theta}] nos fornece:
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P\Big(-C < \frac{\widehat{\theta}-\theta}{\sigma} \leq C\Big) &=& P\Big( \frac{\widehat{\theta}-\theta}{\sigma} \leq C\Big) - P\Big(\frac{\widehat{\theta}-\theta}{\sigma}\leq -C\Big)\\
+&\approx& \Phi(C) - \Phi(-C)\\
+&=& \Phi(C) - 1 + \Phi(C)\\
+&=& 2\Phi(C) -1.
+\end{array}
+\]
+++++
+
+Por outro lado,
+[latexmath]
+++++
+\[
+\begin{array}{lll}
+P\Big(-C < \frac{\widehat{\theta}-\theta}{\sigma} \leq C\Big) &=& P\Big( -C\sigma < \widehat{\theta}-\theta \leq C\sigma\Big)\\
+&=&P\Big( -C\sigma - \widehat{\theta} < -\theta \leq C\sigma - \widehat{\theta}\Big)\\
+&=& P\Big( -C\sigma + \widehat{\theta} \leq \theta < C\sigma + \widehat{\theta}\Big).
+\end{array}
+\]
+++++
+
+Juntando as duas equações, obtemos que:
+
+[latexmath]
+++++
+\[
+P\Big( -C\sigma + \widehat{\theta} \leq \theta < C\sigma + \widehat{\theta}\Big)\approx 2\Phi(C) -1.
+\]
+++++
+
+Se quisermos um nível x:[\alpha], temos que resolver x:[2\Phi(C) -1 = \alpha] o que fornece
+[latexmath]
+++++
+\[
+C = \Phi^{-1}\Big(\frac{1+\alpha}{2}\Big),
+\]
+++++
+onde x:[\Phi^{-1}((1+\alpha)/2)] é o valor encontrado na tabela da normal, tal que a probabilidade
+de ser menor ou igual a este valor é de x:[(1+\alpha)/2].
+
+Finalmente, obtemos que um intervalo de confiança de nível x:[\alpha] para x:[\theta] é dado por
+[latexmath]
+++++
+\[
+\big[ -C\sigma + \widehat{\theta}; C\sigma + \widehat{\theta}\big],
+\]
+++++
+onde x:[C] é dado por x:[C = \Phi^{-1}\Big(\frac{1+\alpha}{2}\Big)]. 
 
 === Regressão e Correlação
 
