@@ -350,6 +350,16 @@ Var(\widehat{p}) = Var\Big(\frac{S_n}{n}\Big) = \frac{1}{n^2} Var(S_n) = \frac{n
 \]
 ++++
 
+É possível mostrar, na realidade, que vale o seguinte resultado:
+[latexmath]
+++++
+\[
+\frac{\widehat{p}-p}{\sqrt{\widehat{p}(1-\widehat{p})/n}} \stackrel{aprox.}{\sim} N(0,1),
+\]
+++++
+ou seja, se trocarmos x:[p(1-p)/n] por x:[\widehat{p}(1-\widehat{p})/n], o resultado ainda vale. Este
+resultado será útil na construção de intervalos de confiança.
+
 ===== Distribuição Amostral da Diferença entre Médias
 
 Em vários problemas práticos, deseja-se comparar duas populações de interesse. Por exemplo,
@@ -738,7 +748,7 @@ Desta forma, o intervalo de confiança é dado por
 [latexmath]
 ++++
 \[
-\Big[ -1,96\cdot \frac{15}{sqrt{100}} + 175; 1,96\cdot \frac{15}{\sqrt{100}} + 175\Big].
+\Big[ -1,96\cdot \frac{15}{\sqrt{100}} + 175; 1,96\cdot \frac{15}{\sqrt{100}} + 175\Big].
 \]
 ++++
 Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
@@ -750,6 +760,80 @@ valor da altura média dos alunos da UFPB é
 \]
 ++++
 ====
+
+==== Intervalo de Confiança para a Proporção
+
+(((Intervalo de Confiança, para a Proporção)))
+
+Seja x:[X_1,\ldots,X_n] uma AAS de uma variável aleatória Bernoulli x:[X] com parâmetro x:[p],
+isto é, as variáveis x:[X_i] assumem o valor 1 com probabilidade x:[p], e 0 com probabilidade
+x:[1-p]. Seja x:[\widehat{p}] a proporção da amostra que assume valor 1 (ou em exemplos práticos
+a proporção da amostra que satisfaz uma determinada condição), então, temos que x:[\widehat{p}]
+é dado por
+[latexmath]
+++++
+\[
+\widehat{p} = \overline{X} = \frac{1}{n} \sum_{i=1}^n X_i.
+\]
+++++
+
+
+Vimos que a distribuição amostral da proporção satisfaz
+[latexmath]
+++++
+\[
+\frac{\widehat{p}-p}{\sqrt{\widehat{p}(1-\widehat{p})/n}} \stackrel{aprox.}{\sim} N(0,1).
+\]
+++++
+
+Desta forma, utilizando o que vimos na construção de intervalos de confiança,
+um intervalo de confiança de nível x:[\alpha] para a proporção é dado por
+[latexmath]
+++++
+\[
+\Big[ -C \frac{\sqrt{\widehat{p}(1-\widehat{p})}}{\sqrt{n}} + \widehat{p}; C \frac{\sqrt{\widehat{p}(1-\widehat{p})}}{\sqrt{n}} + \widehat{p} \Big],
+\]
+++++
+onde x:[C] é dado por x:[C = \Phi^{-1}\Big(1-\frac{\alpha}{2}\Big)].
+
+.Exemplo de cálculo de intervalo de confiança para a proporção
+====
+Uma amostra de 300 habitantes de uma cidade mostrou que 180 desejavam a água fluorada. 
+Vamos encontrar o intervalo de confiança de 95% para a população favorável a fluoração.
+
+Primeiramente, note que estamos querendo x:[1-\alpha = 0,95], o que nos fornece
+x:[\alpha = 0,05] e desta forma, x:[1-\alpha/2 = 0,975].
+
+Olhando para a tabela da normal, vemos que x:[C = \Phi^{-1}(1-\alpha/2)] é dado
+por 1,96.
+
+Por outro lado, como a proporção estimada dos habitantes favoráveis a fluoração é 
+[latexmath]
+++++
+\[
+\widehat{p} = \frac{180}{300} = 0,6.
+\]
+++++
+
+Desta forma, o intervalo de confiança é dado por
+[latexmath]
+++++
+\[
+\Big[ -1,96\cdot \frac{sqrt{0,6\cdot 0,4}{\sqrt{300}} + 0,6; 1,96\cdot \frac{sqrt{0,6\cdot 0,4}{\sqrt{300}} + 0,6\Big].
+\]
+++++
+Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
+valor da proporção da população favorável a fluoração é
+[latexmath]
+++++
+\[
+\Big[ 0,54; 0,65\Big].
+\]
+++++
+====
+
+
+
 
 === Regressão e Correlação
 
