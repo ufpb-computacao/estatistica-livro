@@ -1,5 +1,19 @@
 == Estatística Descritiva
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Conhecer os conceitos básicos da estatística e, principalmente, a diferença entre população e amostra
+* Construir uma tabela estatística
+* Conhecer os tipos de variáveis estatísticas
+* Construir um histograma
+* Identificar e entender o significado dos gráficos estatísticos
+* Conhecer e saber calcular as principais medidas de posição
+* Conhecer e saber calcular as principais medidas de dispersão
+____
+
+
 === Conceitos Básicos
 
 // O que é estatística?
