@@ -1,5 +1,23 @@
 [[Cap_Var_Ale]]
 == Variáveis Aleatórias e Suas Distribuições
+
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Saber a definição de variável aleatória
+* Saber identificar variáveis aleatórias discretas
+* Entender o que é e como calcular a função de probabilidade de uma variável aleatória discreta
+* Saber identificar variáveis aleatórias contínuas
+* Entender o que é e como calcular a função de densidade de uma variável aleatória contínua
+* Saber a definição e como calcular a função de distribuição acumulada
+* Saber a relação entre a função de distribuição acumulada e função de probabilidade (no caso de variáveis aleatórias discretas)
+* Saber a relação entre a função de distribuição acumulada e função de densidade (no caso de variáveis aleatórias contínuas)
+* Saber a definição e exemplos de variáveis aleatórias mistas
+* Entender o que são e como trabalhar com funções de variáveis aleatórias
+____
+
+
 Imaginemos que existe a definição de que a temperatura de João Pessoa é 
 considerada quente se é maior do que 27 graus Celsius, é considerada 
 confortável se está entre 20 e 27 graus Celsius, e é considerada fria se é 
