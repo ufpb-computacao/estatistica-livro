@@ -1,5 +1,17 @@
 == Esperança de uma Variável Aleatória
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Entender o que é a esperança de variáveis aleatórias
+* Conhecer as propriedades da esperança
+* Saber calcular a esperança
+* Entender o que é a variância de variáveis aleatórias
+* Conhecer as propriedades da variância
+* Saber calcular a variância
+____
+
 Vamos começar introduzindo uma notação que será útil ao estudar o conceito de
 esperança matemática: variáveis aleatórias independentes.
 
