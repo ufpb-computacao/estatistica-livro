@@ -819,7 +819,7 @@ Desta forma, o intervalo de confiança é dado por
 [latexmath]
 ++++
 \[
-\Big[ -1,96\cdot \frac{sqrt{0,6\cdot 0,4}}{\sqrt{300}} + 0,6; 1,96\cdot \frac{sqrt{0,6\cdot 0,4}}{\sqrt{300}} + 0,6\Big].
+\Big[ -1,96\cdot \frac{\sqrt{0,6\cdot 0,4}}{\sqrt{300}} + 0,6; 1,96\cdot \frac{\sqrt{0,6\cdot 0,4}}{\sqrt{300}} + 0,6\Big].
 \]
 ++++
 Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
@@ -884,7 +884,7 @@ Pelos dados do problema, temos que o intervalo de confiança é dado por
 [latexmath]
 ++++
 \[
-\Big[ -1,96\cdot \sqrt{(5,05)^2/133+(5,44)^2/162}  + 25,34-24,94; 1,96\cdot \sqrt{(5,05)^2/133+(5,44)^2/162}  + 25,34-24,94\Big].
+\Big[ -1,96\cdot \sqrt{\frac{(5,05)^2}{133}+\frac{(5,44)^2}{162}}  + 25,34-24,94; 1,96\cdot \sqrt{\frac{(5,05)^2}{133}+\frac{(5,44)^2}{162}}  + 25,34-24,94\Big].
 \]
 ++++
 Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
