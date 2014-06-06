@@ -1,5 +1,15 @@
 == Principais Distribuições Contínuas
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Conhecer as principais distribuições contínuas
+* Saber utilizar a tabela da distribuição normal
+* Conhecer a distribuição Exponencial e Gama
+* Saber utilizar a distribuição normal para aproximar a distribuição binomial
+____
+
 Aqui apresentaremos algumas das principais distribuições contínuas. Para tanto, apresentaremos suas funções de densidade.
 
 Além disso, apresentaremos algumas propriedades destas distribuições, tais como esperança e variância.
