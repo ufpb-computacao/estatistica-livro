@@ -1,5 +1,16 @@
 == Teoria dos Conjuntos e Contagem
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Entender o que é um conjunto, um elemento de um conjunto
+* Entender as relações entre conjuntos
+* Conhecer os principais métodos de contagem
+* Saber a diferença entre combinação e arranjo e como aplicar essas definições em problemas práticos
+* Conhecer o binômio de Newton
+____
+
 O objetivo deste capítulo é apresentar os pré-requisitos 
 necessários para estudar probabilidade.
 
