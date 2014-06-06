@@ -721,7 +721,7 @@ Vimos que a distribuição amostral da média é, pelo Teorema Central do Limite
 \]
 ++++
 
-Pelo que vimos na subseção anterior, isto nos diz que um intervalo de confiança de nível x:[\alpha] para
+Pelo que vimos na subseção anterior, isto nos diz que um intervalo de confiança de nível x:[1-\alpha] para
 a média é dado por
 [latexmath]
 ++++
@@ -787,7 +787,7 @@ Vimos que a distribuição amostral da proporção satisfaz
 ++++
 
 Desta forma, utilizando o que vimos na construção de intervalos de confiança,
-um intervalo de confiança de nível x:[\alpha] para a proporção é dado por
+um intervalo de confiança de nível x:[1-\alpha] para a proporção é dado por
 [latexmath]
 ++++
 \[
@@ -832,6 +832,70 @@ valor da proporção da população favorável a fluoração é
 ++++
 ====
 
+
+
+==== Intervalo de Confiança para a Diferença de Médias
+
+(((Intervalo de Confiança, para a Diferença de Médias)))
+
+Considere duas AAS independentes de tamanhos x:[n_1] e x:[n_2] das duas populações. Vimos que
+a distribuição amostral da diferença x:[(\overline{X}_1-\overline{X}_2)],
+para x:[n_1] e x:[n_2] suficientemente grandes, satisfaz
+[latexmath]
+++++
+\[
+\frac{(\overline{X}_1-\overline{X}_2)-(\mu_1-\mu_2)}{\sqrt{\sigma_1^2/n_1+\sigma_2^2/n_2}}  \stackrel{aprox.}{\sim} N(0,1).
+\]
+++++
+
+
+Desta forma, utilizando o que vimos na construção de intervalos de confiança,
+um intervalo de confiança de nível x:[1-\alpha] para a diferença de médias é dado por
+[latexmath]
+++++
+\[
+\Big[ -C \sqrt{\sigma_1^2/n_1+\sigma_2^2/n_2} + \overline{X}_1-\overline{X}_2; C \sqrt{\sigma_1^2/n_1+\sigma_2^2/n_2} + \overline{X}_1-\overline{X}_2 \Big],
+\]
+++++
+onde x:[C] é dado por x:[C = \Phi^{-1}\Big(1-\frac{\alpha}{2}\Big)].
+
+.Exemplo de cálculo de intervalo de confiança para a diferença de médias
+====
+Um teste psicológico destinado a medir a precisão com que uma pessoa julga outras pessoas, foi realizado. 
+As notas possíveis do teste variam de 0 a 41. Durante sua elaboração o teste foi aplicado a vários grupos 
+com diferentes de pessoas. De acordo com os resultados observados, vamos construir um intervalo de confiança
+para a diferença entre as médias dos grupos de homens e de mulheres, com $95\%$ de confiança.
+
+
+Homens: x:[n=133], x:[\overline{X}=25,34] e x:[\sigma=5,05].
+
+
+Mulheres: x:[n=162], x:[\overline{X}=24,94] e x:[\sigma=5,44].
+
+
+Primeiramente, note que estamos querendo x:[1-\alpha = 0,95], o que nos fornece
+x:[\alpha = 0,05] e desta forma, x:[1-\alpha/2 = 0,975].
+
+Olhando para a tabela da normal, vemos que x:[C = \Phi^{-1}(1-\alpha/2)] é dado
+por 1,96.
+
+
+Pelos dados do problema, temos que o intervalo de confiança é dado por
+[latexmath]
+++++
+\[
+\Big[ -1,96\cdot \sqrt{(5,05)^2/133+(5,44)^2/162}  + 25,34-24,94; 1,96\cdot \sqrt{(5,05)^2/133+(5,44)^2/162}  + 25,34-24,94\Big].
+\]
+++++
+Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
+valor da diferença entre as médias dos grupos de homens e de mulheres é
+[latexmath]
+++++
+\[
+\Big[ -0,80; 1,60\Big].
+\]
+++++
+====
 
 
 
