@@ -819,7 +819,7 @@ Desta forma, o intervalo de confiança é dado por
 [latexmath]
 ++++
 \[
-\Big[ -1,96\cdot \frac{sqrt{0,6\cdot 0,4}{\sqrt{300}} + 0,6; 1,96\cdot \frac{sqrt{0,6\cdot 0,4}{\sqrt{300}} + 0,6\Big].
+\Big[ -1,96\cdot \frac{sqrt{0,6\cdot 0,4}}{\sqrt{300}} + 0,6; 1,96\cdot \frac{sqrt{0,6\cdot 0,4}}{\sqrt{300}} + 0,6\Big].
 \]
 ++++
 Realizando a conta, obtemos que o intervalo, ao nível de 95% de confiança para o verdadeiro
