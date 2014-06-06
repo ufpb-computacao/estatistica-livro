@@ -1,5 +1,15 @@
 == Principais Distribuições Discretas
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Conhecer as principais distribuições discretas
+* Saber a diferença entre a distribuição binomial e hipergeométrica
+* Saber a diferença entre a distribuição geométrica e binomial negativa
+* Entender a definição da distribuição Poisson e como utilizar a distribuição Poisson para aproximar a distribuição binomial
+____
+
 (((Distribuição)))
 
 Aqui apresentaremos as principais distribuições de variáveis aleatórias discretas, ou seja, 
