@@ -1,5 +1,16 @@
 == Definições Básicas
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* As principais definições da probabilidade
+* Reconhecer um modelo com resultados equiprováveis e modelos com resultados que não são equiprováveis
+* Entender e saber aplicar o conceito de probabilidade condicional
+* Saber enunciar e aplicar o teorema da probabilidade total e o teorema de Bayes
+* Saber a definição e intuição de eventos independentes
+____
+
 (((Modelos Matemáticos)))
 
 Modelos Matemáticos::
