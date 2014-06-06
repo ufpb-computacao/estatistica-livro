@@ -1,5 +1,16 @@
 == Introdução à Inferência Estatística
 
+.Objetivos do capítulo
+____
+Ao final deste capítulo você deverá ser capaz de:
+
+* Conhecer os principais tipos de amostragem
+* Saber o que são estimadores e a diferença entre estimador e estimativa
+* Conhecer a distribuição amostral da média, proporção, diferença de médias e diferença de proporções
+* Saber construir diversos intervalos de confiança
+* Saber realizar uma regressão linear de x:[Y] em x:[X] e calcular seu coeficiente de determinação
+____
+
 === Definições Básicas
 
 Vamos começar relembrando dois conceitos básicos importantes de estatística, a saber, _população_ e _amostra_.
