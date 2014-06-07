@@ -18,3 +18,5 @@ livro/capitulos/*.asc~
 /log.txt
 releases
 
+/.RData
+/.Rhistory
