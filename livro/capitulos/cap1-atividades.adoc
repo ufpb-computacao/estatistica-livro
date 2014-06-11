@@ -1,6 +1,64 @@
 === Atividades
 
-1.
+*1.* Em um estado, foram pedidos para 35 empresas os números de empregados demitidos no ano de 2013. Os 
+resultados informados pelas empresas estão dados abaixo:
+
+35-30-30-45-41-48-64-41-47-56-43-36-45-40-33-49-37-34-56
+
+40-41-37-45-48-34-52-25-53-41-38-41-37-45-35-41.
+
+a) Construa uma tabela de distribuição de frequência para estes dados.
+
+b) Construa um histograma para estes dados.
+
+
+*2.* Construa uma tabela de distribuição de frequência e histograma para o seguinte conjunto de dados:
+
+26-9-7-5-9-6-3-4-19-25-5-20-21-9-30-8-18-3-22-14-25-1-18-14-24.
+
+*3.* Calule a média aritmética dos dados da questão 1. 
+
+*4.* Calcule a média aritmética dos dados da questão 2.
+
+*5.* Calcule a moda dos dados da questão 1.
+
+*6.* Calcule a moda dos dados da questão 2.
+
+*7.* Calcule a mediana dos dados da questão 1.
+
+*8.* Calcule a mediana dos dados da questão 2.
+
+*9.* Calcule o desvio médio dos dados da questão 1.
+
+*10.* Calcule o desvio médio dos dados da questão 2.
+
+*11.* Calcule a variância amostral e populacional dos dados da questão 1.
+
+*12.* Calcule a variância amostral e populacional dos dados da questão 2.
+
+*13.* Calcule o coeficiente de variação dos dados da questão 1.
+
+*14.* Calcule o coeficiente de variação dos dados da questão 2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
