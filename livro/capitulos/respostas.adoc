@@ -413,5 +413,102 @@ b)  12393/16384.
 
 *1.* Intervalo de 90% x:[[1,73;1,77\]]. Intervalo de 99% x:[[1,71;1,79\]].
 
+*2.* Intervalo de 90% x:[[4,80;5,59\]]. Intervalo de 95% x:[[4,73;5,67\]]. Intervalo de 99% x:[[4,58;5,82\]].
+
+*3.* Intervalo de 90% x:[[109,18;110,82\]]. Intervalo de 95% x:[[109,02;110,98\]].
+
+*4.*  Intervalo de 90% x:[[0,55;0,65\]]. Intervalo de 99% x:[[0,53;0,67\]].
+
+*5.* Intervalo de 96% x:[[0,46;0,74\]]. Como o valor x:[p=0,5] pertence ao intervalo de confiança de 96%, podemos
+afirmar, com 96% de confiança que, sim, a moeda é honesta.
+
+*6.* Intervalo de 96% x:[[0,20;0,29\]]. Baseado no intervalo de confiança, temos que se x:[X_i] é uma
+variável aleatória indicando que a x:[i]-ésima casa é alugada, então, x:[X_i] segue distribuição
+Bernoulli com o parâmetro x:[p] pertencente a este intervalo. O número de casas alugadas então é dado por
+[latexmath]
+++++
+\[
+N = \sum_{i=1}^{20.000} X_i.
+\]
+++++
+Portanto, x:[N\sim Bin(n,p)], onde x:[p] pertence a este intervalo. Como o número esperado de casas alugadas
+é dado por
+[latexmath]
+++++
+\[
+E(N) = 20.000 p.
+\]
+++++
+Temos que o número esperado de casas alugadas pertence ao intervalo
+[latexmath]
+++++
+\[
+[4000,5800].
+\]
+++++
+
+*7.* Intervalo de 90% x:[[-0,61;1,41\]].
+
+*8.* Intervalo de 95% x:[[-7,09;4,09\]].
+
+*9.* Intervalo de 95% x:[[0,56; 0,64\]]. Como 0,5 = 50% não pertence ao intervalo, e o intervalo contém,
+com 95% de confiança, a média verdadeira. Temos que com 95% de confiança a média verdadeira, isto é,
+a proporção de donas de casa que preferem o detergente x:[A], é maior do que 50%. Desta forma,
+a companhia tem evidência suficiente para NÃO confiar no funcionário.
+
+
+*10.* Intervalo de 90% x:[[0,11;0,16\]]. Como 0,05 = 5% não pertence ao intervalo, e o intervalo contém,
+com 90% de confiança, a média verdadeira. Temos que com 90% de confiança a média verdadeira, isto é,
+o percentual de artigos defeituosos produzidos pelo novo empregado, é maior do que 5%. Desta forma,
+podemos sim afirmar que o novo empregado produz peças com índice de defeitos maior do que o existente.
+
+*11.* a) -0,9921.
+
+b) x:[\widehat{Y} = 32,28 - 1,7 X].
+
+c) Temos que para x:[X=0], x:[\widehat{Y} = 32,28].
+
+*12.* a) x:[\widehat{Y} = 386,84 - 1,87 X].
+
+b) Temos que para x:[X=60], x:[\widehat{Y} = 274,64]. Para x:[X=120], temos x:[\widehat{Y} = 162,44].
+
+c) x:[R^2\approx 0,79].
+
+*13.* a) x:[\widehat{Y} = 1,81 X].
+
+b) x:[R^2\approx 0,30]
+
+c) x:[\widehat{X} = 0,4 + 0,16X].
+
+d) x:[R^2\approx 0,30].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
