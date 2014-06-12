@@ -8,24 +8,24 @@ porém perdemos 8 reais para cada bola vermelha. Seja x:[X] o nosso lucro.
 --
 
 
-a) Determine a função de probabilidade de x:[X];
+a) {resposta} Determine a função de probabilidade de x:[X];
 
 
 
 
-b) Calcule a esperança e variância de x:[X].
+b) {resposta} Calcule a esperança e variância de x:[X].
 
 
 
 --
 
-*2.* Exatamente uma entre 6 chaves parecidas abre uma determinada porta. Tenta-se uma chave após a outra. Qual o número médio de tentativas
+*2.* {resposta} Exatamente uma entre 6 chaves parecidas abre uma determinada porta. Tenta-se uma chave após a outra. Qual o número médio de tentativas
 necessárias para se conseguir abrir a porta?
 
 
 
 
-*3.* Cinquenta pessoas lançam uma moeda honesta dez vezes. Obtenha a média e a variância do número de pessoas
+*3.* {resposta} Cinquenta pessoas lançam uma moeda honesta dez vezes. Obtenha a média e a variância do número de pessoas
 que obtêm exatamente 5 caras.
 
 
@@ -45,12 +45,12 @@ f(x) = \frac{1}{x^2},\quad x\geq 1.
 
 
 
-a) Mostre que x:[f] é, de fato, uma densidade;
+a) {resposta} Mostre que x:[f] é, de fato, uma densidade;
 
 
 
 
-b) A esperança de x:[X] existe? Se sim, quanto vale?
+b) {resposta} A esperança de x:[X] existe? Se sim, quanto vale?
 
 
 
@@ -72,18 +72,18 @@ Obtenha:
 
 
 
-a) x:[E(X)];
+a) {resposta} x:[E(X)];
 
 
 
 
-b) x:[E(|X|)];
+b) {resposta}  x:[E(|X|)];
 
 
 
 
 
-c) x:[Var(X)];
+c) {resposta} x:[Var(X)];
 
 
 
