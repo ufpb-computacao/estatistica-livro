@@ -39,7 +39,7 @@ Na estatística temos algumas definições importantes:
 * *Censo*: Exame de todos os elementos da população.
 
 .População e Amostra
-image::images/descritiva/fig1.png[scaledwidth="60%"] 
+image::images/descritiva/pop-amostra.eps[scaledwidth="60%"] 
 
 .Exemplo de variável
 image::images/descritiva/fig2.png[scaledwidth="60%"] 
