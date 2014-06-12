@@ -16,29 +16,29 @@ b) Construa um histograma para estes dados.
 
 26-9-7-5-9-6-3-4-19-25-5-20-21-9-30-8-18-3-22-14-25-1-18-14-24.
 
-*3.* Calule a média aritmética dos dados da questão 1. 
+*3.* {resposta} Calule a média aritmética dos dados da questão 1. 
 
-*4.* Calcule a média aritmética dos dados da questão 2.
+*4.* {resposta} Calcule a média aritmética dos dados da questão 2.
 
-*5.* Calcule a moda dos dados da questão 1.
+*5.* {resposta} Calcule a moda dos dados da questão 1.
 
-*6.* Calcule a moda dos dados da questão 2.
+*6.* {resposta} Calcule a moda dos dados da questão 2.
 
-*7.* Calcule a mediana dos dados da questão 1.
+*7.* {resposta} Calcule a mediana dos dados da questão 1.
 
-*8.* Calcule a mediana dos dados da questão 2.
+*8.* {resposta} Calcule a mediana dos dados da questão 2.
 
-*9.* Calcule o desvio médio dos dados da questão 1.
+*9.* {resposta} Calcule o desvio médio dos dados da questão 1.
 
-*10.* Calcule o desvio médio dos dados da questão 2.
+*10.* {resposta} Calcule o desvio médio dos dados da questão 2.
 
-*11.* Calcule a variância amostral e populacional dos dados da questão 1.
+*11.* {resposta} Calcule a variância amostral e populacional dos dados da questão 1.
 
-*12.* Calcule a variância amostral e populacional dos dados da questão 2.
+*12.* {resposta} Calcule a variância amostral e populacional dos dados da questão 2.
 
-*13.* Calcule o coeficiente de variação dos dados da questão 1.
+*13.* {resposta} Calcule o coeficiente de variação dos dados da questão 1.
 
-*14.* Calcule o coeficiente de variação dos dados da questão 2.
+*14.* {resposta} Calcule o coeficiente de variação dos dados da questão 2.
 
 
 
