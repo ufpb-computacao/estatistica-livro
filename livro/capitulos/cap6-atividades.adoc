@@ -9,19 +9,19 @@ dentre os 15 pacientes submetidos ao tratamento.
 --
 
 
-a) Qual a distribuição de x:[X]?
+a) {resposta} Qual a distribuição de x:[X]?
 
 
 
 
 
-b) Qual a probabilidade de que os 15 pacientes sejam curados?
+b) {resposta} Qual a probabilidade de que os 15 pacientes sejam curados?
 
 
 
 
 
-c) Qual a probabilidade de que pelo menos dois não sejam curados?
+c) {resposta} Qual a probabilidade de que pelo menos dois não sejam curados?
 
 
 
@@ -36,14 +36,14 @@ O estudante sabe resolver 9 dos 12 problemas. Seja x:[X] o número de exercício
 --
 
 
-a) Qual a distribuição de x:[X]?
+a) {resposta} Qual a distribuição de x:[X]?
 
 
 
 
 
 
-b) Qual a probabilidade do aluno resolver pelo menos 5 exercícios da prova.
+b) {resposta} Qual a probabilidade do aluno resolver pelo menos 5 exercícios da prova.
 
 
 
@@ -58,19 +58,19 @@ para cada uma de 10 questões.
 --
 
 
-a) Qual a distribuição do número de respostas certas?
+a) {resposta} Qual a distribuição do número de respostas certas?
 
 
 
 
 
-b) Qual a probabilidade de que o estudante obtenha 9 ou mais respostas certas?
+b) {resposta} Qual a probabilidade de que o estudante obtenha 9 ou mais respostas certas?
 
 
 
 
 
-c) Qual a probabilidade de que acerte pelo menos duas questões?
+c) {resposta} Qual a probabilidade de que acerte pelo menos duas questões?
 
 
 
@@ -86,13 +86,13 @@ Seja x:[X] o número de pedidos recebidos até o ganhador ganhar o brinde.
 --
 
 
-a) Qual a distribuição de x:[X]?
+a) {resposta} Qual a distribuição de x:[X]?
 
 
 
 
 
-b) Determine o menor número de pedidos necessários para garantir que o brinde saia com probabilidade maior do que 0,9.
+b) {resposta} Determine o menor número de pedidos necessários para garantir que o brinde saia com probabilidade maior do que 0,9.
 
 
 
@@ -108,13 +108,13 @@ seja efetivada.
 --
 
 
-a) Qual a distribuição de x:[X]?
+a) {resposta} Qual a distribuição de x:[X]?
 
 
 
 
 
-b) Calcule a probabilidade de que o vendedor faça no máximo seis visitas para concluir as duas vendas.
+b) {resposta} Calcule a probabilidade de que o vendedor faça no máximo seis visitas para concluir as duas vendas.
 
 
 
@@ -131,12 +131,12 @@ semanas em que não acontece nenhum, calcule:
 
 
 
-a) o parâmetro da distribuição;
+a) {resposta} o parâmetro da distribuição;
 
 
 
 
-b) a probabilidade de que ocorra um acidente em uma semana e também um na semana seguinte,
+b) {resposta} a probabilidade de que ocorra um acidente em uma semana e também um na semana seguinte,
 sabendo que acidentes em semanas diferentes são independentes;
 
 
@@ -144,14 +144,14 @@ sabendo que acidentes em semanas diferentes são independentes;
 
 --
 
-*7.* Se uma variável aleatória tem distribuição Poisson e x:[P(X=0) = 1/2], quanto vale
+*7.* {resposta} Se uma variável aleatória tem distribuição Poisson e x:[P(X=0) = 1/2], quanto vale
 a variância de x:[X]?
 
 
 
 
 
-*8.* Suponha que 1% das lâmpadas de enfeite de natal de certa marca apresentem defeito.
+*8.* {resposta} Suponha que 1% das lâmpadas de enfeite de natal de certa marca apresentem defeito.
 Estime a probabilidade de que uma caixa com 30 lâmpadas contenha no máximo uma lâmpada com defeito.
 (Dica: Aproxime essa probabilidade pela distribuição Poisson)
 
@@ -167,19 +167,19 @@ de que, em um pacote com 1000 parafusos:
 --
 
 
-a) tenhamos exatamente 4 parafusos defeituosos;
+a) {resposta} tenhamos exatamente 4 parafusos defeituosos;
 
 
 
 
 
-b) não tenhamos mais do que 4 parafusos defeituosos;
+b) {resposta} não tenhamos mais do que 4 parafusos defeituosos;
 
 
 
 
 
-c) encontrem-se pelo menos 3 parafusos defeituosos.
+c) {resposta} encontrem-se pelo menos 3 parafusos defeituosos.
 
 
 
