@@ -3,59 +3,59 @@
 *1.* Sejam x:[A,B] e x:[C] três eventos em um espaço de probabilidade. Expresse os seguintes eventos em termos
 de x:[A,B] e x:[C]:
 --
-a) Apenas x:[A] ocorre;
+a) {resposta} Apenas x:[A] ocorre;
 
 
 
-b) x:[A] e x:[B] ocorrem, mas x:[C] não ocorre;
+b) {resposta} x:[A] e x:[B] ocorrem, mas x:[C] não ocorre;
 
 
 
-c) Os três eventos ocorrem;
+c) {resposta} Os três eventos ocorrem;
 
 
 
-d) Pelo menos um dos três ocorrem;
+d) {resposta} Pelo menos um dos três ocorrem;
 
 
 
-e) Nenhum dos três ocorrem;
+e) {resposta} Nenhum dos três ocorrem;
 
 
 
-f) Exatamente um dos três ocorre;
+f) {resposta} Exatamente um dos três ocorre;
 
 
 
 --
 
-*2.* Extraem-se 4 cartas de um baralho com 52 cartas. Qual é a probabilidade de que 2 sejam vermelhas e 2 sejam pretas?
+*2.* {resposta} Extraem-se 4 cartas de um baralho com 52 cartas. Qual é a probabilidade de que 2 sejam vermelhas e 2 sejam pretas?
 
 
 
-*3.* Qual a probabilidade de que os aniversários de 12 pessoas sejam em meses diferentes?
+*3.* {resposta} Qual a probabilidade de que os aniversários de 12 pessoas sejam em meses diferentes?
 
 
 
 *4.* Quatro números são sorteados ao acaso, sem reposição, do conjunto x:[\{0,1,2,\ldots,9\}]. Calcule a probabilidade de que:
 --
-a) Os quatro números sorteados podem ser ordenados de forma consecutiva, por exemplo, x:[\{1,2,3,4\}]. 
+a) {resposta} Os quatro números sorteados podem ser ordenados de forma consecutiva, por exemplo, x:[\{1,2,3,4\}]. 
 
 
 
-b) Todos sejam maiores do que 5.
+b) {resposta} Todos sejam maiores do que 5.
 
 
 
-c) O número 0 seja escolhido.
+c) {resposta} O número 0 seja escolhido.
 
 
 
-d) Pelo menos um seja maior do que 7.
+d) {resposta} Pelo menos um seja maior do que 7.
 
 
 
-e) Todos sejam ímpares.
+e) {resposta} Todos sejam ímpares.
 
 
 --
@@ -63,35 +63,35 @@ e) Todos sejam ímpares.
 *5.* Sejam x:[A] e x:[B] dois eventos em um espaço de probabilidade tais que x:[P(A)=1/2],
 x:[P(B)=1/4] e x:[P(A\cap B)=1/5]. Calcule as probabilidades dos seguintes eventos:
 --
-a) x:[A] não ocorre;
+a) {resposta} x:[A] não ocorre;
 
 
 
-b) x:[B] não ocorre;
+b) {resposta} x:[B] não ocorre;
 
 
 
-c) Pelo menos um entre x:[A] e x:[B] ocorrem;
+c) {resposta} Pelo menos um entre x:[A] e x:[B] ocorrem;
 
 
 
-d) x:[A] não ocorre e x:[B] sim;
+d) {resposta} x:[A] não ocorre e x:[B] sim;
 
 
 
-e) x:[B] não ocorre e x:[A] sim;
+e) {resposta} x:[B] não ocorre e x:[A] sim;
 
 
 
-f) Ocorre exatamente um de x:[A] e x:[B];
+f) {resposta} Ocorre exatamente um de x:[A] e x:[B];
 
 
 
-g) Não ocorre nenhum de x:[A] e x:[B];
+g) {resposta} Não ocorre nenhum de x:[A] e x:[B];
 
 
 
-h) Pelo menos um de x:[A] e x:[B] não ocorre.
+h) {resposta} Pelo menos um de x:[A] e x:[B] não ocorre.
 
 
 
@@ -99,7 +99,7 @@ h) Pelo menos um de x:[A] e x:[B] não ocorre.
 
 
 
-*6.* Escolhe-se ao acaso um número entre 1 e 50. Sabendo que o número é primo, qual é a probabilidade de que seja
+*6.* {resposta} Escolhe-se ao acaso um número entre 1 e 50. Sabendo que o número é primo, qual é a probabilidade de que seja
 ímpar?
 
 
@@ -108,15 +108,15 @@ h) Pelo menos um de x:[A] e x:[B] não ocorre.
 se obtiver o mesmo número pelo menos duas vezes, e ganha um prêmio milionário se a face 6 aparecer pelo menos
 quatro vezes. Qual a probabilidade de que o participante:
 --
-a) Ganhe o prêmio de participação?
+a) {resposta} Ganhe o prêmio de participação?
 
 
 
-b) Ganhe o prêmio milionário?
+b) {resposta} Ganhe o prêmio milionário?
 
 
 
-c) Tenha ganho o prêmio milionário dado que ganhou o prêmio de participação?
+c) {resposta} Tenha ganho o prêmio milionário dado que ganhou o prêmio de participação?
 
 
 
@@ -126,18 +126,18 @@ c) Tenha ganho o prêmio milionário dado que ganhou o prêmio de participação
 A proporção dos rapazes que estudam matemática é 20% e apenas 10% das moças estudam matemática. Obtenha as probabilidades
 de que:
 --
-a) Um estudante escolhido ao acaso estude matemática.
+a) {resposta} Um estudante escolhido ao acaso estude matemática.
 
 
 
-b) Um estudante de matemática escolhido ao acaso seja do sexo feminino.
+b) {resposta} Um estudante de matemática escolhido ao acaso seja do sexo feminino.
 
 
 
 --
 
 
-*9.* Lança-se um dado duas vezes. Considere os eventos: 
+*9.* {resposta} Lança-se um dado duas vezes. Considere os eventos: 
 [latexmath]
 ++++
 \[
@@ -160,11 +160,11 @@ x:[A] e x:[B] são independentes?
 a 80% das aulas e Paulo comparece a 60%. Suas presenças nas aulas são independentes. Calcule a probabilidade de
 que, em determinado dia:
 --
-a) pelo menos um dos estudantes compareça a aula.
+a) {resposta} pelo menos um dos estudantes compareça a aula.
 
 
 
-b) apenas um deles esteja presente.
+b) {resposta} apenas um deles esteja presente.
 
 
 
