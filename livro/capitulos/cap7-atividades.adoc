@@ -1,6 +1,6 @@
 === Atividades
 
-*1.* Se x:[Y] tem distribuição uniforme em x:[(0,5)], qual é a probabilidade de que as raízes da equação
+*1.* {resposta} Se x:[Y] tem distribuição uniforme em x:[(0,5)], qual é a probabilidade de que as raízes da equação
 x:[4x^2+4xY+Y+2 =0] sejam ambas reais?
 
 
@@ -14,13 +14,13 @@ com distribuição normal com parâmetros x:[\mu = 225] e x:[\sigma = 75]. Calcu
 --
 
 
-a) a proporção de pessoas com nível de colesterol entre 200 e 350.
+a) {resposta} a proporção de pessoas com nível de colesterol entre 200 e 350.
 
 
 
 
 
-b) o valor acima do qual se encontra o colesterol da parcela de 10% da população que tem os níveis mais elevados.
+b) {resposta} o valor acima do qual se encontra o colesterol da parcela de 10% da população que tem os níveis mais elevados.
 
 
 
@@ -34,41 +34,41 @@ b) o valor acima do qual se encontra o colesterol da parcela de 10% da populaç�
 --
 
 
-a) x:[P(X\leq 13)];
+a) {resposta} x:[P(X\leq 13)];
 
 
 
 
 
-b) x:[P(X\geq 1)];
-
-
-
-
-
-
-c) x:[P(4\leq X\leq 9)];
+b) {resposta} x:[P(X\geq 1)];
 
 
 
 
 
 
-d) o valor de x:[a] tal que x:[P(X\leq a) = 0,04];
+c) {resposta} x:[P(4\leq X\leq 9)];
 
 
 
 
 
 
-e) o valor de x:[b] tal que x:[P(X\geq b) = 0,01];
+d) {resposta} o valor de x:[a] tal que x:[P(X\leq a) = 0,04];
 
 
 
 
 
 
-f) o intervalo que contém 95% dos valores centrais (intervalo simétrico em torno de x:[\mu]) de x:[X].
+e) {resposta} o valor de x:[b] tal que x:[P(X\geq b) = 0,01];
+
+
+
+
+
+
+f) {resposta} o intervalo que contém 95% dos valores centrais (intervalo simétrico em torno de x:[\mu]) de x:[X].
 
 
 
@@ -83,14 +83,14 @@ por garrafa varia segundo a distribuição normal com parâmetros x:[\mu = 600] 
 --
 
 
-a) a porcentagem de garrafas produzidas com conteúdo inferior a 592ml ou superior a 612ml;
+a) {resposta} a porcentagem de garrafas produzidas com conteúdo inferior a 592ml ou superior a 612ml;
 
 
 
 
 
 
-b) o conteúdo mínimo encontrado em 96% das garrafas fabricadas.
+b) {resposta} o conteúdo mínimo encontrado em 96% das garrafas fabricadas.
 
 
 
@@ -106,7 +106,7 @@ b) o conteúdo mínimo encontrado em 96% das garrafas fabricadas.
 --
 
 
-a) o parâmetro x:[\sigma];
+a) {resposta} o parâmetro x:[\sigma];
  
 
 
@@ -114,7 +114,7 @@ a) o parâmetro x:[\sigma];
 
 
 
-b) o peso abaixo do qual nascem 0,4% dos bebês dessa maternidade.
+b) {resposta} o peso abaixo do qual nascem 0,4% dos bebês dessa maternidade.
 
 
 
@@ -123,27 +123,27 @@ b) o peso abaixo do qual nascem 0,4% dos bebês dessa maternidade.
 
 --
 
-*6.* Se 55% da população de uma cidade é a favor de um projeto proposto pelo prefeito,
+*6.* {resposta} Se 55% da população de uma cidade é a favor de um projeto proposto pelo prefeito,
 estime (usando a aproximação da binomial pela normal) de que, em uma amostra aleatória de 176
 pessoas, no máximo 93 sejam favoráveis ao projeto.
 
 
 
 
-*7.* Seja x:[U] uma variável aleatória uniforme no intervalo x:[(a,b)]. Calcule, para todo x:[n\geq 1], 
+*7.* {resposta} Seja x:[U] uma variável aleatória uniforme no intervalo x:[(a,b)]. Calcule, para todo x:[n\geq 1], 
 x:[E(U^n)].
 
 
 
 
-*8.* Seja x:[X] uma variável aleatória seguindo distribuição Exponencial com parâmetro x:[\lambda].
+*8.* {resposta} Seja x:[X] uma variável aleatória seguindo distribuição Exponencial com parâmetro x:[\lambda].
 Calcule x:[E(X^n)].
 
 
 
 
 
-*9.* Obtenha a esperança da área de um triângulo retângulo isósceles cuja hipotenusa
+*9.* {resposta} Obtenha a esperança da área de um triângulo retângulo isósceles cuja hipotenusa
 tem comprimento uniformemente distribuído no intervalo x:[(2,8)].
 
 
@@ -154,14 +154,14 @@ tem comprimento uniformemente distribuído no intervalo x:[(2,8)].
 *10.* Um computador foi usado para gerar sete números aleatórios independentes uniformemente distribuídos no intervalo
 x:[(0,1)]. Calcule a probabilidade de que:
 --
-a) exatamente de três números estejam entre 1/2 e 1;
+a) {resposta} exatamente de três números estejam entre 1/2 e 1;
 
 
 
 
 
 
-b) menos do que três sejam maiores que 3/4.
+b) {resposta} menos do que três sejam maiores que 3/4.
 
 
 
@@ -170,14 +170,14 @@ b) menos do que três sejam maiores que 3/4.
 
 --
 
-*11.* (Distribuição Log-Normal): Seja x:[Y= e^X], onde x:[X\sim N(0,1)]. Encontre a densidade de x:[Y].
+*11.* {resposta} (Distribuição Log-Normal): Seja x:[Y= e^X], onde x:[X\sim N(0,1)]. Encontre a densidade de x:[Y].
 
 
 
 
 
 
-*12.* Seja x:[X\sim N(0,1)]. Seja x:[Y=X^2]. Obtenha a densidade de x:[Y], mostre que x:[Y] segue distribuição Gama
+*12.* {resposta} Seja x:[X\sim N(0,1)]. Seja x:[Y=X^2]. Obtenha a densidade de x:[Y], mostre que x:[Y] segue distribuição Gama
 e determine os parâmetros. (Dica: Use que x:[\Gamma(1/2)=\sqrt{\pi}].)
 
 
