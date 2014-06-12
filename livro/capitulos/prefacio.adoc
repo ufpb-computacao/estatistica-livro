@@ -127,7 +127,7 @@ crítica através de um envio de uma mensagem acesse: {gitrepo}/issues/new
 +
 [[fig_issue_contribuicao]]
 .Exemplo de contribuição através do 'Issue track'
-image::images/prefacio/issue.png[scaledwidth="70%"]
+image::images/prefacio/issue.eps[scaledwidth="70%"]
 
 === Atividades
 
