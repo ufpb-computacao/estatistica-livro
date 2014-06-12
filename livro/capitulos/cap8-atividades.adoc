@@ -1,28 +1,28 @@
 === Atividades
 
-*1.* Suponha que as alturas dos alunos da UFPB tenham distribuição normal com  
+*1.* {resposta} Suponha que as alturas dos alunos da UFPB tenham distribuição normal com  
 x:[\sigma = 15]cm. Foi retirada uma amostra aleatória de 100 alunos obtendo-se
 x:[\overline{X}=175]cm. Construa um intervalo de 90% de confiança para a verdadeira altura média dos alunos,
 e outro de nível 99%.
 
-*2.* Foram retiradas 25 peças da produção diária de uma máquina, encontrando-se para uma medida uma média 
+*2.* {resposta} Foram retiradas 25 peças da produção diária de uma máquina, encontrando-se para uma medida uma média 
 de 5,2mm. Sabendo-se que as medidas têm distribuição normal com desvio-padrão populacional de
 1,2mm, construa intervalos de confiança para a média com confianças de 90%, 95% e 99%.
 
-*3.* Suponha uma população com x:[\sigma^2 = 9] e considere uma amostra aleatória de tamanho
+*3.* {resposta} Suponha uma população com x:[\sigma^2 = 9] e considere uma amostra aleatória de tamanho
 x:[n = 36] dessa população, com x:[\overline{X}=110]. 
 Determine os intervalos de confiança para x:[\mu], com confiança de 90% e 95%.
 
-*4.* Uma amostra de 300 habitantes de uma cidade mostrou que 180 desejavam a água fluorada.
+*4.* {resposta} Uma amostra de 300 habitantes de uma cidade mostrou que 180 desejavam a água fluorada.
 Encontre os intervalos de confiança de 90% e 99% para a população favorável a fluoração.
 
-*5.* Em 50 lances de uma moeda foram obtidas 30 caras. A partir de um intervalo de confiança de 96%, pode-se dizer que a moeda é honesta?
+*5.* {resposta} Em 50 lances de uma moeda foram obtidas 30 caras. A partir de um intervalo de confiança de 96%, pode-se dizer que a moeda é honesta?
 
-*6.* Numa amostra de 400 casas, 100 dessas casas são alugadas. Construa um intervalo de confiança para 
+*6.* {resposta} Numa amostra de 400 casas, 100 dessas casas são alugadas. Construa um intervalo de confiança para 
 a proporção de casas alugadas, com uma confiança de 96% e, supondo a mesma confiança, 
 construa também um intervalo de confiança para o número de casas alugadas na cidade, uma vez que a cidade possui 20.000 casas.
 
-*7.* Um teste psicológico destinado a medir a precisão com que uma pessoa julga outras pessoas, 
+*7.* {resposta} Um teste psicológico destinado a medir a precisão com que uma pessoa julga outras pessoas, 
 foi realizado. As notas possíveis do teste variam de 0 a 41. Durante sua elaboração o 
 teste foi aplicado a vários grupos com diferentes de pessoas. De acordo com os resultados observados, 
 construa um intervalo de confiança para a diferença entre as médias dos grupos de homens e de mulheres, com 90% de confiança.
@@ -31,7 +31,7 @@ Homens: x:[n=133], x:[\overline{X}=25,34] e x:[\sigma=5,05].
 
 Mulheres: x:[n=162], x:[\overline{X}=24,94] e x:[\sigma=5,44].
 
-*8.* Suponha duas populações normalmente distribuídas de forma que a população I corresponde a 
+*8.* {resposta} Suponha duas populações normalmente distribuídas de forma que a população I corresponde a 
 variável aleatória x:[X \sim N(\mu_1, 25)] e a população II corresponde a variável aleatória 
 x:[Y \sim N(\mu_2, 40)]. Com base nas amostras obtidas abaixo construa um intervalo de confiança 
 para x:[\mu_1-\mu_2] com 95% de confiança.
@@ -40,11 +40,11 @@ Amostra da População I	- 12,	14,	15,	14,	13,	17,	14,	13.
 
 Amostra da População II - 13,	17,	14,	13,	16,	17,	18,	16.
 
-*9.* Uma pesquisa revelou que das 500 donas de casa consultadas, 300 preferiram o detergente x:[A]. 
+*9.* {resposta} Uma pesquisa revelou que das 500 donas de casa consultadas, 300 preferiram o detergente x:[A]. 
 Um funcionário da companhia afirmou que 50% das donas de casa preferem o detergente x:[A]. 
 A companhia, tem evidência, ao nível de 95% para confiar no funcionário?
 
-*10.* Sabe-se por experiência que 5% da produção de um determinado artigo é defeituosa. Um novo empregado é contratado. 
+*10.* {resposta} Sabe-se por experiência que 5% da produção de um determinado artigo é defeituosa. Um novo empregado é contratado. 
 Ele produz 600 peças do artigo com 82 defeituosas. Podemos afirmar, ao nível de 90% de confiança,
 que o novo empregado produz peças com maior índice de defeitos que o existente? 
 
@@ -64,11 +64,11 @@ $Y_i$ &30&25&22&18&15&11&10\\
 ++++
 
 
-a) Calcule o coeficiente de correlação;
+a) {resposta} Calcule o coeficiente de correlação;
 
-b) Determine a reta ajustada;
+b) {resposta} Determine a reta ajustada;
 
-c) Estime o valor de x:[Y] para x:[X=0].
+c) {resposta} Estime o valor de x:[Y] para x:[X=0].
 
 
 *12.* Certa empresa, estudando a variação da demanda de seu produto em relação à variação de preço de venda, obteve a tabela: 
@@ -86,11 +86,11 @@ Demanda ($Y_i$) &350&325&297&270&256&246&238&223&215&208\\
 \]
 ++++
 
-a) Estabeleça a equação da reta ajustada;
+a) {resposta} Estabeleça a equação da reta ajustada;
 
-b) Estime o valor de x:[Y] para x:[X=60] e x:[X=120].
+b) {resposta} Estime o valor de x:[Y] para x:[X=60] e x:[X=120].
 
-c) Calcule o coeficiente de determinação da regressão.
+c) {resposta} Calcule o coeficiente de determinação da regressão.
 
 
 *13.* Pretendendo-se estudar a relação entre as variáveis consumo de energia elétrica x:[(X_i)] e volume
@@ -106,13 +106,13 @@ computando-se os seguintes valores:
 
 Determine:
 
-a) A equação de regressão de x:[Y] para x:[X];
+a) {resposta} A equação de regressão de x:[Y] para x:[X];
 
-b) O coeficiente de determinação da regressão acima;
+b) {resposta} O coeficiente de determinação da regressão acima;
 
-c) A equação de regressão de x:[X] para x:[Y];
+c) {resposta} A equação de regressão de x:[X] para x:[Y];
 
-d) O coeficiente de determinação da regressão acima.
+d) {resposta} O coeficiente de determinação da regressão acima.
 
 
 
