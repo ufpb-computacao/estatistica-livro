@@ -1,6 +1,6 @@
 === Atividades
 
-*1.* Seja x:[X] uma variável aleatória discreta com função de probabilidade dada por
+*1.*  Seja x:[X] uma variável aleatória discreta com função de probabilidade dada por
 [latexmath]
 ++++
 \[
@@ -13,7 +13,7 @@ Encontre:
 --
 
 
-a) o valor de x:[c];
+a) {resposta} o valor de x:[c];
 
 
 
@@ -21,7 +21,7 @@ a) o valor de x:[c];
 
 
 
-b) a probabilidade de x:[X] ser um número ímpar.
+b) {resposta} a probabilidade de x:[X] ser um número ímpar.
 
 
 
@@ -43,7 +43,7 @@ Obtenha:
 --
 
 
-a) o valor de x:[x].
+a) {resposta} o valor de x:[x].
 
 
 
@@ -52,7 +52,7 @@ a) o valor de x:[x].
 
 
 
-b) a probabilidade de x:[X] ser um número par.
+b) {resposta} a probabilidade de x:[X] ser um número par.
 
 
 
@@ -81,14 +81,14 @@ Calcule:
 --
 
 
-a) a função de probabilidade de x:[X].
+a) {resposta} a função de probabilidade de x:[X].
 
 
 
 
 
 
-b) x:[P(X=0|X\hbox{~é par})].
+b) {resposta} x:[P(X=0|X\hbox{~é par})].
 
 
 
@@ -105,7 +105,7 @@ de probabilidade das seguintes variáveis aleatórias:
 --
 
 
-a) o maior número sorteado;
+a) {resposta} o maior número sorteado;
 
 
 
@@ -115,7 +115,7 @@ a) o maior número sorteado;
 
 
 
-b) a soma dos números retirados.
+b) {resposta} a soma dos números retirados.
 
 
 
@@ -132,7 +132,7 @@ b) a soma dos números retirados.
 
 
 
-a) 
+a) {resposta}
 [latexmath]
 ++++
 \[
@@ -147,12 +147,12 @@ f(x) = \begin{cases}
 
 
 
-b) x:[f(x) = 3(1-x)^2, 0\leq x\leq 1.]
+b) {resposta} x:[f(x) = 3(1-x)^2, 0\leq x\leq 1.]
 
 
 
 
-c) x:[f(x) = 4xe^{-2x},\quad x\geq 0.]
+c) {resposta} x:[f(x) = 4xe^{-2x},\quad x\geq 0.]
 
 --
 
@@ -168,7 +168,7 @@ Calcule:
 
 
 
-a) o valor de x:[c];
+a) {resposta} o valor de x:[c];
 
 
 
@@ -179,7 +179,7 @@ a) o valor de x:[c];
 
 
 
-b) a probabilidade de x:[X] ser maior do que x:[2];
+b) {resposta} a probabilidade de x:[X] ser maior do que x:[2];
 
 
 
@@ -189,7 +189,7 @@ b) a probabilidade de x:[X] ser maior do que x:[2];
 
 
 
-c) a função de distribuição de x:[X].
+c) {resposta} a função de distribuição de x:[X].
 
 
 
@@ -203,12 +203,12 @@ c) a função de distribuição de x:[X].
 
 
 
-*7.* Encontre a densidade de x:[Y=e^{-2X}], onde x:[X] é uma variável aleatória contínua com densidade dada por
+*7.* {resposta} Encontre a densidade de x:[Y=e^{-2X}], onde x:[X] é uma variável aleatória contínua com densidade dada por
 x:[f(x) = e^{-x},\quad x>0].
 
 
 
-*8.* Encontre a densidade de x:[|X|], se x:[X] é uma variável aleatória contínua com densidade dada por
+*8.* {resposta} Encontre a densidade de x:[|X|], se x:[X] é uma variável aleatória contínua com densidade dada por
 [latexmath]
 ++++
 \[
@@ -220,7 +220,7 @@ f(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2},\quad x\in\mathbb{R}.
 
 
 
-*9.* Seja x:[X] uma variável aleatória com densidade dada por
+*9.* {resposta} Seja x:[X] uma variável aleatória com densidade dada por
 [latexmath]
 ++++
 \[
