@@ -42,7 +42,7 @@ Na estatística temos algumas definições importantes:
 image::images/descritiva/pop-amostra.eps[scaledwidth="60%"] 
 
 .Exemplo de variável
-image::images/descritiva/fig2.png[scaledwidth="60%"] 
+image::images/descritiva/variavel.eps[scaledwidth="60%"] 
 
 
 
