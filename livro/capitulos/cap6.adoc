@@ -1143,7 +1143,7 @@ P(X_n = k) &=& \displaystyle {n\choose k} \Big(\frac{\lambda}{n}\Big)^k \Big(1-\
 Temos que valem os seguintes limites:
 [latexmath]
 ++++
-\[\lim_{n\to\infty} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) = 1,\hbox{~~and~~}\quad
+\[\lim_{n\to\infty} \Big( 1-\frac{1}{n}\Big) \cdots \Big( 1-\frac{(k-1)}{n}\Big) = 1,\hbox{~~e~~}\quad
 \lim_{n\to\infty} \Big(1-\frac{\lambda}{n}\Big)^{n-k} = e^{-\lambda}.
 \]
 ++++
