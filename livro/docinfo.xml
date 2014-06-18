@@ -3,20 +3,30 @@
 <revhistory>
 
   <revision>
-    <revnumber>v0.1.0</revnumber>
-    <date>Março 2013</date>
-    <authorinitials>Autor1, Autor2</authorinitials>
+    <revnumber>v0.8.1</revnumber>
+    <date>18/Junho/2014</date>
+    <authorinitials>Eduardo</authorinitials>
     <revremark>
-      Primeira versão do livro.
+      Inclusão de Ficha Catalográfica.
     </revremark>
   </revision>
-  
+
+
+  <revision>
+    <revnumber>v0.8.0</revnumber>
+    <date>13/Junho/2014</date>
+    <authorinitials>Andrea</authorinitials>
+    <revremark>
+      Escrita de todos os capítulos.
+    </revremark>
+  </revision>
+
 </revhistory>
 
 <authorgroup>
   <author>
-    <firstname>Nome</firstname>
-    <surname>Sobrenome</surname>
+    <firstname>Andrea</firstname>
+    <surname>Rocha</surname>
   </author>
 </authorgroup>
 
@@ -26,4 +36,3 @@
     <othername>Santana</othername>
   <contrib>Editor</contrib>
 </othercredit>
-
