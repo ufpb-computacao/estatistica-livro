@@ -60,7 +60,7 @@ Qualitativa  \begin{cases}
 \[
 Quantitativa  \begin{cases}
           Discreta:& \text{número de filhos.} \\[15pt]
-          Contínua:& \text{altura, peso, salário.}
+          Continua:& \text{altura, peso, salário.}
       \end{cases}
 \]
 ++++
@@ -100,7 +100,7 @@ Uma série temporal consiste em uma sequência numérica cujos valores variam co
 
 Abaixo vemos como inserir os dados de uma série temporal em uma tabela:
 
-x:[\centerline{\textbf{Vendas da Companhia Alfa - 2007-2009}}]
+x:[\centerline{\textbf{Vendas da Companhia Alfa: 2007-2009}}]
 [latexmath]
 ++++
 \[
@@ -524,9 +524,9 @@ No caso de uma lista de dados não-agrupados, calculamos a média aritmética pe
 \]
 ++++
 
-.Exemplo de cálculo de média aritmética com dados brutos:
+.Exemplo de cálculo de média aritmética com dados brutos
 ====
-Considere os dados x:[2, 3, 7] e x:[8]. Então,
+Considere os dados x:[2, 3, 7] e x:[8]. Então, x:[n=4] e
 [latexmath]
 ++++
 \[
