@@ -3,8 +3,18 @@
 <revhistory>
 
   <revision>
+    <revnumber>v0.8.2</revnumber>
+    <date>25/09/2014</date>
+    <authorinitials>Eduardo</authorinitials>
+    <revremark>
+<ulink url="{gitrepo}/issues/17">Adição de links no histórico de revisão;</ulink>
+<ulink url="{gitrepo}/issues/18">Solicitando feedback ao final de cada capítulo;</ulink>
+    </revremark>
+  </revision>
+
+  <revision>
     <revnumber>v0.8.1</revnumber>
-    <date>18/Junho/2014</date>
+    <date>18/06/2014</date>
     <authorinitials>Eduardo</authorinitials>
     <revremark>
       Inclusão de Ficha Catalográfica.
@@ -14,7 +24,7 @@
 
   <revision>
     <revnumber>v0.8.0</revnumber>
-    <date>13/Junho/2014</date>
+    <date>13/06/2014</date>
     <authorinitials>Andrea</authorinitials>
     <revremark>
       Escrita de todos os capítulos.
