@@ -1,5 +1,7 @@
 == Principais Distribuições Discretas
 
+:cap: cap6
+
 .Objetivos do capítulo
 ____
 Ao final deste capítulo você deverá ser capaz de:

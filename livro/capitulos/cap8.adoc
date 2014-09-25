@@ -1,5 +1,7 @@
 == Introdução à Inferência Estatística
 
+:cap: cap8
+
 .Objetivos do capítulo
 ____
 Ao final deste capítulo você deverá ser capaz de:

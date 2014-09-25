@@ -1,6 +1,8 @@
 [[Cap_Var_Ale]]
 == Variáveis Aleatórias e Suas Distribuições
 
+:cap: cap4
+
 .Objetivos do capítulo
 ____
 Ao final deste capítulo você deverá ser capaz de:

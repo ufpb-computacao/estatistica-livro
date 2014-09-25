@@ -1,5 +1,7 @@
 == Definições Básicas
 
+:cap: cap3
+
 .Objetivos do capítulo
 ____
 Ao final deste capítulo você deverá ser capaz de:
