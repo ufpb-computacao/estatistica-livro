@@ -3,6 +3,16 @@
 <revhistory>
 
   <revision>
+    <revnumber>v1.0.0</revnumber>
+    <date>7/11/2014</date>
+    <authorinitials>Eduardo</authorinitials>
+    <revremark>
+<ulink url="{gitrepo}/issues/19">Respostas movidas para o final das atividades;</ulink>
+Inclusão de mini-sumário por capítulo;
+    </revremark>
+  </revision>
+
+  <revision>
     <revnumber>v0.8.2</revnumber>
     <date>25/09/2014</date>
     <authorinitials>Eduardo</authorinitials>
