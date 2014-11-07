@@ -11,55 +11,48 @@ a) Construa uma tabela de distribuição de frequência para estes dados.
 
 b) Construa um histograma para estes dados.
 
-
 *2.* Construa uma tabela de distribuição de frequência e histograma para o seguinte conjunto de dados:
 
 26-9-7-5-9-6-3-4-19-25-5-20-21-9-30-8-18-3-22-14-25-1-18-14-24.
 
-*3.* {resposta} Calule a média aritmética dos dados da questão 1. 
+*3.* Calule a média aritmética dos dados da questão 1. 
 
-*4.* {resposta} Calcule a média aritmética dos dados da questão 2.
+*4.* Calcule a média aritmética dos dados da questão 2.
 
-*5.* {resposta} Calcule a moda dos dados da questão 1.
+*5.* Calcule a moda dos dados da questão 1.
 
-*6.* {resposta} Calcule a moda dos dados da questão 2.
+*6.* Calcule a moda dos dados da questão 2.
 
-*7.* {resposta} Calcule a mediana dos dados da questão 1.
+*7.* Calcule a mediana dos dados da questão 1.
 
-*8.* {resposta} Calcule a mediana dos dados da questão 2.
+*8.* Calcule a mediana dos dados da questão 2.
 
-*9.* {resposta} Calcule o desvio médio dos dados da questão 1.
+*9.* Calcule o desvio médio dos dados da questão 1.
 
-*10.* {resposta} Calcule o desvio médio dos dados da questão 2.
+*10.* Calcule o desvio médio dos dados da questão 2.
 
-*11.* {resposta} Calcule a variância amostral e populacional dos dados da questão 1.
+*11.* Calcule a variância amostral e populacional dos dados da questão 1.
 
-*12.* {resposta} Calcule a variância amostral e populacional dos dados da questão 2.
+*12.* Calcule a variância amostral e populacional dos dados da questão 2.
 
-*13.* {resposta} Calcule o coeficiente de variação dos dados da questão 1.
+*13.* Calcule o coeficiente de variação dos dados da questão 1.
 
-*14.* {resposta} Calcule o coeficiente de variação dos dados da questão 2.
+*14.* Calcule o coeficiente de variação dos dados da questão 2.
 
+.Respostas
+____
+*3.* 41,8 {nbsp}{nbsp}
+*4.* 13,8 {nbsp}{nbsp}
+*5.* 41  {nbsp}{nbsp}
+*6.* 9  {nbsp}{nbsp}
+*7.* 41 {nbsp}{nbsp}
+*8.* 14 {nbsp}{nbsp}
+*9.* 6,33 {nbsp}{nbsp}
+*10.* 5,52 {nbsp}{nbsp}
+*11.* Variância amostral = 67,75. Variância populacional = 65,81. {nbsp}{nbsp}
+*12.* Variância amostral = 76,83. Variância populacional = 73,76. {nbsp}{nbsp}
+*13.* 19,69%. {nbsp}{nbsp}
+*14.* 63,52%. {nbsp}{nbsp}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+____
 

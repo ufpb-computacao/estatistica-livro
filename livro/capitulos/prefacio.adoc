@@ -1,35 +1,45 @@
-[[prefacio]]
-[preface]
-== Prefácio
+Este livro foi desenvolvido para a introdução do tema Probabilidade e
+Estatística, não tendo a ambição de englobar toda esta vasta  área do
+conhecimento humano. Probabilidade e Estatística são as áreas do
+conhecimento humano que lidam com a incerteza.  Ambas lidam com
+experimentos em que existe alguma variável (ou variáveis) que não
+temos controle, e portanto, mesmo mantendo as mesmas condições, um
+experimento pode fornecer vários resultados diferentes.
 
-Este livro foi desenvolvido para a introdução do tema Probabilidade e Estatística, não tendo a ambição de englobar toda esta vasta 
-área do conhecimento humano. Probabilidade e Estatística são as áreas do conhecimento humano que lidam com a incerteza. 
-Ambas lidam com experimentos em que existe alguma variável (ou variáveis) que não temos controle, e portanto, mesmo mantendo
-as mesmas condições, um experimento pode fornecer vários resultados diferentes.
+Probabilidade e Estatística podem ser vistas como ciências inversas.
+Quando se estuda probabilidade, conhecemos o modelo em estudo
+completamente, e estamos interessados em saber como os resultados do
+experimento se comportam (por exemplo,  saber qual a probabilidade de
+sair um resultado específico). Já na estatística, temos um conjunto de
+dados, mas não sabemos qual o modelo probabilístico que gerou estes
+dados, e portanto, tenta-se descobrir, a partir destes dados, qual o
+modelo probabilístico que gerou estes dados.
 
-Probabilidade e Estatística podem ser vistas como ciências inversas. Quando se estuda probabilidade, conhecemos o modelo
-em estudo completamente, e estamos interessados em saber como os resultados do experimento se comportam (por exemplo, 
-saber qual a probabilidade de sair um resultado específico). Já na estatística, temos um conjunto de dados,
-mas não sabemos qual o modelo probabilístico que gerou estes dados, e portanto, tenta-se descobrir, a partir destes dados,
-qual o modelo probabilístico que gerou estes dados.
+Fenômenos aleatórios estão cada vez mais presentes em nossas vidas, e
+cada vez mais estamos interessados em tentar entender estes fenômenos.
+Gráficos estatísticos estão cada vez mais presentes em notícias, e é
+importante saber interpretar esses gráficos corretamente. Quando vemos
+os resultados de uma pesquisa eleitoral, é bom sabermos interpretar o
+seu significado, etc.. Vale a pena citar também que ferramentas
+estatísticas são utilizadas pelos bancos, para definir o rendimento em
+fundos de investimento ou poupança, também são utilizadas pelas
+seguradoras para definir qual o valor do seguro que você tem que pagar
+(na prática eles calculam o seu risco), etc..
 
+Para um aluno, probabilidade e estatística podem ser úteis da seguinte
+forma: i) são úteis para realizar pesquisa científica; ii) são úteis
+caso o aluno queira trabalhar em banco, seguradora, montadoras,
+instituições financeiras em geral, controle de qualidade da produção
+de algum item, etc..; iii) são úteis no dia-a-dia.
 
-Fenômenos aleatórios estão cada vez mais presentes em nossas vidas, e cada vez mais estamos interessados
-em tentar entender estes fenômenos. Gráficos estatísticos estão cada vez mais presentes em notícias, e
-é importante saber interpretar esses gráficos corretamente. Quando vemos os resultados de uma pesquisa eleitoral, é bom
-sabermos interpretar o seu significado, etc.. Vale a pena citar também que ferramentas estatísticas são utilizadas
-pelos bancos, para definir o rendimento em fundos de investimento ou poupança, também são utilizadas pelas seguradoras para
-definir qual o valor do seguro que você tem que pagar (na prática eles calculam o seu risco), etc..
-
-Para um aluno, probabilidade e estatística podem ser úteis da seguinte forma: i) são úteis para realizar pesquisa científica;
-ii) são úteis caso o aluno queira trabalhar em banco, seguradora, montadoras, instituições financeiras em geral, controle de qualidade
-da produção de algum item, etc..; iii) são úteis no dia-a-dia.
-
-Finalizamos essa primeira parte do prefácio mostrando um exemplo de como a probabilidade pode mostrar como a nossa intuição nos engana.
-Suponha que temos uma sala com 50 pessoas. Qual a probabilidade de que pelo menos duas delas façam aniversário no mesmo 
-dia do ano? Quando falamos dia do ano, estamos falando dia e mês, não apenas dia. 
-Temos 365 dias (vamos desconsiderar o ano bissexto) e 50 pessoas.
-A intuição nos diz que essa probabilidade não deve ser muito grande. Entretanto, esta probabilidade é de 97%!
+Finalizamos essa primeira parte do prefácio mostrando um exemplo de
+como a probabilidade pode mostrar como a nossa intuição nos engana.
+Suponha que temos uma sala com 50 pessoas. Qual a probabilidade de que
+pelo menos duas delas façam aniversário no mesmo  dia do ano? Quando
+falamos dia do ano, estamos falando dia e mês, não apenas dia.  Temos
+365 dias (vamos desconsiderar o ano bissexto) e 50 pessoas. A intuição
+nos diz que essa probabilidade não deve ser muito grande. Entretanto,
+esta probabilidade é de 97%!
 
 
 === Público alvo
@@ -53,106 +63,6 @@ Ele foi concebido para ser utilizado numa disciplina de 'Probabilidade e Estatí
 * Leia materiais complementares eventualmente disponibilizados
 * Realize as atividades propostas pelo professor da disciplina
 
-[[caixas_de_dialogo]]
-=== Caixas de diálogo
-
-Nesta seção apresentamos as caixas de diálogo que poderão ser utilizadas durante o texto.
-Confira os significados delas.
-
-[NOTE]
-========
-Esta caixa é utilizada para realizar alguma reflexão.
-========
-
-[TIP]
-========
-Esta caixa é utilizada quando desejamos remeter a materiais complementares.
-========
-
-[IMPORTANT]
-========
-Esta caixa é utilizada para chamar atenção sobre algo importante.
-========
-
-[CAUTION]
-========
-Esta caixa é utilizada para alertar sobre algo que exige cautela.
-========
-
-[WARNING]
-========
-Esta caixa é utilizada para alertar sobre algo potencialmente perigoso.
-========
-
-Os significados das caixas são apenas uma referência, podendo ser adaptados 
-conforme as intenções dos autores.
-
-
-
-=== Contribuindo com o livro
-
-Você pode contribuir com a atualização e correção deste livro. A tabela a seguir
-resume os métodos de contribuições disponíveis:
-
-[[tab_metodos_contribuicao_livro]]
-.Métodos para contribuição do livro
-[width="100%",cols="1.^,2.^a,4.^",frame="topbot",options="header"]
-|======================
-|Método de contribuição | Habilidades necessárias | Descrição
-| Issue track 
-| 
-- Inscrição no site do github
-- Preenchimento de um formulário
-| Consiste em acessar o repositório do livro e submeter um erro, uma sugestão
-ou uma crítica -- através da criação de um 'Issue'. Quando providências forem 
-tomadas você será notificado disso.
-
-| Submissão de correção
-| 
-
-- Realizar fork de projetos
-- Atualizar texto do livro
-- Realizar PullRequest
-
-| Consiste em acessar os arquivos fontes do livro, realizar a correção desejada
-e submetê-la para avaliação. Este processo é o mesmo utilizado na produção de
-softwares livres.
-|======================
-
-IMPORTANT: Quando for enviar sua contribuição lembre-se de informar qual a versão
-e página do livro que está se referindo.
-
-Contribuição através do Issue track:: Para contribuir com um erro, sugestão ou 
-crítica através de um envio de uma mensagem acesse: {gitrepo}/issues/new 
-+
-[[fig_issue_contribuicao]]
-.Exemplo de contribuição através do 'Issue track'
-image::images/prefacio/issue.eps[scaledwidth="70%"]
-
-=== Atividades
-
-No final de cada capítulo há uma seção *Atividades* com exercícios para serem resolvidos. 
-
-O significado dos ícones relativos aos exercícios são:
-
-Resposta disponível {resposta}:: 
-
-a reposta do exercício se encontra disponível no <<cap_respostas>>.
-
-NOTE: Você pode contribuir enviando respostas ou soluções dos exercícios.
-
-=== Baixando a edição mais nova deste livro
-
-Nós estamos constantemente atualizando o nosso material didático. 
-Todas as versões deste livro encontram-se disponíveis para download.
-
-TIP: Acesse {gitrepo}/releases para baixar a versão mais nova deste livro.
-
-// Sempre manter uma linha em branco no final
-
-
 ////
 Sempre termine os arquivos com uma linha em branco.
 ////
-
-

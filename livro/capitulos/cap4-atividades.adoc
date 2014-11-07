@@ -13,7 +13,7 @@ Encontre:
 --
 
 
-a) {resposta} o valor de x:[c];
+a) o valor de x:[c];
 
 
 
@@ -21,7 +21,7 @@ a) {resposta} o valor de x:[c];
 
 
 
-b) {resposta} a probabilidade de x:[X] ser um número ímpar.
+b) a probabilidade de x:[X] ser um número ímpar.
 
 
 
@@ -43,7 +43,7 @@ Obtenha:
 --
 
 
-a) {resposta} o valor de x:[x].
+a) o valor de x:[x].
 
 
 
@@ -52,7 +52,7 @@ a) {resposta} o valor de x:[x].
 
 
 
-b) {resposta} a probabilidade de x:[X] ser um número par.
+b) a probabilidade de x:[X] ser um número par.
 
 
 
@@ -81,14 +81,14 @@ Calcule:
 --
 
 
-a) {resposta} a função de probabilidade de x:[X].
+a) a função de probabilidade de x:[X].
 
 
 
 
 
 
-b) {resposta} x:[P(X=0|X\hbox{~é par})].
+b) x:[P(X=0|X\hbox{~é par})].
 
 
 
@@ -105,7 +105,7 @@ de probabilidade das seguintes variáveis aleatórias:
 --
 
 
-a) {resposta} o maior número sorteado;
+a) o maior número sorteado;
 
 
 
@@ -115,7 +115,7 @@ a) {resposta} o maior número sorteado;
 
 
 
-b) {resposta} a soma dos números retirados.
+b) a soma dos números retirados.
 
 
 
@@ -132,7 +132,7 @@ b) {resposta} a soma dos números retirados.
 
 
 
-a) {resposta}
+a)
 [latexmath]
 ++++
 \[
@@ -147,12 +147,12 @@ f(x) = \begin{cases}
 
 
 
-b) {resposta} x:[f(x) = 3(1-x)^2, 0\leq x\leq 1.]
+b) x:[f(x) = 3(1-x)^2, 0\leq x\leq 1.]
 
 
 
 
-c) {resposta} x:[f(x) = 4xe^{-2x},\quad x\geq 0.]
+c) x:[f(x) = 4xe^{-2x},\quad x\geq 0.]
 
 --
 
@@ -168,7 +168,7 @@ Calcule:
 
 
 
-a) {resposta} o valor de x:[c];
+a) o valor de x:[c];
 
 
 
@@ -179,7 +179,7 @@ a) {resposta} o valor de x:[c];
 
 
 
-b) {resposta} a probabilidade de x:[X] ser maior do que x:[2];
+b) a probabilidade de x:[X] ser maior do que x:[2];
 
 
 
@@ -189,7 +189,7 @@ b) {resposta} a probabilidade de x:[X] ser maior do que x:[2];
 
 
 
-c) {resposta} a função de distribuição de x:[X].
+c) a função de distribuição de x:[X].
 
 
 
@@ -203,12 +203,12 @@ c) {resposta} a função de distribuição de x:[X].
 
 
 
-*7.* {resposta} Encontre a densidade de x:[Y=e^{-2X}], onde x:[X] é uma variável aleatória contínua com densidade dada por
+*7.* Encontre a densidade de x:[Y=e^{-2X}], onde x:[X] é uma variável aleatória contínua com densidade dada por
 x:[f(x) = e^{-x},\quad x>0].
 
 
 
-*8.* {resposta} Encontre a densidade de x:[|X|], se x:[X] é uma variável aleatória contínua com densidade dada por
+*8.* Encontre a densidade de x:[|X|], se x:[X] é uma variável aleatória contínua com densidade dada por
 [latexmath]
 ++++
 \[
@@ -220,7 +220,7 @@ f(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2},\quad x\in\mathbb{R}.
 
 
 
-*9.* {resposta} Seja x:[X] uma variável aleatória com densidade dada por
+*9.* Seja x:[X] uma variável aleatória com densidade dada por
 [latexmath]
 ++++
 \[
@@ -235,9 +235,46 @@ Obtenha a densidade de x:[Y=X^2].
 
 
 
+.Respostas
+____
+*1.*
+a) 1/21 {nbsp}{nbsp}
+b) 3/7 {nbsp}{nbsp}
+
+*2.* 
+a) 3/4 {nbsp}{nbsp}
+b) 4/5 {nbsp}{nbsp}
+
+*3.*
+a) x:[P(X=0) = 1/2, P(X=1)=P(X=3)=P(X=4)=1/10, P(X=2)=1/5]. {nbsp}{nbsp}
+b) 5/8{nbsp}{nbsp}
 
 
+*4.* 
+a) x:[p(2) = 1/10, p(3)=1/5, p(4)=3/10, p(5)=2/5.]{nbsp}{nbsp}
+b) x:[p(x) = 1/10] se x:[x\in \{3,4,8,9\}] e x:[p(x)=1/5] se x:[x\in \{5,6,7\}].{nbsp}{nbsp}
+
+*6.*
+a) 2{nbsp}{nbsp}
+b) 1/4{nbsp}{nbsp}
+c) x:[F(x) = \begin{cases} 1 - x^2,&\hbox{~se~}x\geq 1,\\ 0,&\hbox{~se~} x<1.\end{cases}]{nbsp}{nbsp}
 
 
+*7.* x:[f_Y(y) = \frac{1}{2\sqrt{y}},\quad 0<y<1].
 
+*8.* x:[f_Y(y) = (2/\pi)^{1/2} \exp\{-y^2/2\},\quad y>0.]
+
+*9.* 
+[latexmath]
+++++
+\[
+f_Y(y) = \begin{cases}
+\frac{1}{4\sqrt{y}}\big(1+e^{-\sqrt{y}}\big),&\hbox{~se~}0\leq y <1,\\
+\frac{1}{4\sqrt{y}}e^{-\sqrt{y}},&\hbox{~se~}y\geq 1,\\
+0,&\hbox{caso contrário}.
+\end{cases}
+\]
+++++
+
+____
 

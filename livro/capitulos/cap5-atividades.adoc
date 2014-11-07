@@ -8,24 +8,24 @@ porém perdemos 8 reais para cada bola vermelha. Seja x:[X] o nosso lucro.
 --
 
 
-a) {resposta} Determine a função de probabilidade de x:[X];
+a. Determine a função de probabilidade de x:[X];
 
 
 
 
-b) {resposta} Calcule a esperança e variância de x:[X].
+b. Calcule a esperança e variância de x:[X].
 
 
 
 --
 
-*2.* {resposta} Exatamente uma entre 6 chaves parecidas abre uma determinada porta. Tenta-se uma chave após a outra. Qual o número médio de tentativas
+*2.* Exatamente uma entre 6 chaves parecidas abre uma determinada porta. Tenta-se uma chave após a outra. Qual o número médio de tentativas
 necessárias para se conseguir abrir a porta?
 
 
 
 
-*3.* {resposta} Cinquenta pessoas lançam uma moeda honesta dez vezes. Obtenha a média e a variância do número de pessoas
+*3.* Cinquenta pessoas lançam uma moeda honesta dez vezes. Obtenha a média e a variância do número de pessoas
 que obtêm exatamente 5 caras.
 
 
@@ -45,12 +45,12 @@ f(x) = \frac{1}{x^2},\quad x\geq 1.
 
 
 
-a) {resposta} Mostre que x:[f] é, de fato, uma densidade;
+a. Mostre que x:[f] é, de fato, uma densidade;
 
 
 
 
-b) {resposta} A esperança de x:[X] existe? Se sim, quanto vale?
+b. A esperança de x:[X] existe? Se sim, quanto vale?
 
 
 
@@ -72,30 +72,40 @@ Obtenha:
 
 
 
-a) {resposta} x:[E(X)];
+a. x:[E(X)];
 
 
 
 
-b) {resposta}  x:[E(|X|)];
+b.  x:[E(|X|)];
 
 
 
 
 
-c) {resposta} x:[Var(X)];
+c. x:[Var(X)];
 
 
 
 --
 
 
+.Respostas
+____
+*1.* 
+a)  x:[ p(-16) = 1/12, p(-7) = 1/6, p(2) = 13/36, p(11)=2/9, p(20) = 1/6].{nbsp}{nbsp}
+b)  x:[E(X) = 4, Var(X) = 108,5].
+
+*2.* 7/2. {nbsp}{nbsp}
+*3.* média = 12,3; variância = 9,3.{nbsp}{nbsp}
+*4.* 
+b) x:[E(X) = \infty]
 
 
+*5.* 
+a) x:[E(X)=0];{nbsp}{nbsp}
+b) x:[E(|X|) = 1.]{nbsp}{nbsp}
+c) x:[Var(X) = 2.]
 
-
-
-
-
-
+____
 
